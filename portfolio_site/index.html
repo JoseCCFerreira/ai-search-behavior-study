@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Search Behavior Study</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>AI Search Behavior Study</h1>
+      <p>A data-driven study on the relationship between traditional search behavior, browser usage and AI assistant adoption.</p>
+      <div class="buttons">
+        <a href="https://github.com/YOUR_USERNAME/ai-search-behavior-study" target="_blank">View GitHub Repository</a>
+        <a href="https://share.streamlit.io/YOUR_USERNAME/ai-search-behavior-study/app/streamlit_app.py" target="_blank">Open Streamlit Dashboard</a>
+        <a href="#methodology">Read Methodology</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section id="purpose">
+      <h2>Project Purpose</h2>
+      <p>This study analyzes the evolution of traditional search, search engines, browsers and AI tools like ChatGPT, Gemini, Copilot, Claude, Perplexity, DeepSeek and Grok.</p>
+    </section>
+    <section id="questions">
+      <h2>Research Questions</h2>
+      <ul>
+        <li>Is AI assistant adoption changing traditional search behavior?</li>
+        <li>Are search engines losing relative attention to AI tools?</li>
+        <li>Which regions show faster AI adoption?</li>
+        <li>Can we forecast the next 3 to 5 years of AI/search behavior?</li>
+        <li>Are there identifiable clusters of countries, platforms or periods?</li>
+        <li>Is the relationship between AI tools and traditional search immediate or delayed?</li>
+      </ul>
+    </section>
+    <section id="architecture">
+      <h2>Architecture</h2>
+      <div class="card-grid">
+        <div class="card"><h3>Raw Data</h3><p>Google Trends, StatCounter, Similarweb and events.</p></div>
+        <div class="card"><h3>DuckDB Database</h3><p>Local analytical engine for raw and processed tables.</p></div>
+        <div class="card"><h3>Processing Layer</h3><p>Normalization, feature engineering and mart creation.</p></div>
+        <div class="card"><h3>Analytical Mart</h3><p>Monthly consolidated metrics for analysis and modeling.</p></div>
+        <div class="card"><h3>Machine Learning</h3><p>Clustering, forecasting, lag analysis and scenario simulation.</p></div>
+        <div class="card"><h3>Streamlit Dashboard</h3><p>Interactive portfolio dashboard for exploration.</p></div>
+      </div>
+    </section>
+    <section id="data-sources">
+      <h2>Data Sources</h2>
+      <ul>
+        <li>Google Trends</li>
+        <li>StatCounter GlobalStats</li>
+        <li>Similarweb or manual AI traffic CSV</li>
+        <li>Manual events dataset</li>
+        <li>Synthetic demo data</li>
+      </ul>
+    </section>
+    <section id="ml">
+      <h2>Machine Learning</h2>
+      <p>Clustering, forecasting, lag analysis, change point detection and model evaluation provide insights into search and AI behavior.</p>
+    </section>
+    <section id="preview">
+      <h2>Dashboard Preview</h2>
+      <div class="card-grid">
+        <div class="card"><h3>Overview</h3></div>
+        <div class="card"><h3>Distribution</h3></div>
+        <div class="card"><h3>Trends</h3></div>
+        <div class="card"><h3>Correlation</h3></div>
+        <div class="card"><h3>Clustering</h3></div>
+        <div class="card"><h3>Forecasting</h3></div>
+      </div>
+    </section>
+    <section id="key-outputs">
+      <h2>Key Outputs</h2>
+      <ul>
+        <li>DuckDB analytical database</li>
+        <li>Streamlit dashboard</li>
+        <li>Forecasting model templates</li>
+        <li>Clustering analysis</li>
+        <li>Data quality report</li>
+        <li>Methodology report</li>
+        <li>Static portfolio page</li>
+        <li>GitHub Actions workflow</li>
+      </ul>
+    </section>
+    <section id="limitations">
+      <h2>Limitations</h2>
+      <ul>
+        <li>Google Trends is a relative index, not absolute volume.</li>
+        <li>Similarweb data may require paid or manual exports.</li>
+        <li>Correlation does not imply causation.</li>
+        <li>Forecasts are exploratory.</li>
+        <li>Browser and search share do not equal user intent.</li>
+        <li>AI usage may happen through apps and integrations.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>Project by Carlos Ferreira | <a href="https://github.com/YOUR_USERNAME/ai-search-behavior-study">GitHub</a> | <a href="#">LinkedIn</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

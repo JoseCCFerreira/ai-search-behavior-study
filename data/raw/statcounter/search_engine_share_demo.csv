@@ -1,0 +1,3781 @@
+date,region,platform,category,value_percent
+2019-01-01,Portugal,Google,search_engine,68.56
+2019-02-01,Portugal,Google,search_engine,72.33
+2019-03-01,Portugal,Google,search_engine,73.55
+2019-04-01,Portugal,Google,search_engine,75.13
+2019-05-01,Portugal,Google,search_engine,76.06
+2019-06-01,Portugal,Google,search_engine,72.44
+2019-07-01,Portugal,Google,search_engine,68.94
+2019-08-01,Portugal,Google,search_engine,66.27
+2019-09-01,Portugal,Google,search_engine,63.34
+2019-10-01,Portugal,Google,search_engine,65.5
+2019-11-01,Portugal,Google,search_engine,65.81
+2019-12-01,Portugal,Google,search_engine,68.21
+2020-01-01,Portugal,Google,search_engine,68.88
+2020-02-01,Portugal,Google,search_engine,72.86
+2020-03-01,Portugal,Google,search_engine,72.72
+2020-04-01,Portugal,Google,search_engine,72.81
+2020-05-01,Portugal,Google,search_engine,71.52
+2020-06-01,Portugal,Google,search_engine,70.39
+2020-07-01,Portugal,Google,search_engine,69.09
+2020-08-01,Portugal,Google,search_engine,65.42
+2020-09-01,Portugal,Google,search_engine,65.97
+2020-10-01,Portugal,Google,search_engine,64.51
+2020-11-01,Portugal,Google,search_engine,63.36
+2020-12-01,Portugal,Google,search_engine,64.78
+2021-01-01,Portugal,Google,search_engine,68.34
+2021-02-01,Portugal,Google,search_engine,71.75
+2021-03-01,Portugal,Google,search_engine,73.13
+2021-04-01,Portugal,Google,search_engine,71.97
+2021-05-01,Portugal,Google,search_engine,72.62
+2021-06-01,Portugal,Google,search_engine,70.15
+2021-07-01,Portugal,Google,search_engine,67.7
+2021-08-01,Portugal,Google,search_engine,62.37
+2021-09-01,Portugal,Google,search_engine,63.88
+2021-10-01,Portugal,Google,search_engine,62.23
+2021-11-01,Portugal,Google,search_engine,66.14
+2021-12-01,Portugal,Google,search_engine,63.39
+2022-01-01,Portugal,Google,search_engine,66.48
+2022-02-01,Portugal,Google,search_engine,69.84
+2022-03-01,Portugal,Google,search_engine,73.89
+2022-04-01,Portugal,Google,search_engine,71.86
+2022-05-01,Portugal,Google,search_engine,72.89
+2022-06-01,Portugal,Google,search_engine,67.76
+2022-07-01,Portugal,Google,search_engine,66.33
+2022-08-01,Portugal,Google,search_engine,64.31
+2022-09-01,Portugal,Google,search_engine,62.08
+2022-10-01,Portugal,Google,search_engine,62.09
+2022-11-01,Portugal,Google,search_engine,62.23
+2022-12-01,Portugal,Google,search_engine,65.95
+2023-01-01,Portugal,Google,search_engine,66.69
+2023-02-01,Portugal,Google,search_engine,71.89
+2023-03-01,Portugal,Google,search_engine,71.29
+2023-04-01,Portugal,Google,search_engine,73.74
+2023-05-01,Portugal,Google,search_engine,73.84
+2023-06-01,Portugal,Google,search_engine,69.23
+2023-07-01,Portugal,Google,search_engine,69.16
+2023-08-01,Portugal,Google,search_engine,64.94
+2023-09-01,Portugal,Google,search_engine,65.09
+2023-10-01,Portugal,Google,search_engine,63.48
+2023-11-01,Portugal,Google,search_engine,65.31
+2023-12-01,Portugal,Google,search_engine,62.79
+2024-01-01,Portugal,Google,search_engine,67.84
+2024-02-01,Portugal,Google,search_engine,71.8
+2024-03-01,Portugal,Google,search_engine,69.61
+2024-04-01,Portugal,Google,search_engine,71.24
+2024-05-01,Portugal,Google,search_engine,71.61
+2024-06-01,Portugal,Google,search_engine,69.52
+2024-07-01,Portugal,Google,search_engine,66.49
+2024-08-01,Portugal,Google,search_engine,61.49
+2024-09-01,Portugal,Google,search_engine,64.12
+2024-10-01,Portugal,Google,search_engine,61.6
+2024-11-01,Portugal,Google,search_engine,62.52
+2024-12-01,Portugal,Google,search_engine,64.0
+2025-01-01,Portugal,Google,search_engine,64.96
+2025-02-01,Portugal,Google,search_engine,70.5
+2025-03-01,Portugal,Google,search_engine,70.76
+2025-04-01,Portugal,Google,search_engine,67.96
+2025-05-01,Portugal,Google,search_engine,69.46
+2025-06-01,Portugal,Google,search_engine,69.29
+2025-07-01,Portugal,Google,search_engine,66.54
+2025-08-01,Portugal,Google,search_engine,65.15
+2025-09-01,Portugal,Google,search_engine,63.2
+2025-10-01,Portugal,Google,search_engine,61.29
+2025-11-01,Portugal,Google,search_engine,63.63
+2025-12-01,Portugal,Google,search_engine,61.37
+2026-01-01,Portugal,Google,search_engine,66.88
+2026-02-01,Portugal,Google,search_engine,67.59
+2026-03-01,Portugal,Google,search_engine,73.0
+2026-04-01,Portugal,Google,search_engine,69.25
+2026-05-01,Portugal,Google,search_engine,67.21
+2026-06-01,Portugal,Google,search_engine,68.24
+2019-01-01,Portugal,Bing,search_engine,7.86
+2019-02-01,Portugal,Bing,search_engine,7.82
+2019-03-01,Portugal,Bing,search_engine,9.82
+2019-04-01,Portugal,Bing,search_engine,5.56
+2019-05-01,Portugal,Bing,search_engine,7.36
+2019-06-01,Portugal,Bing,search_engine,8.15
+2019-07-01,Portugal,Bing,search_engine,10.7
+2019-08-01,Portugal,Bing,search_engine,6.88
+2019-09-01,Portugal,Bing,search_engine,8.71
+2019-10-01,Portugal,Bing,search_engine,8.43
+2019-11-01,Portugal,Bing,search_engine,7.93
+2019-12-01,Portugal,Bing,search_engine,7.59
+2020-01-01,Portugal,Bing,search_engine,9.75
+2020-02-01,Portugal,Bing,search_engine,8.5
+2020-03-01,Portugal,Bing,search_engine,9.23
+2020-04-01,Portugal,Bing,search_engine,6.11
+2020-05-01,Portugal,Bing,search_engine,9.2
+2020-06-01,Portugal,Bing,search_engine,8.3
+2020-07-01,Portugal,Bing,search_engine,7.87
+2020-08-01,Portugal,Bing,search_engine,10.13
+2020-09-01,Portugal,Bing,search_engine,7.31
+2020-10-01,Portugal,Bing,search_engine,5.79
+2020-11-01,Portugal,Bing,search_engine,7.21
+2020-12-01,Portugal,Bing,search_engine,5.81
+2021-01-01,Portugal,Bing,search_engine,11.37
+2021-02-01,Portugal,Bing,search_engine,9.32
+2021-03-01,Portugal,Bing,search_engine,11.39
+2021-04-01,Portugal,Bing,search_engine,9.85
+2021-05-01,Portugal,Bing,search_engine,13.78
+2021-06-01,Portugal,Bing,search_engine,8.84
+2021-07-01,Portugal,Bing,search_engine,5.06
+2021-08-01,Portugal,Bing,search_engine,7.35
+2021-09-01,Portugal,Bing,search_engine,8.68
+2021-10-01,Portugal,Bing,search_engine,7.65
+2021-11-01,Portugal,Bing,search_engine,8.71
+2021-12-01,Portugal,Bing,search_engine,7.08
+2022-01-01,Portugal,Bing,search_engine,5.99
+2022-02-01,Portugal,Bing,search_engine,7.57
+2022-03-01,Portugal,Bing,search_engine,9.44
+2022-04-01,Portugal,Bing,search_engine,10.4
+2022-05-01,Portugal,Bing,search_engine,12.14
+2022-06-01,Portugal,Bing,search_engine,11.65
+2022-07-01,Portugal,Bing,search_engine,8.81
+2022-08-01,Portugal,Bing,search_engine,8.23
+2022-09-01,Portugal,Bing,search_engine,7.81
+2022-10-01,Portugal,Bing,search_engine,7.22
+2022-11-01,Portugal,Bing,search_engine,7.95
+2022-12-01,Portugal,Bing,search_engine,7.55
+2023-01-01,Portugal,Bing,search_engine,9.46
+2023-02-01,Portugal,Bing,search_engine,7.62
+2023-03-01,Portugal,Bing,search_engine,8.61
+2023-04-01,Portugal,Bing,search_engine,10.98
+2023-05-01,Portugal,Bing,search_engine,9.52
+2023-06-01,Portugal,Bing,search_engine,9.29
+2023-07-01,Portugal,Bing,search_engine,9.66
+2023-08-01,Portugal,Bing,search_engine,6.99
+2023-09-01,Portugal,Bing,search_engine,9.27
+2023-10-01,Portugal,Bing,search_engine,9.01
+2023-11-01,Portugal,Bing,search_engine,10.59
+2023-12-01,Portugal,Bing,search_engine,5.53
+2024-01-01,Portugal,Bing,search_engine,7.65
+2024-02-01,Portugal,Bing,search_engine,7.93
+2024-03-01,Portugal,Bing,search_engine,10.22
+2024-04-01,Portugal,Bing,search_engine,9.99
+2024-05-01,Portugal,Bing,search_engine,10.69
+2024-06-01,Portugal,Bing,search_engine,7.86
+2024-07-01,Portugal,Bing,search_engine,9.99
+2024-08-01,Portugal,Bing,search_engine,11.23
+2024-09-01,Portugal,Bing,search_engine,9.09
+2024-10-01,Portugal,Bing,search_engine,10.01
+2024-11-01,Portugal,Bing,search_engine,10.31
+2024-12-01,Portugal,Bing,search_engine,10.03
+2025-01-01,Portugal,Bing,search_engine,8.64
+2025-02-01,Portugal,Bing,search_engine,7.32
+2025-03-01,Portugal,Bing,search_engine,10.3
+2025-04-01,Portugal,Bing,search_engine,11.43
+2025-05-01,Portugal,Bing,search_engine,11.97
+2025-06-01,Portugal,Bing,search_engine,6.65
+2025-07-01,Portugal,Bing,search_engine,8.72
+2025-08-01,Portugal,Bing,search_engine,8.71
+2025-09-01,Portugal,Bing,search_engine,9.45
+2025-10-01,Portugal,Bing,search_engine,9.92
+2025-11-01,Portugal,Bing,search_engine,7.56
+2025-12-01,Portugal,Bing,search_engine,10.19
+2026-01-01,Portugal,Bing,search_engine,9.9
+2026-02-01,Portugal,Bing,search_engine,13.74
+2026-03-01,Portugal,Bing,search_engine,10.18
+2026-04-01,Portugal,Bing,search_engine,7.78
+2026-05-01,Portugal,Bing,search_engine,9.56
+2026-06-01,Portugal,Bing,search_engine,8.02
+2019-01-01,Portugal,Yahoo,search_engine,5.65
+2019-02-01,Portugal,Yahoo,search_engine,5.57
+2019-03-01,Portugal,Yahoo,search_engine,6.3
+2019-04-01,Portugal,Yahoo,search_engine,5.5
+2019-05-01,Portugal,Yahoo,search_engine,8.84
+2019-06-01,Portugal,Yahoo,search_engine,6.01
+2019-07-01,Portugal,Yahoo,search_engine,5.25
+2019-08-01,Portugal,Yahoo,search_engine,5.92
+2019-09-01,Portugal,Yahoo,search_engine,5.57
+2019-10-01,Portugal,Yahoo,search_engine,5.09
+2019-11-01,Portugal,Yahoo,search_engine,3.59
+2019-12-01,Portugal,Yahoo,search_engine,4.28
+2020-01-01,Portugal,Yahoo,search_engine,1.86
+2020-02-01,Portugal,Yahoo,search_engine,6.12
+2020-03-01,Portugal,Yahoo,search_engine,6.39
+2020-04-01,Portugal,Yahoo,search_engine,6.69
+2020-05-01,Portugal,Yahoo,search_engine,7.61
+2020-06-01,Portugal,Yahoo,search_engine,6.75
+2020-07-01,Portugal,Yahoo,search_engine,3.45
+2020-08-01,Portugal,Yahoo,search_engine,3.73
+2020-09-01,Portugal,Yahoo,search_engine,6.08
+2020-10-01,Portugal,Yahoo,search_engine,3.29
+2020-11-01,Portugal,Yahoo,search_engine,5.08
+2020-12-01,Portugal,Yahoo,search_engine,5.99
+2021-01-01,Portugal,Yahoo,search_engine,5.02
+2021-02-01,Portugal,Yahoo,search_engine,8.94
+2021-03-01,Portugal,Yahoo,search_engine,5.28
+2021-04-01,Portugal,Yahoo,search_engine,7.58
+2021-05-01,Portugal,Yahoo,search_engine,5.2
+2021-06-01,Portugal,Yahoo,search_engine,5.5
+2021-07-01,Portugal,Yahoo,search_engine,4.43
+2021-08-01,Portugal,Yahoo,search_engine,3.88
+2021-09-01,Portugal,Yahoo,search_engine,5.43
+2021-10-01,Portugal,Yahoo,search_engine,4.03
+2021-11-01,Portugal,Yahoo,search_engine,4.89
+2021-12-01,Portugal,Yahoo,search_engine,4.34
+2022-01-01,Portugal,Yahoo,search_engine,7.77
+2022-02-01,Portugal,Yahoo,search_engine,4.4
+2022-03-01,Portugal,Yahoo,search_engine,4.94
+2022-04-01,Portugal,Yahoo,search_engine,5.27
+2022-05-01,Portugal,Yahoo,search_engine,2.67
+2022-06-01,Portugal,Yahoo,search_engine,5.94
+2022-07-01,Portugal,Yahoo,search_engine,5.66
+2022-08-01,Portugal,Yahoo,search_engine,5.91
+2022-09-01,Portugal,Yahoo,search_engine,4.22
+2022-10-01,Portugal,Yahoo,search_engine,6.47
+2022-11-01,Portugal,Yahoo,search_engine,2.38
+2022-12-01,Portugal,Yahoo,search_engine,5.35
+2023-01-01,Portugal,Yahoo,search_engine,2.44
+2023-02-01,Portugal,Yahoo,search_engine,4.65
+2023-03-01,Portugal,Yahoo,search_engine,4.06
+2023-04-01,Portugal,Yahoo,search_engine,5.92
+2023-05-01,Portugal,Yahoo,search_engine,5.03
+2023-06-01,Portugal,Yahoo,search_engine,4.05
+2023-07-01,Portugal,Yahoo,search_engine,4.37
+2023-08-01,Portugal,Yahoo,search_engine,2.82
+2023-09-01,Portugal,Yahoo,search_engine,4.24
+2023-10-01,Portugal,Yahoo,search_engine,4.26
+2023-11-01,Portugal,Yahoo,search_engine,3.01
+2023-12-01,Portugal,Yahoo,search_engine,5.15
+2024-01-01,Portugal,Yahoo,search_engine,5.17
+2024-02-01,Portugal,Yahoo,search_engine,3.85
+2024-03-01,Portugal,Yahoo,search_engine,4.17
+2024-04-01,Portugal,Yahoo,search_engine,9.41
+2024-05-01,Portugal,Yahoo,search_engine,4.2
+2024-06-01,Portugal,Yahoo,search_engine,3.78
+2024-07-01,Portugal,Yahoo,search_engine,4.68
+2024-08-01,Portugal,Yahoo,search_engine,5.94
+2024-09-01,Portugal,Yahoo,search_engine,4.28
+2024-10-01,Portugal,Yahoo,search_engine,7.12
+2024-11-01,Portugal,Yahoo,search_engine,4.67
+2024-12-01,Portugal,Yahoo,search_engine,6.66
+2025-01-01,Portugal,Yahoo,search_engine,4.16
+2025-02-01,Portugal,Yahoo,search_engine,5.52
+2025-03-01,Portugal,Yahoo,search_engine,5.26
+2025-04-01,Portugal,Yahoo,search_engine,8.09
+2025-05-01,Portugal,Yahoo,search_engine,4.19
+2025-06-01,Portugal,Yahoo,search_engine,6.82
+2025-07-01,Portugal,Yahoo,search_engine,6.83
+2025-08-01,Portugal,Yahoo,search_engine,5.16
+2025-09-01,Portugal,Yahoo,search_engine,5.63
+2025-10-01,Portugal,Yahoo,search_engine,5.46
+2025-11-01,Portugal,Yahoo,search_engine,6.8
+2025-12-01,Portugal,Yahoo,search_engine,3.6
+2026-01-01,Portugal,Yahoo,search_engine,4.15
+2026-02-01,Portugal,Yahoo,search_engine,3.22
+2026-03-01,Portugal,Yahoo,search_engine,5.17
+2026-04-01,Portugal,Yahoo,search_engine,6.96
+2026-05-01,Portugal,Yahoo,search_engine,6.31
+2026-06-01,Portugal,Yahoo,search_engine,3.68
+2019-01-01,Portugal,DuckDuckGo,search_engine,5.78
+2019-02-01,Portugal,DuckDuckGo,search_engine,4.65
+2019-03-01,Portugal,DuckDuckGo,search_engine,6.49
+2019-04-01,Portugal,DuckDuckGo,search_engine,9.49
+2019-05-01,Portugal,DuckDuckGo,search_engine,6.31
+2019-06-01,Portugal,DuckDuckGo,search_engine,3.7
+2019-07-01,Portugal,DuckDuckGo,search_engine,4.13
+2019-08-01,Portugal,DuckDuckGo,search_engine,4.79
+2019-09-01,Portugal,DuckDuckGo,search_engine,6.07
+2019-10-01,Portugal,DuckDuckGo,search_engine,3.46
+2019-11-01,Portugal,DuckDuckGo,search_engine,6.04
+2019-12-01,Portugal,DuckDuckGo,search_engine,4.39
+2020-01-01,Portugal,DuckDuckGo,search_engine,7.22
+2020-02-01,Portugal,DuckDuckGo,search_engine,6.2
+2020-03-01,Portugal,DuckDuckGo,search_engine,5.37
+2020-04-01,Portugal,DuckDuckGo,search_engine,5.99
+2020-05-01,Portugal,DuckDuckGo,search_engine,3.4
+2020-06-01,Portugal,DuckDuckGo,search_engine,8.46
+2020-07-01,Portugal,DuckDuckGo,search_engine,3.81
+2020-08-01,Portugal,DuckDuckGo,search_engine,6.9
+2020-09-01,Portugal,DuckDuckGo,search_engine,3.76
+2020-10-01,Portugal,DuckDuckGo,search_engine,3.23
+2020-11-01,Portugal,DuckDuckGo,search_engine,6.28
+2020-12-01,Portugal,DuckDuckGo,search_engine,5.04
+2021-01-01,Portugal,DuckDuckGo,search_engine,7.42
+2021-02-01,Portugal,DuckDuckGo,search_engine,7.2
+2021-03-01,Portugal,DuckDuckGo,search_engine,4.87
+2021-04-01,Portugal,DuckDuckGo,search_engine,4.14
+2021-05-01,Portugal,DuckDuckGo,search_engine,7.31
+2021-06-01,Portugal,DuckDuckGo,search_engine,4.13
+2021-07-01,Portugal,DuckDuckGo,search_engine,6.55
+2021-08-01,Portugal,DuckDuckGo,search_engine,8.82
+2021-09-01,Portugal,DuckDuckGo,search_engine,5.06
+2021-10-01,Portugal,DuckDuckGo,search_engine,5.33
+2021-11-01,Portugal,DuckDuckGo,search_engine,6.17
+2021-12-01,Portugal,DuckDuckGo,search_engine,4.8
+2022-01-01,Portugal,DuckDuckGo,search_engine,5.72
+2022-02-01,Portugal,DuckDuckGo,search_engine,1.34
+2022-03-01,Portugal,DuckDuckGo,search_engine,5.97
+2022-04-01,Portugal,DuckDuckGo,search_engine,6.35
+2022-05-01,Portugal,DuckDuckGo,search_engine,5.77
+2022-06-01,Portugal,DuckDuckGo,search_engine,4.27
+2022-07-01,Portugal,DuckDuckGo,search_engine,5.75
+2022-08-01,Portugal,DuckDuckGo,search_engine,6.31
+2022-09-01,Portugal,DuckDuckGo,search_engine,4.11
+2022-10-01,Portugal,DuckDuckGo,search_engine,4.1
+2022-11-01,Portugal,DuckDuckGo,search_engine,4.89
+2022-12-01,Portugal,DuckDuckGo,search_engine,7.47
+2023-01-01,Portugal,DuckDuckGo,search_engine,6.29
+2023-02-01,Portugal,DuckDuckGo,search_engine,5.54
+2023-03-01,Portugal,DuckDuckGo,search_engine,5.74
+2023-04-01,Portugal,DuckDuckGo,search_engine,8.16
+2023-05-01,Portugal,DuckDuckGo,search_engine,5.3
+2023-06-01,Portugal,DuckDuckGo,search_engine,6.76
+2023-07-01,Portugal,DuckDuckGo,search_engine,7.44
+2023-08-01,Portugal,DuckDuckGo,search_engine,3.69
+2023-09-01,Portugal,DuckDuckGo,search_engine,4.43
+2023-10-01,Portugal,DuckDuckGo,search_engine,4.4
+2023-11-01,Portugal,DuckDuckGo,search_engine,7.74
+2023-12-01,Portugal,DuckDuckGo,search_engine,7.77
+2024-01-01,Portugal,DuckDuckGo,search_engine,4.5
+2024-02-01,Portugal,DuckDuckGo,search_engine,8.66
+2024-03-01,Portugal,DuckDuckGo,search_engine,5.2
+2024-04-01,Portugal,DuckDuckGo,search_engine,3.41
+2024-05-01,Portugal,DuckDuckGo,search_engine,6.07
+2024-06-01,Portugal,DuckDuckGo,search_engine,4.98
+2024-07-01,Portugal,DuckDuckGo,search_engine,3.88
+2024-08-01,Portugal,DuckDuckGo,search_engine,4.42
+2024-09-01,Portugal,DuckDuckGo,search_engine,6.6
+2024-10-01,Portugal,DuckDuckGo,search_engine,4.71
+2024-11-01,Portugal,DuckDuckGo,search_engine,4.61
+2024-12-01,Portugal,DuckDuckGo,search_engine,5.3
+2025-01-01,Portugal,DuckDuckGo,search_engine,8.69
+2025-02-01,Portugal,DuckDuckGo,search_engine,7.0
+2025-03-01,Portugal,DuckDuckGo,search_engine,6.01
+2025-04-01,Portugal,DuckDuckGo,search_engine,6.36
+2025-05-01,Portugal,DuckDuckGo,search_engine,8.55
+2025-06-01,Portugal,DuckDuckGo,search_engine,8.61
+2025-07-01,Portugal,DuckDuckGo,search_engine,3.44
+2025-08-01,Portugal,DuckDuckGo,search_engine,6.81
+2025-09-01,Portugal,DuckDuckGo,search_engine,7.5
+2025-10-01,Portugal,DuckDuckGo,search_engine,7.87
+2025-11-01,Portugal,DuckDuckGo,search_engine,2.82
+2025-12-01,Portugal,DuckDuckGo,search_engine,6.02
+2026-01-01,Portugal,DuckDuckGo,search_engine,6.97
+2026-02-01,Portugal,DuckDuckGo,search_engine,6.17
+2026-03-01,Portugal,DuckDuckGo,search_engine,8.23
+2026-04-01,Portugal,DuckDuckGo,search_engine,8.49
+2026-05-01,Portugal,DuckDuckGo,search_engine,7.04
+2026-06-01,Portugal,DuckDuckGo,search_engine,6.72
+2019-01-01,Portugal,Yandex,search_engine,3.28
+2019-02-01,Portugal,Yandex,search_engine,2.84
+2019-03-01,Portugal,Yandex,search_engine,1.65
+2019-04-01,Portugal,Yandex,search_engine,4.7
+2019-05-01,Portugal,Yandex,search_engine,6.3
+2019-06-01,Portugal,Yandex,search_engine,5.67
+2019-07-01,Portugal,Yandex,search_engine,5.47
+2019-08-01,Portugal,Yandex,search_engine,2.17
+2019-09-01,Portugal,Yandex,search_engine,2.78
+2019-10-01,Portugal,Yandex,search_engine,5.25
+2019-11-01,Portugal,Yandex,search_engine,5.83
+2019-12-01,Portugal,Yandex,search_engine,4.44
+2020-01-01,Portugal,Yandex,search_engine,4.11
+2020-02-01,Portugal,Yandex,search_engine,6.58
+2020-03-01,Portugal,Yandex,search_engine,4.86
+2020-04-01,Portugal,Yandex,search_engine,4.85
+2020-05-01,Portugal,Yandex,search_engine,4.3
+2020-06-01,Portugal,Yandex,search_engine,3.39
+2020-07-01,Portugal,Yandex,search_engine,4.33
+2020-08-01,Portugal,Yandex,search_engine,3.68
+2020-09-01,Portugal,Yandex,search_engine,2.32
+2020-10-01,Portugal,Yandex,search_engine,3.54
+2020-11-01,Portugal,Yandex,search_engine,1.82
+2020-12-01,Portugal,Yandex,search_engine,3.19
+2021-01-01,Portugal,Yandex,search_engine,3.66
+2021-02-01,Portugal,Yandex,search_engine,5.75
+2021-03-01,Portugal,Yandex,search_engine,3.23
+2021-04-01,Portugal,Yandex,search_engine,4.22
+2021-05-01,Portugal,Yandex,search_engine,4.52
+2021-06-01,Portugal,Yandex,search_engine,2.87
+2021-07-01,Portugal,Yandex,search_engine,2.71
+2021-08-01,Portugal,Yandex,search_engine,2.2
+2021-09-01,Portugal,Yandex,search_engine,5.65
+2021-10-01,Portugal,Yandex,search_engine,2.09
+2021-11-01,Portugal,Yandex,search_engine,4.58
+2021-12-01,Portugal,Yandex,search_engine,2.7
+2022-01-01,Portugal,Yandex,search_engine,3.89
+2022-02-01,Portugal,Yandex,search_engine,6.44
+2022-03-01,Portugal,Yandex,search_engine,4.14
+2022-04-01,Portugal,Yandex,search_engine,5.74
+2022-05-01,Portugal,Yandex,search_engine,6.27
+2022-06-01,Portugal,Yandex,search_engine,3.75
+2022-07-01,Portugal,Yandex,search_engine,5.66
+2022-08-01,Portugal,Yandex,search_engine,5.34
+2022-09-01,Portugal,Yandex,search_engine,1.67
+2022-10-01,Portugal,Yandex,search_engine,3.47
+2022-11-01,Portugal,Yandex,search_engine,4.6
+2022-12-01,Portugal,Yandex,search_engine,5.6
+2023-01-01,Portugal,Yandex,search_engine,3.7
+2023-02-01,Portugal,Yandex,search_engine,4.36
+2023-03-01,Portugal,Yandex,search_engine,4.98
+2023-04-01,Portugal,Yandex,search_engine,5.28
+2023-05-01,Portugal,Yandex,search_engine,8.01
+2023-06-01,Portugal,Yandex,search_engine,5.43
+2023-07-01,Portugal,Yandex,search_engine,6.56
+2023-08-01,Portugal,Yandex,search_engine,4.27
+2023-09-01,Portugal,Yandex,search_engine,1.26
+2023-10-01,Portugal,Yandex,search_engine,1.38
+2023-11-01,Portugal,Yandex,search_engine,3.17
+2023-12-01,Portugal,Yandex,search_engine,3.47
+2024-01-01,Portugal,Yandex,search_engine,5.4
+2024-02-01,Portugal,Yandex,search_engine,5.75
+2024-03-01,Portugal,Yandex,search_engine,3.78
+2024-04-01,Portugal,Yandex,search_engine,5.91
+2024-05-01,Portugal,Yandex,search_engine,4.98
+2024-06-01,Portugal,Yandex,search_engine,5.74
+2024-07-01,Portugal,Yandex,search_engine,3.29
+2024-08-01,Portugal,Yandex,search_engine,5.43
+2024-09-01,Portugal,Yandex,search_engine,4.23
+2024-10-01,Portugal,Yandex,search_engine,6.22
+2024-11-01,Portugal,Yandex,search_engine,2.49
+2024-12-01,Portugal,Yandex,search_engine,6.61
+2025-01-01,Portugal,Yandex,search_engine,4.66
+2025-02-01,Portugal,Yandex,search_engine,3.87
+2025-03-01,Portugal,Yandex,search_engine,7.55
+2025-04-01,Portugal,Yandex,search_engine,4.63
+2025-05-01,Portugal,Yandex,search_engine,8.12
+2025-06-01,Portugal,Yandex,search_engine,5.15
+2025-07-01,Portugal,Yandex,search_engine,1.82
+2025-08-01,Portugal,Yandex,search_engine,3.08
+2025-09-01,Portugal,Yandex,search_engine,3.54
+2025-10-01,Portugal,Yandex,search_engine,4.82
+2025-11-01,Portugal,Yandex,search_engine,1.67
+2025-12-01,Portugal,Yandex,search_engine,5.21
+2026-01-01,Portugal,Yandex,search_engine,7.5
+2026-02-01,Portugal,Yandex,search_engine,4.49
+2026-03-01,Portugal,Yandex,search_engine,4.57
+2026-04-01,Portugal,Yandex,search_engine,5.78
+2026-05-01,Portugal,Yandex,search_engine,4.19
+2026-06-01,Portugal,Yandex,search_engine,3.21
+2019-01-01,Portugal,Baidu,search_engine,3.88
+2019-02-01,Portugal,Baidu,search_engine,0.82
+2019-03-01,Portugal,Baidu,search_engine,5.64
+2019-04-01,Portugal,Baidu,search_engine,3.22
+2019-05-01,Portugal,Baidu,search_engine,1.28
+2019-06-01,Portugal,Baidu,search_engine,2.5
+2019-07-01,Portugal,Baidu,search_engine,2.17
+2019-08-01,Portugal,Baidu,search_engine,5.62
+2019-09-01,Portugal,Baidu,search_engine,0.83
+2019-10-01,Portugal,Baidu,search_engine,2.29
+2019-11-01,Portugal,Baidu,search_engine,0.98
+2019-12-01,Portugal,Baidu,search_engine,3.83
+2020-01-01,Portugal,Baidu,search_engine,3.05
+2020-02-01,Portugal,Baidu,search_engine,4.95
+2020-03-01,Portugal,Baidu,search_engine,1.72
+2020-04-01,Portugal,Baidu,search_engine,4.6
+2020-05-01,Portugal,Baidu,search_engine,5.44
+2020-06-01,Portugal,Baidu,search_engine,3.87
+2020-07-01,Portugal,Baidu,search_engine,1.82
+2020-08-01,Portugal,Baidu,search_engine,1.38
+2020-09-01,Portugal,Baidu,search_engine,0.5
+2020-10-01,Portugal,Baidu,search_engine,4.09
+2020-11-01,Portugal,Baidu,search_engine,2.97
+2020-12-01,Portugal,Baidu,search_engine,3.47
+2021-01-01,Portugal,Baidu,search_engine,3.78
+2021-02-01,Portugal,Baidu,search_engine,3.5
+2021-03-01,Portugal,Baidu,search_engine,2.42
+2021-04-01,Portugal,Baidu,search_engine,4.48
+2021-05-01,Portugal,Baidu,search_engine,1.55
+2021-06-01,Portugal,Baidu,search_engine,4.1
+2021-07-01,Portugal,Baidu,search_engine,2.19
+2021-08-01,Portugal,Baidu,search_engine,2.27
+2021-09-01,Portugal,Baidu,search_engine,1.85
+2021-10-01,Portugal,Baidu,search_engine,3.55
+2021-11-01,Portugal,Baidu,search_engine,0.74
+2021-12-01,Portugal,Baidu,search_engine,3.92
+2022-01-01,Portugal,Baidu,search_engine,4.2
+2022-02-01,Portugal,Baidu,search_engine,5.73
+2022-03-01,Portugal,Baidu,search_engine,3.47
+2022-04-01,Portugal,Baidu,search_engine,2.6
+2022-05-01,Portugal,Baidu,search_engine,5.09
+2022-06-01,Portugal,Baidu,search_engine,1.38
+2022-07-01,Portugal,Baidu,search_engine,2.04
+2022-08-01,Portugal,Baidu,search_engine,1.17
+2022-09-01,Portugal,Baidu,search_engine,3.63
+2022-10-01,Portugal,Baidu,search_engine,2.82
+2022-11-01,Portugal,Baidu,search_engine,4.19
+2022-12-01,Portugal,Baidu,search_engine,4.36
+2023-01-01,Portugal,Baidu,search_engine,3.39
+2023-02-01,Portugal,Baidu,search_engine,3.35
+2023-03-01,Portugal,Baidu,search_engine,2.08
+2023-04-01,Portugal,Baidu,search_engine,4.26
+2023-05-01,Portugal,Baidu,search_engine,2.28
+2023-06-01,Portugal,Baidu,search_engine,4.83
+2023-07-01,Portugal,Baidu,search_engine,0.97
+2023-08-01,Portugal,Baidu,search_engine,3.27
+2023-09-01,Portugal,Baidu,search_engine,3.87
+2023-10-01,Portugal,Baidu,search_engine,0.5
+2023-11-01,Portugal,Baidu,search_engine,3.62
+2023-12-01,Portugal,Baidu,search_engine,4.36
+2024-01-01,Portugal,Baidu,search_engine,2.82
+2024-02-01,Portugal,Baidu,search_engine,2.69
+2024-03-01,Portugal,Baidu,search_engine,4.82
+2024-04-01,Portugal,Baidu,search_engine,2.23
+2024-05-01,Portugal,Baidu,search_engine,5.45
+2024-06-01,Portugal,Baidu,search_engine,3.0
+2024-07-01,Portugal,Baidu,search_engine,2.37
+2024-08-01,Portugal,Baidu,search_engine,0.83
+2024-09-01,Portugal,Baidu,search_engine,1.73
+2024-10-01,Portugal,Baidu,search_engine,1.31
+2024-11-01,Portugal,Baidu,search_engine,2.09
+2024-12-01,Portugal,Baidu,search_engine,3.07
+2025-01-01,Portugal,Baidu,search_engine,2.79
+2025-02-01,Portugal,Baidu,search_engine,0.5
+2025-03-01,Portugal,Baidu,search_engine,2.77
+2025-04-01,Portugal,Baidu,search_engine,2.69
+2025-05-01,Portugal,Baidu,search_engine,6.05
+2025-06-01,Portugal,Baidu,search_engine,3.88
+2025-07-01,Portugal,Baidu,search_engine,5.07
+2025-08-01,Portugal,Baidu,search_engine,3.86
+2025-09-01,Portugal,Baidu,search_engine,0.96
+2025-10-01,Portugal,Baidu,search_engine,0.5
+2025-11-01,Portugal,Baidu,search_engine,4.87
+2025-12-01,Portugal,Baidu,search_engine,3.03
+2026-01-01,Portugal,Baidu,search_engine,1.86
+2026-02-01,Portugal,Baidu,search_engine,2.7
+2026-03-01,Portugal,Baidu,search_engine,0.5
+2026-04-01,Portugal,Baidu,search_engine,4.44
+2026-05-01,Portugal,Baidu,search_engine,4.7
+2026-06-01,Portugal,Baidu,search_engine,5.87
+2019-01-01,United States,Google,search_engine,69.37
+2019-02-01,United States,Google,search_engine,71.12
+2019-03-01,United States,Google,search_engine,73.29
+2019-04-01,United States,Google,search_engine,72.97
+2019-05-01,United States,Google,search_engine,71.89
+2019-06-01,United States,Google,search_engine,72.4
+2019-07-01,United States,Google,search_engine,67.58
+2019-08-01,United States,Google,search_engine,68.76
+2019-09-01,United States,Google,search_engine,64.33
+2019-10-01,United States,Google,search_engine,62.84
+2019-11-01,United States,Google,search_engine,65.03
+2019-12-01,United States,Google,search_engine,64.3
+2020-01-01,United States,Google,search_engine,68.26
+2020-02-01,United States,Google,search_engine,71.28
+2020-03-01,United States,Google,search_engine,73.99
+2020-04-01,United States,Google,search_engine,73.19
+2020-05-01,United States,Google,search_engine,72.85
+2020-06-01,United States,Google,search_engine,70.51
+2020-07-01,United States,Google,search_engine,72.59
+2020-08-01,United States,Google,search_engine,65.74
+2020-09-01,United States,Google,search_engine,62.02
+2020-10-01,United States,Google,search_engine,64.13
+2020-11-01,United States,Google,search_engine,66.39
+2020-12-01,United States,Google,search_engine,65.17
+2021-01-01,United States,Google,search_engine,69.12
+2021-02-01,United States,Google,search_engine,70.93
+2021-03-01,United States,Google,search_engine,72.87
+2021-04-01,United States,Google,search_engine,71.87
+2021-05-01,United States,Google,search_engine,74.45
+2021-06-01,United States,Google,search_engine,70.07
+2021-07-01,United States,Google,search_engine,67.66
+2021-08-01,United States,Google,search_engine,64.91
+2021-09-01,United States,Google,search_engine,62.54
+2021-10-01,United States,Google,search_engine,64.01
+2021-11-01,United States,Google,search_engine,62.8
+2021-12-01,United States,Google,search_engine,67.21
+2022-01-01,United States,Google,search_engine,67.42
+2022-02-01,United States,Google,search_engine,72.67
+2022-03-01,United States,Google,search_engine,73.44
+2022-04-01,United States,Google,search_engine,71.25
+2022-05-01,United States,Google,search_engine,73.14
+2022-06-01,United States,Google,search_engine,71.2
+2022-07-01,United States,Google,search_engine,69.18
+2022-08-01,United States,Google,search_engine,65.88
+2022-09-01,United States,Google,search_engine,62.35
+2022-10-01,United States,Google,search_engine,65.21
+2022-11-01,United States,Google,search_engine,64.43
+2022-12-01,United States,Google,search_engine,64.64
+2023-01-01,United States,Google,search_engine,68.02
+2023-02-01,United States,Google,search_engine,67.89
+2023-03-01,United States,Google,search_engine,72.36
+2023-04-01,United States,Google,search_engine,74.03
+2023-05-01,United States,Google,search_engine,69.48
+2023-06-01,United States,Google,search_engine,71.61
+2023-07-01,United States,Google,search_engine,67.27
+2023-08-01,United States,Google,search_engine,62.26
+2023-09-01,United States,Google,search_engine,61.98
+2023-10-01,United States,Google,search_engine,62.76
+2023-11-01,United States,Google,search_engine,62.1
+2023-12-01,United States,Google,search_engine,65.29
+2024-01-01,United States,Google,search_engine,69.58
+2024-02-01,United States,Google,search_engine,68.68
+2024-03-01,United States,Google,search_engine,70.33
+2024-04-01,United States,Google,search_engine,71.78
+2024-05-01,United States,Google,search_engine,69.36
+2024-06-01,United States,Google,search_engine,67.62
+2024-07-01,United States,Google,search_engine,67.26
+2024-08-01,United States,Google,search_engine,63.01
+2024-09-01,United States,Google,search_engine,62.31
+2024-10-01,United States,Google,search_engine,58.49
+2024-11-01,United States,Google,search_engine,59.88
+2024-12-01,United States,Google,search_engine,59.43
+2025-01-01,United States,Google,search_engine,68.71
+2025-02-01,United States,Google,search_engine,69.34
+2025-03-01,United States,Google,search_engine,70.13
+2025-04-01,United States,Google,search_engine,70.27
+2025-05-01,United States,Google,search_engine,70.22
+2025-06-01,United States,Google,search_engine,68.14
+2025-07-01,United States,Google,search_engine,66.58
+2025-08-01,United States,Google,search_engine,65.21
+2025-09-01,United States,Google,search_engine,63.24
+2025-10-01,United States,Google,search_engine,60.13
+2025-11-01,United States,Google,search_engine,60.78
+2025-12-01,United States,Google,search_engine,63.37
+2026-01-01,United States,Google,search_engine,65.07
+2026-02-01,United States,Google,search_engine,66.19
+2026-03-01,United States,Google,search_engine,69.25
+2026-04-01,United States,Google,search_engine,66.18
+2026-05-01,United States,Google,search_engine,67.09
+2026-06-01,United States,Google,search_engine,66.57
+2019-01-01,United States,Bing,search_engine,6.99
+2019-02-01,United States,Bing,search_engine,7.55
+2019-03-01,United States,Bing,search_engine,7.86
+2019-04-01,United States,Bing,search_engine,6.9
+2019-05-01,United States,Bing,search_engine,6.13
+2019-06-01,United States,Bing,search_engine,9.6
+2019-07-01,United States,Bing,search_engine,8.45
+2019-08-01,United States,Bing,search_engine,8.1
+2019-09-01,United States,Bing,search_engine,9.99
+2019-10-01,United States,Bing,search_engine,8.22
+2019-11-01,United States,Bing,search_engine,7.74
+2019-12-01,United States,Bing,search_engine,5.97
+2020-01-01,United States,Bing,search_engine,9.57
+2020-02-01,United States,Bing,search_engine,9.34
+2020-03-01,United States,Bing,search_engine,9.02
+2020-04-01,United States,Bing,search_engine,8.74
+2020-05-01,United States,Bing,search_engine,7.1
+2020-06-01,United States,Bing,search_engine,8.46
+2020-07-01,United States,Bing,search_engine,7.87
+2020-08-01,United States,Bing,search_engine,8.34
+2020-09-01,United States,Bing,search_engine,7.63
+2020-10-01,United States,Bing,search_engine,7.21
+2020-11-01,United States,Bing,search_engine,6.26
+2020-12-01,United States,Bing,search_engine,10.92
+2021-01-01,United States,Bing,search_engine,8.04
+2021-02-01,United States,Bing,search_engine,9.13
+2021-03-01,United States,Bing,search_engine,10.75
+2021-04-01,United States,Bing,search_engine,8.82
+2021-05-01,United States,Bing,search_engine,6.22
+2021-06-01,United States,Bing,search_engine,9.41
+2021-07-01,United States,Bing,search_engine,9.14
+2021-08-01,United States,Bing,search_engine,7.01
+2021-09-01,United States,Bing,search_engine,6.69
+2021-10-01,United States,Bing,search_engine,5.63
+2021-11-01,United States,Bing,search_engine,8.3
+2021-12-01,United States,Bing,search_engine,8.22
+2022-01-01,United States,Bing,search_engine,11.11
+2022-02-01,United States,Bing,search_engine,9.75
+2022-03-01,United States,Bing,search_engine,8.67
+2022-04-01,United States,Bing,search_engine,6.64
+2022-05-01,United States,Bing,search_engine,10.42
+2022-06-01,United States,Bing,search_engine,8.44
+2022-07-01,United States,Bing,search_engine,6.98
+2022-08-01,United States,Bing,search_engine,10.93
+2022-09-01,United States,Bing,search_engine,10.02
+2022-10-01,United States,Bing,search_engine,6.84
+2022-11-01,United States,Bing,search_engine,5.85
+2022-12-01,United States,Bing,search_engine,8.72
+2023-01-01,United States,Bing,search_engine,5.87
+2023-02-01,United States,Bing,search_engine,7.85
+2023-03-01,United States,Bing,search_engine,7.72
+2023-04-01,United States,Bing,search_engine,10.38
+2023-05-01,United States,Bing,search_engine,8.62
+2023-06-01,United States,Bing,search_engine,10.45
+2023-07-01,United States,Bing,search_engine,8.47
+2023-08-01,United States,Bing,search_engine,10.37
+2023-09-01,United States,Bing,search_engine,9.04
+2023-10-01,United States,Bing,search_engine,7.89
+2023-11-01,United States,Bing,search_engine,11.51
+2023-12-01,United States,Bing,search_engine,10.76
+2024-01-01,United States,Bing,search_engine,9.24
+2024-02-01,United States,Bing,search_engine,9.8
+2024-03-01,United States,Bing,search_engine,10.28
+2024-04-01,United States,Bing,search_engine,8.45
+2024-05-01,United States,Bing,search_engine,10.84
+2024-06-01,United States,Bing,search_engine,9.78
+2024-07-01,United States,Bing,search_engine,12.6
+2024-08-01,United States,Bing,search_engine,8.12
+2024-09-01,United States,Bing,search_engine,10.83
+2024-10-01,United States,Bing,search_engine,7.84
+2024-11-01,United States,Bing,search_engine,9.26
+2024-12-01,United States,Bing,search_engine,11.58
+2025-01-01,United States,Bing,search_engine,9.5
+2025-02-01,United States,Bing,search_engine,9.76
+2025-03-01,United States,Bing,search_engine,11.28
+2025-04-01,United States,Bing,search_engine,11.27
+2025-05-01,United States,Bing,search_engine,8.83
+2025-06-01,United States,Bing,search_engine,8.98
+2025-07-01,United States,Bing,search_engine,11.67
+2025-08-01,United States,Bing,search_engine,9.07
+2025-09-01,United States,Bing,search_engine,10.9
+2025-10-01,United States,Bing,search_engine,9.08
+2025-11-01,United States,Bing,search_engine,11.61
+2025-12-01,United States,Bing,search_engine,10.78
+2026-01-01,United States,Bing,search_engine,8.55
+2026-02-01,United States,Bing,search_engine,10.45
+2026-03-01,United States,Bing,search_engine,10.53
+2026-04-01,United States,Bing,search_engine,10.92
+2026-05-01,United States,Bing,search_engine,10.73
+2026-06-01,United States,Bing,search_engine,7.41
+2019-01-01,United States,Yahoo,search_engine,3.57
+2019-02-01,United States,Yahoo,search_engine,4.48
+2019-03-01,United States,Yahoo,search_engine,8.58
+2019-04-01,United States,Yahoo,search_engine,1.41
+2019-05-01,United States,Yahoo,search_engine,6.95
+2019-06-01,United States,Yahoo,search_engine,6.76
+2019-07-01,United States,Yahoo,search_engine,5.25
+2019-08-01,United States,Yahoo,search_engine,4.85
+2019-09-01,United States,Yahoo,search_engine,8.07
+2019-10-01,United States,Yahoo,search_engine,4.45
+2019-11-01,United States,Yahoo,search_engine,6.65
+2019-12-01,United States,Yahoo,search_engine,7.25
+2020-01-01,United States,Yahoo,search_engine,3.06
+2020-02-01,United States,Yahoo,search_engine,7.59
+2020-03-01,United States,Yahoo,search_engine,4.06
+2020-04-01,United States,Yahoo,search_engine,4.97
+2020-05-01,United States,Yahoo,search_engine,8.49
+2020-06-01,United States,Yahoo,search_engine,6.17
+2020-07-01,United States,Yahoo,search_engine,4.39
+2020-08-01,United States,Yahoo,search_engine,4.98
+2020-09-01,United States,Yahoo,search_engine,6.55
+2020-10-01,United States,Yahoo,search_engine,7.28
+2020-11-01,United States,Yahoo,search_engine,4.53
+2020-12-01,United States,Yahoo,search_engine,6.21
+2021-01-01,United States,Yahoo,search_engine,4.0
+2021-02-01,United States,Yahoo,search_engine,4.89
+2021-03-01,United States,Yahoo,search_engine,0.56
+2021-04-01,United States,Yahoo,search_engine,8.05
+2021-05-01,United States,Yahoo,search_engine,4.45
+2021-06-01,United States,Yahoo,search_engine,4.24
+2021-07-01,United States,Yahoo,search_engine,5.17
+2021-08-01,United States,Yahoo,search_engine,2.99
+2021-09-01,United States,Yahoo,search_engine,5.62
+2021-10-01,United States,Yahoo,search_engine,5.31
+2021-11-01,United States,Yahoo,search_engine,3.71
+2021-12-01,United States,Yahoo,search_engine,6.39
+2022-01-01,United States,Yahoo,search_engine,5.87
+2022-02-01,United States,Yahoo,search_engine,7.01
+2022-03-01,United States,Yahoo,search_engine,6.21
+2022-04-01,United States,Yahoo,search_engine,5.6
+2022-05-01,United States,Yahoo,search_engine,3.41
+2022-06-01,United States,Yahoo,search_engine,5.09
+2022-07-01,United States,Yahoo,search_engine,4.06
+2022-08-01,United States,Yahoo,search_engine,3.16
+2022-09-01,United States,Yahoo,search_engine,5.87
+2022-10-01,United States,Yahoo,search_engine,3.1
+2022-11-01,United States,Yahoo,search_engine,7.29
+2022-12-01,United States,Yahoo,search_engine,4.92
+2023-01-01,United States,Yahoo,search_engine,4.08
+2023-02-01,United States,Yahoo,search_engine,4.48
+2023-03-01,United States,Yahoo,search_engine,3.08
+2023-04-01,United States,Yahoo,search_engine,3.14
+2023-05-01,United States,Yahoo,search_engine,3.18
+2023-06-01,United States,Yahoo,search_engine,5.83
+2023-07-01,United States,Yahoo,search_engine,5.97
+2023-08-01,United States,Yahoo,search_engine,6.15
+2023-09-01,United States,Yahoo,search_engine,4.66
+2023-10-01,United States,Yahoo,search_engine,5.62
+2023-11-01,United States,Yahoo,search_engine,6.16
+2023-12-01,United States,Yahoo,search_engine,5.16
+2024-01-01,United States,Yahoo,search_engine,7.98
+2024-02-01,United States,Yahoo,search_engine,5.16
+2024-03-01,United States,Yahoo,search_engine,6.89
+2024-04-01,United States,Yahoo,search_engine,5.76
+2024-05-01,United States,Yahoo,search_engine,4.64
+2024-06-01,United States,Yahoo,search_engine,5.53
+2024-07-01,United States,Yahoo,search_engine,4.7
+2024-08-01,United States,Yahoo,search_engine,3.37
+2024-09-01,United States,Yahoo,search_engine,4.43
+2024-10-01,United States,Yahoo,search_engine,4.55
+2024-11-01,United States,Yahoo,search_engine,4.26
+2024-12-01,United States,Yahoo,search_engine,3.5
+2025-01-01,United States,Yahoo,search_engine,5.24
+2025-02-01,United States,Yahoo,search_engine,3.09
+2025-03-01,United States,Yahoo,search_engine,4.6
+2025-04-01,United States,Yahoo,search_engine,7.33
+2025-05-01,United States,Yahoo,search_engine,6.3
+2025-06-01,United States,Yahoo,search_engine,6.83
+2025-07-01,United States,Yahoo,search_engine,6.01
+2025-08-01,United States,Yahoo,search_engine,9.01
+2025-09-01,United States,Yahoo,search_engine,4.15
+2025-10-01,United States,Yahoo,search_engine,5.72
+2025-11-01,United States,Yahoo,search_engine,2.53
+2025-12-01,United States,Yahoo,search_engine,7.22
+2026-01-01,United States,Yahoo,search_engine,5.93
+2026-02-01,United States,Yahoo,search_engine,4.95
+2026-03-01,United States,Yahoo,search_engine,3.86
+2026-04-01,United States,Yahoo,search_engine,5.08
+2026-05-01,United States,Yahoo,search_engine,4.61
+2026-06-01,United States,Yahoo,search_engine,4.96
+2019-01-01,United States,DuckDuckGo,search_engine,6.36
+2019-02-01,United States,DuckDuckGo,search_engine,3.17
+2019-03-01,United States,DuckDuckGo,search_engine,5.11
+2019-04-01,United States,DuckDuckGo,search_engine,5.94
+2019-05-01,United States,DuckDuckGo,search_engine,4.39
+2019-06-01,United States,DuckDuckGo,search_engine,5.04
+2019-07-01,United States,DuckDuckGo,search_engine,5.56
+2019-08-01,United States,DuckDuckGo,search_engine,2.13
+2019-09-01,United States,DuckDuckGo,search_engine,3.04
+2019-10-01,United States,DuckDuckGo,search_engine,5.84
+2019-11-01,United States,DuckDuckGo,search_engine,4.89
+2019-12-01,United States,DuckDuckGo,search_engine,5.61
+2020-01-01,United States,DuckDuckGo,search_engine,5.85
+2020-02-01,United States,DuckDuckGo,search_engine,5.33
+2020-03-01,United States,DuckDuckGo,search_engine,5.55
+2020-04-01,United States,DuckDuckGo,search_engine,7.1
+2020-05-01,United States,DuckDuckGo,search_engine,3.86
+2020-06-01,United States,DuckDuckGo,search_engine,5.51
+2020-07-01,United States,DuckDuckGo,search_engine,2.89
+2020-08-01,United States,DuckDuckGo,search_engine,6.26
+2020-09-01,United States,DuckDuckGo,search_engine,7.88
+2020-10-01,United States,DuckDuckGo,search_engine,0.77
+2020-11-01,United States,DuckDuckGo,search_engine,5.83
+2020-12-01,United States,DuckDuckGo,search_engine,6.62
+2021-01-01,United States,DuckDuckGo,search_engine,6.88
+2021-02-01,United States,DuckDuckGo,search_engine,1.46
+2021-03-01,United States,DuckDuckGo,search_engine,5.94
+2021-04-01,United States,DuckDuckGo,search_engine,7.98
+2021-05-01,United States,DuckDuckGo,search_engine,5.19
+2021-06-01,United States,DuckDuckGo,search_engine,4.87
+2021-07-01,United States,DuckDuckGo,search_engine,5.0
+2021-08-01,United States,DuckDuckGo,search_engine,6.58
+2021-09-01,United States,DuckDuckGo,search_engine,2.16
+2021-10-01,United States,DuckDuckGo,search_engine,3.84
+2021-11-01,United States,DuckDuckGo,search_engine,3.82
+2021-12-01,United States,DuckDuckGo,search_engine,4.11
+2022-01-01,United States,DuckDuckGo,search_engine,5.87
+2022-02-01,United States,DuckDuckGo,search_engine,3.42
+2022-03-01,United States,DuckDuckGo,search_engine,3.32
+2022-04-01,United States,DuckDuckGo,search_engine,6.62
+2022-05-01,United States,DuckDuckGo,search_engine,5.7
+2022-06-01,United States,DuckDuckGo,search_engine,7.95
+2022-07-01,United States,DuckDuckGo,search_engine,4.58
+2022-08-01,United States,DuckDuckGo,search_engine,5.47
+2022-09-01,United States,DuckDuckGo,search_engine,2.78
+2022-10-01,United States,DuckDuckGo,search_engine,5.14
+2022-11-01,United States,DuckDuckGo,search_engine,5.26
+2022-12-01,United States,DuckDuckGo,search_engine,6.92
+2023-01-01,United States,DuckDuckGo,search_engine,5.55
+2023-02-01,United States,DuckDuckGo,search_engine,5.56
+2023-03-01,United States,DuckDuckGo,search_engine,9.03
+2023-04-01,United States,DuckDuckGo,search_engine,5.4
+2023-05-01,United States,DuckDuckGo,search_engine,5.77
+2023-06-01,United States,DuckDuckGo,search_engine,7.04
+2023-07-01,United States,DuckDuckGo,search_engine,8.12
+2023-08-01,United States,DuckDuckGo,search_engine,7.91
+2023-09-01,United States,DuckDuckGo,search_engine,5.65
+2023-10-01,United States,DuckDuckGo,search_engine,5.89
+2023-11-01,United States,DuckDuckGo,search_engine,6.41
+2023-12-01,United States,DuckDuckGo,search_engine,4.22
+2024-01-01,United States,DuckDuckGo,search_engine,4.66
+2024-02-01,United States,DuckDuckGo,search_engine,6.01
+2024-03-01,United States,DuckDuckGo,search_engine,7.42
+2024-04-01,United States,DuckDuckGo,search_engine,7.53
+2024-05-01,United States,DuckDuckGo,search_engine,6.78
+2024-06-01,United States,DuckDuckGo,search_engine,6.46
+2024-07-01,United States,DuckDuckGo,search_engine,7.59
+2024-08-01,United States,DuckDuckGo,search_engine,5.86
+2024-09-01,United States,DuckDuckGo,search_engine,5.06
+2024-10-01,United States,DuckDuckGo,search_engine,4.09
+2024-11-01,United States,DuckDuckGo,search_engine,3.82
+2024-12-01,United States,DuckDuckGo,search_engine,5.6
+2025-01-01,United States,DuckDuckGo,search_engine,5.6
+2025-02-01,United States,DuckDuckGo,search_engine,9.98
+2025-03-01,United States,DuckDuckGo,search_engine,8.36
+2025-04-01,United States,DuckDuckGo,search_engine,8.97
+2025-05-01,United States,DuckDuckGo,search_engine,6.38
+2025-06-01,United States,DuckDuckGo,search_engine,8.83
+2025-07-01,United States,DuckDuckGo,search_engine,7.45
+2025-08-01,United States,DuckDuckGo,search_engine,7.33
+2025-09-01,United States,DuckDuckGo,search_engine,6.02
+2025-10-01,United States,DuckDuckGo,search_engine,7.18
+2025-11-01,United States,DuckDuckGo,search_engine,5.71
+2025-12-01,United States,DuckDuckGo,search_engine,6.55
+2026-01-01,United States,DuckDuckGo,search_engine,6.13
+2026-02-01,United States,DuckDuckGo,search_engine,6.37
+2026-03-01,United States,DuckDuckGo,search_engine,7.6
+2026-04-01,United States,DuckDuckGo,search_engine,7.95
+2026-05-01,United States,DuckDuckGo,search_engine,7.24
+2026-06-01,United States,DuckDuckGo,search_engine,7.92
+2019-01-01,United States,Yandex,search_engine,4.41
+2019-02-01,United States,Yandex,search_engine,4.91
+2019-03-01,United States,Yandex,search_engine,4.04
+2019-04-01,United States,Yandex,search_engine,6.04
+2019-05-01,United States,Yandex,search_engine,5.25
+2019-06-01,United States,Yandex,search_engine,6.3
+2019-07-01,United States,Yandex,search_engine,7.36
+2019-08-01,United States,Yandex,search_engine,4.98
+2019-09-01,United States,Yandex,search_engine,4.7
+2019-10-01,United States,Yandex,search_engine,3.28
+2019-11-01,United States,Yandex,search_engine,5.88
+2019-12-01,United States,Yandex,search_engine,3.95
+2020-01-01,United States,Yandex,search_engine,3.75
+2020-02-01,United States,Yandex,search_engine,1.55
+2020-03-01,United States,Yandex,search_engine,1.76
+2020-04-01,United States,Yandex,search_engine,5.6
+2020-05-01,United States,Yandex,search_engine,5.42
+2020-06-01,United States,Yandex,search_engine,3.89
+2020-07-01,United States,Yandex,search_engine,2.27
+2020-08-01,United States,Yandex,search_engine,4.98
+2020-09-01,United States,Yandex,search_engine,5.46
+2020-10-01,United States,Yandex,search_engine,3.98
+2020-11-01,United States,Yandex,search_engine,4.66
+2020-12-01,United States,Yandex,search_engine,3.78
+2021-01-01,United States,Yandex,search_engine,4.78
+2021-02-01,United States,Yandex,search_engine,3.87
+2021-03-01,United States,Yandex,search_engine,7.63
+2021-04-01,United States,Yandex,search_engine,5.07
+2021-05-01,United States,Yandex,search_engine,4.53
+2021-06-01,United States,Yandex,search_engine,4.2
+2021-07-01,United States,Yandex,search_engine,4.02
+2021-08-01,United States,Yandex,search_engine,6.2
+2021-09-01,United States,Yandex,search_engine,4.35
+2021-10-01,United States,Yandex,search_engine,4.16
+2021-11-01,United States,Yandex,search_engine,4.31
+2021-12-01,United States,Yandex,search_engine,2.44
+2022-01-01,United States,Yandex,search_engine,3.52
+2022-02-01,United States,Yandex,search_engine,5.68
+2022-03-01,United States,Yandex,search_engine,3.52
+2022-04-01,United States,Yandex,search_engine,4.0
+2022-05-01,United States,Yandex,search_engine,3.86
+2022-06-01,United States,Yandex,search_engine,5.82
+2022-07-01,United States,Yandex,search_engine,3.96
+2022-08-01,United States,Yandex,search_engine,6.28
+2022-09-01,United States,Yandex,search_engine,4.42
+2022-10-01,United States,Yandex,search_engine,5.21
+2022-11-01,United States,Yandex,search_engine,3.69
+2022-12-01,United States,Yandex,search_engine,2.85
+2023-01-01,United States,Yandex,search_engine,4.09
+2023-02-01,United States,Yandex,search_engine,3.74
+2023-03-01,United States,Yandex,search_engine,3.89
+2023-04-01,United States,Yandex,search_engine,2.15
+2023-05-01,United States,Yandex,search_engine,3.84
+2023-06-01,United States,Yandex,search_engine,5.09
+2023-07-01,United States,Yandex,search_engine,2.45
+2023-08-01,United States,Yandex,search_engine,6.76
+2023-09-01,United States,Yandex,search_engine,2.48
+2023-10-01,United States,Yandex,search_engine,2.83
+2023-11-01,United States,Yandex,search_engine,3.96
+2023-12-01,United States,Yandex,search_engine,5.12
+2024-01-01,United States,Yandex,search_engine,2.08
+2024-02-01,United States,Yandex,search_engine,4.81
+2024-03-01,United States,Yandex,search_engine,3.3
+2024-04-01,United States,Yandex,search_engine,2.35
+2024-05-01,United States,Yandex,search_engine,5.09
+2024-06-01,United States,Yandex,search_engine,5.75
+2024-07-01,United States,Yandex,search_engine,4.23
+2024-08-01,United States,Yandex,search_engine,2.89
+2024-09-01,United States,Yandex,search_engine,4.8
+2024-10-01,United States,Yandex,search_engine,3.38
+2024-11-01,United States,Yandex,search_engine,3.43
+2024-12-01,United States,Yandex,search_engine,4.35
+2025-01-01,United States,Yandex,search_engine,3.33
+2025-02-01,United States,Yandex,search_engine,3.7
+2025-03-01,United States,Yandex,search_engine,3.56
+2025-04-01,United States,Yandex,search_engine,5.7
+2025-05-01,United States,Yandex,search_engine,2.28
+2025-06-01,United States,Yandex,search_engine,5.79
+2025-07-01,United States,Yandex,search_engine,4.1
+2025-08-01,United States,Yandex,search_engine,5.4
+2025-09-01,United States,Yandex,search_engine,1.11
+2025-10-01,United States,Yandex,search_engine,3.26
+2025-11-01,United States,Yandex,search_engine,4.48
+2025-12-01,United States,Yandex,search_engine,2.65
+2026-01-01,United States,Yandex,search_engine,5.41
+2026-02-01,United States,Yandex,search_engine,4.11
+2026-03-01,United States,Yandex,search_engine,5.2
+2026-04-01,United States,Yandex,search_engine,4.6
+2026-05-01,United States,Yandex,search_engine,3.15
+2026-06-01,United States,Yandex,search_engine,4.48
+2019-01-01,United States,Baidu,search_engine,4.96
+2019-02-01,United States,Baidu,search_engine,3.94
+2019-03-01,United States,Baidu,search_engine,4.35
+2019-04-01,United States,Baidu,search_engine,5.08
+2019-05-01,United States,Baidu,search_engine,4.04
+2019-06-01,United States,Baidu,search_engine,3.36
+2019-07-01,United States,Baidu,search_engine,1.78
+2019-08-01,United States,Baidu,search_engine,4.46
+2019-09-01,United States,Baidu,search_engine,0.5
+2019-10-01,United States,Baidu,search_engine,3.62
+2019-11-01,United States,Baidu,search_engine,6.84
+2019-12-01,United States,Baidu,search_engine,2.83
+2020-01-01,United States,Baidu,search_engine,4.04
+2020-02-01,United States,Baidu,search_engine,4.67
+2020-03-01,United States,Baidu,search_engine,5.14
+2020-04-01,United States,Baidu,search_engine,5.15
+2020-05-01,United States,Baidu,search_engine,5.68
+2020-06-01,United States,Baidu,search_engine,3.23
+2020-07-01,United States,Baidu,search_engine,1.93
+2020-08-01,United States,Baidu,search_engine,1.53
+2020-09-01,United States,Baidu,search_engine,1.12
+2020-10-01,United States,Baidu,search_engine,1.79
+2020-11-01,United States,Baidu,search_engine,3.09
+2020-12-01,United States,Baidu,search_engine,6.05
+2021-01-01,United States,Baidu,search_engine,2.66
+2021-02-01,United States,Baidu,search_engine,2.43
+2021-03-01,United States,Baidu,search_engine,2.56
+2021-04-01,United States,Baidu,search_engine,2.87
+2021-05-01,United States,Baidu,search_engine,2.86
+2021-06-01,United States,Baidu,search_engine,1.65
+2021-07-01,United States,Baidu,search_engine,4.61
+2021-08-01,United States,Baidu,search_engine,3.28
+2021-09-01,United States,Baidu,search_engine,2.26
+2021-10-01,United States,Baidu,search_engine,6.14
+2021-11-01,United States,Baidu,search_engine,1.68
+2021-12-01,United States,Baidu,search_engine,4.55
+2022-01-01,United States,Baidu,search_engine,6.03
+2022-02-01,United States,Baidu,search_engine,5.79
+2022-03-01,United States,Baidu,search_engine,3.24
+2022-04-01,United States,Baidu,search_engine,4.69
+2022-05-01,United States,Baidu,search_engine,3.51
+2022-06-01,United States,Baidu,search_engine,0.5
+2022-07-01,United States,Baidu,search_engine,4.16
+2022-08-01,United States,Baidu,search_engine,1.49
+2022-09-01,United States,Baidu,search_engine,2.23
+2022-10-01,United States,Baidu,search_engine,1.01
+2022-11-01,United States,Baidu,search_engine,4.13
+2022-12-01,United States,Baidu,search_engine,5.32
+2023-01-01,United States,Baidu,search_engine,4.49
+2023-02-01,United States,Baidu,search_engine,4.72
+2023-03-01,United States,Baidu,search_engine,0.78
+2023-04-01,United States,Baidu,search_engine,3.49
+2023-05-01,United States,Baidu,search_engine,2.02
+2023-06-01,United States,Baidu,search_engine,3.57
+2023-07-01,United States,Baidu,search_engine,1.15
+2023-08-01,United States,Baidu,search_engine,3.3
+2023-09-01,United States,Baidu,search_engine,2.36
+2023-10-01,United States,Baidu,search_engine,3.87
+2023-11-01,United States,Baidu,search_engine,1.24
+2023-12-01,United States,Baidu,search_engine,3.07
+2024-01-01,United States,Baidu,search_engine,3.71
+2024-02-01,United States,Baidu,search_engine,3.64
+2024-03-01,United States,Baidu,search_engine,3.98
+2024-04-01,United States,Baidu,search_engine,2.6
+2024-05-01,United States,Baidu,search_engine,2.95
+2024-06-01,United States,Baidu,search_engine,3.65
+2024-07-01,United States,Baidu,search_engine,2.51
+2024-08-01,United States,Baidu,search_engine,1.12
+2024-09-01,United States,Baidu,search_engine,2.21
+2024-10-01,United States,Baidu,search_engine,5.62
+2024-11-01,United States,Baidu,search_engine,5.08
+2024-12-01,United States,Baidu,search_engine,6.57
+2025-01-01,United States,Baidu,search_engine,3.93
+2025-02-01,United States,Baidu,search_engine,1.57
+2025-03-01,United States,Baidu,search_engine,3.11
+2025-04-01,United States,Baidu,search_engine,3.18
+2025-05-01,United States,Baidu,search_engine,4.41
+2025-06-01,United States,Baidu,search_engine,1.74
+2025-07-01,United States,Baidu,search_engine,3.78
+2025-08-01,United States,Baidu,search_engine,0.5
+2025-09-01,United States,Baidu,search_engine,5.2
+2025-10-01,United States,Baidu,search_engine,3.16
+2025-11-01,United States,Baidu,search_engine,4.29
+2025-12-01,United States,Baidu,search_engine,0.5
+2026-01-01,United States,Baidu,search_engine,5.87
+2026-02-01,United States,Baidu,search_engine,2.32
+2026-03-01,United States,Baidu,search_engine,3.9
+2026-04-01,United States,Baidu,search_engine,3.9
+2026-05-01,United States,Baidu,search_engine,6.42
+2026-06-01,United States,Baidu,search_engine,4.61
+2019-01-01,Germany,Google,search_engine,70.87
+2019-02-01,Germany,Google,search_engine,72.85
+2019-03-01,Germany,Google,search_engine,71.77
+2019-04-01,Germany,Google,search_engine,72.43
+2019-05-01,Germany,Google,search_engine,74.35
+2019-06-01,Germany,Google,search_engine,72.23
+2019-07-01,Germany,Google,search_engine,70.05
+2019-08-01,Germany,Google,search_engine,68.59
+2019-09-01,Germany,Google,search_engine,65.38
+2019-10-01,Germany,Google,search_engine,63.9
+2019-11-01,Germany,Google,search_engine,63.56
+2019-12-01,Germany,Google,search_engine,68.11
+2020-01-01,Germany,Google,search_engine,70.74
+2020-02-01,Germany,Google,search_engine,70.48
+2020-03-01,Germany,Google,search_engine,72.19
+2020-04-01,Germany,Google,search_engine,72.41
+2020-05-01,Germany,Google,search_engine,71.98
+2020-06-01,Germany,Google,search_engine,72.43
+2020-07-01,Germany,Google,search_engine,69.2
+2020-08-01,Germany,Google,search_engine,65.53
+2020-09-01,Germany,Google,search_engine,64.01
+2020-10-01,Germany,Google,search_engine,66.14
+2020-11-01,Germany,Google,search_engine,64.79
+2020-12-01,Germany,Google,search_engine,64.07
+2021-01-01,Germany,Google,search_engine,69.05
+2021-02-01,Germany,Google,search_engine,68.61
+2021-03-01,Germany,Google,search_engine,72.73
+2021-04-01,Germany,Google,search_engine,74.91
+2021-05-01,Germany,Google,search_engine,73.37
+2021-06-01,Germany,Google,search_engine,70.81
+2021-07-01,Germany,Google,search_engine,69.51
+2021-08-01,Germany,Google,search_engine,66.16
+2021-09-01,Germany,Google,search_engine,61.73
+2021-10-01,Germany,Google,search_engine,63.23
+2021-11-01,Germany,Google,search_engine,62.77
+2021-12-01,Germany,Google,search_engine,66.75
+2022-01-01,Germany,Google,search_engine,68.12
+2022-02-01,Germany,Google,search_engine,69.81
+2022-03-01,Germany,Google,search_engine,71.96
+2022-04-01,Germany,Google,search_engine,71.78
+2022-05-01,Germany,Google,search_engine,72.35
+2022-06-01,Germany,Google,search_engine,66.48
+2022-07-01,Germany,Google,search_engine,68.57
+2022-08-01,Germany,Google,search_engine,65.21
+2022-09-01,Germany,Google,search_engine,62.39
+2022-10-01,Germany,Google,search_engine,62.55
+2022-11-01,Germany,Google,search_engine,65.12
+2022-12-01,Germany,Google,search_engine,65.0
+2023-01-01,Germany,Google,search_engine,67.33
+2023-02-01,Germany,Google,search_engine,71.42
+2023-03-01,Germany,Google,search_engine,70.64
+2023-04-01,Germany,Google,search_engine,72.09
+2023-05-01,Germany,Google,search_engine,71.59
+2023-06-01,Germany,Google,search_engine,68.12
+2023-07-01,Germany,Google,search_engine,66.72
+2023-08-01,Germany,Google,search_engine,63.18
+2023-09-01,Germany,Google,search_engine,66.58
+2023-10-01,Germany,Google,search_engine,64.63
+2023-11-01,Germany,Google,search_engine,61.59
+2023-12-01,Germany,Google,search_engine,65.07
+2024-01-01,Germany,Google,search_engine,68.43
+2024-02-01,Germany,Google,search_engine,68.0
+2024-03-01,Germany,Google,search_engine,70.24
+2024-04-01,Germany,Google,search_engine,70.62
+2024-05-01,Germany,Google,search_engine,71.37
+2024-06-01,Germany,Google,search_engine,69.49
+2024-07-01,Germany,Google,search_engine,64.41
+2024-08-01,Germany,Google,search_engine,62.25
+2024-09-01,Germany,Google,search_engine,63.54
+2024-10-01,Germany,Google,search_engine,60.1
+2024-11-01,Germany,Google,search_engine,60.87
+2024-12-01,Germany,Google,search_engine,62.94
+2025-01-01,Germany,Google,search_engine,62.28
+2025-02-01,Germany,Google,search_engine,68.23
+2025-03-01,Germany,Google,search_engine,67.87
+2025-04-01,Germany,Google,search_engine,69.68
+2025-05-01,Germany,Google,search_engine,68.58
+2025-06-01,Germany,Google,search_engine,65.35
+2025-07-01,Germany,Google,search_engine,65.81
+2025-08-01,Germany,Google,search_engine,61.61
+2025-09-01,Germany,Google,search_engine,62.7
+2025-10-01,Germany,Google,search_engine,60.13
+2025-11-01,Germany,Google,search_engine,60.66
+2025-12-01,Germany,Google,search_engine,62.12
+2026-01-01,Germany,Google,search_engine,63.31
+2026-02-01,Germany,Google,search_engine,67.56
+2026-03-01,Germany,Google,search_engine,70.01
+2026-04-01,Germany,Google,search_engine,72.08
+2026-05-01,Germany,Google,search_engine,69.25
+2026-06-01,Germany,Google,search_engine,65.45
+2019-01-01,Germany,Bing,search_engine,7.4
+2019-02-01,Germany,Bing,search_engine,7.34
+2019-03-01,Germany,Bing,search_engine,8.72
+2019-04-01,Germany,Bing,search_engine,9.5
+2019-05-01,Germany,Bing,search_engine,7.9
+2019-06-01,Germany,Bing,search_engine,8.65
+2019-07-01,Germany,Bing,search_engine,9.9
+2019-08-01,Germany,Bing,search_engine,6.68
+2019-09-01,Germany,Bing,search_engine,6.32
+2019-10-01,Germany,Bing,search_engine,9.19
+2019-11-01,Germany,Bing,search_engine,7.73
+2019-12-01,Germany,Bing,search_engine,8.88
+2020-01-01,Germany,Bing,search_engine,9.91
+2020-02-01,Germany,Bing,search_engine,9.47
+2020-03-01,Germany,Bing,search_engine,8.99
+2020-04-01,Germany,Bing,search_engine,12.44
+2020-05-01,Germany,Bing,search_engine,9.4
+2020-06-01,Germany,Bing,search_engine,7.16
+2020-07-01,Germany,Bing,search_engine,6.57
+2020-08-01,Germany,Bing,search_engine,9.18
+2020-09-01,Germany,Bing,search_engine,9.79
+2020-10-01,Germany,Bing,search_engine,8.49
+2020-11-01,Germany,Bing,search_engine,8.29
+2020-12-01,Germany,Bing,search_engine,9.23
+2021-01-01,Germany,Bing,search_engine,7.07
+2021-02-01,Germany,Bing,search_engine,8.7
+2021-03-01,Germany,Bing,search_engine,9.24
+2021-04-01,Germany,Bing,search_engine,10.37
+2021-05-01,Germany,Bing,search_engine,7.55
+2021-06-01,Germany,Bing,search_engine,10.53
+2021-07-01,Germany,Bing,search_engine,5.66
+2021-08-01,Germany,Bing,search_engine,10.16
+2021-09-01,Germany,Bing,search_engine,9.59
+2021-10-01,Germany,Bing,search_engine,6.71
+2021-11-01,Germany,Bing,search_engine,8.84
+2021-12-01,Germany,Bing,search_engine,9.69
+2022-01-01,Germany,Bing,search_engine,6.67
+2022-02-01,Germany,Bing,search_engine,9.71
+2022-03-01,Germany,Bing,search_engine,11.39
+2022-04-01,Germany,Bing,search_engine,9.11
+2022-05-01,Germany,Bing,search_engine,10.77
+2022-06-01,Germany,Bing,search_engine,9.58
+2022-07-01,Germany,Bing,search_engine,10.38
+2022-08-01,Germany,Bing,search_engine,8.4
+2022-09-01,Germany,Bing,search_engine,7.83
+2022-10-01,Germany,Bing,search_engine,8.06
+2022-11-01,Germany,Bing,search_engine,9.85
+2022-12-01,Germany,Bing,search_engine,9.06
+2023-01-01,Germany,Bing,search_engine,10.21
+2023-02-01,Germany,Bing,search_engine,9.1
+2023-03-01,Germany,Bing,search_engine,11.56
+2023-04-01,Germany,Bing,search_engine,10.98
+2023-05-01,Germany,Bing,search_engine,9.52
+2023-06-01,Germany,Bing,search_engine,10.46
+2023-07-01,Germany,Bing,search_engine,10.02
+2023-08-01,Germany,Bing,search_engine,8.59
+2023-09-01,Germany,Bing,search_engine,8.49
+2023-10-01,Germany,Bing,search_engine,9.38
+2023-11-01,Germany,Bing,search_engine,7.16
+2023-12-01,Germany,Bing,search_engine,9.03
+2024-01-01,Germany,Bing,search_engine,9.71
+2024-02-01,Germany,Bing,search_engine,10.5
+2024-03-01,Germany,Bing,search_engine,10.81
+2024-04-01,Germany,Bing,search_engine,9.57
+2024-05-01,Germany,Bing,search_engine,11.09
+2024-06-01,Germany,Bing,search_engine,10.03
+2024-07-01,Germany,Bing,search_engine,8.3
+2024-08-01,Germany,Bing,search_engine,10.8
+2024-09-01,Germany,Bing,search_engine,7.46
+2024-10-01,Germany,Bing,search_engine,7.94
+2024-11-01,Germany,Bing,search_engine,9.69
+2024-12-01,Germany,Bing,search_engine,10.92
+2025-01-01,Germany,Bing,search_engine,8.42
+2025-02-01,Germany,Bing,search_engine,8.81
+2025-03-01,Germany,Bing,search_engine,8.7
+2025-04-01,Germany,Bing,search_engine,12.0
+2025-05-01,Germany,Bing,search_engine,12.15
+2025-06-01,Germany,Bing,search_engine,9.36
+2025-07-01,Germany,Bing,search_engine,6.41
+2025-08-01,Germany,Bing,search_engine,12.37
+2025-09-01,Germany,Bing,search_engine,9.44
+2025-10-01,Germany,Bing,search_engine,8.88
+2025-11-01,Germany,Bing,search_engine,8.15
+2025-12-01,Germany,Bing,search_engine,10.2
+2026-01-01,Germany,Bing,search_engine,12.25
+2026-02-01,Germany,Bing,search_engine,8.86
+2026-03-01,Germany,Bing,search_engine,12.13
+2026-04-01,Germany,Bing,search_engine,12.32
+2026-05-01,Germany,Bing,search_engine,9.35
+2026-06-01,Germany,Bing,search_engine,10.24
+2019-01-01,Germany,Yahoo,search_engine,4.22
+2019-02-01,Germany,Yahoo,search_engine,5.82
+2019-03-01,Germany,Yahoo,search_engine,7.26
+2019-04-01,Germany,Yahoo,search_engine,7.01
+2019-05-01,Germany,Yahoo,search_engine,7.51
+2019-06-01,Germany,Yahoo,search_engine,4.93
+2019-07-01,Germany,Yahoo,search_engine,2.03
+2019-08-01,Germany,Yahoo,search_engine,6.32
+2019-09-01,Germany,Yahoo,search_engine,4.17
+2019-10-01,Germany,Yahoo,search_engine,4.94
+2019-11-01,Germany,Yahoo,search_engine,4.6
+2019-12-01,Germany,Yahoo,search_engine,6.51
+2020-01-01,Germany,Yahoo,search_engine,9.01
+2020-02-01,Germany,Yahoo,search_engine,6.84
+2020-03-01,Germany,Yahoo,search_engine,5.5
+2020-04-01,Germany,Yahoo,search_engine,9.86
+2020-05-01,Germany,Yahoo,search_engine,6.67
+2020-06-01,Germany,Yahoo,search_engine,5.88
+2020-07-01,Germany,Yahoo,search_engine,5.72
+2020-08-01,Germany,Yahoo,search_engine,8.33
+2020-09-01,Germany,Yahoo,search_engine,3.59
+2020-10-01,Germany,Yahoo,search_engine,3.03
+2020-11-01,Germany,Yahoo,search_engine,7.25
+2020-12-01,Germany,Yahoo,search_engine,3.02
+2021-01-01,Germany,Yahoo,search_engine,4.85
+2021-02-01,Germany,Yahoo,search_engine,3.11
+2021-03-01,Germany,Yahoo,search_engine,4.22
+2021-04-01,Germany,Yahoo,search_engine,3.73
+2021-05-01,Germany,Yahoo,search_engine,4.68
+2021-06-01,Germany,Yahoo,search_engine,6.7
+2021-07-01,Germany,Yahoo,search_engine,2.79
+2021-08-01,Germany,Yahoo,search_engine,3.81
+2021-09-01,Germany,Yahoo,search_engine,3.97
+2021-10-01,Germany,Yahoo,search_engine,5.62
+2021-11-01,Germany,Yahoo,search_engine,4.57
+2021-12-01,Germany,Yahoo,search_engine,2.9
+2022-01-01,Germany,Yahoo,search_engine,5.83
+2022-02-01,Germany,Yahoo,search_engine,4.03
+2022-03-01,Germany,Yahoo,search_engine,5.66
+2022-04-01,Germany,Yahoo,search_engine,4.86
+2022-05-01,Germany,Yahoo,search_engine,5.48
+2022-06-01,Germany,Yahoo,search_engine,6.1
+2022-07-01,Germany,Yahoo,search_engine,3.81
+2022-08-01,Germany,Yahoo,search_engine,4.87
+2022-09-01,Germany,Yahoo,search_engine,4.83
+2022-10-01,Germany,Yahoo,search_engine,3.09
+2022-11-01,Germany,Yahoo,search_engine,6.03
+2022-12-01,Germany,Yahoo,search_engine,6.64
+2023-01-01,Germany,Yahoo,search_engine,3.24
+2023-02-01,Germany,Yahoo,search_engine,6.76
+2023-03-01,Germany,Yahoo,search_engine,4.9
+2023-04-01,Germany,Yahoo,search_engine,4.49
+2023-05-01,Germany,Yahoo,search_engine,7.08
+2023-06-01,Germany,Yahoo,search_engine,7.47
+2023-07-01,Germany,Yahoo,search_engine,4.64
+2023-08-01,Germany,Yahoo,search_engine,7.94
+2023-09-01,Germany,Yahoo,search_engine,3.93
+2023-10-01,Germany,Yahoo,search_engine,9.23
+2023-11-01,Germany,Yahoo,search_engine,4.52
+2023-12-01,Germany,Yahoo,search_engine,3.1
+2024-01-01,Germany,Yahoo,search_engine,6.2
+2024-02-01,Germany,Yahoo,search_engine,5.94
+2024-03-01,Germany,Yahoo,search_engine,3.8
+2024-04-01,Germany,Yahoo,search_engine,3.65
+2024-05-01,Germany,Yahoo,search_engine,6.95
+2024-06-01,Germany,Yahoo,search_engine,4.4
+2024-07-01,Germany,Yahoo,search_engine,5.08
+2024-08-01,Germany,Yahoo,search_engine,3.83
+2024-09-01,Germany,Yahoo,search_engine,5.25
+2024-10-01,Germany,Yahoo,search_engine,4.92
+2024-11-01,Germany,Yahoo,search_engine,1.6
+2024-12-01,Germany,Yahoo,search_engine,2.15
+2025-01-01,Germany,Yahoo,search_engine,6.13
+2025-02-01,Germany,Yahoo,search_engine,6.85
+2025-03-01,Germany,Yahoo,search_engine,5.39
+2025-04-01,Germany,Yahoo,search_engine,6.26
+2025-05-01,Germany,Yahoo,search_engine,5.55
+2025-06-01,Germany,Yahoo,search_engine,4.66
+2025-07-01,Germany,Yahoo,search_engine,3.17
+2025-08-01,Germany,Yahoo,search_engine,2.04
+2025-09-01,Germany,Yahoo,search_engine,4.14
+2025-10-01,Germany,Yahoo,search_engine,2.84
+2025-11-01,Germany,Yahoo,search_engine,6.86
+2025-12-01,Germany,Yahoo,search_engine,5.65
+2026-01-01,Germany,Yahoo,search_engine,7.05
+2026-02-01,Germany,Yahoo,search_engine,5.2
+2026-03-01,Germany,Yahoo,search_engine,5.86
+2026-04-01,Germany,Yahoo,search_engine,5.9
+2026-05-01,Germany,Yahoo,search_engine,3.62
+2026-06-01,Germany,Yahoo,search_engine,5.18
+2019-01-01,Germany,DuckDuckGo,search_engine,2.34
+2019-02-01,Germany,DuckDuckGo,search_engine,5.13
+2019-03-01,Germany,DuckDuckGo,search_engine,4.13
+2019-04-01,Germany,DuckDuckGo,search_engine,1.63
+2019-05-01,Germany,DuckDuckGo,search_engine,4.57
+2019-06-01,Germany,DuckDuckGo,search_engine,6.07
+2019-07-01,Germany,DuckDuckGo,search_engine,5.75
+2019-08-01,Germany,DuckDuckGo,search_engine,0.51
+2019-09-01,Germany,DuckDuckGo,search_engine,5.8
+2019-10-01,Germany,DuckDuckGo,search_engine,2.71
+2019-11-01,Germany,DuckDuckGo,search_engine,6.82
+2019-12-01,Germany,DuckDuckGo,search_engine,4.38
+2020-01-01,Germany,DuckDuckGo,search_engine,5.41
+2020-02-01,Germany,DuckDuckGo,search_engine,4.5
+2020-03-01,Germany,DuckDuckGo,search_engine,3.72
+2020-04-01,Germany,DuckDuckGo,search_engine,6.0
+2020-05-01,Germany,DuckDuckGo,search_engine,6.21
+2020-06-01,Germany,DuckDuckGo,search_engine,5.77
+2020-07-01,Germany,DuckDuckGo,search_engine,4.27
+2020-08-01,Germany,DuckDuckGo,search_engine,6.54
+2020-09-01,Germany,DuckDuckGo,search_engine,5.36
+2020-10-01,Germany,DuckDuckGo,search_engine,5.7
+2020-11-01,Germany,DuckDuckGo,search_engine,3.12
+2020-12-01,Germany,DuckDuckGo,search_engine,6.95
+2021-01-01,Germany,DuckDuckGo,search_engine,5.76
+2021-02-01,Germany,DuckDuckGo,search_engine,5.05
+2021-03-01,Germany,DuckDuckGo,search_engine,8.58
+2021-04-01,Germany,DuckDuckGo,search_engine,5.42
+2021-05-01,Germany,DuckDuckGo,search_engine,6.66
+2021-06-01,Germany,DuckDuckGo,search_engine,5.83
+2021-07-01,Germany,DuckDuckGo,search_engine,4.77
+2021-08-01,Germany,DuckDuckGo,search_engine,5.53
+2021-09-01,Germany,DuckDuckGo,search_engine,4.15
+2021-10-01,Germany,DuckDuckGo,search_engine,6.42
+2021-11-01,Germany,DuckDuckGo,search_engine,5.22
+2021-12-01,Germany,DuckDuckGo,search_engine,5.28
+2022-01-01,Germany,DuckDuckGo,search_engine,6.26
+2022-02-01,Germany,DuckDuckGo,search_engine,7.94
+2022-03-01,Germany,DuckDuckGo,search_engine,8.56
+2022-04-01,Germany,DuckDuckGo,search_engine,5.23
+2022-05-01,Germany,DuckDuckGo,search_engine,2.47
+2022-06-01,Germany,DuckDuckGo,search_engine,4.34
+2022-07-01,Germany,DuckDuckGo,search_engine,6.67
+2022-08-01,Germany,DuckDuckGo,search_engine,3.85
+2022-09-01,Germany,DuckDuckGo,search_engine,5.72
+2022-10-01,Germany,DuckDuckGo,search_engine,5.14
+2022-11-01,Germany,DuckDuckGo,search_engine,6.87
+2022-12-01,Germany,DuckDuckGo,search_engine,4.81
+2023-01-01,Germany,DuckDuckGo,search_engine,1.61
+2023-02-01,Germany,DuckDuckGo,search_engine,6.86
+2023-03-01,Germany,DuckDuckGo,search_engine,8.0
+2023-04-01,Germany,DuckDuckGo,search_engine,6.95
+2023-05-01,Germany,DuckDuckGo,search_engine,6.59
+2023-06-01,Germany,DuckDuckGo,search_engine,5.03
+2023-07-01,Germany,DuckDuckGo,search_engine,5.28
+2023-08-01,Germany,DuckDuckGo,search_engine,6.58
+2023-09-01,Germany,DuckDuckGo,search_engine,6.41
+2023-10-01,Germany,DuckDuckGo,search_engine,4.78
+2023-11-01,Germany,DuckDuckGo,search_engine,6.39
+2023-12-01,Germany,DuckDuckGo,search_engine,4.68
+2024-01-01,Germany,DuckDuckGo,search_engine,5.92
+2024-02-01,Germany,DuckDuckGo,search_engine,8.55
+2024-03-01,Germany,DuckDuckGo,search_engine,8.28
+2024-04-01,Germany,DuckDuckGo,search_engine,7.82
+2024-05-01,Germany,DuckDuckGo,search_engine,8.47
+2024-06-01,Germany,DuckDuckGo,search_engine,2.36
+2024-07-01,Germany,DuckDuckGo,search_engine,5.63
+2024-08-01,Germany,DuckDuckGo,search_engine,5.19
+2024-09-01,Germany,DuckDuckGo,search_engine,4.94
+2024-10-01,Germany,DuckDuckGo,search_engine,7.31
+2024-11-01,Germany,DuckDuckGo,search_engine,6.61
+2024-12-01,Germany,DuckDuckGo,search_engine,4.94
+2025-01-01,Germany,DuckDuckGo,search_engine,6.01
+2025-02-01,Germany,DuckDuckGo,search_engine,5.89
+2025-03-01,Germany,DuckDuckGo,search_engine,7.81
+2025-04-01,Germany,DuckDuckGo,search_engine,5.99
+2025-05-01,Germany,DuckDuckGo,search_engine,6.54
+2025-06-01,Germany,DuckDuckGo,search_engine,5.98
+2025-07-01,Germany,DuckDuckGo,search_engine,4.6
+2025-08-01,Germany,DuckDuckGo,search_engine,6.12
+2025-09-01,Germany,DuckDuckGo,search_engine,4.09
+2025-10-01,Germany,DuckDuckGo,search_engine,6.81
+2025-11-01,Germany,DuckDuckGo,search_engine,6.03
+2025-12-01,Germany,DuckDuckGo,search_engine,5.93
+2026-01-01,Germany,DuckDuckGo,search_engine,4.58
+2026-02-01,Germany,DuckDuckGo,search_engine,8.26
+2026-03-01,Germany,DuckDuckGo,search_engine,3.98
+2026-04-01,Germany,DuckDuckGo,search_engine,7.04
+2026-05-01,Germany,DuckDuckGo,search_engine,5.82
+2026-06-01,Germany,DuckDuckGo,search_engine,5.3
+2019-01-01,Germany,Yandex,search_engine,3.4
+2019-02-01,Germany,Yandex,search_engine,2.01
+2019-03-01,Germany,Yandex,search_engine,2.63
+2019-04-01,Germany,Yandex,search_engine,5.53
+2019-05-01,Germany,Yandex,search_engine,3.47
+2019-06-01,Germany,Yandex,search_engine,4.17
+2019-07-01,Germany,Yandex,search_engine,3.05
+2019-08-01,Germany,Yandex,search_engine,1.73
+2019-09-01,Germany,Yandex,search_engine,3.2
+2019-10-01,Germany,Yandex,search_engine,3.09
+2019-11-01,Germany,Yandex,search_engine,2.29
+2019-12-01,Germany,Yandex,search_engine,5.42
+2020-01-01,Germany,Yandex,search_engine,5.39
+2020-02-01,Germany,Yandex,search_engine,4.62
+2020-03-01,Germany,Yandex,search_engine,3.97
+2020-04-01,Germany,Yandex,search_engine,4.88
+2020-05-01,Germany,Yandex,search_engine,3.77
+2020-06-01,Germany,Yandex,search_engine,3.92
+2020-07-01,Germany,Yandex,search_engine,4.45
+2020-08-01,Germany,Yandex,search_engine,6.74
+2020-09-01,Germany,Yandex,search_engine,4.07
+2020-10-01,Germany,Yandex,search_engine,1.94
+2020-11-01,Germany,Yandex,search_engine,4.74
+2020-12-01,Germany,Yandex,search_engine,3.4
+2021-01-01,Germany,Yandex,search_engine,3.76
+2021-02-01,Germany,Yandex,search_engine,3.83
+2021-03-01,Germany,Yandex,search_engine,4.6
+2021-04-01,Germany,Yandex,search_engine,4.16
+2021-05-01,Germany,Yandex,search_engine,5.65
+2021-06-01,Germany,Yandex,search_engine,3.05
+2021-07-01,Germany,Yandex,search_engine,4.99
+2021-08-01,Germany,Yandex,search_engine,3.37
+2021-09-01,Germany,Yandex,search_engine,7.97
+2021-10-01,Germany,Yandex,search_engine,3.84
+2021-11-01,Germany,Yandex,search_engine,2.93
+2021-12-01,Germany,Yandex,search_engine,5.57
+2022-01-01,Germany,Yandex,search_engine,4.19
+2022-02-01,Germany,Yandex,search_engine,6.43
+2022-03-01,Germany,Yandex,search_engine,5.96
+2022-04-01,Germany,Yandex,search_engine,3.16
+2022-05-01,Germany,Yandex,search_engine,9.52
+2022-06-01,Germany,Yandex,search_engine,2.77
+2022-07-01,Germany,Yandex,search_engine,6.06
+2022-08-01,Germany,Yandex,search_engine,4.21
+2022-09-01,Germany,Yandex,search_engine,2.66
+2022-10-01,Germany,Yandex,search_engine,5.94
+2022-11-01,Germany,Yandex,search_engine,1.94
+2022-12-01,Germany,Yandex,search_engine,1.01
+2023-01-01,Germany,Yandex,search_engine,2.68
+2023-02-01,Germany,Yandex,search_engine,3.82
+2023-03-01,Germany,Yandex,search_engine,6.01
+2023-04-01,Germany,Yandex,search_engine,5.94
+2023-05-01,Germany,Yandex,search_engine,2.44
+2023-06-01,Germany,Yandex,search_engine,4.61
+2023-07-01,Germany,Yandex,search_engine,5.1
+2023-08-01,Germany,Yandex,search_engine,5.42
+2023-09-01,Germany,Yandex,search_engine,3.14
+2023-10-01,Germany,Yandex,search_engine,3.79
+2023-11-01,Germany,Yandex,search_engine,4.55
+2023-12-01,Germany,Yandex,search_engine,1.86
+2024-01-01,Germany,Yandex,search_engine,6.35
+2024-02-01,Germany,Yandex,search_engine,5.53
+2024-03-01,Germany,Yandex,search_engine,7.22
+2024-04-01,Germany,Yandex,search_engine,4.19
+2024-05-01,Germany,Yandex,search_engine,3.12
+2024-06-01,Germany,Yandex,search_engine,8.62
+2024-07-01,Germany,Yandex,search_engine,5.19
+2024-08-01,Germany,Yandex,search_engine,6.83
+2024-09-01,Germany,Yandex,search_engine,2.86
+2024-10-01,Germany,Yandex,search_engine,4.58
+2024-11-01,Germany,Yandex,search_engine,3.86
+2024-12-01,Germany,Yandex,search_engine,2.27
+2025-01-01,Germany,Yandex,search_engine,2.25
+2025-02-01,Germany,Yandex,search_engine,5.95
+2025-03-01,Germany,Yandex,search_engine,4.44
+2025-04-01,Germany,Yandex,search_engine,5.06
+2025-05-01,Germany,Yandex,search_engine,3.76
+2025-06-01,Germany,Yandex,search_engine,4.69
+2025-07-01,Germany,Yandex,search_engine,6.08
+2025-08-01,Germany,Yandex,search_engine,3.37
+2025-09-01,Germany,Yandex,search_engine,4.16
+2025-10-01,Germany,Yandex,search_engine,2.35
+2025-11-01,Germany,Yandex,search_engine,3.29
+2025-12-01,Germany,Yandex,search_engine,5.47
+2026-01-01,Germany,Yandex,search_engine,6.42
+2026-02-01,Germany,Yandex,search_engine,2.48
+2026-03-01,Germany,Yandex,search_engine,5.82
+2026-04-01,Germany,Yandex,search_engine,4.6
+2026-05-01,Germany,Yandex,search_engine,5.3
+2026-06-01,Germany,Yandex,search_engine,0.73
+2019-01-01,Germany,Baidu,search_engine,0.5
+2019-02-01,Germany,Baidu,search_engine,1.57
+2019-03-01,Germany,Baidu,search_engine,2.98
+2019-04-01,Germany,Baidu,search_engine,2.67
+2019-05-01,Germany,Baidu,search_engine,0.6
+2019-06-01,Germany,Baidu,search_engine,3.01
+2019-07-01,Germany,Baidu,search_engine,3.26
+2019-08-01,Germany,Baidu,search_engine,1.46
+2019-09-01,Germany,Baidu,search_engine,3.75
+2019-10-01,Germany,Baidu,search_engine,4.47
+2019-11-01,Germany,Baidu,search_engine,3.48
+2019-12-01,Germany,Baidu,search_engine,5.24
+2020-01-01,Germany,Baidu,search_engine,0.77
+2020-02-01,Germany,Baidu,search_engine,1.19
+2020-03-01,Germany,Baidu,search_engine,0.78
+2020-04-01,Germany,Baidu,search_engine,5.36
+2020-05-01,Germany,Baidu,search_engine,5.02
+2020-06-01,Germany,Baidu,search_engine,3.24
+2020-07-01,Germany,Baidu,search_engine,0.5
+2020-08-01,Germany,Baidu,search_engine,1.91
+2020-09-01,Germany,Baidu,search_engine,1.75
+2020-10-01,Germany,Baidu,search_engine,3.2
+2020-11-01,Germany,Baidu,search_engine,4.68
+2020-12-01,Germany,Baidu,search_engine,2.67
+2021-01-01,Germany,Baidu,search_engine,3.32
+2021-02-01,Germany,Baidu,search_engine,5.55
+2021-03-01,Germany,Baidu,search_engine,1.05
+2021-04-01,Germany,Baidu,search_engine,4.83
+2021-05-01,Germany,Baidu,search_engine,2.54
+2021-06-01,Germany,Baidu,search_engine,2.39
+2021-07-01,Germany,Baidu,search_engine,0.5
+2021-08-01,Germany,Baidu,search_engine,0.5
+2021-09-01,Germany,Baidu,search_engine,2.89
+2021-10-01,Germany,Baidu,search_engine,2.98
+2021-11-01,Germany,Baidu,search_engine,1.49
+2021-12-01,Germany,Baidu,search_engine,3.45
+2022-01-01,Germany,Baidu,search_engine,2.47
+2022-02-01,Germany,Baidu,search_engine,0.5
+2022-03-01,Germany,Baidu,search_engine,1.19
+2022-04-01,Germany,Baidu,search_engine,2.92
+2022-05-01,Germany,Baidu,search_engine,2.41
+2022-06-01,Germany,Baidu,search_engine,3.23
+2022-07-01,Germany,Baidu,search_engine,1.91
+2022-08-01,Germany,Baidu,search_engine,0.86
+2022-09-01,Germany,Baidu,search_engine,2.65
+2022-10-01,Germany,Baidu,search_engine,2.79
+2022-11-01,Germany,Baidu,search_engine,1.87
+2022-12-01,Germany,Baidu,search_engine,2.94
+2023-01-01,Germany,Baidu,search_engine,4.37
+2023-02-01,Germany,Baidu,search_engine,2.19
+2023-03-01,Germany,Baidu,search_engine,2.98
+2023-04-01,Germany,Baidu,search_engine,8.38
+2023-05-01,Germany,Baidu,search_engine,0.95
+2023-06-01,Germany,Baidu,search_engine,3.47
+2023-07-01,Germany,Baidu,search_engine,4.35
+2023-08-01,Germany,Baidu,search_engine,3.84
+2023-09-01,Germany,Baidu,search_engine,4.47
+2023-10-01,Germany,Baidu,search_engine,1.78
+2023-11-01,Germany,Baidu,search_engine,5.9
+2023-12-01,Germany,Baidu,search_engine,1.95
+2024-01-01,Germany,Baidu,search_engine,5.54
+2024-02-01,Germany,Baidu,search_engine,2.29
+2024-03-01,Germany,Baidu,search_engine,3.33
+2024-04-01,Germany,Baidu,search_engine,2.62
+2024-05-01,Germany,Baidu,search_engine,2.68
+2024-06-01,Germany,Baidu,search_engine,0.5
+2024-07-01,Germany,Baidu,search_engine,5.67
+2024-08-01,Germany,Baidu,search_engine,3.18
+2024-09-01,Germany,Baidu,search_engine,4.08
+2024-10-01,Germany,Baidu,search_engine,2.11
+2024-11-01,Germany,Baidu,search_engine,3.24
+2024-12-01,Germany,Baidu,search_engine,2.87
+2025-01-01,Germany,Baidu,search_engine,3.22
+2025-02-01,Germany,Baidu,search_engine,4.62
+2025-03-01,Germany,Baidu,search_engine,6.01
+2025-04-01,Germany,Baidu,search_engine,4.85
+2025-05-01,Germany,Baidu,search_engine,2.1
+2025-06-01,Germany,Baidu,search_engine,6.04
+2025-07-01,Germany,Baidu,search_engine,4.45
+2025-08-01,Germany,Baidu,search_engine,3.79
+2025-09-01,Germany,Baidu,search_engine,3.24
+2025-10-01,Germany,Baidu,search_engine,4.87
+2025-11-01,Germany,Baidu,search_engine,2.86
+2025-12-01,Germany,Baidu,search_engine,2.73
+2026-01-01,Germany,Baidu,search_engine,2.9
+2026-02-01,Germany,Baidu,search_engine,3.4
+2026-03-01,Germany,Baidu,search_engine,2.96
+2026-04-01,Germany,Baidu,search_engine,6.24
+2026-05-01,Germany,Baidu,search_engine,3.71
+2026-06-01,Germany,Baidu,search_engine,0.66
+2019-01-01,Brazil,Google,search_engine,66.96
+2019-02-01,Brazil,Google,search_engine,72.41
+2019-03-01,Brazil,Google,search_engine,74.17
+2019-04-01,Brazil,Google,search_engine,75.83
+2019-05-01,Brazil,Google,search_engine,73.47
+2019-06-01,Brazil,Google,search_engine,71.91
+2019-07-01,Brazil,Google,search_engine,69.98
+2019-08-01,Brazil,Google,search_engine,66.76
+2019-09-01,Brazil,Google,search_engine,66.97
+2019-10-01,Brazil,Google,search_engine,65.06
+2019-11-01,Brazil,Google,search_engine,65.61
+2019-12-01,Brazil,Google,search_engine,67.26
+2020-01-01,Brazil,Google,search_engine,67.32
+2020-02-01,Brazil,Google,search_engine,70.89
+2020-03-01,Brazil,Google,search_engine,74.41
+2020-04-01,Brazil,Google,search_engine,76.96
+2020-05-01,Brazil,Google,search_engine,73.11
+2020-06-01,Brazil,Google,search_engine,73.85
+2020-07-01,Brazil,Google,search_engine,67.99
+2020-08-01,Brazil,Google,search_engine,67.72
+2020-09-01,Brazil,Google,search_engine,64.48
+2020-10-01,Brazil,Google,search_engine,60.51
+2020-11-01,Brazil,Google,search_engine,62.97
+2020-12-01,Brazil,Google,search_engine,64.9
+2021-01-01,Brazil,Google,search_engine,67.7
+2021-02-01,Brazil,Google,search_engine,70.31
+2021-03-01,Brazil,Google,search_engine,72.87
+2021-04-01,Brazil,Google,search_engine,74.26
+2021-05-01,Brazil,Google,search_engine,69.99
+2021-06-01,Brazil,Google,search_engine,73.63
+2021-07-01,Brazil,Google,search_engine,69.98
+2021-08-01,Brazil,Google,search_engine,65.33
+2021-09-01,Brazil,Google,search_engine,63.88
+2021-10-01,Brazil,Google,search_engine,61.22
+2021-11-01,Brazil,Google,search_engine,62.53
+2021-12-01,Brazil,Google,search_engine,65.32
+2022-01-01,Brazil,Google,search_engine,68.74
+2022-02-01,Brazil,Google,search_engine,68.69
+2022-03-01,Brazil,Google,search_engine,71.43
+2022-04-01,Brazil,Google,search_engine,72.15
+2022-05-01,Brazil,Google,search_engine,74.18
+2022-06-01,Brazil,Google,search_engine,69.07
+2022-07-01,Brazil,Google,search_engine,65.88
+2022-08-01,Brazil,Google,search_engine,65.73
+2022-09-01,Brazil,Google,search_engine,60.56
+2022-10-01,Brazil,Google,search_engine,64.9
+2022-11-01,Brazil,Google,search_engine,62.34
+2022-12-01,Brazil,Google,search_engine,64.76
+2023-01-01,Brazil,Google,search_engine,66.16
+2023-02-01,Brazil,Google,search_engine,69.49
+2023-03-01,Brazil,Google,search_engine,75.16
+2023-04-01,Brazil,Google,search_engine,72.49
+2023-05-01,Brazil,Google,search_engine,69.5
+2023-06-01,Brazil,Google,search_engine,69.96
+2023-07-01,Brazil,Google,search_engine,66.53
+2023-08-01,Brazil,Google,search_engine,65.63
+2023-09-01,Brazil,Google,search_engine,63.33
+2023-10-01,Brazil,Google,search_engine,59.34
+2023-11-01,Brazil,Google,search_engine,61.57
+2023-12-01,Brazil,Google,search_engine,65.35
+2024-01-01,Brazil,Google,search_engine,65.29
+2024-02-01,Brazil,Google,search_engine,67.44
+2024-03-01,Brazil,Google,search_engine,69.07
+2024-04-01,Brazil,Google,search_engine,67.58
+2024-05-01,Brazil,Google,search_engine,70.49
+2024-06-01,Brazil,Google,search_engine,70.87
+2024-07-01,Brazil,Google,search_engine,66.42
+2024-08-01,Brazil,Google,search_engine,64.89
+2024-09-01,Brazil,Google,search_engine,57.12
+2024-10-01,Brazil,Google,search_engine,61.25
+2024-11-01,Brazil,Google,search_engine,60.64
+2024-12-01,Brazil,Google,search_engine,65.09
+2025-01-01,Brazil,Google,search_engine,64.77
+2025-02-01,Brazil,Google,search_engine,66.19
+2025-03-01,Brazil,Google,search_engine,68.76
+2025-04-01,Brazil,Google,search_engine,67.06
+2025-05-01,Brazil,Google,search_engine,67.92
+2025-06-01,Brazil,Google,search_engine,67.83
+2025-07-01,Brazil,Google,search_engine,65.1
+2025-08-01,Brazil,Google,search_engine,62.17
+2025-09-01,Brazil,Google,search_engine,62.41
+2025-10-01,Brazil,Google,search_engine,60.27
+2025-11-01,Brazil,Google,search_engine,63.21
+2025-12-01,Brazil,Google,search_engine,64.98
+2026-01-01,Brazil,Google,search_engine,64.25
+2026-02-01,Brazil,Google,search_engine,67.67
+2026-03-01,Brazil,Google,search_engine,70.44
+2026-04-01,Brazil,Google,search_engine,68.96
+2026-05-01,Brazil,Google,search_engine,67.27
+2026-06-01,Brazil,Google,search_engine,66.03
+2019-01-01,Brazil,Bing,search_engine,4.91
+2019-02-01,Brazil,Bing,search_engine,9.43
+2019-03-01,Brazil,Bing,search_engine,4.93
+2019-04-01,Brazil,Bing,search_engine,6.73
+2019-05-01,Brazil,Bing,search_engine,9.21
+2019-06-01,Brazil,Bing,search_engine,7.54
+2019-07-01,Brazil,Bing,search_engine,3.39
+2019-08-01,Brazil,Bing,search_engine,8.11
+2019-09-01,Brazil,Bing,search_engine,8.35
+2019-10-01,Brazil,Bing,search_engine,10.64
+2019-11-01,Brazil,Bing,search_engine,8.7
+2019-12-01,Brazil,Bing,search_engine,7.3
+2020-01-01,Brazil,Bing,search_engine,9.82
+2020-02-01,Brazil,Bing,search_engine,8.63
+2020-03-01,Brazil,Bing,search_engine,10.48
+2020-04-01,Brazil,Bing,search_engine,7.8
+2020-05-01,Brazil,Bing,search_engine,8.35
+2020-06-01,Brazil,Bing,search_engine,8.04
+2020-07-01,Brazil,Bing,search_engine,5.91
+2020-08-01,Brazil,Bing,search_engine,8.3
+2020-09-01,Brazil,Bing,search_engine,7.44
+2020-10-01,Brazil,Bing,search_engine,9.12
+2020-11-01,Brazil,Bing,search_engine,6.38
+2020-12-01,Brazil,Bing,search_engine,9.11
+2021-01-01,Brazil,Bing,search_engine,8.96
+2021-02-01,Brazil,Bing,search_engine,11.49
+2021-03-01,Brazil,Bing,search_engine,9.37
+2021-04-01,Brazil,Bing,search_engine,11.0
+2021-05-01,Brazil,Bing,search_engine,9.44
+2021-06-01,Brazil,Bing,search_engine,9.37
+2021-07-01,Brazil,Bing,search_engine,8.48
+2021-08-01,Brazil,Bing,search_engine,11.3
+2021-09-01,Brazil,Bing,search_engine,7.3
+2021-10-01,Brazil,Bing,search_engine,6.69
+2021-11-01,Brazil,Bing,search_engine,5.56
+2021-12-01,Brazil,Bing,search_engine,8.2
+2022-01-01,Brazil,Bing,search_engine,8.17
+2022-02-01,Brazil,Bing,search_engine,10.22
+2022-03-01,Brazil,Bing,search_engine,8.88
+2022-04-01,Brazil,Bing,search_engine,9.35
+2022-05-01,Brazil,Bing,search_engine,9.43
+2022-06-01,Brazil,Bing,search_engine,12.92
+2022-07-01,Brazil,Bing,search_engine,7.01
+2022-08-01,Brazil,Bing,search_engine,13.13
+2022-09-01,Brazil,Bing,search_engine,7.15
+2022-10-01,Brazil,Bing,search_engine,5.85
+2022-11-01,Brazil,Bing,search_engine,9.0
+2022-12-01,Brazil,Bing,search_engine,10.55
+2023-01-01,Brazil,Bing,search_engine,9.52
+2023-02-01,Brazil,Bing,search_engine,11.38
+2023-03-01,Brazil,Bing,search_engine,9.78
+2023-04-01,Brazil,Bing,search_engine,7.49
+2023-05-01,Brazil,Bing,search_engine,7.46
+2023-06-01,Brazil,Bing,search_engine,8.9
+2023-07-01,Brazil,Bing,search_engine,7.2
+2023-08-01,Brazil,Bing,search_engine,10.81
+2023-09-01,Brazil,Bing,search_engine,9.33
+2023-10-01,Brazil,Bing,search_engine,9.43
+2023-11-01,Brazil,Bing,search_engine,8.93
+2023-12-01,Brazil,Bing,search_engine,7.06
+2024-01-01,Brazil,Bing,search_engine,8.74
+2024-02-01,Brazil,Bing,search_engine,9.92
+2024-03-01,Brazil,Bing,search_engine,10.2
+2024-04-01,Brazil,Bing,search_engine,11.59
+2024-05-01,Brazil,Bing,search_engine,8.08
+2024-06-01,Brazil,Bing,search_engine,7.4
+2024-07-01,Brazil,Bing,search_engine,9.77
+2024-08-01,Brazil,Bing,search_engine,10.05
+2024-09-01,Brazil,Bing,search_engine,9.65
+2024-10-01,Brazil,Bing,search_engine,10.57
+2024-11-01,Brazil,Bing,search_engine,12.46
+2024-12-01,Brazil,Bing,search_engine,6.1
+2025-01-01,Brazil,Bing,search_engine,9.91
+2025-02-01,Brazil,Bing,search_engine,10.05
+2025-03-01,Brazil,Bing,search_engine,9.85
+2025-04-01,Brazil,Bing,search_engine,10.81
+2025-05-01,Brazil,Bing,search_engine,11.71
+2025-06-01,Brazil,Bing,search_engine,11.19
+2025-07-01,Brazil,Bing,search_engine,11.52
+2025-08-01,Brazil,Bing,search_engine,11.98
+2025-09-01,Brazil,Bing,search_engine,9.52
+2025-10-01,Brazil,Bing,search_engine,8.96
+2025-11-01,Brazil,Bing,search_engine,6.37
+2025-12-01,Brazil,Bing,search_engine,9.15
+2026-01-01,Brazil,Bing,search_engine,10.9
+2026-02-01,Brazil,Bing,search_engine,11.6
+2026-03-01,Brazil,Bing,search_engine,11.97
+2026-04-01,Brazil,Bing,search_engine,10.27
+2026-05-01,Brazil,Bing,search_engine,10.53
+2026-06-01,Brazil,Bing,search_engine,10.21
+2019-01-01,Brazil,Yahoo,search_engine,6.77
+2019-02-01,Brazil,Yahoo,search_engine,6.41
+2019-03-01,Brazil,Yahoo,search_engine,7.84
+2019-04-01,Brazil,Yahoo,search_engine,7.56
+2019-05-01,Brazil,Yahoo,search_engine,6.0
+2019-06-01,Brazil,Yahoo,search_engine,8.15
+2019-07-01,Brazil,Yahoo,search_engine,5.61
+2019-08-01,Brazil,Yahoo,search_engine,4.4
+2019-09-01,Brazil,Yahoo,search_engine,5.85
+2019-10-01,Brazil,Yahoo,search_engine,5.09
+2019-11-01,Brazil,Yahoo,search_engine,6.83
+2019-12-01,Brazil,Yahoo,search_engine,5.3
+2020-01-01,Brazil,Yahoo,search_engine,7.31
+2020-02-01,Brazil,Yahoo,search_engine,10.51
+2020-03-01,Brazil,Yahoo,search_engine,6.14
+2020-04-01,Brazil,Yahoo,search_engine,8.19
+2020-05-01,Brazil,Yahoo,search_engine,6.43
+2020-06-01,Brazil,Yahoo,search_engine,3.91
+2020-07-01,Brazil,Yahoo,search_engine,6.59
+2020-08-01,Brazil,Yahoo,search_engine,5.48
+2020-09-01,Brazil,Yahoo,search_engine,2.97
+2020-10-01,Brazil,Yahoo,search_engine,6.64
+2020-11-01,Brazil,Yahoo,search_engine,6.05
+2020-12-01,Brazil,Yahoo,search_engine,3.24
+2021-01-01,Brazil,Yahoo,search_engine,5.46
+2021-02-01,Brazil,Yahoo,search_engine,5.74
+2021-03-01,Brazil,Yahoo,search_engine,5.71
+2021-04-01,Brazil,Yahoo,search_engine,4.76
+2021-05-01,Brazil,Yahoo,search_engine,6.12
+2021-06-01,Brazil,Yahoo,search_engine,7.32
+2021-07-01,Brazil,Yahoo,search_engine,4.19
+2021-08-01,Brazil,Yahoo,search_engine,5.59
+2021-09-01,Brazil,Yahoo,search_engine,4.66
+2021-10-01,Brazil,Yahoo,search_engine,5.47
+2021-11-01,Brazil,Yahoo,search_engine,4.94
+2021-12-01,Brazil,Yahoo,search_engine,7.71
+2022-01-01,Brazil,Yahoo,search_engine,6.74
+2022-02-01,Brazil,Yahoo,search_engine,2.69
+2022-03-01,Brazil,Yahoo,search_engine,7.62
+2022-04-01,Brazil,Yahoo,search_engine,3.37
+2022-05-01,Brazil,Yahoo,search_engine,8.73
+2022-06-01,Brazil,Yahoo,search_engine,5.87
+2022-07-01,Brazil,Yahoo,search_engine,4.19
+2022-08-01,Brazil,Yahoo,search_engine,4.01
+2022-09-01,Brazil,Yahoo,search_engine,4.32
+2022-10-01,Brazil,Yahoo,search_engine,3.42
+2022-11-01,Brazil,Yahoo,search_engine,5.73
+2022-12-01,Brazil,Yahoo,search_engine,5.4
+2023-01-01,Brazil,Yahoo,search_engine,7.6
+2023-02-01,Brazil,Yahoo,search_engine,4.01
+2023-03-01,Brazil,Yahoo,search_engine,7.96
+2023-04-01,Brazil,Yahoo,search_engine,5.84
+2023-05-01,Brazil,Yahoo,search_engine,4.71
+2023-06-01,Brazil,Yahoo,search_engine,5.37
+2023-07-01,Brazil,Yahoo,search_engine,6.91
+2023-08-01,Brazil,Yahoo,search_engine,6.15
+2023-09-01,Brazil,Yahoo,search_engine,2.93
+2023-10-01,Brazil,Yahoo,search_engine,5.95
+2023-11-01,Brazil,Yahoo,search_engine,6.6
+2023-12-01,Brazil,Yahoo,search_engine,6.91
+2024-01-01,Brazil,Yahoo,search_engine,4.35
+2024-02-01,Brazil,Yahoo,search_engine,4.52
+2024-03-01,Brazil,Yahoo,search_engine,7.1
+2024-04-01,Brazil,Yahoo,search_engine,7.93
+2024-05-01,Brazil,Yahoo,search_engine,8.02
+2024-06-01,Brazil,Yahoo,search_engine,7.39
+2024-07-01,Brazil,Yahoo,search_engine,4.25
+2024-08-01,Brazil,Yahoo,search_engine,4.01
+2024-09-01,Brazil,Yahoo,search_engine,3.18
+2024-10-01,Brazil,Yahoo,search_engine,5.83
+2024-11-01,Brazil,Yahoo,search_engine,3.59
+2024-12-01,Brazil,Yahoo,search_engine,3.82
+2025-01-01,Brazil,Yahoo,search_engine,4.06
+2025-02-01,Brazil,Yahoo,search_engine,4.33
+2025-03-01,Brazil,Yahoo,search_engine,2.98
+2025-04-01,Brazil,Yahoo,search_engine,5.83
+2025-05-01,Brazil,Yahoo,search_engine,4.84
+2025-06-01,Brazil,Yahoo,search_engine,5.55
+2025-07-01,Brazil,Yahoo,search_engine,5.04
+2025-08-01,Brazil,Yahoo,search_engine,4.46
+2025-09-01,Brazil,Yahoo,search_engine,0.9
+2025-10-01,Brazil,Yahoo,search_engine,5.69
+2025-11-01,Brazil,Yahoo,search_engine,4.8
+2025-12-01,Brazil,Yahoo,search_engine,3.12
+2026-01-01,Brazil,Yahoo,search_engine,4.04
+2026-02-01,Brazil,Yahoo,search_engine,6.17
+2026-03-01,Brazil,Yahoo,search_engine,5.11
+2026-04-01,Brazil,Yahoo,search_engine,5.48
+2026-05-01,Brazil,Yahoo,search_engine,3.8
+2026-06-01,Brazil,Yahoo,search_engine,3.93
+2019-01-01,Brazil,DuckDuckGo,search_engine,5.29
+2019-02-01,Brazil,DuckDuckGo,search_engine,3.39
+2019-03-01,Brazil,DuckDuckGo,search_engine,6.23
+2019-04-01,Brazil,DuckDuckGo,search_engine,2.57
+2019-05-01,Brazil,DuckDuckGo,search_engine,6.83
+2019-06-01,Brazil,DuckDuckGo,search_engine,7.89
+2019-07-01,Brazil,DuckDuckGo,search_engine,4.02
+2019-08-01,Brazil,DuckDuckGo,search_engine,7.15
+2019-09-01,Brazil,DuckDuckGo,search_engine,6.54
+2019-10-01,Brazil,DuckDuckGo,search_engine,5.0
+2019-11-01,Brazil,DuckDuckGo,search_engine,6.15
+2019-12-01,Brazil,DuckDuckGo,search_engine,5.58
+2020-01-01,Brazil,DuckDuckGo,search_engine,5.5
+2020-02-01,Brazil,DuckDuckGo,search_engine,3.83
+2020-03-01,Brazil,DuckDuckGo,search_engine,1.15
+2020-04-01,Brazil,DuckDuckGo,search_engine,6.29
+2020-05-01,Brazil,DuckDuckGo,search_engine,4.85
+2020-06-01,Brazil,DuckDuckGo,search_engine,4.49
+2020-07-01,Brazil,DuckDuckGo,search_engine,6.56
+2020-08-01,Brazil,DuckDuckGo,search_engine,4.6
+2020-09-01,Brazil,DuckDuckGo,search_engine,5.01
+2020-10-01,Brazil,DuckDuckGo,search_engine,4.81
+2020-11-01,Brazil,DuckDuckGo,search_engine,2.68
+2020-12-01,Brazil,DuckDuckGo,search_engine,0.5
+2021-01-01,Brazil,DuckDuckGo,search_engine,4.18
+2021-02-01,Brazil,DuckDuckGo,search_engine,3.93
+2021-03-01,Brazil,DuckDuckGo,search_engine,7.08
+2021-04-01,Brazil,DuckDuckGo,search_engine,5.03
+2021-05-01,Brazil,DuckDuckGo,search_engine,7.39
+2021-06-01,Brazil,DuckDuckGo,search_engine,6.28
+2021-07-01,Brazil,DuckDuckGo,search_engine,4.87
+2021-08-01,Brazil,DuckDuckGo,search_engine,4.02
+2021-09-01,Brazil,DuckDuckGo,search_engine,6.65
+2021-10-01,Brazil,DuckDuckGo,search_engine,5.69
+2021-11-01,Brazil,DuckDuckGo,search_engine,5.9
+2021-12-01,Brazil,DuckDuckGo,search_engine,5.32
+2022-01-01,Brazil,DuckDuckGo,search_engine,4.5
+2022-02-01,Brazil,DuckDuckGo,search_engine,5.92
+2022-03-01,Brazil,DuckDuckGo,search_engine,7.74
+2022-04-01,Brazil,DuckDuckGo,search_engine,3.89
+2022-05-01,Brazil,DuckDuckGo,search_engine,4.77
+2022-06-01,Brazil,DuckDuckGo,search_engine,7.32
+2022-07-01,Brazil,DuckDuckGo,search_engine,6.25
+2022-08-01,Brazil,DuckDuckGo,search_engine,4.89
+2022-09-01,Brazil,DuckDuckGo,search_engine,3.79
+2022-10-01,Brazil,DuckDuckGo,search_engine,5.28
+2022-11-01,Brazil,DuckDuckGo,search_engine,5.02
+2022-12-01,Brazil,DuckDuckGo,search_engine,4.41
+2023-01-01,Brazil,DuckDuckGo,search_engine,4.46
+2023-02-01,Brazil,DuckDuckGo,search_engine,8.22
+2023-03-01,Brazil,DuckDuckGo,search_engine,5.12
+2023-04-01,Brazil,DuckDuckGo,search_engine,5.56
+2023-05-01,Brazil,DuckDuckGo,search_engine,7.84
+2023-06-01,Brazil,DuckDuckGo,search_engine,4.92
+2023-07-01,Brazil,DuckDuckGo,search_engine,5.61
+2023-08-01,Brazil,DuckDuckGo,search_engine,2.95
+2023-09-01,Brazil,DuckDuckGo,search_engine,4.24
+2023-10-01,Brazil,DuckDuckGo,search_engine,7.29
+2023-11-01,Brazil,DuckDuckGo,search_engine,7.24
+2023-12-01,Brazil,DuckDuckGo,search_engine,5.8
+2024-01-01,Brazil,DuckDuckGo,search_engine,6.95
+2024-02-01,Brazil,DuckDuckGo,search_engine,7.05
+2024-03-01,Brazil,DuckDuckGo,search_engine,7.09
+2024-04-01,Brazil,DuckDuckGo,search_engine,6.46
+2024-05-01,Brazil,DuckDuckGo,search_engine,8.5
+2024-06-01,Brazil,DuckDuckGo,search_engine,5.69
+2024-07-01,Brazil,DuckDuckGo,search_engine,5.76
+2024-08-01,Brazil,DuckDuckGo,search_engine,7.9
+2024-09-01,Brazil,DuckDuckGo,search_engine,5.07
+2024-10-01,Brazil,DuckDuckGo,search_engine,6.02
+2024-11-01,Brazil,DuckDuckGo,search_engine,5.09
+2024-12-01,Brazil,DuckDuckGo,search_engine,8.39
+2025-01-01,Brazil,DuckDuckGo,search_engine,6.95
+2025-02-01,Brazil,DuckDuckGo,search_engine,7.09
+2025-03-01,Brazil,DuckDuckGo,search_engine,7.73
+2025-04-01,Brazil,DuckDuckGo,search_engine,7.34
+2025-05-01,Brazil,DuckDuckGo,search_engine,7.05
+2025-06-01,Brazil,DuckDuckGo,search_engine,2.23
+2025-07-01,Brazil,DuckDuckGo,search_engine,6.98
+2025-08-01,Brazil,DuckDuckGo,search_engine,7.06
+2025-09-01,Brazil,DuckDuckGo,search_engine,4.48
+2025-10-01,Brazil,DuckDuckGo,search_engine,5.2
+2025-11-01,Brazil,DuckDuckGo,search_engine,8.73
+2025-12-01,Brazil,DuckDuckGo,search_engine,5.05
+2026-01-01,Brazil,DuckDuckGo,search_engine,6.3
+2026-02-01,Brazil,DuckDuckGo,search_engine,5.56
+2026-03-01,Brazil,DuckDuckGo,search_engine,10.3
+2026-04-01,Brazil,DuckDuckGo,search_engine,6.98
+2026-05-01,Brazil,DuckDuckGo,search_engine,5.03
+2026-06-01,Brazil,DuckDuckGo,search_engine,7.46
+2019-01-01,Brazil,Yandex,search_engine,2.76
+2019-02-01,Brazil,Yandex,search_engine,4.11
+2019-03-01,Brazil,Yandex,search_engine,4.13
+2019-04-01,Brazil,Yandex,search_engine,3.68
+2019-05-01,Brazil,Yandex,search_engine,2.43
+2019-06-01,Brazil,Yandex,search_engine,3.27
+2019-07-01,Brazil,Yandex,search_engine,2.32
+2019-08-01,Brazil,Yandex,search_engine,4.31
+2019-09-01,Brazil,Yandex,search_engine,2.98
+2019-10-01,Brazil,Yandex,search_engine,0.87
+2019-11-01,Brazil,Yandex,search_engine,1.77
+2019-12-01,Brazil,Yandex,search_engine,3.87
+2020-01-01,Brazil,Yandex,search_engine,3.19
+2020-02-01,Brazil,Yandex,search_engine,4.27
+2020-03-01,Brazil,Yandex,search_engine,6.16
+2020-04-01,Brazil,Yandex,search_engine,3.67
+2020-05-01,Brazil,Yandex,search_engine,5.17
+2020-06-01,Brazil,Yandex,search_engine,4.64
+2020-07-01,Brazil,Yandex,search_engine,4.83
+2020-08-01,Brazil,Yandex,search_engine,5.14
+2020-09-01,Brazil,Yandex,search_engine,4.32
+2020-10-01,Brazil,Yandex,search_engine,4.02
+2020-11-01,Brazil,Yandex,search_engine,4.23
+2020-12-01,Brazil,Yandex,search_engine,2.67
+2021-01-01,Brazil,Yandex,search_engine,8.3
+2021-02-01,Brazil,Yandex,search_engine,5.48
+2021-03-01,Brazil,Yandex,search_engine,3.77
+2021-04-01,Brazil,Yandex,search_engine,6.65
+2021-05-01,Brazil,Yandex,search_engine,3.92
+2021-06-01,Brazil,Yandex,search_engine,1.61
+2021-07-01,Brazil,Yandex,search_engine,3.98
+2021-08-01,Brazil,Yandex,search_engine,3.86
+2021-09-01,Brazil,Yandex,search_engine,2.83
+2021-10-01,Brazil,Yandex,search_engine,2.89
+2021-11-01,Brazil,Yandex,search_engine,4.75
+2021-12-01,Brazil,Yandex,search_engine,3.17
+2022-01-01,Brazil,Yandex,search_engine,4.13
+2022-02-01,Brazil,Yandex,search_engine,4.33
+2022-03-01,Brazil,Yandex,search_engine,4.01
+2022-04-01,Brazil,Yandex,search_engine,5.84
+2022-05-01,Brazil,Yandex,search_engine,3.69
+2022-06-01,Brazil,Yandex,search_engine,2.75
+2022-07-01,Brazil,Yandex,search_engine,3.81
+2022-08-01,Brazil,Yandex,search_engine,2.93
+2022-09-01,Brazil,Yandex,search_engine,5.89
+2022-10-01,Brazil,Yandex,search_engine,1.87
+2022-11-01,Brazil,Yandex,search_engine,5.23
+2022-12-01,Brazil,Yandex,search_engine,3.33
+2023-01-01,Brazil,Yandex,search_engine,4.33
+2023-02-01,Brazil,Yandex,search_engine,3.83
+2023-03-01,Brazil,Yandex,search_engine,5.25
+2023-04-01,Brazil,Yandex,search_engine,5.48
+2023-05-01,Brazil,Yandex,search_engine,4.27
+2023-06-01,Brazil,Yandex,search_engine,3.75
+2023-07-01,Brazil,Yandex,search_engine,4.71
+2023-08-01,Brazil,Yandex,search_engine,3.6
+2023-09-01,Brazil,Yandex,search_engine,1.8
+2023-10-01,Brazil,Yandex,search_engine,6.68
+2023-11-01,Brazil,Yandex,search_engine,2.84
+2023-12-01,Brazil,Yandex,search_engine,8.61
+2024-01-01,Brazil,Yandex,search_engine,3.93
+2024-02-01,Brazil,Yandex,search_engine,5.15
+2024-03-01,Brazil,Yandex,search_engine,7.24
+2024-04-01,Brazil,Yandex,search_engine,5.95
+2024-05-01,Brazil,Yandex,search_engine,4.57
+2024-06-01,Brazil,Yandex,search_engine,5.44
+2024-07-01,Brazil,Yandex,search_engine,1.61
+2024-08-01,Brazil,Yandex,search_engine,5.04
+2024-09-01,Brazil,Yandex,search_engine,2.61
+2024-10-01,Brazil,Yandex,search_engine,2.11
+2024-11-01,Brazil,Yandex,search_engine,3.79
+2024-12-01,Brazil,Yandex,search_engine,4.56
+2025-01-01,Brazil,Yandex,search_engine,5.48
+2025-02-01,Brazil,Yandex,search_engine,5.61
+2025-03-01,Brazil,Yandex,search_engine,4.14
+2025-04-01,Brazil,Yandex,search_engine,5.01
+2025-05-01,Brazil,Yandex,search_engine,4.48
+2025-06-01,Brazil,Yandex,search_engine,4.57
+2025-07-01,Brazil,Yandex,search_engine,5.02
+2025-08-01,Brazil,Yandex,search_engine,4.84
+2025-09-01,Brazil,Yandex,search_engine,3.98
+2025-10-01,Brazil,Yandex,search_engine,6.49
+2025-11-01,Brazil,Yandex,search_engine,3.37
+2025-12-01,Brazil,Yandex,search_engine,3.54
+2026-01-01,Brazil,Yandex,search_engine,4.64
+2026-02-01,Brazil,Yandex,search_engine,5.09
+2026-03-01,Brazil,Yandex,search_engine,4.6
+2026-04-01,Brazil,Yandex,search_engine,4.31
+2026-05-01,Brazil,Yandex,search_engine,5.07
+2026-06-01,Brazil,Yandex,search_engine,5.34
+2019-01-01,Brazil,Baidu,search_engine,1.76
+2019-02-01,Brazil,Baidu,search_engine,1.92
+2019-03-01,Brazil,Baidu,search_engine,3.39
+2019-04-01,Brazil,Baidu,search_engine,2.41
+2019-05-01,Brazil,Baidu,search_engine,2.51
+2019-06-01,Brazil,Baidu,search_engine,1.66
+2019-07-01,Brazil,Baidu,search_engine,3.76
+2019-08-01,Brazil,Baidu,search_engine,0.5
+2019-09-01,Brazil,Baidu,search_engine,4.35
+2019-10-01,Brazil,Baidu,search_engine,3.46
+2019-11-01,Brazil,Baidu,search_engine,0.58
+2019-12-01,Brazil,Baidu,search_engine,3.82
+2020-01-01,Brazil,Baidu,search_engine,4.47
+2020-02-01,Brazil,Baidu,search_engine,3.08
+2020-03-01,Brazil,Baidu,search_engine,5.99
+2020-04-01,Brazil,Baidu,search_engine,4.72
+2020-05-01,Brazil,Baidu,search_engine,1.84
+2020-06-01,Brazil,Baidu,search_engine,1.12
+2020-07-01,Brazil,Baidu,search_engine,3.69
+2020-08-01,Brazil,Baidu,search_engine,1.93
+2020-09-01,Brazil,Baidu,search_engine,1.05
+2020-10-01,Brazil,Baidu,search_engine,3.01
+2020-11-01,Brazil,Baidu,search_engine,4.05
+2020-12-01,Brazil,Baidu,search_engine,6.2
+2021-01-01,Brazil,Baidu,search_engine,4.47
+2021-02-01,Brazil,Baidu,search_engine,1.88
+2021-03-01,Brazil,Baidu,search_engine,2.93
+2021-04-01,Brazil,Baidu,search_engine,5.71
+2021-05-01,Brazil,Baidu,search_engine,0.73
+2021-06-01,Brazil,Baidu,search_engine,1.63
+2021-07-01,Brazil,Baidu,search_engine,2.71
+2021-08-01,Brazil,Baidu,search_engine,3.59
+2021-09-01,Brazil,Baidu,search_engine,3.71
+2021-10-01,Brazil,Baidu,search_engine,2.24
+2021-11-01,Brazil,Baidu,search_engine,2.97
+2021-12-01,Brazil,Baidu,search_engine,4.21
+2022-01-01,Brazil,Baidu,search_engine,3.0
+2022-02-01,Brazil,Baidu,search_engine,4.55
+2022-03-01,Brazil,Baidu,search_engine,2.56
+2022-04-01,Brazil,Baidu,search_engine,2.66
+2022-05-01,Brazil,Baidu,search_engine,2.93
+2022-06-01,Brazil,Baidu,search_engine,4.22
+2022-07-01,Brazil,Baidu,search_engine,1.57
+2022-08-01,Brazil,Baidu,search_engine,1.38
+2022-09-01,Brazil,Baidu,search_engine,3.96
+2022-10-01,Brazil,Baidu,search_engine,2.54
+2022-11-01,Brazil,Baidu,search_engine,2.38
+2022-12-01,Brazil,Baidu,search_engine,3.9
+2023-01-01,Brazil,Baidu,search_engine,3.49
+2023-02-01,Brazil,Baidu,search_engine,2.74
+2023-03-01,Brazil,Baidu,search_engine,3.36
+2023-04-01,Brazil,Baidu,search_engine,4.64
+2023-05-01,Brazil,Baidu,search_engine,3.17
+2023-06-01,Brazil,Baidu,search_engine,2.56
+2023-07-01,Brazil,Baidu,search_engine,4.34
+2023-08-01,Brazil,Baidu,search_engine,1.17
+2023-09-01,Brazil,Baidu,search_engine,2.03
+2023-10-01,Brazil,Baidu,search_engine,1.72
+2023-11-01,Brazil,Baidu,search_engine,6.47
+2023-12-01,Brazil,Baidu,search_engine,2.92
+2024-01-01,Brazil,Baidu,search_engine,4.81
+2024-02-01,Brazil,Baidu,search_engine,2.86
+2024-03-01,Brazil,Baidu,search_engine,6.57
+2024-04-01,Brazil,Baidu,search_engine,5.51
+2024-05-01,Brazil,Baidu,search_engine,4.41
+2024-06-01,Brazil,Baidu,search_engine,5.14
+2024-07-01,Brazil,Baidu,search_engine,3.25
+2024-08-01,Brazil,Baidu,search_engine,1.53
+2024-09-01,Brazil,Baidu,search_engine,3.42
+2024-10-01,Brazil,Baidu,search_engine,3.54
+2024-11-01,Brazil,Baidu,search_engine,2.95
+2024-12-01,Brazil,Baidu,search_engine,1.27
+2025-01-01,Brazil,Baidu,search_engine,1.34
+2025-02-01,Brazil,Baidu,search_engine,1.01
+2025-03-01,Brazil,Baidu,search_engine,4.12
+2025-04-01,Brazil,Baidu,search_engine,3.14
+2025-05-01,Brazil,Baidu,search_engine,3.51
+2025-06-01,Brazil,Baidu,search_engine,1.85
+2025-07-01,Brazil,Baidu,search_engine,3.79
+2025-08-01,Brazil,Baidu,search_engine,4.4
+2025-09-01,Brazil,Baidu,search_engine,2.05
+2025-10-01,Brazil,Baidu,search_engine,2.67
+2025-11-01,Brazil,Baidu,search_engine,3.86
+2025-12-01,Brazil,Baidu,search_engine,3.07
+2026-01-01,Brazil,Baidu,search_engine,3.73
+2026-02-01,Brazil,Baidu,search_engine,1.5
+2026-03-01,Brazil,Baidu,search_engine,0.83
+2026-04-01,Brazil,Baidu,search_engine,2.54
+2026-05-01,Brazil,Baidu,search_engine,3.98
+2026-06-01,Brazil,Baidu,search_engine,3.78
+2019-01-01,United Kingdom,Google,search_engine,71.11
+2019-02-01,United Kingdom,Google,search_engine,70.45
+2019-03-01,United Kingdom,Google,search_engine,74.93
+2019-04-01,United Kingdom,Google,search_engine,77.0
+2019-05-01,United Kingdom,Google,search_engine,73.93
+2019-06-01,United Kingdom,Google,search_engine,71.84
+2019-07-01,United Kingdom,Google,search_engine,69.74
+2019-08-01,United Kingdom,Google,search_engine,68.3
+2019-09-01,United Kingdom,Google,search_engine,64.92
+2019-10-01,United Kingdom,Google,search_engine,61.47
+2019-11-01,United Kingdom,Google,search_engine,64.91
+2019-12-01,United Kingdom,Google,search_engine,66.58
+2020-01-01,United Kingdom,Google,search_engine,70.46
+2020-02-01,United Kingdom,Google,search_engine,71.72
+2020-03-01,United Kingdom,Google,search_engine,73.12
+2020-04-01,United Kingdom,Google,search_engine,72.51
+2020-05-01,United Kingdom,Google,search_engine,74.84
+2020-06-01,United Kingdom,Google,search_engine,71.08
+2020-07-01,United Kingdom,Google,search_engine,68.13
+2020-08-01,United Kingdom,Google,search_engine,68.11
+2020-09-01,United Kingdom,Google,search_engine,64.45
+2020-10-01,United Kingdom,Google,search_engine,67.71
+2020-11-01,United Kingdom,Google,search_engine,66.02
+2020-12-01,United Kingdom,Google,search_engine,65.67
+2021-01-01,United Kingdom,Google,search_engine,67.11
+2021-02-01,United Kingdom,Google,search_engine,70.92
+2021-03-01,United Kingdom,Google,search_engine,71.05
+2021-04-01,United Kingdom,Google,search_engine,73.65
+2021-05-01,United Kingdom,Google,search_engine,72.57
+2021-06-01,United Kingdom,Google,search_engine,68.39
+2021-07-01,United Kingdom,Google,search_engine,67.11
+2021-08-01,United Kingdom,Google,search_engine,64.08
+2021-09-01,United Kingdom,Google,search_engine,59.87
+2021-10-01,United Kingdom,Google,search_engine,63.39
+2021-11-01,United Kingdom,Google,search_engine,64.66
+2021-12-01,United Kingdom,Google,search_engine,67.12
+2022-01-01,United Kingdom,Google,search_engine,67.5
+2022-02-01,United Kingdom,Google,search_engine,70.59
+2022-03-01,United Kingdom,Google,search_engine,71.91
+2022-04-01,United Kingdom,Google,search_engine,70.84
+2022-05-01,United Kingdom,Google,search_engine,72.42
+2022-06-01,United Kingdom,Google,search_engine,68.47
+2022-07-01,United Kingdom,Google,search_engine,66.72
+2022-08-01,United Kingdom,Google,search_engine,68.23
+2022-09-01,United Kingdom,Google,search_engine,65.25
+2022-10-01,United Kingdom,Google,search_engine,61.19
+2022-11-01,United Kingdom,Google,search_engine,61.93
+2022-12-01,United Kingdom,Google,search_engine,63.86
+2023-01-01,United Kingdom,Google,search_engine,66.91
+2023-02-01,United Kingdom,Google,search_engine,68.3
+2023-03-01,United Kingdom,Google,search_engine,71.42
+2023-04-01,United Kingdom,Google,search_engine,70.51
+2023-05-01,United Kingdom,Google,search_engine,71.0
+2023-06-01,United Kingdom,Google,search_engine,67.72
+2023-07-01,United Kingdom,Google,search_engine,63.76
+2023-08-01,United Kingdom,Google,search_engine,63.44
+2023-09-01,United Kingdom,Google,search_engine,62.75
+2023-10-01,United Kingdom,Google,search_engine,62.94
+2023-11-01,United Kingdom,Google,search_engine,59.46
+2023-12-01,United Kingdom,Google,search_engine,63.3
+2024-01-01,United Kingdom,Google,search_engine,63.82
+2024-02-01,United Kingdom,Google,search_engine,69.4
+2024-03-01,United Kingdom,Google,search_engine,68.44
+2024-04-01,United Kingdom,Google,search_engine,68.25
+2024-05-01,United Kingdom,Google,search_engine,69.09
+2024-06-01,United Kingdom,Google,search_engine,70.12
+2024-07-01,United Kingdom,Google,search_engine,68.09
+2024-08-01,United Kingdom,Google,search_engine,62.03
+2024-09-01,United Kingdom,Google,search_engine,62.03
+2024-10-01,United Kingdom,Google,search_engine,57.26
+2024-11-01,United Kingdom,Google,search_engine,61.81
+2024-12-01,United Kingdom,Google,search_engine,61.49
+2025-01-01,United Kingdom,Google,search_engine,64.06
+2025-02-01,United Kingdom,Google,search_engine,69.02
+2025-03-01,United Kingdom,Google,search_engine,71.9
+2025-04-01,United Kingdom,Google,search_engine,67.36
+2025-05-01,United Kingdom,Google,search_engine,68.96
+2025-06-01,United Kingdom,Google,search_engine,66.97
+2025-07-01,United Kingdom,Google,search_engine,65.18
+2025-08-01,United Kingdom,Google,search_engine,61.49
+2025-09-01,United Kingdom,Google,search_engine,62.29
+2025-10-01,United Kingdom,Google,search_engine,62.26
+2025-11-01,United Kingdom,Google,search_engine,58.7
+2025-12-01,United Kingdom,Google,search_engine,59.17
+2026-01-01,United Kingdom,Google,search_engine,63.67
+2026-02-01,United Kingdom,Google,search_engine,69.32
+2026-03-01,United Kingdom,Google,search_engine,67.63
+2026-04-01,United Kingdom,Google,search_engine,71.19
+2026-05-01,United Kingdom,Google,search_engine,66.21
+2026-06-01,United Kingdom,Google,search_engine,68.19
+2019-01-01,United Kingdom,Bing,search_engine,12.38
+2019-02-01,United Kingdom,Bing,search_engine,5.91
+2019-03-01,United Kingdom,Bing,search_engine,7.85
+2019-04-01,United Kingdom,Bing,search_engine,8.65
+2019-05-01,United Kingdom,Bing,search_engine,7.5
+2019-06-01,United Kingdom,Bing,search_engine,10.18
+2019-07-01,United Kingdom,Bing,search_engine,11.21
+2019-08-01,United Kingdom,Bing,search_engine,6.7
+2019-09-01,United Kingdom,Bing,search_engine,6.6
+2019-10-01,United Kingdom,Bing,search_engine,6.04
+2019-11-01,United Kingdom,Bing,search_engine,7.18
+2019-12-01,United Kingdom,Bing,search_engine,8.89
+2020-01-01,United Kingdom,Bing,search_engine,8.05
+2020-02-01,United Kingdom,Bing,search_engine,10.24
+2020-03-01,United Kingdom,Bing,search_engine,7.54
+2020-04-01,United Kingdom,Bing,search_engine,7.33
+2020-05-01,United Kingdom,Bing,search_engine,7.82
+2020-06-01,United Kingdom,Bing,search_engine,9.31
+2020-07-01,United Kingdom,Bing,search_engine,9.15
+2020-08-01,United Kingdom,Bing,search_engine,9.12
+2020-09-01,United Kingdom,Bing,search_engine,7.64
+2020-10-01,United Kingdom,Bing,search_engine,10.27
+2020-11-01,United Kingdom,Bing,search_engine,9.69
+2020-12-01,United Kingdom,Bing,search_engine,9.43
+2021-01-01,United Kingdom,Bing,search_engine,7.79
+2021-02-01,United Kingdom,Bing,search_engine,9.79
+2021-03-01,United Kingdom,Bing,search_engine,5.73
+2021-04-01,United Kingdom,Bing,search_engine,8.98
+2021-05-01,United Kingdom,Bing,search_engine,7.58
+2021-06-01,United Kingdom,Bing,search_engine,7.38
+2021-07-01,United Kingdom,Bing,search_engine,10.51
+2021-08-01,United Kingdom,Bing,search_engine,8.47
+2021-09-01,United Kingdom,Bing,search_engine,10.54
+2021-10-01,United Kingdom,Bing,search_engine,7.26
+2021-11-01,United Kingdom,Bing,search_engine,6.65
+2021-12-01,United Kingdom,Bing,search_engine,11.38
+2022-01-01,United Kingdom,Bing,search_engine,9.4
+2022-02-01,United Kingdom,Bing,search_engine,9.83
+2022-03-01,United Kingdom,Bing,search_engine,10.72
+2022-04-01,United Kingdom,Bing,search_engine,11.66
+2022-05-01,United Kingdom,Bing,search_engine,8.66
+2022-06-01,United Kingdom,Bing,search_engine,6.87
+2022-07-01,United Kingdom,Bing,search_engine,9.69
+2022-08-01,United Kingdom,Bing,search_engine,11.51
+2022-09-01,United Kingdom,Bing,search_engine,9.89
+2022-10-01,United Kingdom,Bing,search_engine,10.54
+2022-11-01,United Kingdom,Bing,search_engine,8.21
+2022-12-01,United Kingdom,Bing,search_engine,8.13
+2023-01-01,United Kingdom,Bing,search_engine,8.9
+2023-02-01,United Kingdom,Bing,search_engine,11.56
+2023-03-01,United Kingdom,Bing,search_engine,12.4
+2023-04-01,United Kingdom,Bing,search_engine,10.1
+2023-05-01,United Kingdom,Bing,search_engine,13.87
+2023-06-01,United Kingdom,Bing,search_engine,11.16
+2023-07-01,United Kingdom,Bing,search_engine,9.95
+2023-08-01,United Kingdom,Bing,search_engine,10.12
+2023-09-01,United Kingdom,Bing,search_engine,7.33
+2023-10-01,United Kingdom,Bing,search_engine,8.95
+2023-11-01,United Kingdom,Bing,search_engine,11.79
+2023-12-01,United Kingdom,Bing,search_engine,11.52
+2024-01-01,United Kingdom,Bing,search_engine,7.51
+2024-02-01,United Kingdom,Bing,search_engine,10.32
+2024-03-01,United Kingdom,Bing,search_engine,9.06
+2024-04-01,United Kingdom,Bing,search_engine,9.46
+2024-05-01,United Kingdom,Bing,search_engine,8.6
+2024-06-01,United Kingdom,Bing,search_engine,8.03
+2024-07-01,United Kingdom,Bing,search_engine,7.48
+2024-08-01,United Kingdom,Bing,search_engine,7.2
+2024-09-01,United Kingdom,Bing,search_engine,9.37
+2024-10-01,United Kingdom,Bing,search_engine,6.85
+2024-11-01,United Kingdom,Bing,search_engine,9.11
+2024-12-01,United Kingdom,Bing,search_engine,11.15
+2025-01-01,United Kingdom,Bing,search_engine,12.11
+2025-02-01,United Kingdom,Bing,search_engine,11.2
+2025-03-01,United Kingdom,Bing,search_engine,11.38
+2025-04-01,United Kingdom,Bing,search_engine,10.59
+2025-05-01,United Kingdom,Bing,search_engine,9.18
+2025-06-01,United Kingdom,Bing,search_engine,10.25
+2025-07-01,United Kingdom,Bing,search_engine,11.36
+2025-08-01,United Kingdom,Bing,search_engine,7.3
+2025-09-01,United Kingdom,Bing,search_engine,8.63
+2025-10-01,United Kingdom,Bing,search_engine,8.76
+2025-11-01,United Kingdom,Bing,search_engine,6.37
+2025-12-01,United Kingdom,Bing,search_engine,10.13
+2026-01-01,United Kingdom,Bing,search_engine,8.41
+2026-02-01,United Kingdom,Bing,search_engine,9.73
+2026-03-01,United Kingdom,Bing,search_engine,12.76
+2026-04-01,United Kingdom,Bing,search_engine,13.77
+2026-05-01,United Kingdom,Bing,search_engine,9.46
+2026-06-01,United Kingdom,Bing,search_engine,8.96
+2019-01-01,United Kingdom,Yahoo,search_engine,6.03
+2019-02-01,United Kingdom,Yahoo,search_engine,3.98
+2019-03-01,United Kingdom,Yahoo,search_engine,7.04
+2019-04-01,United Kingdom,Yahoo,search_engine,7.82
+2019-05-01,United Kingdom,Yahoo,search_engine,7.88
+2019-06-01,United Kingdom,Yahoo,search_engine,7.67
+2019-07-01,United Kingdom,Yahoo,search_engine,6.11
+2019-08-01,United Kingdom,Yahoo,search_engine,7.76
+2019-09-01,United Kingdom,Yahoo,search_engine,3.12
+2019-10-01,United Kingdom,Yahoo,search_engine,7.0
+2019-11-01,United Kingdom,Yahoo,search_engine,5.59
+2019-12-01,United Kingdom,Yahoo,search_engine,5.57
+2020-01-01,United Kingdom,Yahoo,search_engine,4.53
+2020-02-01,United Kingdom,Yahoo,search_engine,7.71
+2020-03-01,United Kingdom,Yahoo,search_engine,3.25
+2020-04-01,United Kingdom,Yahoo,search_engine,4.61
+2020-05-01,United Kingdom,Yahoo,search_engine,5.41
+2020-06-01,United Kingdom,Yahoo,search_engine,6.35
+2020-07-01,United Kingdom,Yahoo,search_engine,5.64
+2020-08-01,United Kingdom,Yahoo,search_engine,8.54
+2020-09-01,United Kingdom,Yahoo,search_engine,3.92
+2020-10-01,United Kingdom,Yahoo,search_engine,6.98
+2020-11-01,United Kingdom,Yahoo,search_engine,5.45
+2020-12-01,United Kingdom,Yahoo,search_engine,3.96
+2021-01-01,United Kingdom,Yahoo,search_engine,5.08
+2021-02-01,United Kingdom,Yahoo,search_engine,3.96
+2021-03-01,United Kingdom,Yahoo,search_engine,7.19
+2021-04-01,United Kingdom,Yahoo,search_engine,5.38
+2021-05-01,United Kingdom,Yahoo,search_engine,6.45
+2021-06-01,United Kingdom,Yahoo,search_engine,5.62
+2021-07-01,United Kingdom,Yahoo,search_engine,5.53
+2021-08-01,United Kingdom,Yahoo,search_engine,4.11
+2021-09-01,United Kingdom,Yahoo,search_engine,7.57
+2021-10-01,United Kingdom,Yahoo,search_engine,3.52
+2021-11-01,United Kingdom,Yahoo,search_engine,4.97
+2021-12-01,United Kingdom,Yahoo,search_engine,4.89
+2022-01-01,United Kingdom,Yahoo,search_engine,6.23
+2022-02-01,United Kingdom,Yahoo,search_engine,7.71
+2022-03-01,United Kingdom,Yahoo,search_engine,5.55
+2022-04-01,United Kingdom,Yahoo,search_engine,6.83
+2022-05-01,United Kingdom,Yahoo,search_engine,7.91
+2022-06-01,United Kingdom,Yahoo,search_engine,5.14
+2022-07-01,United Kingdom,Yahoo,search_engine,5.35
+2022-08-01,United Kingdom,Yahoo,search_engine,8.4
+2022-09-01,United Kingdom,Yahoo,search_engine,5.07
+2022-10-01,United Kingdom,Yahoo,search_engine,7.76
+2022-11-01,United Kingdom,Yahoo,search_engine,3.99
+2022-12-01,United Kingdom,Yahoo,search_engine,5.41
+2023-01-01,United Kingdom,Yahoo,search_engine,4.86
+2023-02-01,United Kingdom,Yahoo,search_engine,7.1
+2023-03-01,United Kingdom,Yahoo,search_engine,4.25
+2023-04-01,United Kingdom,Yahoo,search_engine,2.21
+2023-05-01,United Kingdom,Yahoo,search_engine,6.03
+2023-06-01,United Kingdom,Yahoo,search_engine,4.32
+2023-07-01,United Kingdom,Yahoo,search_engine,6.38
+2023-08-01,United Kingdom,Yahoo,search_engine,4.31
+2023-09-01,United Kingdom,Yahoo,search_engine,4.44
+2023-10-01,United Kingdom,Yahoo,search_engine,2.83
+2023-11-01,United Kingdom,Yahoo,search_engine,4.83
+2023-12-01,United Kingdom,Yahoo,search_engine,5.91
+2024-01-01,United Kingdom,Yahoo,search_engine,5.48
+2024-02-01,United Kingdom,Yahoo,search_engine,4.62
+2024-03-01,United Kingdom,Yahoo,search_engine,7.0
+2024-04-01,United Kingdom,Yahoo,search_engine,5.32
+2024-05-01,United Kingdom,Yahoo,search_engine,5.38
+2024-06-01,United Kingdom,Yahoo,search_engine,7.18
+2024-07-01,United Kingdom,Yahoo,search_engine,4.31
+2024-08-01,United Kingdom,Yahoo,search_engine,5.78
+2024-09-01,United Kingdom,Yahoo,search_engine,5.43
+2024-10-01,United Kingdom,Yahoo,search_engine,4.38
+2024-11-01,United Kingdom,Yahoo,search_engine,8.06
+2024-12-01,United Kingdom,Yahoo,search_engine,3.56
+2025-01-01,United Kingdom,Yahoo,search_engine,4.37
+2025-02-01,United Kingdom,Yahoo,search_engine,5.2
+2025-03-01,United Kingdom,Yahoo,search_engine,5.59
+2025-04-01,United Kingdom,Yahoo,search_engine,3.83
+2025-05-01,United Kingdom,Yahoo,search_engine,6.47
+2025-06-01,United Kingdom,Yahoo,search_engine,4.01
+2025-07-01,United Kingdom,Yahoo,search_engine,4.51
+2025-08-01,United Kingdom,Yahoo,search_engine,7.29
+2025-09-01,United Kingdom,Yahoo,search_engine,4.41
+2025-10-01,United Kingdom,Yahoo,search_engine,3.99
+2025-11-01,United Kingdom,Yahoo,search_engine,3.65
+2025-12-01,United Kingdom,Yahoo,search_engine,5.62
+2026-01-01,United Kingdom,Yahoo,search_engine,3.92
+2026-02-01,United Kingdom,Yahoo,search_engine,3.66
+2026-03-01,United Kingdom,Yahoo,search_engine,4.68
+2026-04-01,United Kingdom,Yahoo,search_engine,3.77
+2026-05-01,United Kingdom,Yahoo,search_engine,3.21
+2026-06-01,United Kingdom,Yahoo,search_engine,6.55
+2019-01-01,United Kingdom,DuckDuckGo,search_engine,2.34
+2019-02-01,United Kingdom,DuckDuckGo,search_engine,5.48
+2019-03-01,United Kingdom,DuckDuckGo,search_engine,5.73
+2019-04-01,United Kingdom,DuckDuckGo,search_engine,7.84
+2019-05-01,United Kingdom,DuckDuckGo,search_engine,3.61
+2019-06-01,United Kingdom,DuckDuckGo,search_engine,7.22
+2019-07-01,United Kingdom,DuckDuckGo,search_engine,6.46
+2019-08-01,United Kingdom,DuckDuckGo,search_engine,7.16
+2019-09-01,United Kingdom,DuckDuckGo,search_engine,5.82
+2019-10-01,United Kingdom,DuckDuckGo,search_engine,4.07
+2019-11-01,United Kingdom,DuckDuckGo,search_engine,5.41
+2019-12-01,United Kingdom,DuckDuckGo,search_engine,4.71
+2020-01-01,United Kingdom,DuckDuckGo,search_engine,8.71
+2020-02-01,United Kingdom,DuckDuckGo,search_engine,6.07
+2020-03-01,United Kingdom,DuckDuckGo,search_engine,3.46
+2020-04-01,United Kingdom,DuckDuckGo,search_engine,6.19
+2020-05-01,United Kingdom,DuckDuckGo,search_engine,4.8
+2020-06-01,United Kingdom,DuckDuckGo,search_engine,6.38
+2020-07-01,United Kingdom,DuckDuckGo,search_engine,4.18
+2020-08-01,United Kingdom,DuckDuckGo,search_engine,5.14
+2020-09-01,United Kingdom,DuckDuckGo,search_engine,4.07
+2020-10-01,United Kingdom,DuckDuckGo,search_engine,4.58
+2020-11-01,United Kingdom,DuckDuckGo,search_engine,4.95
+2020-12-01,United Kingdom,DuckDuckGo,search_engine,4.28
+2021-01-01,United Kingdom,DuckDuckGo,search_engine,4.5
+2021-02-01,United Kingdom,DuckDuckGo,search_engine,5.03
+2021-03-01,United Kingdom,DuckDuckGo,search_engine,3.69
+2021-04-01,United Kingdom,DuckDuckGo,search_engine,5.88
+2021-05-01,United Kingdom,DuckDuckGo,search_engine,5.4
+2021-06-01,United Kingdom,DuckDuckGo,search_engine,7.22
+2021-07-01,United Kingdom,DuckDuckGo,search_engine,6.73
+2021-08-01,United Kingdom,DuckDuckGo,search_engine,4.44
+2021-09-01,United Kingdom,DuckDuckGo,search_engine,5.24
+2021-10-01,United Kingdom,DuckDuckGo,search_engine,3.24
+2021-11-01,United Kingdom,DuckDuckGo,search_engine,5.6
+2021-12-01,United Kingdom,DuckDuckGo,search_engine,5.47
+2022-01-01,United Kingdom,DuckDuckGo,search_engine,6.59
+2022-02-01,United Kingdom,DuckDuckGo,search_engine,6.29
+2022-03-01,United Kingdom,DuckDuckGo,search_engine,6.07
+2022-04-01,United Kingdom,DuckDuckGo,search_engine,6.47
+2022-05-01,United Kingdom,DuckDuckGo,search_engine,3.11
+2022-06-01,United Kingdom,DuckDuckGo,search_engine,4.82
+2022-07-01,United Kingdom,DuckDuckGo,search_engine,7.65
+2022-08-01,United Kingdom,DuckDuckGo,search_engine,4.6
+2022-09-01,United Kingdom,DuckDuckGo,search_engine,1.9
+2022-10-01,United Kingdom,DuckDuckGo,search_engine,3.66
+2022-11-01,United Kingdom,DuckDuckGo,search_engine,6.82
+2022-12-01,United Kingdom,DuckDuckGo,search_engine,7.32
+2023-01-01,United Kingdom,DuckDuckGo,search_engine,7.45
+2023-02-01,United Kingdom,DuckDuckGo,search_engine,9.61
+2023-03-01,United Kingdom,DuckDuckGo,search_engine,5.67
+2023-04-01,United Kingdom,DuckDuckGo,search_engine,6.87
+2023-05-01,United Kingdom,DuckDuckGo,search_engine,6.09
+2023-06-01,United Kingdom,DuckDuckGo,search_engine,7.14
+2023-07-01,United Kingdom,DuckDuckGo,search_engine,4.2
+2023-08-01,United Kingdom,DuckDuckGo,search_engine,5.46
+2023-09-01,United Kingdom,DuckDuckGo,search_engine,5.62
+2023-10-01,United Kingdom,DuckDuckGo,search_engine,6.41
+2023-11-01,United Kingdom,DuckDuckGo,search_engine,2.9
+2023-12-01,United Kingdom,DuckDuckGo,search_engine,5.58
+2024-01-01,United Kingdom,DuckDuckGo,search_engine,8.18
+2024-02-01,United Kingdom,DuckDuckGo,search_engine,8.4
+2024-03-01,United Kingdom,DuckDuckGo,search_engine,7.48
+2024-04-01,United Kingdom,DuckDuckGo,search_engine,8.79
+2024-05-01,United Kingdom,DuckDuckGo,search_engine,5.9
+2024-06-01,United Kingdom,DuckDuckGo,search_engine,5.86
+2024-07-01,United Kingdom,DuckDuckGo,search_engine,6.44
+2024-08-01,United Kingdom,DuckDuckGo,search_engine,8.13
+2024-09-01,United Kingdom,DuckDuckGo,search_engine,8.07
+2024-10-01,United Kingdom,DuckDuckGo,search_engine,4.05
+2024-11-01,United Kingdom,DuckDuckGo,search_engine,3.53
+2024-12-01,United Kingdom,DuckDuckGo,search_engine,5.29
+2025-01-01,United Kingdom,DuckDuckGo,search_engine,7.19
+2025-02-01,United Kingdom,DuckDuckGo,search_engine,8.62
+2025-03-01,United Kingdom,DuckDuckGo,search_engine,8.06
+2025-04-01,United Kingdom,DuckDuckGo,search_engine,7.14
+2025-05-01,United Kingdom,DuckDuckGo,search_engine,7.31
+2025-06-01,United Kingdom,DuckDuckGo,search_engine,8.16
+2025-07-01,United Kingdom,DuckDuckGo,search_engine,5.0
+2025-08-01,United Kingdom,DuckDuckGo,search_engine,6.17
+2025-09-01,United Kingdom,DuckDuckGo,search_engine,6.94
+2025-10-01,United Kingdom,DuckDuckGo,search_engine,7.69
+2025-11-01,United Kingdom,DuckDuckGo,search_engine,5.9
+2025-12-01,United Kingdom,DuckDuckGo,search_engine,6.32
+2026-01-01,United Kingdom,DuckDuckGo,search_engine,4.75
+2026-02-01,United Kingdom,DuckDuckGo,search_engine,9.67
+2026-03-01,United Kingdom,DuckDuckGo,search_engine,7.06
+2026-04-01,United Kingdom,DuckDuckGo,search_engine,10.11
+2026-05-01,United Kingdom,DuckDuckGo,search_engine,6.67
+2026-06-01,United Kingdom,DuckDuckGo,search_engine,4.6
+2019-01-01,United Kingdom,Yandex,search_engine,2.32
+2019-02-01,United Kingdom,Yandex,search_engine,2.91
+2019-03-01,United Kingdom,Yandex,search_engine,2.82
+2019-04-01,United Kingdom,Yandex,search_engine,4.83
+2019-05-01,United Kingdom,Yandex,search_engine,3.22
+2019-06-01,United Kingdom,Yandex,search_engine,4.12
+2019-07-01,United Kingdom,Yandex,search_engine,3.96
+2019-08-01,United Kingdom,Yandex,search_engine,4.43
+2019-09-01,United Kingdom,Yandex,search_engine,4.43
+2019-10-01,United Kingdom,Yandex,search_engine,6.63
+2019-11-01,United Kingdom,Yandex,search_engine,2.14
+2019-12-01,United Kingdom,Yandex,search_engine,4.7
+2020-01-01,United Kingdom,Yandex,search_engine,4.19
+2020-02-01,United Kingdom,Yandex,search_engine,2.64
+2020-03-01,United Kingdom,Yandex,search_engine,2.83
+2020-04-01,United Kingdom,Yandex,search_engine,4.03
+2020-05-01,United Kingdom,Yandex,search_engine,6.59
+2020-06-01,United Kingdom,Yandex,search_engine,3.69
+2020-07-01,United Kingdom,Yandex,search_engine,3.26
+2020-08-01,United Kingdom,Yandex,search_engine,5.09
+2020-09-01,United Kingdom,Yandex,search_engine,5.73
+2020-10-01,United Kingdom,Yandex,search_engine,3.98
+2020-11-01,United Kingdom,Yandex,search_engine,2.86
+2020-12-01,United Kingdom,Yandex,search_engine,3.86
+2021-01-01,United Kingdom,Yandex,search_engine,5.49
+2021-02-01,United Kingdom,Yandex,search_engine,5.15
+2021-03-01,United Kingdom,Yandex,search_engine,6.27
+2021-04-01,United Kingdom,Yandex,search_engine,4.21
+2021-05-01,United Kingdom,Yandex,search_engine,4.25
+2021-06-01,United Kingdom,Yandex,search_engine,5.16
+2021-07-01,United Kingdom,Yandex,search_engine,3.14
+2021-08-01,United Kingdom,Yandex,search_engine,3.22
+2021-09-01,United Kingdom,Yandex,search_engine,5.76
+2021-10-01,United Kingdom,Yandex,search_engine,2.98
+2021-11-01,United Kingdom,Yandex,search_engine,5.06
+2021-12-01,United Kingdom,Yandex,search_engine,5.86
+2022-01-01,United Kingdom,Yandex,search_engine,3.04
+2022-02-01,United Kingdom,Yandex,search_engine,3.43
+2022-03-01,United Kingdom,Yandex,search_engine,6.04
+2022-04-01,United Kingdom,Yandex,search_engine,2.8
+2022-05-01,United Kingdom,Yandex,search_engine,5.28
+2022-06-01,United Kingdom,Yandex,search_engine,4.91
+2022-07-01,United Kingdom,Yandex,search_engine,5.15
+2022-08-01,United Kingdom,Yandex,search_engine,2.5
+2022-09-01,United Kingdom,Yandex,search_engine,5.29
+2022-10-01,United Kingdom,Yandex,search_engine,4.08
+2022-11-01,United Kingdom,Yandex,search_engine,4.95
+2022-12-01,United Kingdom,Yandex,search_engine,5.81
+2023-01-01,United Kingdom,Yandex,search_engine,2.65
+2023-02-01,United Kingdom,Yandex,search_engine,6.41
+2023-03-01,United Kingdom,Yandex,search_engine,4.57
+2023-04-01,United Kingdom,Yandex,search_engine,5.49
+2023-05-01,United Kingdom,Yandex,search_engine,6.06
+2023-06-01,United Kingdom,Yandex,search_engine,3.41
+2023-07-01,United Kingdom,Yandex,search_engine,3.86
+2023-08-01,United Kingdom,Yandex,search_engine,3.81
+2023-09-01,United Kingdom,Yandex,search_engine,5.67
+2023-10-01,United Kingdom,Yandex,search_engine,4.07
+2023-11-01,United Kingdom,Yandex,search_engine,3.0
+2023-12-01,United Kingdom,Yandex,search_engine,3.63
+2024-01-01,United Kingdom,Yandex,search_engine,2.34
+2024-02-01,United Kingdom,Yandex,search_engine,3.02
+2024-03-01,United Kingdom,Yandex,search_engine,3.91
+2024-04-01,United Kingdom,Yandex,search_engine,6.8
+2024-05-01,United Kingdom,Yandex,search_engine,3.2
+2024-06-01,United Kingdom,Yandex,search_engine,4.14
+2024-07-01,United Kingdom,Yandex,search_engine,4.36
+2024-08-01,United Kingdom,Yandex,search_engine,3.2
+2024-09-01,United Kingdom,Yandex,search_engine,4.49
+2024-10-01,United Kingdom,Yandex,search_engine,4.66
+2024-11-01,United Kingdom,Yandex,search_engine,4.48
+2024-12-01,United Kingdom,Yandex,search_engine,5.33
+2025-01-01,United Kingdom,Yandex,search_engine,3.51
+2025-02-01,United Kingdom,Yandex,search_engine,4.51
+2025-03-01,United Kingdom,Yandex,search_engine,4.6
+2025-04-01,United Kingdom,Yandex,search_engine,7.76
+2025-05-01,United Kingdom,Yandex,search_engine,4.38
+2025-06-01,United Kingdom,Yandex,search_engine,6.75
+2025-07-01,United Kingdom,Yandex,search_engine,2.41
+2025-08-01,United Kingdom,Yandex,search_engine,4.59
+2025-09-01,United Kingdom,Yandex,search_engine,2.15
+2025-10-01,United Kingdom,Yandex,search_engine,4.11
+2025-11-01,United Kingdom,Yandex,search_engine,3.06
+2025-12-01,United Kingdom,Yandex,search_engine,2.82
+2026-01-01,United Kingdom,Yandex,search_engine,4.12
+2026-02-01,United Kingdom,Yandex,search_engine,2.79
+2026-03-01,United Kingdom,Yandex,search_engine,6.67
+2026-04-01,United Kingdom,Yandex,search_engine,5.27
+2026-05-01,United Kingdom,Yandex,search_engine,4.35
+2026-06-01,United Kingdom,Yandex,search_engine,7.45
+2019-01-01,United Kingdom,Baidu,search_engine,3.68
+2019-02-01,United Kingdom,Baidu,search_engine,3.12
+2019-03-01,United Kingdom,Baidu,search_engine,2.65
+2019-04-01,United Kingdom,Baidu,search_engine,1.03
+2019-05-01,United Kingdom,Baidu,search_engine,6.91
+2019-06-01,United Kingdom,Baidu,search_engine,4.0
+2019-07-01,United Kingdom,Baidu,search_engine,4.8
+2019-08-01,United Kingdom,Baidu,search_engine,4.24
+2019-09-01,United Kingdom,Baidu,search_engine,0.5
+2019-10-01,United Kingdom,Baidu,search_engine,3.46
+2019-11-01,United Kingdom,Baidu,search_engine,1.96
+2019-12-01,United Kingdom,Baidu,search_engine,4.53
+2020-01-01,United Kingdom,Baidu,search_engine,0.8
+2020-02-01,United Kingdom,Baidu,search_engine,4.83
+2020-03-01,United Kingdom,Baidu,search_engine,2.87
+2020-04-01,United Kingdom,Baidu,search_engine,4.0
+2020-05-01,United Kingdom,Baidu,search_engine,3.97
+2020-06-01,United Kingdom,Baidu,search_engine,3.95
+2020-07-01,United Kingdom,Baidu,search_engine,2.28
+2020-08-01,United Kingdom,Baidu,search_engine,1.25
+2020-09-01,United Kingdom,Baidu,search_engine,2.91
+2020-10-01,United Kingdom,Baidu,search_engine,1.58
+2020-11-01,United Kingdom,Baidu,search_engine,2.96
+2020-12-01,United Kingdom,Baidu,search_engine,5.66
+2021-01-01,United Kingdom,Baidu,search_engine,2.76
+2021-02-01,United Kingdom,Baidu,search_engine,5.0
+2021-03-01,United Kingdom,Baidu,search_engine,1.47
+2021-04-01,United Kingdom,Baidu,search_engine,1.72
+2021-05-01,United Kingdom,Baidu,search_engine,1.76
+2021-06-01,United Kingdom,Baidu,search_engine,4.02
+2021-07-01,United Kingdom,Baidu,search_engine,2.38
+2021-08-01,United Kingdom,Baidu,search_engine,4.75
+2021-09-01,United Kingdom,Baidu,search_engine,4.15
+2021-10-01,United Kingdom,Baidu,search_engine,2.43
+2021-11-01,United Kingdom,Baidu,search_engine,1.25
+2021-12-01,United Kingdom,Baidu,search_engine,3.19
+2022-01-01,United Kingdom,Baidu,search_engine,4.57
+2022-02-01,United Kingdom,Baidu,search_engine,2.74
+2022-03-01,United Kingdom,Baidu,search_engine,1.02
+2022-04-01,United Kingdom,Baidu,search_engine,2.72
+2022-05-01,United Kingdom,Baidu,search_engine,2.34
+2022-06-01,United Kingdom,Baidu,search_engine,2.78
+2022-07-01,United Kingdom,Baidu,search_engine,1.91
+2022-08-01,United Kingdom,Baidu,search_engine,4.77
+2022-09-01,United Kingdom,Baidu,search_engine,2.1
+2022-10-01,United Kingdom,Baidu,search_engine,4.34
+2022-11-01,United Kingdom,Baidu,search_engine,0.5
+2022-12-01,United Kingdom,Baidu,search_engine,1.75
+2023-01-01,United Kingdom,Baidu,search_engine,2.16
+2023-02-01,United Kingdom,Baidu,search_engine,3.88
+2023-03-01,United Kingdom,Baidu,search_engine,1.49
+2023-04-01,United Kingdom,Baidu,search_engine,1.63
+2023-05-01,United Kingdom,Baidu,search_engine,1.43
+2023-06-01,United Kingdom,Baidu,search_engine,2.8
+2023-07-01,United Kingdom,Baidu,search_engine,2.22
+2023-08-01,United Kingdom,Baidu,search_engine,5.66
+2023-09-01,United Kingdom,Baidu,search_engine,3.43
+2023-10-01,United Kingdom,Baidu,search_engine,2.64
+2023-11-01,United Kingdom,Baidu,search_engine,4.41
+2023-12-01,United Kingdom,Baidu,search_engine,5.74
+2024-01-01,United Kingdom,Baidu,search_engine,3.33
+2024-02-01,United Kingdom,Baidu,search_engine,3.04
+2024-03-01,United Kingdom,Baidu,search_engine,2.57
+2024-04-01,United Kingdom,Baidu,search_engine,1.73
+2024-05-01,United Kingdom,Baidu,search_engine,0.66
+2024-06-01,United Kingdom,Baidu,search_engine,1.1
+2024-07-01,United Kingdom,Baidu,search_engine,2.55
+2024-08-01,United Kingdom,Baidu,search_engine,3.0
+2024-09-01,United Kingdom,Baidu,search_engine,1.95
+2024-10-01,United Kingdom,Baidu,search_engine,2.32
+2024-11-01,United Kingdom,Baidu,search_engine,2.67
+2024-12-01,United Kingdom,Baidu,search_engine,4.39
+2025-01-01,United Kingdom,Baidu,search_engine,3.15
+2025-02-01,United Kingdom,Baidu,search_engine,4.15
+2025-03-01,United Kingdom,Baidu,search_engine,2.47
+2025-04-01,United Kingdom,Baidu,search_engine,2.11
+2025-05-01,United Kingdom,Baidu,search_engine,4.05
+2025-06-01,United Kingdom,Baidu,search_engine,4.67
+2025-07-01,United Kingdom,Baidu,search_engine,5.68
+2025-08-01,United Kingdom,Baidu,search_engine,3.12
+2025-09-01,United Kingdom,Baidu,search_engine,2.02
+2025-10-01,United Kingdom,Baidu,search_engine,3.24
+2025-11-01,United Kingdom,Baidu,search_engine,1.76
+2025-12-01,United Kingdom,Baidu,search_engine,5.54
+2026-01-01,United Kingdom,Baidu,search_engine,1.14
+2026-02-01,United Kingdom,Baidu,search_engine,2.74
+2026-03-01,United Kingdom,Baidu,search_engine,2.79
+2026-04-01,United Kingdom,Baidu,search_engine,2.77
+2026-05-01,United Kingdom,Baidu,search_engine,1.13
+2026-06-01,United Kingdom,Baidu,search_engine,1.34
+2019-01-01,India,Google,search_engine,70.56
+2019-02-01,India,Google,search_engine,71.72
+2019-03-01,India,Google,search_engine,75.4
+2019-04-01,India,Google,search_engine,75.0
+2019-05-01,India,Google,search_engine,74.17
+2019-06-01,India,Google,search_engine,74.02
+2019-07-01,India,Google,search_engine,70.61
+2019-08-01,India,Google,search_engine,66.68
+2019-09-01,India,Google,search_engine,63.35
+2019-10-01,India,Google,search_engine,65.89
+2019-11-01,India,Google,search_engine,65.5
+2019-12-01,India,Google,search_engine,64.76
+2020-01-01,India,Google,search_engine,68.68
+2020-02-01,India,Google,search_engine,70.54
+2020-03-01,India,Google,search_engine,76.32
+2020-04-01,India,Google,search_engine,76.97
+2020-05-01,India,Google,search_engine,73.35
+2020-06-01,India,Google,search_engine,72.82
+2020-07-01,India,Google,search_engine,69.19
+2020-08-01,India,Google,search_engine,66.04
+2020-09-01,India,Google,search_engine,64.68
+2020-10-01,India,Google,search_engine,63.33
+2020-11-01,India,Google,search_engine,65.77
+2020-12-01,India,Google,search_engine,66.44
+2021-01-01,India,Google,search_engine,68.3
+2021-02-01,India,Google,search_engine,67.46
+2021-03-01,India,Google,search_engine,75.09
+2021-04-01,India,Google,search_engine,75.0
+2021-05-01,India,Google,search_engine,72.06
+2021-06-01,India,Google,search_engine,69.5
+2021-07-01,India,Google,search_engine,68.95
+2021-08-01,India,Google,search_engine,65.16
+2021-09-01,India,Google,search_engine,64.93
+2021-10-01,India,Google,search_engine,64.15
+2021-11-01,India,Google,search_engine,63.5
+2021-12-01,India,Google,search_engine,65.36
+2022-01-01,India,Google,search_engine,69.2
+2022-02-01,India,Google,search_engine,71.22
+2022-03-01,India,Google,search_engine,69.98
+2022-04-01,India,Google,search_engine,71.61
+2022-05-01,India,Google,search_engine,71.93
+2022-06-01,India,Google,search_engine,70.07
+2022-07-01,India,Google,search_engine,65.97
+2022-08-01,India,Google,search_engine,63.98
+2022-09-01,India,Google,search_engine,61.37
+2022-10-01,India,Google,search_engine,63.02
+2022-11-01,India,Google,search_engine,60.03
+2022-12-01,India,Google,search_engine,62.56
+2023-01-01,India,Google,search_engine,69.92
+2023-02-01,India,Google,search_engine,68.02
+2023-03-01,India,Google,search_engine,70.76
+2023-04-01,India,Google,search_engine,71.55
+2023-05-01,India,Google,search_engine,69.03
+2023-06-01,India,Google,search_engine,68.39
+2023-07-01,India,Google,search_engine,66.27
+2023-08-01,India,Google,search_engine,65.95
+2023-09-01,India,Google,search_engine,61.11
+2023-10-01,India,Google,search_engine,63.86
+2023-11-01,India,Google,search_engine,63.47
+2023-12-01,India,Google,search_engine,65.78
+2024-01-01,India,Google,search_engine,66.15
+2024-02-01,India,Google,search_engine,68.52
+2024-03-01,India,Google,search_engine,69.79
+2024-04-01,India,Google,search_engine,70.32
+2024-05-01,India,Google,search_engine,70.62
+2024-06-01,India,Google,search_engine,69.95
+2024-07-01,India,Google,search_engine,65.37
+2024-08-01,India,Google,search_engine,62.03
+2024-09-01,India,Google,search_engine,63.03
+2024-10-01,India,Google,search_engine,57.89
+2024-11-01,India,Google,search_engine,60.98
+2024-12-01,India,Google,search_engine,62.27
+2025-01-01,India,Google,search_engine,65.89
+2025-02-01,India,Google,search_engine,67.29
+2025-03-01,India,Google,search_engine,67.62
+2025-04-01,India,Google,search_engine,70.1
+2025-05-01,India,Google,search_engine,68.27
+2025-06-01,India,Google,search_engine,68.35
+2025-07-01,India,Google,search_engine,62.49
+2025-08-01,India,Google,search_engine,61.7
+2025-09-01,India,Google,search_engine,62.1
+2025-10-01,India,Google,search_engine,58.68
+2025-11-01,India,Google,search_engine,60.95
+2025-12-01,India,Google,search_engine,62.38
+2026-01-01,India,Google,search_engine,65.65
+2026-02-01,India,Google,search_engine,70.35
+2026-03-01,India,Google,search_engine,69.69
+2026-04-01,India,Google,search_engine,66.94
+2026-05-01,India,Google,search_engine,68.51
+2026-06-01,India,Google,search_engine,68.69
+2019-01-01,India,Bing,search_engine,9.09
+2019-02-01,India,Bing,search_engine,5.99
+2019-03-01,India,Bing,search_engine,10.42
+2019-04-01,India,Bing,search_engine,8.64
+2019-05-01,India,Bing,search_engine,10.51
+2019-06-01,India,Bing,search_engine,7.91
+2019-07-01,India,Bing,search_engine,7.62
+2019-08-01,India,Bing,search_engine,9.91
+2019-09-01,India,Bing,search_engine,4.84
+2019-10-01,India,Bing,search_engine,4.03
+2019-11-01,India,Bing,search_engine,10.2
+2019-12-01,India,Bing,search_engine,5.94
+2020-01-01,India,Bing,search_engine,7.17
+2020-02-01,India,Bing,search_engine,7.12
+2020-03-01,India,Bing,search_engine,10.52
+2020-04-01,India,Bing,search_engine,9.28
+2020-05-01,India,Bing,search_engine,8.62
+2020-06-01,India,Bing,search_engine,8.62
+2020-07-01,India,Bing,search_engine,9.32
+2020-08-01,India,Bing,search_engine,8.73
+2020-09-01,India,Bing,search_engine,6.98
+2020-10-01,India,Bing,search_engine,6.84
+2020-11-01,India,Bing,search_engine,8.78
+2020-12-01,India,Bing,search_engine,5.93
+2021-01-01,India,Bing,search_engine,8.82
+2021-02-01,India,Bing,search_engine,8.39
+2021-03-01,India,Bing,search_engine,7.55
+2021-04-01,India,Bing,search_engine,10.28
+2021-05-01,India,Bing,search_engine,9.43
+2021-06-01,India,Bing,search_engine,11.56
+2021-07-01,India,Bing,search_engine,7.4
+2021-08-01,India,Bing,search_engine,9.66
+2021-09-01,India,Bing,search_engine,8.09
+2021-10-01,India,Bing,search_engine,8.41
+2021-11-01,India,Bing,search_engine,7.54
+2021-12-01,India,Bing,search_engine,7.15
+2022-01-01,India,Bing,search_engine,8.19
+2022-02-01,India,Bing,search_engine,8.88
+2022-03-01,India,Bing,search_engine,7.08
+2022-04-01,India,Bing,search_engine,6.55
+2022-05-01,India,Bing,search_engine,8.0
+2022-06-01,India,Bing,search_engine,9.99
+2022-07-01,India,Bing,search_engine,8.34
+2022-08-01,India,Bing,search_engine,9.84
+2022-09-01,India,Bing,search_engine,9.92
+2022-10-01,India,Bing,search_engine,10.75
+2022-11-01,India,Bing,search_engine,9.14
+2022-12-01,India,Bing,search_engine,8.12
+2023-01-01,India,Bing,search_engine,10.4
+2023-02-01,India,Bing,search_engine,11.51
+2023-03-01,India,Bing,search_engine,10.59
+2023-04-01,India,Bing,search_engine,8.69
+2023-05-01,India,Bing,search_engine,9.16
+2023-06-01,India,Bing,search_engine,8.91
+2023-07-01,India,Bing,search_engine,11.23
+2023-08-01,India,Bing,search_engine,10.37
+2023-09-01,India,Bing,search_engine,8.85
+2023-10-01,India,Bing,search_engine,9.82
+2023-11-01,India,Bing,search_engine,7.02
+2023-12-01,India,Bing,search_engine,6.31
+2024-01-01,India,Bing,search_engine,12.41
+2024-02-01,India,Bing,search_engine,8.36
+2024-03-01,India,Bing,search_engine,10.65
+2024-04-01,India,Bing,search_engine,9.16
+2024-05-01,India,Bing,search_engine,9.3
+2024-06-01,India,Bing,search_engine,10.87
+2024-07-01,India,Bing,search_engine,10.86
+2024-08-01,India,Bing,search_engine,11.34
+2024-09-01,India,Bing,search_engine,8.25
+2024-10-01,India,Bing,search_engine,8.08
+2024-11-01,India,Bing,search_engine,10.74
+2024-12-01,India,Bing,search_engine,11.4
+2025-01-01,India,Bing,search_engine,9.33
+2025-02-01,India,Bing,search_engine,10.31
+2025-03-01,India,Bing,search_engine,12.96
+2025-04-01,India,Bing,search_engine,10.0
+2025-05-01,India,Bing,search_engine,10.77
+2025-06-01,India,Bing,search_engine,11.04
+2025-07-01,India,Bing,search_engine,10.74
+2025-08-01,India,Bing,search_engine,13.27
+2025-09-01,India,Bing,search_engine,8.45
+2025-10-01,India,Bing,search_engine,9.33
+2025-11-01,India,Bing,search_engine,10.78
+2025-12-01,India,Bing,search_engine,11.04
+2026-01-01,India,Bing,search_engine,12.33
+2026-02-01,India,Bing,search_engine,9.12
+2026-03-01,India,Bing,search_engine,8.49
+2026-04-01,India,Bing,search_engine,10.69
+2026-05-01,India,Bing,search_engine,12.82
+2026-06-01,India,Bing,search_engine,10.17
+2019-01-01,India,Yahoo,search_engine,5.23
+2019-02-01,India,Yahoo,search_engine,3.44
+2019-03-01,India,Yahoo,search_engine,7.6
+2019-04-01,India,Yahoo,search_engine,5.95
+2019-05-01,India,Yahoo,search_engine,7.68
+2019-06-01,India,Yahoo,search_engine,5.56
+2019-07-01,India,Yahoo,search_engine,3.0
+2019-08-01,India,Yahoo,search_engine,5.87
+2019-09-01,India,Yahoo,search_engine,1.58
+2019-10-01,India,Yahoo,search_engine,2.94
+2019-11-01,India,Yahoo,search_engine,4.55
+2019-12-01,India,Yahoo,search_engine,5.76
+2020-01-01,India,Yahoo,search_engine,5.73
+2020-02-01,India,Yahoo,search_engine,5.94
+2020-03-01,India,Yahoo,search_engine,7.97
+2020-04-01,India,Yahoo,search_engine,7.69
+2020-05-01,India,Yahoo,search_engine,3.66
+2020-06-01,India,Yahoo,search_engine,1.48
+2020-07-01,India,Yahoo,search_engine,6.14
+2020-08-01,India,Yahoo,search_engine,4.68
+2020-09-01,India,Yahoo,search_engine,3.03
+2020-10-01,India,Yahoo,search_engine,4.64
+2020-11-01,India,Yahoo,search_engine,8.49
+2020-12-01,India,Yahoo,search_engine,3.93
+2021-01-01,India,Yahoo,search_engine,6.78
+2021-02-01,India,Yahoo,search_engine,5.78
+2021-03-01,India,Yahoo,search_engine,5.29
+2021-04-01,India,Yahoo,search_engine,4.56
+2021-05-01,India,Yahoo,search_engine,6.3
+2021-06-01,India,Yahoo,search_engine,2.65
+2021-07-01,India,Yahoo,search_engine,4.9
+2021-08-01,India,Yahoo,search_engine,4.41
+2021-09-01,India,Yahoo,search_engine,7.1
+2021-10-01,India,Yahoo,search_engine,4.45
+2021-11-01,India,Yahoo,search_engine,3.09
+2021-12-01,India,Yahoo,search_engine,5.67
+2022-01-01,India,Yahoo,search_engine,5.24
+2022-02-01,India,Yahoo,search_engine,4.7
+2022-03-01,India,Yahoo,search_engine,8.51
+2022-04-01,India,Yahoo,search_engine,5.1
+2022-05-01,India,Yahoo,search_engine,5.03
+2022-06-01,India,Yahoo,search_engine,6.03
+2022-07-01,India,Yahoo,search_engine,4.15
+2022-08-01,India,Yahoo,search_engine,5.56
+2022-09-01,India,Yahoo,search_engine,5.56
+2022-10-01,India,Yahoo,search_engine,4.93
+2022-11-01,India,Yahoo,search_engine,5.01
+2022-12-01,India,Yahoo,search_engine,4.23
+2023-01-01,India,Yahoo,search_engine,2.89
+2023-02-01,India,Yahoo,search_engine,4.89
+2023-03-01,India,Yahoo,search_engine,5.6
+2023-04-01,India,Yahoo,search_engine,6.7
+2023-05-01,India,Yahoo,search_engine,5.71
+2023-06-01,India,Yahoo,search_engine,5.24
+2023-07-01,India,Yahoo,search_engine,7.03
+2023-08-01,India,Yahoo,search_engine,4.45
+2023-09-01,India,Yahoo,search_engine,4.62
+2023-10-01,India,Yahoo,search_engine,6.65
+2023-11-01,India,Yahoo,search_engine,4.01
+2023-12-01,India,Yahoo,search_engine,5.8
+2024-01-01,India,Yahoo,search_engine,7.34
+2024-02-01,India,Yahoo,search_engine,8.31
+2024-03-01,India,Yahoo,search_engine,6.3
+2024-04-01,India,Yahoo,search_engine,2.72
+2024-05-01,India,Yahoo,search_engine,6.17
+2024-06-01,India,Yahoo,search_engine,4.84
+2024-07-01,India,Yahoo,search_engine,5.58
+2024-08-01,India,Yahoo,search_engine,4.83
+2024-09-01,India,Yahoo,search_engine,6.26
+2024-10-01,India,Yahoo,search_engine,4.75
+2024-11-01,India,Yahoo,search_engine,4.96
+2024-12-01,India,Yahoo,search_engine,5.19
+2025-01-01,India,Yahoo,search_engine,3.73
+2025-02-01,India,Yahoo,search_engine,5.26
+2025-03-01,India,Yahoo,search_engine,3.73
+2025-04-01,India,Yahoo,search_engine,8.4
+2025-05-01,India,Yahoo,search_engine,4.95
+2025-06-01,India,Yahoo,search_engine,3.43
+2025-07-01,India,Yahoo,search_engine,3.68
+2025-08-01,India,Yahoo,search_engine,5.96
+2025-09-01,India,Yahoo,search_engine,3.56
+2025-10-01,India,Yahoo,search_engine,2.66
+2025-11-01,India,Yahoo,search_engine,3.68
+2025-12-01,India,Yahoo,search_engine,1.68
+2026-01-01,India,Yahoo,search_engine,3.44
+2026-02-01,India,Yahoo,search_engine,3.77
+2026-03-01,India,Yahoo,search_engine,6.85
+2026-04-01,India,Yahoo,search_engine,5.14
+2026-05-01,India,Yahoo,search_engine,4.96
+2026-06-01,India,Yahoo,search_engine,4.07
+2019-01-01,India,DuckDuckGo,search_engine,5.08
+2019-02-01,India,DuckDuckGo,search_engine,3.65
+2019-03-01,India,DuckDuckGo,search_engine,5.58
+2019-04-01,India,DuckDuckGo,search_engine,8.52
+2019-05-01,India,DuckDuckGo,search_engine,6.2
+2019-06-01,India,DuckDuckGo,search_engine,5.3
+2019-07-01,India,DuckDuckGo,search_engine,5.3
+2019-08-01,India,DuckDuckGo,search_engine,6.01
+2019-09-01,India,DuckDuckGo,search_engine,7.84
+2019-10-01,India,DuckDuckGo,search_engine,3.29
+2019-11-01,India,DuckDuckGo,search_engine,4.5
+2019-12-01,India,DuckDuckGo,search_engine,1.96
+2020-01-01,India,DuckDuckGo,search_engine,5.6
+2020-02-01,India,DuckDuckGo,search_engine,7.54
+2020-03-01,India,DuckDuckGo,search_engine,3.96
+2020-04-01,India,DuckDuckGo,search_engine,6.27
+2020-05-01,India,DuckDuckGo,search_engine,5.66
+2020-06-01,India,DuckDuckGo,search_engine,6.27
+2020-07-01,India,DuckDuckGo,search_engine,7.46
+2020-08-01,India,DuckDuckGo,search_engine,7.9
+2020-09-01,India,DuckDuckGo,search_engine,3.94
+2020-10-01,India,DuckDuckGo,search_engine,4.55
+2020-11-01,India,DuckDuckGo,search_engine,4.08
+2020-12-01,India,DuckDuckGo,search_engine,4.67
+2021-01-01,India,DuckDuckGo,search_engine,4.66
+2021-02-01,India,DuckDuckGo,search_engine,5.8
+2021-03-01,India,DuckDuckGo,search_engine,6.35
+2021-04-01,India,DuckDuckGo,search_engine,6.14
+2021-05-01,India,DuckDuckGo,search_engine,7.08
+2021-06-01,India,DuckDuckGo,search_engine,6.06
+2021-07-01,India,DuckDuckGo,search_engine,5.23
+2021-08-01,India,DuckDuckGo,search_engine,5.28
+2021-09-01,India,DuckDuckGo,search_engine,5.55
+2021-10-01,India,DuckDuckGo,search_engine,4.16
+2021-11-01,India,DuckDuckGo,search_engine,5.8
+2021-12-01,India,DuckDuckGo,search_engine,6.82
+2022-01-01,India,DuckDuckGo,search_engine,6.25
+2022-02-01,India,DuckDuckGo,search_engine,6.92
+2022-03-01,India,DuckDuckGo,search_engine,7.06
+2022-04-01,India,DuckDuckGo,search_engine,4.01
+2022-05-01,India,DuckDuckGo,search_engine,6.83
+2022-06-01,India,DuckDuckGo,search_engine,7.96
+2022-07-01,India,DuckDuckGo,search_engine,5.62
+2022-08-01,India,DuckDuckGo,search_engine,8.04
+2022-09-01,India,DuckDuckGo,search_engine,6.36
+2022-10-01,India,DuckDuckGo,search_engine,4.55
+2022-11-01,India,DuckDuckGo,search_engine,6.1
+2022-12-01,India,DuckDuckGo,search_engine,7.52
+2023-01-01,India,DuckDuckGo,search_engine,7.83
+2023-02-01,India,DuckDuckGo,search_engine,9.03
+2023-03-01,India,DuckDuckGo,search_engine,7.27
+2023-04-01,India,DuckDuckGo,search_engine,6.66
+2023-05-01,India,DuckDuckGo,search_engine,5.21
+2023-06-01,India,DuckDuckGo,search_engine,7.52
+2023-07-01,India,DuckDuckGo,search_engine,5.19
+2023-08-01,India,DuckDuckGo,search_engine,6.05
+2023-09-01,India,DuckDuckGo,search_engine,5.66
+2023-10-01,India,DuckDuckGo,search_engine,6.39
+2023-11-01,India,DuckDuckGo,search_engine,5.0
+2023-12-01,India,DuckDuckGo,search_engine,5.76
+2024-01-01,India,DuckDuckGo,search_engine,5.91
+2024-02-01,India,DuckDuckGo,search_engine,7.86
+2024-03-01,India,DuckDuckGo,search_engine,7.34
+2024-04-01,India,DuckDuckGo,search_engine,5.64
+2024-05-01,India,DuckDuckGo,search_engine,9.37
+2024-06-01,India,DuckDuckGo,search_engine,6.24
+2024-07-01,India,DuckDuckGo,search_engine,6.81
+2024-08-01,India,DuckDuckGo,search_engine,5.71
+2024-09-01,India,DuckDuckGo,search_engine,5.77
+2024-10-01,India,DuckDuckGo,search_engine,6.68
+2024-11-01,India,DuckDuckGo,search_engine,7.43
+2024-12-01,India,DuckDuckGo,search_engine,7.29
+2025-01-01,India,DuckDuckGo,search_engine,7.92
+2025-02-01,India,DuckDuckGo,search_engine,7.65
+2025-03-01,India,DuckDuckGo,search_engine,6.94
+2025-04-01,India,DuckDuckGo,search_engine,7.23
+2025-05-01,India,DuckDuckGo,search_engine,7.84
+2025-06-01,India,DuckDuckGo,search_engine,7.27
+2025-07-01,India,DuckDuckGo,search_engine,5.77
+2025-08-01,India,DuckDuckGo,search_engine,7.79
+2025-09-01,India,DuckDuckGo,search_engine,7.95
+2025-10-01,India,DuckDuckGo,search_engine,6.05
+2025-11-01,India,DuckDuckGo,search_engine,7.14
+2025-12-01,India,DuckDuckGo,search_engine,6.28
+2026-01-01,India,DuckDuckGo,search_engine,3.66
+2026-02-01,India,DuckDuckGo,search_engine,9.82
+2026-03-01,India,DuckDuckGo,search_engine,6.53
+2026-04-01,India,DuckDuckGo,search_engine,9.89
+2026-05-01,India,DuckDuckGo,search_engine,5.22
+2026-06-01,India,DuckDuckGo,search_engine,7.9
+2019-01-01,India,Yandex,search_engine,2.16
+2019-02-01,India,Yandex,search_engine,4.71
+2019-03-01,India,Yandex,search_engine,6.07
+2019-04-01,India,Yandex,search_engine,5.24
+2019-05-01,India,Yandex,search_engine,5.15
+2019-06-01,India,Yandex,search_engine,6.98
+2019-07-01,India,Yandex,search_engine,3.47
+2019-08-01,India,Yandex,search_engine,5.25
+2019-09-01,India,Yandex,search_engine,6.72
+2019-10-01,India,Yandex,search_engine,0.5
+2019-11-01,India,Yandex,search_engine,3.64
+2019-12-01,India,Yandex,search_engine,2.63
+2020-01-01,India,Yandex,search_engine,5.07
+2020-02-01,India,Yandex,search_engine,2.87
+2020-03-01,India,Yandex,search_engine,4.27
+2020-04-01,India,Yandex,search_engine,4.12
+2020-05-01,India,Yandex,search_engine,3.94
+2020-06-01,India,Yandex,search_engine,4.61
+2020-07-01,India,Yandex,search_engine,2.57
+2020-08-01,India,Yandex,search_engine,2.98
+2020-09-01,India,Yandex,search_engine,5.32
+2020-10-01,India,Yandex,search_engine,3.6
+2020-11-01,India,Yandex,search_engine,3.62
+2020-12-01,India,Yandex,search_engine,2.48
+2021-01-01,India,Yandex,search_engine,3.76
+2021-02-01,India,Yandex,search_engine,4.73
+2021-03-01,India,Yandex,search_engine,2.96
+2021-04-01,India,Yandex,search_engine,5.48
+2021-05-01,India,Yandex,search_engine,3.99
+2021-06-01,India,Yandex,search_engine,4.25
+2021-07-01,India,Yandex,search_engine,2.96
+2021-08-01,India,Yandex,search_engine,2.53
+2021-09-01,India,Yandex,search_engine,0.5
+2021-10-01,India,Yandex,search_engine,4.94
+2021-11-01,India,Yandex,search_engine,1.15
+2021-12-01,India,Yandex,search_engine,5.82
+2022-01-01,India,Yandex,search_engine,5.45
+2022-02-01,India,Yandex,search_engine,6.64
+2022-03-01,India,Yandex,search_engine,3.89
+2022-04-01,India,Yandex,search_engine,5.42
+2022-05-01,India,Yandex,search_engine,4.05
+2022-06-01,India,Yandex,search_engine,2.15
+2022-07-01,India,Yandex,search_engine,4.1
+2022-08-01,India,Yandex,search_engine,6.39
+2022-09-01,India,Yandex,search_engine,4.62
+2022-10-01,India,Yandex,search_engine,5.38
+2022-11-01,India,Yandex,search_engine,3.85
+2022-12-01,India,Yandex,search_engine,3.01
+2023-01-01,India,Yandex,search_engine,3.48
+2023-02-01,India,Yandex,search_engine,6.19
+2023-03-01,India,Yandex,search_engine,6.01
+2023-04-01,India,Yandex,search_engine,7.25
+2023-05-01,India,Yandex,search_engine,5.82
+2023-06-01,India,Yandex,search_engine,3.27
+2023-07-01,India,Yandex,search_engine,3.35
+2023-08-01,India,Yandex,search_engine,5.34
+2023-09-01,India,Yandex,search_engine,4.93
+2023-10-01,India,Yandex,search_engine,4.69
+2023-11-01,India,Yandex,search_engine,5.05
+2023-12-01,India,Yandex,search_engine,5.9
+2024-01-01,India,Yandex,search_engine,4.84
+2024-02-01,India,Yandex,search_engine,3.96
+2024-03-01,India,Yandex,search_engine,4.12
+2024-04-01,India,Yandex,search_engine,7.37
+2024-05-01,India,Yandex,search_engine,3.57
+2024-06-01,India,Yandex,search_engine,4.62
+2024-07-01,India,Yandex,search_engine,2.77
+2024-08-01,India,Yandex,search_engine,4.32
+2024-09-01,India,Yandex,search_engine,3.29
+2024-10-01,India,Yandex,search_engine,4.09
+2024-11-01,India,Yandex,search_engine,1.26
+2024-12-01,India,Yandex,search_engine,1.76
+2025-01-01,India,Yandex,search_engine,6.11
+2025-02-01,India,Yandex,search_engine,5.23
+2025-03-01,India,Yandex,search_engine,5.57
+2025-04-01,India,Yandex,search_engine,5.69
+2025-05-01,India,Yandex,search_engine,4.73
+2025-06-01,India,Yandex,search_engine,4.06
+2025-07-01,India,Yandex,search_engine,4.4
+2025-08-01,India,Yandex,search_engine,5.92
+2025-09-01,India,Yandex,search_engine,5.67
+2025-10-01,India,Yandex,search_engine,5.47
+2025-11-01,India,Yandex,search_engine,4.63
+2025-12-01,India,Yandex,search_engine,5.28
+2026-01-01,India,Yandex,search_engine,4.74
+2026-02-01,India,Yandex,search_engine,3.62
+2026-03-01,India,Yandex,search_engine,3.08
+2026-04-01,India,Yandex,search_engine,7.04
+2026-05-01,India,Yandex,search_engine,4.85
+2026-06-01,India,Yandex,search_engine,3.46
+2019-01-01,India,Baidu,search_engine,1.07
+2019-02-01,India,Baidu,search_engine,3.28
+2019-03-01,India,Baidu,search_engine,2.37
+2019-04-01,India,Baidu,search_engine,1.85
+2019-05-01,India,Baidu,search_engine,4.42
+2019-06-01,India,Baidu,search_engine,1.63
+2019-07-01,India,Baidu,search_engine,3.89
+2019-08-01,India,Baidu,search_engine,2.45
+2019-09-01,India,Baidu,search_engine,4.2
+2019-10-01,India,Baidu,search_engine,2.54
+2019-11-01,India,Baidu,search_engine,2.2
+2019-12-01,India,Baidu,search_engine,2.93
+2020-01-01,India,Baidu,search_engine,3.8
+2020-02-01,India,Baidu,search_engine,3.34
+2020-03-01,India,Baidu,search_engine,1.3
+2020-04-01,India,Baidu,search_engine,3.62
+2020-05-01,India,Baidu,search_engine,3.6
+2020-06-01,India,Baidu,search_engine,1.28
+2020-07-01,India,Baidu,search_engine,4.56
+2020-08-01,India,Baidu,search_engine,3.72
+2020-09-01,India,Baidu,search_engine,3.62
+2020-10-01,India,Baidu,search_engine,2.36
+2020-11-01,India,Baidu,search_engine,0.9
+2020-12-01,India,Baidu,search_engine,3.69
+2021-01-01,India,Baidu,search_engine,1.97
+2021-02-01,India,Baidu,search_engine,2.67
+2021-03-01,India,Baidu,search_engine,1.66
+2021-04-01,India,Baidu,search_engine,2.38
+2021-05-01,India,Baidu,search_engine,0.82
+2021-06-01,India,Baidu,search_engine,0.5
+2021-07-01,India,Baidu,search_engine,2.7
+2021-08-01,India,Baidu,search_engine,4.45
+2021-09-01,India,Baidu,search_engine,1.84
+2021-10-01,India,Baidu,search_engine,1.13
+2021-11-01,India,Baidu,search_engine,3.61
+2021-12-01,India,Baidu,search_engine,1.18
+2022-01-01,India,Baidu,search_engine,1.0
+2022-02-01,India,Baidu,search_engine,3.3
+2022-03-01,India,Baidu,search_engine,6.38
+2022-04-01,India,Baidu,search_engine,2.9
+2022-05-01,India,Baidu,search_engine,1.9
+2022-06-01,India,Baidu,search_engine,2.54
+2022-07-01,India,Baidu,search_engine,4.93
+2022-08-01,India,Baidu,search_engine,0.92
+2022-09-01,India,Baidu,search_engine,3.77
+2022-10-01,India,Baidu,search_engine,3.07
+2022-11-01,India,Baidu,search_engine,2.01
+2022-12-01,India,Baidu,search_engine,3.73
+2023-01-01,India,Baidu,search_engine,1.77
+2023-02-01,India,Baidu,search_engine,1.51
+2023-03-01,India,Baidu,search_engine,5.82
+2023-04-01,India,Baidu,search_engine,6.39
+2023-05-01,India,Baidu,search_engine,4.92
+2023-06-01,India,Baidu,search_engine,3.79
+2023-07-01,India,Baidu,search_engine,4.44
+2023-08-01,India,Baidu,search_engine,3.08
+2023-09-01,India,Baidu,search_engine,4.26
+2023-10-01,India,Baidu,search_engine,1.36
+2023-11-01,India,Baidu,search_engine,2.1
+2023-12-01,India,Baidu,search_engine,5.17
+2024-01-01,India,Baidu,search_engine,1.21
+2024-02-01,India,Baidu,search_engine,2.97
+2024-03-01,India,Baidu,search_engine,2.97
+2024-04-01,India,Baidu,search_engine,3.58
+2024-05-01,India,Baidu,search_engine,3.65
+2024-06-01,India,Baidu,search_engine,2.11
+2024-07-01,India,Baidu,search_engine,2.05
+2024-08-01,India,Baidu,search_engine,4.36
+2024-09-01,India,Baidu,search_engine,5.29
+2024-10-01,India,Baidu,search_engine,2.71
+2024-11-01,India,Baidu,search_engine,3.26
+2024-12-01,India,Baidu,search_engine,3.99
+2025-01-01,India,Baidu,search_engine,2.47
+2025-02-01,India,Baidu,search_engine,3.39
+2025-03-01,India,Baidu,search_engine,3.99
+2025-04-01,India,Baidu,search_engine,1.4
+2025-05-01,India,Baidu,search_engine,4.56
+2025-06-01,India,Baidu,search_engine,1.85
+2025-07-01,India,Baidu,search_engine,3.92
+2025-08-01,India,Baidu,search_engine,2.77
+2025-09-01,India,Baidu,search_engine,2.78
+2025-10-01,India,Baidu,search_engine,0.64
+2025-11-01,India,Baidu,search_engine,1.87
+2025-12-01,India,Baidu,search_engine,2.51
+2026-01-01,India,Baidu,search_engine,1.96
+2026-02-01,India,Baidu,search_engine,4.39
+2026-03-01,India,Baidu,search_engine,4.81
+2026-04-01,India,Baidu,search_engine,2.21
+2026-05-01,India,Baidu,search_engine,3.82
+2026-06-01,India,Baidu,search_engine,1.1
+2019-01-01,Worldwide,Google,search_engine,70.32
+2019-02-01,Worldwide,Google,search_engine,74.31
+2019-03-01,Worldwide,Google,search_engine,72.5
+2019-04-01,Worldwide,Google,search_engine,74.64
+2019-05-01,Worldwide,Google,search_engine,73.91
+2019-06-01,Worldwide,Google,search_engine,71.18
+2019-07-01,Worldwide,Google,search_engine,69.26
+2019-08-01,Worldwide,Google,search_engine,69.8
+2019-09-01,Worldwide,Google,search_engine,67.32
+2019-10-01,Worldwide,Google,search_engine,65.47
+2019-11-01,Worldwide,Google,search_engine,65.54
+2019-12-01,Worldwide,Google,search_engine,67.49
+2020-01-01,Worldwide,Google,search_engine,67.53
+2020-02-01,Worldwide,Google,search_engine,72.59
+2020-03-01,Worldwide,Google,search_engine,75.66
+2020-04-01,Worldwide,Google,search_engine,72.35
+2020-05-01,Worldwide,Google,search_engine,71.37
+2020-06-01,Worldwide,Google,search_engine,74.75
+2020-07-01,Worldwide,Google,search_engine,68.96
+2020-08-01,Worldwide,Google,search_engine,67.22
+2020-09-01,Worldwide,Google,search_engine,65.61
+2020-10-01,Worldwide,Google,search_engine,61.69
+2020-11-01,Worldwide,Google,search_engine,65.18
+2020-12-01,Worldwide,Google,search_engine,63.52
+2021-01-01,Worldwide,Google,search_engine,69.23
+2021-02-01,Worldwide,Google,search_engine,70.35
+2021-03-01,Worldwide,Google,search_engine,73.57
+2021-04-01,Worldwide,Google,search_engine,73.11
+2021-05-01,Worldwide,Google,search_engine,68.01
+2021-06-01,Worldwide,Google,search_engine,71.66
+2021-07-01,Worldwide,Google,search_engine,67.28
+2021-08-01,Worldwide,Google,search_engine,65.02
+2021-09-01,Worldwide,Google,search_engine,64.64
+2021-10-01,Worldwide,Google,search_engine,63.4
+2021-11-01,Worldwide,Google,search_engine,63.67
+2021-12-01,Worldwide,Google,search_engine,64.36
+2022-01-01,Worldwide,Google,search_engine,67.78
+2022-02-01,Worldwide,Google,search_engine,68.16
+2022-03-01,Worldwide,Google,search_engine,70.89
+2022-04-01,Worldwide,Google,search_engine,70.36
+2022-05-01,Worldwide,Google,search_engine,70.17
+2022-06-01,Worldwide,Google,search_engine,70.67
+2022-07-01,Worldwide,Google,search_engine,65.5
+2022-08-01,Worldwide,Google,search_engine,63.99
+2022-09-01,Worldwide,Google,search_engine,64.69
+2022-10-01,Worldwide,Google,search_engine,62.22
+2022-11-01,Worldwide,Google,search_engine,61.61
+2022-12-01,Worldwide,Google,search_engine,65.09
+2023-01-01,Worldwide,Google,search_engine,65.68
+2023-02-01,Worldwide,Google,search_engine,68.72
+2023-03-01,Worldwide,Google,search_engine,69.88
+2023-04-01,Worldwide,Google,search_engine,70.39
+2023-05-01,Worldwide,Google,search_engine,69.08
+2023-06-01,Worldwide,Google,search_engine,65.54
+2023-07-01,Worldwide,Google,search_engine,66.36
+2023-08-01,Worldwide,Google,search_engine,63.09
+2023-09-01,Worldwide,Google,search_engine,63.14
+2023-10-01,Worldwide,Google,search_engine,64.41
+2023-11-01,Worldwide,Google,search_engine,62.62
+2023-12-01,Worldwide,Google,search_engine,65.58
+2024-01-01,Worldwide,Google,search_engine,65.73
+2024-02-01,Worldwide,Google,search_engine,68.12
+2024-03-01,Worldwide,Google,search_engine,67.66
+2024-04-01,Worldwide,Google,search_engine,68.26
+2024-05-01,Worldwide,Google,search_engine,69.61
+2024-06-01,Worldwide,Google,search_engine,67.37
+2024-07-01,Worldwide,Google,search_engine,64.2
+2024-08-01,Worldwide,Google,search_engine,63.94
+2024-09-01,Worldwide,Google,search_engine,58.89
+2024-10-01,Worldwide,Google,search_engine,60.61
+2024-11-01,Worldwide,Google,search_engine,59.55
+2024-12-01,Worldwide,Google,search_engine,60.12
+2025-01-01,Worldwide,Google,search_engine,66.59
+2025-02-01,Worldwide,Google,search_engine,65.81
+2025-03-01,Worldwide,Google,search_engine,65.76
+2025-04-01,Worldwide,Google,search_engine,67.2
+2025-05-01,Worldwide,Google,search_engine,68.01
+2025-06-01,Worldwide,Google,search_engine,65.27
+2025-07-01,Worldwide,Google,search_engine,64.79
+2025-08-01,Worldwide,Google,search_engine,63.56
+2025-09-01,Worldwide,Google,search_engine,59.24
+2025-10-01,Worldwide,Google,search_engine,60.96
+2025-11-01,Worldwide,Google,search_engine,61.22
+2025-12-01,Worldwide,Google,search_engine,61.5
+2026-01-01,Worldwide,Google,search_engine,66.41
+2026-02-01,Worldwide,Google,search_engine,65.02
+2026-03-01,Worldwide,Google,search_engine,66.05
+2026-04-01,Worldwide,Google,search_engine,69.42
+2026-05-01,Worldwide,Google,search_engine,64.84
+2026-06-01,Worldwide,Google,search_engine,65.12
+2019-01-01,Worldwide,Bing,search_engine,5.98
+2019-02-01,Worldwide,Bing,search_engine,7.45
+2019-03-01,Worldwide,Bing,search_engine,6.12
+2019-04-01,Worldwide,Bing,search_engine,6.07
+2019-05-01,Worldwide,Bing,search_engine,8.57
+2019-06-01,Worldwide,Bing,search_engine,7.93
+2019-07-01,Worldwide,Bing,search_engine,7.34
+2019-08-01,Worldwide,Bing,search_engine,6.77
+2019-09-01,Worldwide,Bing,search_engine,6.16
+2019-10-01,Worldwide,Bing,search_engine,7.29
+2019-11-01,Worldwide,Bing,search_engine,8.48
+2019-12-01,Worldwide,Bing,search_engine,6.55
+2020-01-01,Worldwide,Bing,search_engine,12.3
+2020-02-01,Worldwide,Bing,search_engine,8.58
+2020-03-01,Worldwide,Bing,search_engine,6.66
+2020-04-01,Worldwide,Bing,search_engine,9.84
+2020-05-01,Worldwide,Bing,search_engine,9.27
+2020-06-01,Worldwide,Bing,search_engine,7.23
+2020-07-01,Worldwide,Bing,search_engine,7.16
+2020-08-01,Worldwide,Bing,search_engine,10.55
+2020-09-01,Worldwide,Bing,search_engine,6.79
+2020-10-01,Worldwide,Bing,search_engine,7.7
+2020-11-01,Worldwide,Bing,search_engine,9.0
+2020-12-01,Worldwide,Bing,search_engine,7.93
+2021-01-01,Worldwide,Bing,search_engine,7.64
+2021-02-01,Worldwide,Bing,search_engine,11.21
+2021-03-01,Worldwide,Bing,search_engine,10.46
+2021-04-01,Worldwide,Bing,search_engine,10.66
+2021-05-01,Worldwide,Bing,search_engine,7.81
+2021-06-01,Worldwide,Bing,search_engine,10.83
+2021-07-01,Worldwide,Bing,search_engine,10.67
+2021-08-01,Worldwide,Bing,search_engine,5.51
+2021-09-01,Worldwide,Bing,search_engine,6.81
+2021-10-01,Worldwide,Bing,search_engine,9.4
+2021-11-01,Worldwide,Bing,search_engine,6.63
+2021-12-01,Worldwide,Bing,search_engine,7.66
+2022-01-01,Worldwide,Bing,search_engine,6.97
+2022-02-01,Worldwide,Bing,search_engine,8.8
+2022-03-01,Worldwide,Bing,search_engine,9.65
+2022-04-01,Worldwide,Bing,search_engine,7.93
+2022-05-01,Worldwide,Bing,search_engine,9.23
+2022-06-01,Worldwide,Bing,search_engine,10.08
+2022-07-01,Worldwide,Bing,search_engine,7.18
+2022-08-01,Worldwide,Bing,search_engine,6.42
+2022-09-01,Worldwide,Bing,search_engine,8.62
+2022-10-01,Worldwide,Bing,search_engine,9.41
+2022-11-01,Worldwide,Bing,search_engine,7.71
+2022-12-01,Worldwide,Bing,search_engine,9.0
+2023-01-01,Worldwide,Bing,search_engine,11.94
+2023-02-01,Worldwide,Bing,search_engine,8.88
+2023-03-01,Worldwide,Bing,search_engine,11.84
+2023-04-01,Worldwide,Bing,search_engine,8.11
+2023-05-01,Worldwide,Bing,search_engine,9.11
+2023-06-01,Worldwide,Bing,search_engine,8.0
+2023-07-01,Worldwide,Bing,search_engine,8.45
+2023-08-01,Worldwide,Bing,search_engine,12.03
+2023-09-01,Worldwide,Bing,search_engine,10.75
+2023-10-01,Worldwide,Bing,search_engine,7.07
+2023-11-01,Worldwide,Bing,search_engine,8.48
+2023-12-01,Worldwide,Bing,search_engine,10.1
+2024-01-01,Worldwide,Bing,search_engine,8.5
+2024-02-01,Worldwide,Bing,search_engine,6.76
+2024-03-01,Worldwide,Bing,search_engine,9.18
+2024-04-01,Worldwide,Bing,search_engine,11.1
+2024-05-01,Worldwide,Bing,search_engine,9.3
+2024-06-01,Worldwide,Bing,search_engine,12.57
+2024-07-01,Worldwide,Bing,search_engine,9.95
+2024-08-01,Worldwide,Bing,search_engine,8.08
+2024-09-01,Worldwide,Bing,search_engine,9.3
+2024-10-01,Worldwide,Bing,search_engine,7.3
+2024-11-01,Worldwide,Bing,search_engine,10.75
+2024-12-01,Worldwide,Bing,search_engine,9.9
+2025-01-01,Worldwide,Bing,search_engine,12.31
+2025-02-01,Worldwide,Bing,search_engine,14.01
+2025-03-01,Worldwide,Bing,search_engine,12.65
+2025-04-01,Worldwide,Bing,search_engine,10.97
+2025-05-01,Worldwide,Bing,search_engine,11.62
+2025-06-01,Worldwide,Bing,search_engine,10.24
+2025-07-01,Worldwide,Bing,search_engine,8.38
+2025-08-01,Worldwide,Bing,search_engine,11.14
+2025-09-01,Worldwide,Bing,search_engine,10.74
+2025-10-01,Worldwide,Bing,search_engine,10.98
+2025-11-01,Worldwide,Bing,search_engine,10.77
+2025-12-01,Worldwide,Bing,search_engine,9.14
+2026-01-01,Worldwide,Bing,search_engine,10.6
+2026-02-01,Worldwide,Bing,search_engine,9.33
+2026-03-01,Worldwide,Bing,search_engine,11.97
+2026-04-01,Worldwide,Bing,search_engine,13.28
+2026-05-01,Worldwide,Bing,search_engine,10.8
+2026-06-01,Worldwide,Bing,search_engine,9.3
+2019-01-01,Worldwide,Yahoo,search_engine,6.05
+2019-02-01,Worldwide,Yahoo,search_engine,7.28
+2019-03-01,Worldwide,Yahoo,search_engine,7.31
+2019-04-01,Worldwide,Yahoo,search_engine,5.57
+2019-05-01,Worldwide,Yahoo,search_engine,6.76
+2019-06-01,Worldwide,Yahoo,search_engine,6.61
+2019-07-01,Worldwide,Yahoo,search_engine,9.07
+2019-08-01,Worldwide,Yahoo,search_engine,2.52
+2019-09-01,Worldwide,Yahoo,search_engine,6.46
+2019-10-01,Worldwide,Yahoo,search_engine,6.81
+2019-11-01,Worldwide,Yahoo,search_engine,4.94
+2019-12-01,Worldwide,Yahoo,search_engine,7.66
+2020-01-01,Worldwide,Yahoo,search_engine,6.55
+2020-02-01,Worldwide,Yahoo,search_engine,7.92
+2020-03-01,Worldwide,Yahoo,search_engine,5.49
+2020-04-01,Worldwide,Yahoo,search_engine,7.02
+2020-05-01,Worldwide,Yahoo,search_engine,6.57
+2020-06-01,Worldwide,Yahoo,search_engine,8.83
+2020-07-01,Worldwide,Yahoo,search_engine,5.3
+2020-08-01,Worldwide,Yahoo,search_engine,4.98
+2020-09-01,Worldwide,Yahoo,search_engine,7.21
+2020-10-01,Worldwide,Yahoo,search_engine,5.91
+2020-11-01,Worldwide,Yahoo,search_engine,5.26
+2020-12-01,Worldwide,Yahoo,search_engine,6.16
+2021-01-01,Worldwide,Yahoo,search_engine,4.87
+2021-02-01,Worldwide,Yahoo,search_engine,8.32
+2021-03-01,Worldwide,Yahoo,search_engine,6.93
+2021-04-01,Worldwide,Yahoo,search_engine,5.91
+2021-05-01,Worldwide,Yahoo,search_engine,6.57
+2021-06-01,Worldwide,Yahoo,search_engine,6.6
+2021-07-01,Worldwide,Yahoo,search_engine,2.87
+2021-08-01,Worldwide,Yahoo,search_engine,5.55
+2021-09-01,Worldwide,Yahoo,search_engine,7.0
+2021-10-01,Worldwide,Yahoo,search_engine,5.0
+2021-11-01,Worldwide,Yahoo,search_engine,5.78
+2021-12-01,Worldwide,Yahoo,search_engine,6.59
+2022-01-01,Worldwide,Yahoo,search_engine,5.78
+2022-02-01,Worldwide,Yahoo,search_engine,4.81
+2022-03-01,Worldwide,Yahoo,search_engine,4.33
+2022-04-01,Worldwide,Yahoo,search_engine,3.51
+2022-05-01,Worldwide,Yahoo,search_engine,5.14
+2022-06-01,Worldwide,Yahoo,search_engine,6.06
+2022-07-01,Worldwide,Yahoo,search_engine,5.25
+2022-08-01,Worldwide,Yahoo,search_engine,5.83
+2022-09-01,Worldwide,Yahoo,search_engine,4.27
+2022-10-01,Worldwide,Yahoo,search_engine,8.42
+2022-11-01,Worldwide,Yahoo,search_engine,3.59
+2022-12-01,Worldwide,Yahoo,search_engine,5.83
+2023-01-01,Worldwide,Yahoo,search_engine,8.11
+2023-02-01,Worldwide,Yahoo,search_engine,4.95
+2023-03-01,Worldwide,Yahoo,search_engine,5.89
+2023-04-01,Worldwide,Yahoo,search_engine,3.84
+2023-05-01,Worldwide,Yahoo,search_engine,7.7
+2023-06-01,Worldwide,Yahoo,search_engine,7.62
+2023-07-01,Worldwide,Yahoo,search_engine,4.6
+2023-08-01,Worldwide,Yahoo,search_engine,3.52
+2023-09-01,Worldwide,Yahoo,search_engine,6.35
+2023-10-01,Worldwide,Yahoo,search_engine,4.5
+2023-11-01,Worldwide,Yahoo,search_engine,5.34
+2023-12-01,Worldwide,Yahoo,search_engine,7.67
+2024-01-01,Worldwide,Yahoo,search_engine,5.1
+2024-02-01,Worldwide,Yahoo,search_engine,6.2
+2024-03-01,Worldwide,Yahoo,search_engine,2.8
+2024-04-01,Worldwide,Yahoo,search_engine,2.41
+2024-05-01,Worldwide,Yahoo,search_engine,4.77
+2024-06-01,Worldwide,Yahoo,search_engine,3.21
+2024-07-01,Worldwide,Yahoo,search_engine,6.05
+2024-08-01,Worldwide,Yahoo,search_engine,5.28
+2024-09-01,Worldwide,Yahoo,search_engine,4.9
+2024-10-01,Worldwide,Yahoo,search_engine,5.38
+2024-11-01,Worldwide,Yahoo,search_engine,3.56
+2024-12-01,Worldwide,Yahoo,search_engine,2.21
+2025-01-01,Worldwide,Yahoo,search_engine,4.57
+2025-02-01,Worldwide,Yahoo,search_engine,3.72
+2025-03-01,Worldwide,Yahoo,search_engine,6.61
+2025-04-01,Worldwide,Yahoo,search_engine,6.59
+2025-05-01,Worldwide,Yahoo,search_engine,3.19
+2025-06-01,Worldwide,Yahoo,search_engine,6.88
+2025-07-01,Worldwide,Yahoo,search_engine,5.74
+2025-08-01,Worldwide,Yahoo,search_engine,5.37
+2025-09-01,Worldwide,Yahoo,search_engine,4.98
+2025-10-01,Worldwide,Yahoo,search_engine,8.35
+2025-11-01,Worldwide,Yahoo,search_engine,4.54
+2025-12-01,Worldwide,Yahoo,search_engine,6.57
+2026-01-01,Worldwide,Yahoo,search_engine,3.87
+2026-02-01,Worldwide,Yahoo,search_engine,3.36
+2026-03-01,Worldwide,Yahoo,search_engine,4.62
+2026-04-01,Worldwide,Yahoo,search_engine,7.78
+2026-05-01,Worldwide,Yahoo,search_engine,5.94
+2026-06-01,Worldwide,Yahoo,search_engine,5.58
+2019-01-01,Worldwide,DuckDuckGo,search_engine,5.76
+2019-02-01,Worldwide,DuckDuckGo,search_engine,4.95
+2019-03-01,Worldwide,DuckDuckGo,search_engine,4.95
+2019-04-01,Worldwide,DuckDuckGo,search_engine,6.62
+2019-05-01,Worldwide,DuckDuckGo,search_engine,6.28
+2019-06-01,Worldwide,DuckDuckGo,search_engine,4.76
+2019-07-01,Worldwide,DuckDuckGo,search_engine,5.8
+2019-08-01,Worldwide,DuckDuckGo,search_engine,4.46
+2019-09-01,Worldwide,DuckDuckGo,search_engine,8.05
+2019-10-01,Worldwide,DuckDuckGo,search_engine,4.71
+2019-11-01,Worldwide,DuckDuckGo,search_engine,6.71
+2019-12-01,Worldwide,DuckDuckGo,search_engine,4.39
+2020-01-01,Worldwide,DuckDuckGo,search_engine,4.23
+2020-02-01,Worldwide,DuckDuckGo,search_engine,4.72
+2020-03-01,Worldwide,DuckDuckGo,search_engine,2.93
+2020-04-01,Worldwide,DuckDuckGo,search_engine,7.71
+2020-05-01,Worldwide,DuckDuckGo,search_engine,7.66
+2020-06-01,Worldwide,DuckDuckGo,search_engine,4.56
+2020-07-01,Worldwide,DuckDuckGo,search_engine,6.38
+2020-08-01,Worldwide,DuckDuckGo,search_engine,6.11
+2020-09-01,Worldwide,DuckDuckGo,search_engine,6.51
+2020-10-01,Worldwide,DuckDuckGo,search_engine,5.2
+2020-11-01,Worldwide,DuckDuckGo,search_engine,6.33
+2020-12-01,Worldwide,DuckDuckGo,search_engine,3.64
+2021-01-01,Worldwide,DuckDuckGo,search_engine,5.57
+2021-02-01,Worldwide,DuckDuckGo,search_engine,6.61
+2021-03-01,Worldwide,DuckDuckGo,search_engine,7.65
+2021-04-01,Worldwide,DuckDuckGo,search_engine,4.27
+2021-05-01,Worldwide,DuckDuckGo,search_engine,5.04
+2021-06-01,Worldwide,DuckDuckGo,search_engine,3.91
+2021-07-01,Worldwide,DuckDuckGo,search_engine,5.57
+2021-08-01,Worldwide,DuckDuckGo,search_engine,5.4
+2021-09-01,Worldwide,DuckDuckGo,search_engine,4.08
+2021-10-01,Worldwide,DuckDuckGo,search_engine,7.77
+2021-11-01,Worldwide,DuckDuckGo,search_engine,3.63
+2021-12-01,Worldwide,DuckDuckGo,search_engine,7.73
+2022-01-01,Worldwide,DuckDuckGo,search_engine,6.53
+2022-02-01,Worldwide,DuckDuckGo,search_engine,7.02
+2022-03-01,Worldwide,DuckDuckGo,search_engine,8.81
+2022-04-01,Worldwide,DuckDuckGo,search_engine,7.82
+2022-05-01,Worldwide,DuckDuckGo,search_engine,6.19
+2022-06-01,Worldwide,DuckDuckGo,search_engine,6.76
+2022-07-01,Worldwide,DuckDuckGo,search_engine,6.52
+2022-08-01,Worldwide,DuckDuckGo,search_engine,4.75
+2022-09-01,Worldwide,DuckDuckGo,search_engine,5.66
+2022-10-01,Worldwide,DuckDuckGo,search_engine,3.77
+2022-11-01,Worldwide,DuckDuckGo,search_engine,5.29
+2022-12-01,Worldwide,DuckDuckGo,search_engine,6.66
+2023-01-01,Worldwide,DuckDuckGo,search_engine,8.75
+2023-02-01,Worldwide,DuckDuckGo,search_engine,3.89
+2023-03-01,Worldwide,DuckDuckGo,search_engine,6.83
+2023-04-01,Worldwide,DuckDuckGo,search_engine,5.01
+2023-05-01,Worldwide,DuckDuckGo,search_engine,5.88
+2023-06-01,Worldwide,DuckDuckGo,search_engine,5.55
+2023-07-01,Worldwide,DuckDuckGo,search_engine,7.08
+2023-08-01,Worldwide,DuckDuckGo,search_engine,6.77
+2023-09-01,Worldwide,DuckDuckGo,search_engine,4.02
+2023-10-01,Worldwide,DuckDuckGo,search_engine,5.93
+2023-11-01,Worldwide,DuckDuckGo,search_engine,5.91
+2023-12-01,Worldwide,DuckDuckGo,search_engine,6.75
+2024-01-01,Worldwide,DuckDuckGo,search_engine,7.74
+2024-02-01,Worldwide,DuckDuckGo,search_engine,4.23
+2024-03-01,Worldwide,DuckDuckGo,search_engine,8.9
+2024-04-01,Worldwide,DuckDuckGo,search_engine,8.39
+2024-05-01,Worldwide,DuckDuckGo,search_engine,6.21
+2024-06-01,Worldwide,DuckDuckGo,search_engine,8.26
+2024-07-01,Worldwide,DuckDuckGo,search_engine,6.8
+2024-08-01,Worldwide,DuckDuckGo,search_engine,6.83
+2024-09-01,Worldwide,DuckDuckGo,search_engine,6.53
+2024-10-01,Worldwide,DuckDuckGo,search_engine,5.91
+2024-11-01,Worldwide,DuckDuckGo,search_engine,5.72
+2024-12-01,Worldwide,DuckDuckGo,search_engine,6.5
+2025-01-01,Worldwide,DuckDuckGo,search_engine,4.78
+2025-02-01,Worldwide,DuckDuckGo,search_engine,7.39
+2025-03-01,Worldwide,DuckDuckGo,search_engine,5.36
+2025-04-01,Worldwide,DuckDuckGo,search_engine,7.16
+2025-05-01,Worldwide,DuckDuckGo,search_engine,6.41
+2025-06-01,Worldwide,DuckDuckGo,search_engine,6.82
+2025-07-01,Worldwide,DuckDuckGo,search_engine,5.42
+2025-08-01,Worldwide,DuckDuckGo,search_engine,5.37
+2025-09-01,Worldwide,DuckDuckGo,search_engine,6.53
+2025-10-01,Worldwide,DuckDuckGo,search_engine,3.85
+2025-11-01,Worldwide,DuckDuckGo,search_engine,7.32
+2025-12-01,Worldwide,DuckDuckGo,search_engine,5.6
+2026-01-01,Worldwide,DuckDuckGo,search_engine,7.27
+2026-02-01,Worldwide,DuckDuckGo,search_engine,6.91
+2026-03-01,Worldwide,DuckDuckGo,search_engine,9.37
+2026-04-01,Worldwide,DuckDuckGo,search_engine,6.71
+2026-05-01,Worldwide,DuckDuckGo,search_engine,6.37
+2026-06-01,Worldwide,DuckDuckGo,search_engine,5.87
+2019-01-01,Worldwide,Yandex,search_engine,6.09
+2019-02-01,Worldwide,Yandex,search_engine,3.17
+2019-03-01,Worldwide,Yandex,search_engine,4.37
+2019-04-01,Worldwide,Yandex,search_engine,6.58
+2019-05-01,Worldwide,Yandex,search_engine,5.9
+2019-06-01,Worldwide,Yandex,search_engine,5.37
+2019-07-01,Worldwide,Yandex,search_engine,4.28
+2019-08-01,Worldwide,Yandex,search_engine,3.29
+2019-09-01,Worldwide,Yandex,search_engine,5.64
+2019-10-01,Worldwide,Yandex,search_engine,6.38
+2019-11-01,Worldwide,Yandex,search_engine,2.0
+2019-12-01,Worldwide,Yandex,search_engine,2.89
+2020-01-01,Worldwide,Yandex,search_engine,4.38
+2020-02-01,Worldwide,Yandex,search_engine,4.78
+2020-03-01,Worldwide,Yandex,search_engine,4.95
+2020-04-01,Worldwide,Yandex,search_engine,7.18
+2020-05-01,Worldwide,Yandex,search_engine,5.16
+2020-06-01,Worldwide,Yandex,search_engine,3.07
+2020-07-01,Worldwide,Yandex,search_engine,3.3
+2020-08-01,Worldwide,Yandex,search_engine,4.05
+2020-09-01,Worldwide,Yandex,search_engine,6.19
+2020-10-01,Worldwide,Yandex,search_engine,3.39
+2020-11-01,Worldwide,Yandex,search_engine,3.44
+2020-12-01,Worldwide,Yandex,search_engine,4.17
+2021-01-01,Worldwide,Yandex,search_engine,2.2
+2021-02-01,Worldwide,Yandex,search_engine,2.55
+2021-03-01,Worldwide,Yandex,search_engine,1.0
+2021-04-01,Worldwide,Yandex,search_engine,6.28
+2021-05-01,Worldwide,Yandex,search_engine,4.53
+2021-06-01,Worldwide,Yandex,search_engine,7.69
+2021-07-01,Worldwide,Yandex,search_engine,3.35
+2021-08-01,Worldwide,Yandex,search_engine,4.21
+2021-09-01,Worldwide,Yandex,search_engine,5.18
+2021-10-01,Worldwide,Yandex,search_engine,4.21
+2021-11-01,Worldwide,Yandex,search_engine,6.04
+2021-12-01,Worldwide,Yandex,search_engine,3.46
+2022-01-01,Worldwide,Yandex,search_engine,4.54
+2022-02-01,Worldwide,Yandex,search_engine,5.09
+2022-03-01,Worldwide,Yandex,search_engine,1.98
+2022-04-01,Worldwide,Yandex,search_engine,6.04
+2022-05-01,Worldwide,Yandex,search_engine,3.73
+2022-06-01,Worldwide,Yandex,search_engine,5.65
+2022-07-01,Worldwide,Yandex,search_engine,6.71
+2022-08-01,Worldwide,Yandex,search_engine,3.66
+2022-09-01,Worldwide,Yandex,search_engine,3.63
+2022-10-01,Worldwide,Yandex,search_engine,2.64
+2022-11-01,Worldwide,Yandex,search_engine,2.35
+2022-12-01,Worldwide,Yandex,search_engine,1.63
+2023-01-01,Worldwide,Yandex,search_engine,5.42
+2023-02-01,Worldwide,Yandex,search_engine,2.89
+2023-03-01,Worldwide,Yandex,search_engine,4.51
+2023-04-01,Worldwide,Yandex,search_engine,3.08
+2023-05-01,Worldwide,Yandex,search_engine,5.82
+2023-06-01,Worldwide,Yandex,search_engine,6.34
+2023-07-01,Worldwide,Yandex,search_engine,2.73
+2023-08-01,Worldwide,Yandex,search_engine,5.23
+2023-09-01,Worldwide,Yandex,search_engine,2.93
+2023-10-01,Worldwide,Yandex,search_engine,2.45
+2023-11-01,Worldwide,Yandex,search_engine,1.39
+2023-12-01,Worldwide,Yandex,search_engine,4.8
+2024-01-01,Worldwide,Yandex,search_engine,1.58
+2024-02-01,Worldwide,Yandex,search_engine,3.74
+2024-03-01,Worldwide,Yandex,search_engine,4.79
+2024-04-01,Worldwide,Yandex,search_engine,7.03
+2024-05-01,Worldwide,Yandex,search_engine,4.76
+2024-06-01,Worldwide,Yandex,search_engine,3.36
+2024-07-01,Worldwide,Yandex,search_engine,4.78
+2024-08-01,Worldwide,Yandex,search_engine,7.8
+2024-09-01,Worldwide,Yandex,search_engine,3.57
+2024-10-01,Worldwide,Yandex,search_engine,5.01
+2024-11-01,Worldwide,Yandex,search_engine,6.21
+2024-12-01,Worldwide,Yandex,search_engine,3.11
+2025-01-01,Worldwide,Yandex,search_engine,2.09
+2025-02-01,Worldwide,Yandex,search_engine,4.42
+2025-03-01,Worldwide,Yandex,search_engine,4.85
+2025-04-01,Worldwide,Yandex,search_engine,7.14
+2025-05-01,Worldwide,Yandex,search_engine,2.86
+2025-06-01,Worldwide,Yandex,search_engine,3.06
+2025-07-01,Worldwide,Yandex,search_engine,7.48
+2025-08-01,Worldwide,Yandex,search_engine,2.86
+2025-09-01,Worldwide,Yandex,search_engine,2.78
+2025-10-01,Worldwide,Yandex,search_engine,4.91
+2025-11-01,Worldwide,Yandex,search_engine,2.56
+2025-12-01,Worldwide,Yandex,search_engine,5.9
+2026-01-01,Worldwide,Yandex,search_engine,5.69
+2026-02-01,Worldwide,Yandex,search_engine,6.34
+2026-03-01,Worldwide,Yandex,search_engine,4.87
+2026-04-01,Worldwide,Yandex,search_engine,3.47
+2026-05-01,Worldwide,Yandex,search_engine,3.94
+2026-06-01,Worldwide,Yandex,search_engine,5.89
+2019-01-01,Worldwide,Baidu,search_engine,3.14
+2019-02-01,Worldwide,Baidu,search_engine,2.48
+2019-03-01,Worldwide,Baidu,search_engine,1.53
+2019-04-01,Worldwide,Baidu,search_engine,4.7
+2019-05-01,Worldwide,Baidu,search_engine,3.52
+2019-06-01,Worldwide,Baidu,search_engine,3.33
+2019-07-01,Worldwide,Baidu,search_engine,0.56
+2019-08-01,Worldwide,Baidu,search_engine,7.27
+2019-09-01,Worldwide,Baidu,search_engine,2.67
+2019-10-01,Worldwide,Baidu,search_engine,4.67
+2019-11-01,Worldwide,Baidu,search_engine,5.59
+2019-12-01,Worldwide,Baidu,search_engine,2.48
+2020-01-01,Worldwide,Baidu,search_engine,2.25
+2020-02-01,Worldwide,Baidu,search_engine,3.4
+2020-03-01,Worldwide,Baidu,search_engine,3.51
+2020-04-01,Worldwide,Baidu,search_engine,2.63
+2020-05-01,Worldwide,Baidu,search_engine,3.58
+2020-06-01,Worldwide,Baidu,search_engine,3.88
+2020-07-01,Worldwide,Baidu,search_engine,3.76
+2020-08-01,Worldwide,Baidu,search_engine,3.88
+2020-09-01,Worldwide,Baidu,search_engine,1.16
+2020-10-01,Worldwide,Baidu,search_engine,2.7
+2020-11-01,Worldwide,Baidu,search_engine,4.82
+2020-12-01,Worldwide,Baidu,search_engine,1.19
+2021-01-01,Worldwide,Baidu,search_engine,2.39
+2021-02-01,Worldwide,Baidu,search_engine,0.5
+2021-03-01,Worldwide,Baidu,search_engine,3.88
+2021-04-01,Worldwide,Baidu,search_engine,1.75
+2021-05-01,Worldwide,Baidu,search_engine,5.43
+2021-06-01,Worldwide,Baidu,search_engine,2.58
+2021-07-01,Worldwide,Baidu,search_engine,2.88
+2021-08-01,Worldwide,Baidu,search_engine,1.96
+2021-09-01,Worldwide,Baidu,search_engine,1.7
+2021-10-01,Worldwide,Baidu,search_engine,3.82
+2021-11-01,Worldwide,Baidu,search_engine,4.91
+2021-12-01,Worldwide,Baidu,search_engine,4.33
+2022-01-01,Worldwide,Baidu,search_engine,2.13
+2022-02-01,Worldwide,Baidu,search_engine,3.67
+2022-03-01,Worldwide,Baidu,search_engine,3.24
+2022-04-01,Worldwide,Baidu,search_engine,4.23
+2022-05-01,Worldwide,Baidu,search_engine,3.29
+2022-06-01,Worldwide,Baidu,search_engine,4.09
+2022-07-01,Worldwide,Baidu,search_engine,1.07
+2022-08-01,Worldwide,Baidu,search_engine,2.55
+2022-09-01,Worldwide,Baidu,search_engine,1.68
+2022-10-01,Worldwide,Baidu,search_engine,1.82
+2022-11-01,Worldwide,Baidu,search_engine,3.96
+2022-12-01,Worldwide,Baidu,search_engine,3.19
+2023-01-01,Worldwide,Baidu,search_engine,0.78
+2023-02-01,Worldwide,Baidu,search_engine,1.06
+2023-03-01,Worldwide,Baidu,search_engine,0.97
+2023-04-01,Worldwide,Baidu,search_engine,5.8
+2023-05-01,Worldwide,Baidu,search_engine,1.18
+2023-06-01,Worldwide,Baidu,search_engine,1.62
+2023-07-01,Worldwide,Baidu,search_engine,0.76
+2023-08-01,Worldwide,Baidu,search_engine,3.94
+2023-09-01,Worldwide,Baidu,search_engine,6.07
+2023-10-01,Worldwide,Baidu,search_engine,1.64
+2023-11-01,Worldwide,Baidu,search_engine,3.69
+2023-12-01,Worldwide,Baidu,search_engine,1.18
+2024-01-01,Worldwide,Baidu,search_engine,4.12
+2024-02-01,Worldwide,Baidu,search_engine,2.14
+2024-03-01,Worldwide,Baidu,search_engine,5.7
+2024-04-01,Worldwide,Baidu,search_engine,4.91
+2024-05-01,Worldwide,Baidu,search_engine,4.32
+2024-06-01,Worldwide,Baidu,search_engine,6.29
+2024-07-01,Worldwide,Baidu,search_engine,2.7
+2024-08-01,Worldwide,Baidu,search_engine,3.06
+2024-09-01,Worldwide,Baidu,search_engine,3.77
+2024-10-01,Worldwide,Baidu,search_engine,0.81
+2024-11-01,Worldwide,Baidu,search_engine,3.13
+2024-12-01,Worldwide,Baidu,search_engine,1.9
+2025-01-01,Worldwide,Baidu,search_engine,3.97
+2025-02-01,Worldwide,Baidu,search_engine,5.82
+2025-03-01,Worldwide,Baidu,search_engine,4.15
+2025-04-01,Worldwide,Baidu,search_engine,2.21
+2025-05-01,Worldwide,Baidu,search_engine,3.4
+2025-06-01,Worldwide,Baidu,search_engine,3.06
+2025-07-01,Worldwide,Baidu,search_engine,3.06
+2025-08-01,Worldwide,Baidu,search_engine,2.12
+2025-09-01,Worldwide,Baidu,search_engine,3.18
+2025-10-01,Worldwide,Baidu,search_engine,5.64
+2025-11-01,Worldwide,Baidu,search_engine,1.12
+2025-12-01,Worldwide,Baidu,search_engine,3.7
+2026-01-01,Worldwide,Baidu,search_engine,4.02
+2026-02-01,Worldwide,Baidu,search_engine,1.56
+2026-03-01,Worldwide,Baidu,search_engine,1.36
+2026-04-01,Worldwide,Baidu,search_engine,1.46
+2026-05-01,Worldwide,Baidu,search_engine,2.53
+2026-06-01,Worldwide,Baidu,search_engine,2.62

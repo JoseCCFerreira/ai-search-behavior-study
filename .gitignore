@@ -1,0 +1,15 @@
+__pycache__/
+.venv/
+venv/
+.env
+.DS_Store
+*.pyc
+data/database/*.duckdb
+data/database/*.wal
+data/raw/private/
+.streamlit/secrets.toml
+models/*.pkl
+models/*.joblib
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/

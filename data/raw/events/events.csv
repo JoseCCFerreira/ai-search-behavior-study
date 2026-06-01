@@ -1,0 +1,5 @@
+event_date,event_name,event_type,affected_platform,description
+2020-11-30,ChatGPT launch,product,ChatGPT,"OpenAI releases ChatGPT, accelerating interest in AI assistants."
+2023-05-10,Gemini launch,product,Gemini,"Google launches Gemini, boosting AI adoption in search contexts."
+2023-11-15,Copilot launch,product,Copilot,"Microsoft Copilot becomes available, linking AI assistant experiences to search and browser use."
+2024-04-01,AI Overviews release,feature,Google,"Search engines add AI overview experiences, altering traditional search behavior."

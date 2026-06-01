@@ -1,0 +1,1 @@
+from src.data_ingestion.create_demo_data import write_demo_data
