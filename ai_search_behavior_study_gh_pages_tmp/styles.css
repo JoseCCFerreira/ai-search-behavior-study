@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: #f7f8fb;
+  color: #1f2937;
+}
+
+header.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #fff;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+header.hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+header.hero p {
+  margin: 0 0 2rem;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttons a {
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #0f172a;
+  background: #f8fafc;
+  font-weight: 600;
+}
+
+.container {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #475569;
+}
+
+@media (max-width: 768px) {
+  header.hero {
+    padding: 3rem 1rem;
+  }
+}

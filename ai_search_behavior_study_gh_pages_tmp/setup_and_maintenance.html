@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Search Behavior Study — Setup & Manutenção</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Setup, Execução e Manutenção</h1>
+
+    <section>
+      <h2>Sumário</h2>
+      <p>Esta página descreve passo-a-passo como instalar, executar, manter e atualizar o projeto <strong>AI Search Behavior Study</strong>.</p>
+    </section>
+
+    <section>
+      <h2>Requisitos</h2>
+      <ul>
+        <li>Python 3.11+</li>
+        <li>pip</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Instalação (local)</h2>
+      <pre><code class="bash">git clone &lt;URL_DO_REPOSITORIO&gt;
+cd ai_search_behavior_study
+python3 -m venv .venv
+source .venv/bin/activate  # macOS/Linux
+pip install -r requirements.txt
+</code></pre>
+      <p>Se prefere não criar um virtualenv, instale as dependências num ambiente controlado.</p>
+    </section>
+
+    <section>
+      <h2>Gerar dados demo (se não tiver dados reais)</h2>
+      <pre><code class="bash">python src/data_ingestion/create_demo_data.py
+</code></pre>
+      <p>Isto irá popular <code>data/raw/</code> com ficheiros CSV de exemplo usados pelo pipeline.</p>
+    </section>
+
+    <section>
+      <h2>Criar base DuckDB e carregar dados</h2>
+      <pre><code class="bash">python src/database/create_database.py
+python src/database/load_to_duckdb.py
+</code></pre>
+      <p>Isto cria <code>data/database/ai_search_behavior.duckdb</code> e popula as tabelas raw e processadas.</p>
+    </section>
+
+    <section>
+      <h2>Executar a aplicação Streamlit</h2>
+      <pre><code class="bash">streamlit run app/streamlit_app.py
+</code></pre>
+      <p>A aplicação usa a base DuckDB local. Se não existir, gere os dados demo e carregue-os primeiro.</p>
+    </section>
+
+    <section>
+      <h2>Substituir dados demo por dados reais</h2>
+      <ol>
+        <li>Copie os CSVs reais para as pastas correspondentes em <code>data/raw/</code>:</li>
+        <ul>
+          <li><code>data/raw/google_trends/</code></li>
+          <li><code>data/raw/statcounter/</code> (search_engine e browser)</li>
+          <li><code>data/raw/similarweb/</code></li>
+          <li><code>data/raw/events/</code></li>
+        </ul>
+        <li>Recrie o banco e carregue os CSVs:</li>
+        <pre><code class="bash">python src/database/create_database.py
+python src/database/load_to_duckdb.py
+</code></pre>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Manutenção e boas práticas</h2>
+      <ul>
+        <li>Versiona o código via Git; faz commits pequenos e descritivos.</li>
+        <li>Mantém as dependências atualizadas e fixe-as no <code>requirements.txt</code> quando necessário.</li>
+        <li>Não comites dados sensíveis nem ficheiros grandes — usa armazenamento externo para CSVs reais.</li>
+        <li>Usa branches para funcionalidades e pull requests para merges.</li>
+        <li>Automatiza testes com GitHub Actions (já incluído em <code>.github/workflows/python-tests.yml</code>).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Como fazer deploy (resumo)</h2>
+      <h3>GitHub Pages (HTML).</h3>
+      <ol>
+        <li>Pusha o repositório para GitHub.</li>
+        <li>Vá a Settings → Pages → Deploy from branch.</li>
+        <li>Escolha a branch <code>main</code> e a pasta <code>/portfolio_site</code>.</li>
+      </ol>
+
+      <h3>Streamlit Community Cloud</h3>
+      <ol>
+        <li>Pusha o repositório para GitHub.</li>
+        <li>Crie uma nova app em Streamlit Cloud ligada ao repo.</li>
+        <li>Defina o ficheiro principal para <code>app/streamlit_app.py</code> e confirme <code>requirements.txt</code>.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Problemas comuns</h2>
+      <ul>
+        <li><strong>Erro de importação `src` nos testes`</strong>: executar pytest com <code>PYTHONPATH=.</code>.</li>
+        <li><strong>Streamlit não encontrado</strong>: ativa o virtualenv e instala as dependências com pip.</li>
+        <li><strong>CSV ausente</strong>: verifica os caminhos em <code>src/config.py</code>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contactos</h2>
+      <p>Projecto por Carlos Ferreira — atualiza os links no footer do <code>portfolio_site/index.html</code>.</p>
+    </section>
+
+  </main>
+</body>
+</html>
