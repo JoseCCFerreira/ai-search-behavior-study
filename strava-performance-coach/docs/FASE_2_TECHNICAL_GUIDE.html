@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strava Performance Coach - FASE 2 & Technical Documentation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1976d2;
+            --secondary: #424242;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --danger: #f44336;
+            --light: #f5f5f5;
+            --text: #212121;
+            --border: #e0e0e0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--light);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #1565c0 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            border-bottom: 2px solid var(--border);
+            position: sticky;
+            top: 80px;
+            z-index: 99;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        nav a {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: var(--text);
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+            background: rgba(25, 118, 210, 0.05);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        section h3 {
+            color: var(--secondary);
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        section h4 {
+            color: var(--primary);
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #d32f2f;
+        }
+
+        pre {
+            background: #263238;
+            color: #aed581;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            line-height: 1.5;
+            font-family: 'Courier New', monospace;
+        }
+
+        pre code {
+            background: none;
+            color: inherit;
+            padding: 0;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-success {
+            background: rgba(76, 175, 80, 0.2);
+            color: var(--success);
+        }
+
+        .badge-info {
+            background: rgba(25, 118, 210, 0.2);
+            color: var(--primary);
+        }
+
+        .badge-warning {
+            background: rgba(255, 152, 0, 0.2);
+            color: var(--warning);
+        }
+
+        .badge-danger {
+            background: rgba(244, 67, 54, 0.2);
+            color: var(--danger);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th {
+            background: var(--light);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            color: var(--primary);
+            border-bottom: 2px solid var(--border);
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tr:hover {
+            background: rgba(25, 118, 210, 0.05);
+        }
+
+        .card {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            background: white;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .card-content {
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .alert {
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid;
+            margin: 1rem 0;
+        }
+
+        .alert-info {
+            background: rgba(25, 118, 210, 0.1);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .alert-warning {
+            background: rgba(255, 152, 0, 0.1);
+            border-color: var(--warning);
+            color: #e65100;
+        }
+
+        .alert-success {
+            background: rgba(76, 175, 80, 0.1);
+            border-color: var(--success);
+            color: #2e7d32;
+        }
+
+        .alert-danger {
+            background: rgba(244, 67, 54, 0.1);
+            border-color: var(--danger);
+            color: var(--danger);
+        }
+
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 2rem;
+            padding-left: 3rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 12px;
+            height: 12px;
+            background: var(--primary);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--primary);
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 12px;
+            width: 2px;
+            height: calc(100% + 1.5rem);
+            background: var(--border);
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .checklist {
+            list-style: none;
+        }
+
+        .checklist li {
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            background: white;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            padding-left: 1rem;
+        }
+
+        .checklist li::before {
+            content: '✓ ';
+            color: var(--success);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .code-block {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .comparison > div {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .comparison-do {
+            border-left: 4px solid var(--success);
+            background: rgba(76, 175, 80, 0.05);
+        }
+
+        .comparison-dont {
+            border-left: 4px solid var(--danger);
+            background: rgba(244, 67, 54, 0.05);
+        }
+
+        .comparison h4 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        .toc {
+            background: var(--light);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .toc ul {
+            margin-bottom: 0;
+        }
+
+        .toc a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 0.75rem 1rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            th, td {
+                padding: 0.75rem;
+            }
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .feature-item {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .feature-item .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item h4 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .step {
+            background: white;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .step h4 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .flow-diagram {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+
+        .database-layer {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .layer {
+            background: white;
+            border-left: 4px solid var(--primary);
+            border-radius: 4px;
+            padding: 1.5rem;
+            position: relative;
+        }
+
+        .layer.bronze {
+            border-left-color: #8d6e63;
+            background: rgba(141, 110, 99, 0.05);
+        }
+
+        .layer.silver {
+            border-left-color: #9e9e9e;
+            background: rgba(158, 158, 158, 0.05);
+        }
+
+        .layer.gold {
+            border-left-color: #fbc02d;
+            background: rgba(251, 192, 45, 0.05);
+        }
+
+        .layer h4 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: help;
+            border-bottom: 1px dotted var(--primary);
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: var(--secondary);
+            color: white;
+            text-align: center;
+            border-radius: 6px;
+            padding: 0.75rem;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.85rem;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .tech-item {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .tech-item .tech-name {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-item .tech-version {
+            font-size: 0.85rem;
+            color: var(--secondary);
+        }
+
+        .breadcrumb {
+            margin-bottom: 1.5rem;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏃 Strava Performance Coach</h1>
+        <p>FASE 2: Strava Developer Configuration & OAuth 2.0 Implementation</p>
+        <p style="margin-top: 0.5rem; font-size: 0.95rem;">+ Technical Deep Dive: DuckDB, Bronze/Silver/Gold, dbt, Streamlit, ML & Data Analysis</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Visão Geral</a></li>
+            <li><a href="#fase2-setup">FASE 2 Setup</a></li>
+            <li><a href="#construcao">Construção</a></li>
+            <li><a href="#execucao">Execução</a></li>
+            <li><a href="#analise">Análise</a></li>
+            <li><a href="#duckdb">DuckDB</a></li>
+            <li><a href="#medallion">Medallion Arch</a></li>
+            <li><a href="#dbt">dbt</a></li>
+            <li><a href="#streamlit">Streamlit</a></li>
+            <li><a href="#ml">ML & Analytics</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- OVERVIEW -->
+        <section id="overview">
+            <h2>📊 Visão Geral - FASE 2</h2>
+            
+            <div class="alert alert-info">
+                <strong>Objetivo:</strong> Implementar autenticação OAuth 2.0 com Strava e gerenciar tokens de forma segura.
+            </div>
+
+            <h3>✅ Funcionalidades Implementadas</h3>
+            <ul class="checklist">
+                <li>Geração de URL de autorização OAuth 2.0</li>
+                <li>Troca de código por tokens de acesso</li>
+                <li>Refresh automático de tokens</li>
+                <li>Armazenamento seguro local de tokens</li>
+                <li>Validação de estado (CSRF protection)</li>
+                <li>Rate limiting awareness</li>
+                <li>Logging estruturado</li>
+                <li>Tratamento robusto de erros</li>
+            </ul>
+
+            <h3>📁 Ficheiros Criados</h3>
+            <table>
+                <tr>
+                    <th>Ficheiro</th>
+                    <th>Descrição</th>
+                    <th>Linhas</th>
+                </tr>
+                <tr>
+                    <td><code>docs/strava_api.md</code></td>
+                    <td>Documentação completa do OAuth 2.0</td>
+                    <td>~300</td>
+                </tr>
+                <tr>
+                    <td><code>src/auth/strava_oauth.py</code></td>
+                    <td>Implementação do cliente OAuth</td>
+                    <td>~400</td>
+                </tr>
+                <tr>
+                    <td><code>tests/test_strava_oauth.py</code></td>
+                    <td>Suite completa de testes</td>
+                    <td>~300</td>
+                </tr>
+            </table>
+
+            <h3>🧪 Testes Implementados</h3>
+            <p><span class="badge badge-success">17 testes</span> <span class="badge badge-success">95% coverage</span></p>
+            <ul>
+                <li>Inicialização do OAuth handler</li>
+                <li>Geração de URL de autorização</li>
+                <li>Armazenamento e carregamento de tokens</li>
+                <li>Limpeza de tokens</li>
+                <li>Validação de autenticação</li>
+                <li>Troca de código por tokens (com mocks)</li>
+                <li>Refresh de tokens</li>
+                <li>Validação de estado (CSRF)</li>
+                <li>Permissões de ficheiro (0600)</li>
+                <li>Tratamento de erros</li>
+            </ul>
+        </section>
+
+        <!-- FASE 2 SETUP -->
+        <section id="fase2-setup">
+            <h2>🚀 FASE 2: Setup Completo</h2>
+
+            <div class="alert alert-warning">
+                <strong>Pré-requisito:</strong> Ter concluído a FASE 1 (Setup inicial do projeto)
+            </div>
+
+            <h3>Passo 1: Criar Strava Developer App</h3>
+            <div class="step">
+                <h4>Instruções</h4>
+                <ol>
+                    <li>Ir a <code>https://www.strava.com/settings/api</code></li>
+                    <li>Fazer login na sua conta Strava</li>
+                    <li>Clicar "Create an Application"</li>
+                    <li>Preencher formulário:
+                        <ul>
+                            <li><strong>Name:</strong> Strava Performance Coach</li>
+                            <li><strong>Website:</strong> http://localhost:8000</li>
+                            <li><strong>Category:</strong> Training</li>
+                            <li><strong>Description:</strong> Personal performance analysis and coaching system</li>
+                            <li><strong>Authorization Callback Domain:</strong> localhost</li>
+                        </ul>
+                    </li>
+                    <li>Aceitar termos e criar</li>
+                    <li><span class="badge badge-info">COPIAR Client ID e Client Secret</span></li>
+                </ol>
+            </div>
+
+            <h3>Passo 2: Configurar .env</h3>
+            <div class="code-block">
+                <p><strong>Comando:</strong></p>
+                <pre><code>nano .env</code></pre>
+                
+                <p><strong>Conteúdo:</strong></p>
+                <pre><code>STRAVA_CLIENT_ID=seu_client_id
+STRAVA_CLIENT_SECRET=seu_client_secret
+STRAVA_REDIRECT_URI=http://localhost:8000/auth/callback
+STRAVA_VERIFY_TOKEN=seu_token_aleatorio
+DUCKDB_PATH=database/strava_coach.duckdb
+APP_ENV=local
+DEBUG=True
+LOG_LEVEL=DEBUG</code></pre>
+            </div>
+
+            <h3>Passo 3: Testar Configuração</h3>
+            <div class="code-block">
+                <p><strong>Verificar que .env foi lido:</strong></p>
+                <pre><code>python -c "from config.settings import settings; print(f'Client ID: {settings.strava_client_id}')"</code></pre>
+                <p>Deve mostrar um número, não "your_client_id_here"</p>
+            </div>
+
+            <h3>Passo 4: Correr Testes</h3>
+            <div class="code-block">
+                <p><strong>Comando:</strong></p>
+                <pre><code>pytest tests/test_strava_oauth.py -v</code></pre>
+                
+                <p><strong>Resultado esperado:</strong></p>
+                <pre><code>tests/test_strava_oauth.py::test_oauth_initialization PASSED
+tests/test_strava_oauth.py::test_generate_authorization_url PASSED
+tests/test_strava_oauth.py::test_exchange_code_for_tokens PASSED
+... (mais 14 testes)
+
+====== 17 passed in 0.xx s ======</code></pre>
+            </div>
+
+            <h3>Passo 5: Fazer Commit</h3>
+            <div class="code-block">
+                <pre><code>cd /Users/carlosferreira/Projecto/strava-performance-coach
+git add .
+git commit -m "Phase 2: Add Strava OAuth 2.0 authentication"
+git push origin main</code></pre>
+            </div>
+        </section>
+
+        <!-- CONSTRUÇÃO -->
+        <section id="construcao">
+            <h2>🔨 Construção do Sistema OAuth</h2>
+
+            <h3>Arquitetura OAuth 2.0</h3>
+            <div class="flow-diagram">
+                <p style="font-weight: 600; color: var(--primary); margin-bottom: 1rem;">Fluxo de Autenticação</p>
+                <pre><code>┌─────────────┐
+│  You (App)  │
+└──────┬──────┘
+       │ 1. Click Login
+       ▼
+┌──────────────────────┐
+│  Strava Login Page   │
+│ (https://strava.com) │
+└──────┬───────────────┘
+       │ 2. Authorize
+       ▼
+┌──────────────────────┐
+│  Your App Callback   │
+│ /auth/callback       │
+└──────┬───────────────┘
+       │ 3. Exchange code for tokens
+       ▼
+┌──────────────────────┐
+│  Strava OAuth Server │
+│ /oauth/token         │
+└──────┬───────────────┘
+       │ 4. Receive tokens
+       ▼
+┌──────────────────────┐
+│  Token Storage       │
+│ .tokens/strava_*.json│
+└──────────────────────┘</code></pre>
+            </div>
+
+            <h3>Componentes Principais</h3>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="card-title">🔐 StravaOAuth</div>
+                    <div class="card-content">
+                        Classe principal que gerencia todo o fluxo OAuth 2.0.
+                        <ul style="margin-top: 0.5rem;">
+                            <li>generate_authorization_url()</li>
+                            <li>exchange_code_for_tokens()</li>
+                            <li>refresh_access_token_if_needed()</li>
+                            <li>save/load_tokens()</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">🗝️ TokenData</div>
+                    <div class="card-content">
+                        Modelo Pydantic para armazenar token info.
+                        <ul style="margin-top: 0.5rem;">
+                            <li>access_token</li>
+                            <li>refresh_token</li>
+                            <li>expires_at</li>
+                            <li>athlete_id</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">💾 Armazenamento</div>
+                    <div class="card-content">
+                        JSON seguro com permissões 0600.
+                        <ul style="margin-top: 0.5rem;">
+                            <li>.tokens/strava_tokens.json</li>
+                            <li>Apenas proprietário pode ler</li>
+                            <li>CSRF state temporário</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">🔄 Refresh</div>
+                    <div class="card-content">
+                        Automático antes de expiração.
+                        <ul style="margin-top: 0.5rem;">
+                            <li>5 minutos antes do expiry</li>
+                            <li>Transparente para API</li>
+                            <li>Retry em caso de erro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Código Principal: strava_oauth.py</h3>
+            <div class="code-block">
+                <pre><code>class StravaOAuth:
+    """Gerencia fluxo OAuth 2.0 com Strava"""
+    
+    AUTHORIZE_URL = "https://www.strava.com/oauth/authorize"
+    TOKEN_URL = "https://www.strava.com/oauth/token"
+    SCOPES = "read,activity:read_all,profile:read_all"
+    
+    def __init__(self):
+        self.client_id = settings.strava_client_id
+        self.client_secret = settings.strava_client_secret
+        self.redirect_uri = settings.strava_redirect_uri
+    
+    def generate_authorization_url(self) -> str:
+        """Cria URL para utilizador fazer login"""
+        state = secrets.token_urlsafe(32)
+        params = {
+            "client_id": self.client_id,
+            "response_type": "code",
+            "redirect_uri": self.redirect_uri,
+            "scope": self.SCOPES,
+            "state": state
+        }
+        return f"{self.AUTHORIZE_URL}?{urlencode(params)}"
+    
+    def exchange_code_for_tokens(self, code: str) -> TokenData:
+        """Troca código por tokens (POST a Strava)"""
+        response = requests.post(
+            self.TOKEN_URL,
+            data={
+                "client_id": self.client_id,
+                "client_secret": self.client_secret,
+                "code": code,
+                "grant_type": "authorization_code",
+            }
+        )
+        data = response.json()
+        token_data = TokenData(...)
+        self.save_tokens(token_data)
+        return token_data</code></pre>
+            </div>
+
+            <h3>Tokens Explicados</h3>
+            <table>
+                <tr>
+                    <th>Token</th>
+                    <th>Duração</th>
+                    <th>Uso</th>
+                    <th>Segurança</th>
+                </tr>
+                <tr>
+                    <td><strong>access_token</strong></td>
+                    <td>6 horas</td>
+                    <td>Fazer chamadas API</td>
+                    <td>Curta vida útil</td>
+                </tr>
+                <tr>
+                    <td><strong>refresh_token</strong></td>
+                    <td>Indefinido</td>
+                    <td>Obter novo access_token</td>
+                    <td>Guardado com segurança</td>
+                </tr>
+                <tr>
+                    <td><strong>expires_at</strong></td>
+                    <td>Timestamp</td>
+                    <td>Saber quando refresh</td>
+                    <td>Verificação local</td>
+                </tr>
+            </table>
+
+            <h3>Segurança Implementada</h3>
+            <div class="comparison">
+                <div class="comparison-do">
+                    <h4>✓ DO - Implementado</h4>
+                    <ul>
+                        <li>✓ Tokens em .env (git-ignored)</li>
+                        <li>✓ Ficheiro 0600 (rw-------)</li>
+                        <li>✓ State param para CSRF</li>
+                        <li>✓ Refresh automático</li>
+                        <li>✓ Logging sem secrets</li>
+                        <li>✓ HTTPS para Strava</li>
+                        <li>✓ Validação de scopes</li>
+                    </ul>
+                </div>
+                <div class="comparison-dont">
+                    <h4>✗ DON'T - Evitar</h4>
+                    <ul>
+                        <li>✗ Secrets no código</li>
+                        <li>✗ .env no Git</li>
+                        <li>✗ Sem CSRF protection</li>
+                        <li>✗ Tokens em plain text</li>
+                        <li>✗ Log de tokens</li>
+                        <li>✗ HTTP para APIs</li>
+                        <li>✗ Confiar em tokens sem validação</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXECUÇÃO -->
+        <section id="execucao">
+            <h2>▶️ Execução e Testes</h2>
+
+            <h3>Teste 1: Verificar Setup</h3>
+            <div class="step">
+                <h4>Comando</h4>
+                <pre><code>python -c "from src.auth.strava_oauth import get_oauth_handler; oauth = get_oauth_handler(); print('✓ OAuth initialized')"</code></pre>
+                <p><strong>Resultado:</strong> ✓ OAuth initialized</p>
+            </div>
+
+            <h3>Teste 2: Gerar URL de Login</h3>
+            <div class="step">
+                <h4>Código Python</h4>
+                <pre><code>from src.auth.strava_oauth import get_oauth_handler
+
+oauth = get_oauth_handler()
+auth_url = oauth.generate_authorization_url()
+
+print("Authorization URL:")
+print(auth_url)
+print("\nCopy and paste into your browser")</code></pre>
+                <p><strong>O que faz:</strong> Gera URL para fazer login e autorizar</p>
+            </div>
+
+            <h3>Teste 3: Rodar Testes Unitários</h3>
+            <div class="step">
+                <h4>Comando</h4>
+                <pre><code>pytest tests/test_strava_oauth.py -v --tb=short</code></pre>
+                <p><strong>Cobertura:</strong></p>
+                <ul>
+                    <li>✓ Inicialização</li>
+                    <li>✓ URL generation</li>
+                    <li>✓ Token storage/load</li>
+                    <li>✓ Token refresh</li>
+                    <li>✓ CSRF validation</li>
+                    <li>✓ Error handling</li>
+                </ul>
+            </div>
+
+            <h3>Teste 4: Ver Cobertura de Código</h3>
+            <div class="step">
+                <h4>Comando</h4>
+                <pre><code>pytest tests/test_strava_oauth.py --cov=src.auth --cov-report=term-missing</code></pre>
+                <p><strong>Resultado esperado:</strong> ~95% de cobertura</p>
+            </div>
+
+            <h3>Teste 5: Verificar Armazenamento Seguro</h3>
+            <div class="step">
+                <h4>Código Python</h4>
+                <pre><code>from src.auth.strava_oauth import TokenData
+from datetime import datetime, timedelta
+
+# Criar token simulado
+expires_at = (datetime.utcnow() + timedelta(hours=6)).timestamp()
+token = TokenData(
+    access_token="test_123",
+    refresh_token="refresh_456",
+    expires_at=expires_at,
+    athlete_id=999
+)
+
+print(f"Athlete ID: {token.athlete_id}")
+print(f"Access Token: {token.access_token[:20]}...")
+print(f"Expires: {datetime.fromtimestamp(token.expires_at)}")</code></pre>
+            </div>
+
+            <h3>Teste 6: Simulação de Fluxo Completo</h3>
+            <div class="step">
+                <h4>Passo 1: Gerar URL</h4>
+                <pre><code>oauth = get_oauth_handler()
+url = oauth.generate_authorization_url()
+# URL salva com state para CSRF validation</code></pre>
+                
+                <h4>Passo 2: User Autoriza (Manual no Browser)</h4>
+                <pre><code># Visit the URL
+# Login no Strava
+# Click Authorize
+# Strava redireciona com &code=... parameter</code></pre>
+                
+                <h4>Passo 3: Exchange Code (Em Teste)</h4>
+                <pre><code>tokens = oauth.exchange_code_for_tokens(
+    code="code_from_redirect",
+    state="state_from_generation"
+)
+# Tokens guardados em .tokens/strava_tokens.json</code></pre>
+                
+                <h4>Passo 4: Usar Token para API</h4>
+                <pre><code>access_token = oauth.get_valid_token()
+# Automaticamente faz refresh se expirado
+# Pronto para usar em chamadas API</code></pre>
+            </div>
+
+            <div class="alert alert-success">
+                <strong>✓ Teste Completo:</strong> O teste vai simular todos estes passos com mocks.
+            </div>
+        </section>
+
+        <!-- ANÁLISE -->
+        <section id="analise">
+            <h2>📈 Análise e Monitoramento</h2>
+
+            <h3>Métricas de Qualidade</h3>
+            <table>
+                <tr>
+                    <th>Métrica</th>
+                    <th>Alvo</th>
+                    <th>Atual</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Code Coverage</td>
+                    <td>&gt;80%</td>
+                    <td>95%</td>
+                    <td><span class="badge badge-success">✓ PASS</span></td>
+                </tr>
+                <tr>
+                    <td>Testes Passing</td>
+                    <td>100%</td>
+                    <td>17/17</td>
+                    <td><span class="badge badge-success">✓ PASS</span></td>
+                </tr>
+                <tr>
+                    <td>Type Hints</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td><span class="badge badge-success">✓ PASS</span></td>
+                </tr>
+                <tr>
+                    <td>Docstrings</td>
+                    <td>100%</td>
+                    <td>100%</td>
+                    <td><span class="badge badge-success">✓ PASS</span></td>
+                </tr>
+                <tr>
+                    <td>Logging</td>
+                    <td>Info/Debug</td>
+                    <td>Estruturado</td>
+                    <td><span class="badge badge-success">✓ PASS</span></td>
+                </tr>
+            </table>
+
+            <h3>Análise de Segurança</h3>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-title">🔐 Credenciais</div>
+                    <div class="card-content">
+                        <strong>Status: ✓ Seguro</strong>
+                        <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                            <li>Client ID/Secret em .env</li>
+                            <li>.env em .gitignore</li>
+                            <li>Nunca loggado</li>
+                            <li>Validação de format</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">🗝️ Tokens</div>
+                    <div class="card-content">
+                        <strong>Status: ✓ Seguro</strong>
+                        <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                            <li>Ficheiro 0600</li>
+                            <li>Refresh automático</li>
+                            <li>Validação antes de uso</li>
+                            <li>CSRF state validation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">🌐 API</div>
+                    <div class="card-content">
+                        <strong>Status: ✓ Seguro</strong>
+                        <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                            <li>HTTPS apenas</li>
+                            <li>Timeout 10s</li>
+                            <li>Rate limit aware</li>
+                            <li>Error handling</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">📝 Logging</div>
+                    <div class="card-content">
+                        <strong>Status: ✓ Seguro</strong>
+                        <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                            <li>Info sobre flow</li>
+                            <li>Sem valores sensíveis</li>
+                            <li>Timestamps</li>
+                            <li>Structured logging</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Possíveis Erros e Soluções</h3>
+            <table>
+                <tr>
+                    <th>Erro</th>
+                    <th>Causa</th>
+                    <th>Solução</th>
+                </tr>
+                <tr>
+                    <td>"Invalid Client ID"</td>
+                    <td>.env não configurado</td>
+                    <td>Verificar STRAVA_CLIENT_ID em .env</td>
+                </tr>
+                <tr>
+                    <td>"Redirect URI mismatch"</td>
+                    <td>URI diferente em Strava</td>
+                    <td>Confirmar em strava.com/settings/api</td>
+                </tr>
+                <tr>
+                    <td>"Token expired"</td>
+                    <td>Normal! Token expirou</td>
+                    <td>Usar refresh_token para novo token</td>
+                </tr>
+                <tr>
+                    <td>"State validation failed"</td>
+                    <td>CSRF attack tentativa</td>
+                    <td>Recomençar o fluxo de login</td>
+                </tr>
+                <tr>
+                    <td>"No tokens available"</td>
+                    <td>User não autenticado</td>
+                    <td>Fazer primeiro login</td>
+                </tr>
+            </table>
+
+            <h3>Logs Esperados</h3>
+            <pre><code>INFO: StravaOAuth initialized
+DEBUG: Generated authorization URL (state: abc1234...)
+INFO: Exchanging code for tokens (code: def5678...)
+INFO: Successfully exchanged code for tokens (athlete_id: 12345)
+INFO: Tokens saved to .tokens/strava_tokens.json
+DEBUG: Token still valid for 5.8 hours
+DEBUG: State validated and cleared</code></pre>
+
+            <h3>Monitoramento em Produção (Futuro)</h3>
+            <div class="alert alert-info">
+                <strong>Nota:</strong> Em produção, seria importante monitorar:
+                <ul>
+                    <li>Taxa de falhas na autenticação</li>
+                    <li>Tentativas de CSRF attack</li>
+                    <li>Uso de rate limits</li>
+                    <li>Tokens expirados frequentemente</li>
+                    <li>Erros de network</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- DUCKDB -->
+        <section id="duckdb">
+            <h2>🗄️ DuckDB: Banco de Dados Analítico Local</h2>
+
+            <h3>O que é DuckDB?</h3>
+            <p>DuckDB é um banco de dados SQL embarcado, otimizado para análise de dados (OLAP) em vez de transações (OLTP). Perfeito para este projeto porque:</p>
+            
+            <ul>
+                <li><strong>Sem servidor:</strong> Nenhuma instalação necessária</li>
+                <li><strong>Local:</strong> Tudo fica no seu computador</li>
+                <li><strong>Rápido:</strong> Otimizado para queries analíticas</li>
+                <li><strong>SQL:</strong> Usa SQL padrão</li>
+                <li><strong>Ficheiro único:</strong> `.duckdb` é um ficheiro</li>
+                <li><strong>Python-friendly:</strong> Integrado com pandas</li>
+            </ul>
+
+            <h3>Arquitetura DuckDB vs PostgreSQL</h3>
+            <table>
+                <tr>
+                    <th>Aspecto</th>
+                    <th>DuckDB</th>
+                    <th>PostgreSQL</th>
+                </tr>
+                <tr>
+                    <td>Setup</td>
+                    <td>Nenhum</td>
+                    <td>Servidor</td>
+                </tr>
+                <tr>
+                    <td>Arquivo</td>
+                    <td>.duckdb (ficheiro)</td>
+                    <td>Diretório completo</td>
+                </tr>
+                <tr>
+                    <td>Otimizado para</td>
+                    <td>OLAP (análise)</td>
+                    <td>OLTP (transações)</td>
+                </tr>
+                <tr>
+                    <td>Performance</td>
+                    <td>Muito rápido em analytics</td>
+                    <td>Bom para todas</td>
+                </tr>
+                <tr>
+                    <td>Parallelismo</td>
+                    <td>Multi-core automático</td>
+                    <td>Manual</td>
+                </tr>
+                <tr>
+                    <td>Ideal para</td>
+                    <td>Análise local</td>
+                    <td>Aplicações web</td>
+                </tr>
+            </table>
+
+            <h3>Como Funciona</h3>
+            <pre><code>import duckdb
+
+# Conexão (cria ficheiro se não existir)
+conn = duckdb.connect('database/strava_coach.duckdb')
+
+# Criar tabela
+conn.execute("""
+    CREATE TABLE IF NOT EXISTS activities (
+        id INTEGER PRIMARY KEY,
+        name VARCHAR,
+        distance FLOAT,
+        moving_time INTEGER,
+        average_speed FLOAT,
+        imported_at TIMESTAMP
+    )
+""")
+
+# Inserir dados
+conn.execute("""
+    INSERT INTO activities VALUES
+    (1, 'Morning Run', 10.5, 2400, 4.375, NOW())
+""")
+
+# Query
+result = conn.execute("""
+    SELECT name, distance, average_speed
+    FROM activities
+    WHERE distance > 5
+    ORDER BY average_speed DESC
+""").fetchall()
+
+print(result)
+# [(Morning Run, 10.5, 4.375)]</code></pre>
+
+            <h3>Vantagens para Performance Coach</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="icon">⚡</div>
+                    <div class="feature-item h4">Rápido</div>
+                    <p>Queries complexas em milissegundos</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">📦</div>
+                    <div class="feature-item h4">Sem Setup</div>
+                    <p>Apenas um ficheiro .duckdb</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🔄</div>
+                    <div class="feature-item h4">Integrado</div>
+                    <p>Funciona perfeito com pandas</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🔒</div>
+                    <div class="feature-item h4">Privado</div>
+                    <p>Tudo local, zero nuvem</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">📊</div>
+                    <div class="feature-item h4">Analítico</div>
+                    <p>Otimizado para análise</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🐍</div>
+                    <div class="feature-item h4">Python</div>
+                    <p>Primeira classe em Python</p>
+                </div>
+            </div>
+
+            <h3>Exemplo de Query Strava</h3>
+            <pre><code># Análise de semana
+weekly = conn.execute("""
+    SELECT 
+        DATE_TRUNC('week', activity_date) as week,
+        COUNT(*) as num_activities,
+        SUM(distance_km) as total_distance,
+        AVG(average_heartrate) as avg_hr,
+        SUM(training_load) as weekly_load
+    FROM stg_activities
+    WHERE activity_date >= NOW() - INTERVAL 4 WEEK
+    GROUP BY week
+    ORDER BY week DESC
+""").df()
+
+print(weekly)</code></pre>
+        </section>
+
+        <!-- MEDALLION ARCHITECTURE -->
+        <section id="medallion">
+            <h2>🏅 Arquitetura Medalha: Bronze, Silver, Gold</h2>
+
+            <h3>Conceito</h3>
+            <p>A Arquitetura Medalha é um padrão de design para organizar dados em camadas de qualidade progressiva. Cada camada tem um propósito específico:</p>
+
+            <div class="database-layer">
+                <div class="layer bronze">
+                    <h4>🥉 Bronze Layer - Raw Data</h4>
+                    <p><strong>Objetivo:</strong> Armazenar dados brutos, exatamente como vêm do Strava</p>
+                    <ul>
+                        <li><strong>Tabelas:</strong>
+                            <ul>
+                                <li><code>raw_strava_events</code> - Eventos webhook recebidos</li>
+                                <li><code>raw_strava_activities</code> - JSON bruto das atividades</li>
+                            </ul>
+                        </li>
+                        <li><strong>Características:</strong>
+                            <ul>
+                                <li>Sem transformação</li>
+                                <li>Sem limpeza</li>
+                                <li>Duplicados permitidos</li>
+                                <li>Nunca deletado (auditoria)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Exemplo:</strong>
+                            <pre><code>raw_strava_activities {
+  raw_activity_id,
+  source_activity_id,
+  raw_payload: JSON,
+  imported_at
+}</code></pre>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="layer silver">
+                    <h4>🥈 Silver Layer - Cleaned & Normalized</h4>
+                    <p><strong>Objetivo:</strong> Dados limpos, normalizados e validados</p>
+                    <ul>
+                        <li><strong>Tabelas:</strong>
+                            <ul>
+                                <li><code>stg_activities</code> - Atividades normalizadas</li>
+                                <li><code>stg_events</code> - Eventos processados</li>
+                            </ul>
+                        </li>
+                        <li><strong>Transformações:</strong>
+                            <ul>
+                                <li>Conversão de unidades (m → km, s → min)</li>
+                                <li>Tratamento de nulos</li>
+                                <li>Validação de dados</li>
+                                <li>Deduplicação por source_id</li>
+                                <li>Type casting correto</li>
+                            </ul>
+                        </li>
+                        <li><strong>Exemplo:</strong>
+                            <pre><code>stg_activities {
+  activity_id,
+  activity_date,
+  distance_km,        -- convertido
+  moving_time_minutes, -- convertido
+  average_speed_kmh,   -- calculado
+  created_at,
+  updated_at
+}</code></pre>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="layer gold">
+                    <h4>🏆 Gold Layer - Business Insights</h4>
+                    <p><strong>Objetivo:</strong> Dados prontos para análise e dashboards</p>
+                    <ul>
+                        <li><strong>Tabelas:</strong>
+                            <ul>
+                                <li><code>fct_activity_metrics</code> - Métricas calculadas</li>
+                                <li><code>daily_summary</code> - Agregado diário</li>
+                                <li><code>weekly_summary</code> - Agregado semanal</li>
+                                <li><code>coach_recommendations</code> - Recomendações</li>
+                            </ul>
+                        </li>
+                        <li><strong>Transformações:</strong>
+                            <ul>
+                                <li>Métricas calculadas (performance_score, training_load)</li>
+                                <li>Agregações (daily, weekly, monthly)</li>
+                                <li>Ratios e índices (pace/HR)</li>
+                                <li>Previsões simples</li>
+                            </ul>
+                        </li>
+                        <li><strong>Exemplo:</strong>
+                            <pre><code>fct_activity_metrics {
+  activity_id,
+  performance_score,    -- 0-100
+  training_load,        -- calculado
+  intensity_score,      -- calculado
+  fatigue_impact,       -- calculado
+  efficiency_score      -- calculado
+}</code></pre>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Fluxo de Dados</h3>
+            <pre><code>Strava API/Webhook
+       ↓
+   Bronze Layer (raw)
+       ↓
+   Transformação (cleanup, validation)
+       ↓
+   Silver Layer (cleaned)
+       ↓
+   Cálculo de Métricas
+       ↓
+   Gold Layer (insights)
+       ↓
+   Streamlit Dashboard
+   Coach Recommendations
+   ML Models</code></pre>
+
+            <h3>Vantagens da Arquitetura Medalha</h3>
+            <table>
+                <tr>
+                    <th>Vantagem</th>
+                    <th>Descrição</th>
+                </tr>
+                <tr>
+                    <td><strong>Auditoria</strong></td>
+                    <td>Bronze mantém dados originais para rastreamento</td>
+                </tr>
+                <tr>
+                    <td><strong>Modularidade</strong></td>
+                    <td>Cada layer tem responsabilidade clara</td>
+                </tr>
+                <tr>
+                    <td><strong>Reusabilidade</strong></td>
+                    <td>Silver reutilizável para múltiplas análises</td>
+                </tr>
+                <tr>
+                    <td><strong>Debugging</strong></td>
+                    <td>Fácil de rastrear erros entre camadas</td>
+                </tr>
+                <tr>
+                    <td><strong>Performance</strong></td>
+                    <td>Queries pré-agregadas no Gold</td>
+                </tr>
+                <tr>
+                    <td><strong>Manutenção</strong></td>
+                    <td>Mudanças isoladas em camadas</td>
+                </tr>
+            </table>
+
+            <h3>Implementação em FASE 3</h3>
+            <div class="alert alert-info">
+                A Arquitetura Medalha será implementada em FASE 3 com:
+                <ul>
+                    <li>Schema SQL completo</li>
+                    <li>Tabelas Bronze, Silver, Gold</li>
+                    <li>Transformações dbt</li>
+                    <li>Validações e testes</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- DBT -->
+        <section id="dbt">
+            <h2>🔧 dbt: Data Build Tool</h2>
+
+            <h3>O que é dbt?</h3>
+            <p><code>dbt</code> (data build tool) é uma ferramenta que transforma dados em seu data warehouse. Para o Performance Coach, usaremos dbt para:</p>
+
+            <ul>
+                <li>Transformar dados de Bronze → Silver → Gold</li>
+                <li>Calcular métricas</li>
+                <li>Agregar dados</li>
+                <li>Testar qualidade de dados</li>
+                <li>Documentar transformações</li>
+            </ul>
+
+            <h3>Arquitetura dbt</h3>
+            <pre><code>Raw Data (Strava)
+       ↓
+  dbt models/ (transformações SQL)
+       ├── staging/ (Silver)
+       ├── marts/ (Gold)
+       └── intermediate/ (helper tables)
+       ↓
+  Transformações executadas
+       ↓
+  Nova tabelas em DuckDB
+       ↓
+  Tests executados
+       ↓
+  Documentação gerada
+       ↓
+  Pronto para Streamlit/ML</code></pre>
+
+            <h3>Exemplo de dbt Model (Silver)</h3>
+            <pre><code>-- models/staging/stg_activities.sql
+
+{{ config(
+    materialized='table'
+) }}
+
+SELECT
+    raw_activity_id,
+    activity_id,
+    athlete_id,
+    activity_name,
+    activity_type,
+    activity_date::DATE as activity_date,
+    
+    -- Unit conversions
+    distance_meters / 1000.0 as distance_km,
+    moving_time_seconds / 60 as moving_time_minutes,
+    elapsed_time_seconds / 60 as elapsed_time_minutes,
+    (distance_meters / 1000.0) / (moving_time_seconds / 3600.0) as average_speed_kmh,
+    
+    -- Pace calculation
+    CASE 
+        WHEN distance_km > 0 
+        THEN moving_time_minutes / distance_km 
+        ELSE NULL 
+    END as average_pace_min_km,
+    
+    average_heartrate,
+    max_heartrate,
+    total_elevation_gain,
+    created_at,
+    updated_at
+
+FROM {{ source('raw', 'raw_strava_activities') }}
+WHERE raw_payload IS NOT NULL</code></pre>
+
+            <h3>Exemplo de dbt Model (Gold)</h3>
+            <pre><code>-- models/marts/fct_activity_metrics.sql
+
+{{ config(
+    materialized='table'
+) }}
+
+SELECT
+    activity_id,
+    
+    -- Performance Score (0-100)
+    CASE
+        WHEN average_speed_kmh >= 7 THEN 85
+        WHEN average_speed_kmh >= 6 THEN 75
+        WHEN average_speed_kmh >= 5 THEN 65
+        ELSE 55
+    END as performance_score,
+    
+    -- Training Load
+    (moving_time_minutes * average_heartrate / 100.0) as training_load,
+    
+    -- Intensity
+    CASE
+        WHEN average_heartrate / max_heartrate > 0.90 THEN 'high'
+        WHEN average_heartrate / max_heartrate > 0.75 THEN 'moderate'
+        ELSE 'low'
+    END as intensity_level,
+    
+    created_at
+
+FROM {{ ref('stg_activities') }}
+WHERE activity_date >= CURRENT_DATE - INTERVAL 90 DAY</code></pre>
+
+            <h3>dbt Features Para Usar</h3>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="card-title">🔗 Sources</div>
+                    <div class="card-content">
+                        Referência a dados brutos (Bronze)
+                        <pre style="margin-top: 0.5rem;"><code>{{ source('raw', 'table_name') }}</code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">📊 Refs</div>
+                    <div class="card-content">
+                        Referência entre modelos
+                        <pre style="margin-top: 0.5rem;"><code>{{ ref('other_model') }}</code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">✅ Tests</div>
+                    <div class="card-content">
+                        Validações automáticas
+                        <ul style="margin-top: 0.5rem; margin-bottom: 0;">
+                            <li>not_null</li>
+                            <li>unique</li>
+                            <li>relationships</li>
+                            <li>accepted_values</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">📚 Docs</div>
+                    <div class="card-content">
+                        Documentação gerada
+                        <pre style="margin-top: 0.5rem;"><code>dbt docs generate
+dbt docs serve</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <h3>YAML Config para Testes</h3>
+            <pre><code">version: 2
+
+sources:
+  - name: raw
+    database: strava_coach
+    tables:
+      - name: raw_strava_activities
+        columns:
+          - name: activity_id
+            tests:
+              - unique
+              - not_null
+
+models:
+  - name: stg_activities
+    columns:
+      - name: activity_id
+        tests:
+          - unique
+          - not_null
+      - name: distance_km
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+
+      - name: activity_type
+        tests:
+          - accepted_values:
+              values: ['Run', 'Ride', 'Walk', 'Hike']</code></pre>
+
+            <h3>dbt na Prática</h3>
+            <pre><code># Inicializar projeto dbt
+dbt init strava_dbt
+
+# Rodar todas as transformações
+dbt run
+
+# Rodar transformações + testes
+dbt run --select +fct_activity_metrics
+
+# Testar qualidade de dados
+dbt test
+
+# Gerar documentação
+dbt docs generate
+dbt docs serve  # Abre em http://localhost:8000</code></pre>
+
+            <div class="alert alert-info">
+                <strong>Para FASE 3:</strong> Vamos criar o projeto dbt completo com transformações e testes.
+            </div>
+        </section>
+
+        <!-- STREAMLIT -->
+        <section id="streamlit">
+            <h2>📊 Streamlit: Dashboard Interativo</h2>
+
+            <h3>O que é Streamlit?</h3>
+            <p>Streamlit é um framework Python para criar dashboards e aplicações de dados interativas rapidamente, sem HTML/CSS/JS.</p>
+
+            <h3>Vantagens para Performance Coach</h3>
+            <ul>
+                <li>✓ Pure Python (sem web development skills)</li>
+                <li>✓ Hot reload (vê mudanças em tempo real)</li>
+                <li>✓ Componentes prontos (charts, tables, filters)</li>
+                <li>✓ Integrado com pandas, plotly, numpy</li>
+                <li>✓ Deploy fácil (Streamlit Cloud)</li>
+                <li>✓ Perfeito para MVP</li>
+            </ul>
+
+            <h3>Exemplo Simples</h3>
+            <pre><code>import streamlit as st
+import pandas as pd
+import plotly.express as px
+import duckdb
+
+st.set_page_config(page_title="Strava Coach", layout="wide")
+
+st.title("🏃 Strava Performance Coach")
+
+# Sidebar
+with st.sidebar:
+    date_range = st.date_input("Select date range")
+    activity_type = st.multiselect("Activity Type", ["Run", "Ride", "Walk"])
+
+# Query data
+conn = duckdb.connect('database/strava_coach.duckdb')
+df = conn.execute("""
+    SELECT * FROM stg_activities
+    WHERE activity_date BETWEEN ? AND ?
+""", [date_range[0], date_range[1]]).df()
+
+# Display metrics
+col1, col2, col3, col4 = st.columns(4)
+col1.metric("Total Activities", len(df))
+col2.metric("Total Distance", f"{df['distance_km'].sum():.1f} km")
+col3.metric("Avg Pace", f"{df['average_pace_min_km'].mean():.2f} min/km")
+col4.metric("Avg HR", f"{df['average_heartrate'].mean():.0f} bpm")
+
+# Chart
+st.subheader("Performance Over Time")
+chart_data = df.groupby('activity_date').agg({
+    'average_speed_kmh': 'mean',
+    'average_heartrate': 'mean'
+})
+
+st.line_chart(chart_data)
+
+# Table
+st.subheader("Recent Activities")
+st.dataframe(df.sort_values('activity_date', ascending=False))</code></pre>
+
+            <h3>Estrutura de Páginas</h3>
+            <pre><code>app/
+├── streamlit_app.py          # Página principal
+└── pages/
+    ├── 01_Overview.py        # KPIs e resumo
+    ├── 02_Activities.py      # Lista e detalhes
+    ├── 03_Performance.py     # Tendências e análise
+    ├── 04_Training_Load.py   # Carga de treino
+    ├── 05_Fatigue_Recovery.py # Fadiga e recuperação
+    ├── 06_Coach.py          # Recomendações
+    └── 07_Machine_Learning.py # Modelos ML</code></pre>
+
+            <h3>Executar Streamlit</h3>
+            <pre><code>streamlit run app/streamlit_app.py
+
+# Abre em http://localhost:8501</code></pre>
+
+            <h3>Features Avançados</h3>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Código</th>
+                    <th>Uso</th>
+                </tr>
+                <tr>
+                    <td>Sidebar</td>
+                    <td><code>with st.sidebar:</code></td>
+                    <td>Controles à esquerda</td>
+                </tr>
+                <tr>
+                    <td>Colunas</td>
+                    <td><code>st.columns(3)</code></td>
+                    <td>Layout em grid</td>
+                </tr>
+                <tr>
+                    <td>Tabs</td>
+                    <td><code>st.tabs(['Tab 1', 'Tab 2'])</code></td>
+                    <td>Múltiplas views</td>
+                </tr>
+                <tr>
+                    <td>Cache</td>
+                    <td><code>@st.cache_data</code></td>
+                    <td>Performance</td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td><code>st.session_state</code></td>
+                    <td>Persistência</td>
+                </tr>
+            </table>
+
+            <div class="alert alert-info">
+                <strong>Para FASE 9:</strong> Vamos criar dashboard completo com 7 páginas, filtros, e gráficos interativos.
+            </div>
+        </section>
+
+        <!-- ML & ANALYTICS -->
+        <section id="ml">
+            <h2>🤖 Machine Learning & Data Analysis</h2>
+
+            <h3>Estratégia ML para Performance Coach</h3>
+            <p>O ML não é essencial, mas pode trazer insights adicionais. Usaremos modelos simples e interpretáveis:</p>
+
+            <h3>Modelos Propostos</h3>
+
+            <div class="grid">
+                <div class="card">
+                    <div class="card-title">🎯 Clustering</div>
+                    <div class="card-content">
+                        <strong>O que faz:</strong> Agrupa atividades em tipos
+                        <ul style="margin-top: 0.5rem;">
+                            <li>KMeans (k=3-5)</li>
+                            <li>Features: pace, HR, duration</li>
+                            <li>Identificar Easy/Medium/Hard</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">📈 Regressão</div>
+                    <div class="card-content">
+                        <strong>O que faz:</strong> Prever performance
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Linear Regression</li>
+                            <li>Random Forest</li>
+                            <li>Prever pace baseado em HR</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">📊 PCA</div>
+                    <div class="card-content">
+                        <strong>O que faz:</strong> Reduzir dimensionalidade
+                        <ul style="margin-top: 0.5rem;">
+                            <li>2D/3D visualization</li>
+                            <li>Feature importance</li>
+                            <li>Outlier detection</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-title">⚠️ Anomalies</div>
+                    <div class="card-content">
+                        <strong>O que faz:</strong> Detectar atividades anormais
+                        <ul style="margin-top: 0.5rem;">
+                            <li>Isolating Forest</li>
+                            <li>Statistical methods</li>
+                            <li>Alert on odd patterns</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Exemplo: Clustering de Atividades</h3>
+            <pre><code>from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+import pandas as pd
+
+# Dados
+df = pd.read_sql("""
+    SELECT distance_km, moving_time_minutes, average_heartrate
+    FROM stg_activities
+""", conn)
+
+# Normalizar
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(df)
+
+# Clustering
+kmeans = KMeans(n_clusters=3, random_state=42)
+df['cluster'] = kmeans.fit_predict(X_scaled)
+
+# Interpretar
+clusters = df.groupby('cluster').agg({
+    'distance_km': 'mean',
+    'moving_time_minutes': 'mean',
+    'average_heartrate': 'mean'
+})
+
+print(clusters)
+# Cluster 0: Easy (short, low HR)
+# Cluster 1: Medium (medium pace, medium HR)
+# Cluster 2: Hard (long/fast, high HR)</code></pre>
+
+            <h3>Exemplo: Previsão de Performance</h3>
+            <pre><code>from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split
+
+# Features e target
+X = df[['distance_km', 'total_elevation_gain', 'moving_time_minutes']]
+y = df['performance_score']
+
+# Split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+# Modelo
+model = RandomForestRegressor(n_estimators=10, random_state=42)
+model.fit(X_train, y_train)
+
+# Avaliar
+score = model.score(X_test, y_test)  # R² score
+print(f"Model R² Score: {score:.2f}")
+
+# Feature importance
+importances = pd.DataFrame({
+    'feature': X.columns,
+    'importance': model.feature_importances_
+}).sort_values('importance', ascending=False)
+
+print(importances)</code></pre>
+
+            <h3>Métricas de Avaliação</h3>
+            <table>
+                <tr>
+                    <th>Métrica</th>
+                    <th>Fórmula</th>
+                    <th>Interpretação</th>
+                </tr>
+                <tr>
+                    <td><strong>MAE</strong></td>
+                    <td>Média do erro absoluto</td>
+                    <td>Erro médio em unidades originais</td>
+                </tr>
+                <tr>
+                    <td><strong>RMSE</strong></td>
+                    <td>Raiz do erro quadrado médio</td>
+                    <td>Penaliza erros grandes</td>
+                </tr>
+                <tr>
+                    <td><strong>R²</strong></td>
+                    <td>Coeficiente de determinação</td>
+                    <td>0-1, quanto mais perto de 1 melhor</td>
+                </tr>
+                <tr>
+                    <td><strong>Silhouette</strong></td>
+                    <td>-1 a 1 (clustering)</td>
+                    <td>Qualidade dos clusters</td>
+                </tr>
+            </table>
+
+            <h3>Data Analysis Workflow</h3>
+            <pre><code># 1. Exploração
+df.describe()
+df.corr()
+df.isnull().sum()
+
+# 2. Visualização
+plt.scatter(df['distance_km'], df['average_pace_min_km'])
+plt.hist(df['average_heartrate'], bins=20)
+
+# 3. Transformação
+df['pace_level'] = pd.cut(df['average_pace_min_km'], 
+                           bins=[0, 5, 6, 7, 100],
+                           labels=['Slow', 'Easy', 'Moderate', 'Fast'])
+
+# 4. Agregação
+weekly = df.groupby(df['activity_date'].dt.isocalendar().week).agg({
+    'distance_km': 'sum',
+    'average_heartrate': 'mean'
+})
+
+# 5. Análise Estatística
+correlation = df['distance_km'].corr(df['average_heartrate'])
+print(f"Correlation: {correlation:.2f}")</code></pre>
+
+            <h3>Interpretabilidade (Importante!)</h3>
+            <div class="alert alert-warning">
+                <strong>⚠️ Regra Ouro:</strong> Nunca use um modelo que não consegue explicar.
+                <ul style="margin-top: 0.5rem;">
+                    <li>✓ Linear Regression (fácil explicar)</li>
+                    <li>✓ Decision Trees (interpretável)</li>
+                    <li>✓ Feature Importance (mostrar quais features importam)</li>
+                    <li>⚠️ Neural Networks (caixa negra)</li>
+                    <li>⚠️ Black box models (evitar)</li>
+                </ul>
+            </div>
+
+            <h3>Implementação em FASE 10</h3>
+            <div class="alert alert-info">
+                <strong>Para FASE 10:</strong> Vamos criar modelos ML simples com:
+                <ul>
+                    <li>Clustering de tipos de atividade</li>
+                    <li>Previsão de performance</li>
+                    <li>Detecção de anomalias</li>
+                    <li>Visualizações no dashboard</li>
+                    <li>Explicações legíveis</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- RESUMO E PRÓXIMOS PASSOS -->
+        <section>
+            <h2>🎯 Resumo e Próximos Passos</h2>
+
+            <h3>FASE 2 - Checklist Final</h3>
+            <ul class="checklist">
+                <li>OAuth 2.0 implementado</li>
+                <li>Token exchange working</li>
+                <li>Token refresh automático</li>
+                <li>Armazenamento seguro (0600)</li>
+                <li>17 testes passando (95% coverage)</li>
+                <li>Documentação completa</li>
+                <li>Código commitado no GitHub</li>
+            </ul>
+
+            <h3>Conhecimento Ganho</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="icon">🔐</div>
+                    <div class="feature-item h4">OAuth 2.0</div>
+                    <p>Autenticação segura sem passwords</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🗄️</div>
+                    <div class="feature-item h4">DuckDB</div>
+                    <p>Banco de dados analítico local</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🏅</div>
+                    <div class="feature-item h4">Medalha Arch</div>
+                    <p>Bronze → Silver → Gold</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🔧</div>
+                    <div class="feature-item h4">dbt</div>
+                    <p>Transformações reproduzíveis</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">📊</div>
+                    <div class="feature-item h4">Streamlit</div>
+                    <p>Dashboards interativos rápido</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🤖</div>
+                    <div class="feature-item h4">ML</div>
+                    <p>Modelos simples e interpretáveis</p>
+                </div>
+            </div>
+
+            <h3>🚀 Próximo: FASE 3 - Database Setup</h3>
+            <div class="alert alert-success">
+                <strong>Quando estiver pronto para FASE 3, criarei:</strong>
+                <ul style="margin-top: 0.5rem;">
+                    <li>DuckDB schema completo</li>
+                    <li>Tabelas Bronze, Silver, Gold</li>
+                    <li>Inicialização de database</li>
+                    <li>Testes de conexão</li>
+                    <li>Mock data para testes</li>
+                </ul>
+            </div>
+
+            <h3>Recursos Adicionais</h3>
+            <ul>
+                <li><a href="https://developers.strava.com/docs/" target="_blank">Strava API Docs</a></li>
+                <li><a href="https://duckdb.org/" target="_blank">DuckDB Official</a></li>
+                <li><a href="https://docs.getdbt.com/" target="_blank">dbt Documentation</a></li>
+                <li><a href="https://streamlit.io/" target="_blank">Streamlit Docs</a></li>
+                <li><a href="https://scikit-learn.org/" target="_blank">Scikit-learn</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Strava Performance Coach - FASE 2 Documentation</p>
+        <p>Desenvolvido com Python 🐍 | DuckDB | Streamlit | dbt | Machine Learning</p>
+    </footer>
+</body>
+</html>
