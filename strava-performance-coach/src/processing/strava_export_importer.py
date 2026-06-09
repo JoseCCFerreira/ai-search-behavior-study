@@ -41,6 +41,7 @@ class ImportResult:
     recommendations_created: int
     stream_points_loaded: int = 0
     activities_with_streams: int = 0
+    activities_skipped: int = 0
 
 
 class StravaExportImporter:
@@ -101,15 +102,21 @@ class StravaExportImporter:
         self._owns_db = db is None
         self._zip: Optional[ZipFile] = None
 
-    def import_export(self, refresh_outputs: bool = True) -> ImportResult:
+    def import_export(
+        self,
+        refresh_outputs: bool = True,
+        only_new: bool = False,
+    ) -> ImportResult:
         """Import activities.csv and refresh analytics/coach outputs."""
         profile = self._read_profile()
         athlete_id = profile["athlete_id"]
         self._upsert_athlete_profile(profile)
 
         df = self._read_activities()
+        existing_activity_ids = self._existing_activity_ids() if only_new else set()
         loaded = 0
         failed = 0
+        skipped = 0
         stream_points_loaded = 0
         activities_with_streams = 0
 
@@ -118,6 +125,9 @@ class StravaExportImporter:
             for _, row in df.iterrows():
                 try:
                     activity = self._normalize_activity_row(row, athlete_id)
+                    if activity["activity_id"] in existing_activity_ids:
+                        skipped += 1
+                        continue
                     streams_loaded = self._save_activity(activity)
                     stream_points_loaded += streams_loaded
                     if streams_loaded:
@@ -150,7 +160,14 @@ class StravaExportImporter:
             recommendations_created=recommendations_created,
             stream_points_loaded=stream_points_loaded,
             activities_with_streams=activities_with_streams,
+            activities_skipped=skipped,
         )
+
+    def _existing_activity_ids(self) -> set[int]:
+        if not self.db.table_exists("stg_activities"):
+            return set()
+        rows = self.db.fetch_all("SELECT activity_id FROM stg_activities")
+        return {int(row[0]) for row in rows}
 
     def _read_activities(self) -> pd.DataFrame:
         with ZipFile(self.zip_path) as z:
@@ -222,6 +239,7 @@ class StravaExportImporter:
             or self._int_number(row.get("Frequência cardíaca máxima")),
             "total_elevation_gain": self._number(row.get("Ganho de elevação")),
             "total_elevation_loss": self._number(row.get("Perda de elevação")),
+            "calories": self._number(row.get("Calorias")),
             "kudos_count": 0,
             "comment_count": 0,
             "photo_count": len(
@@ -274,11 +292,11 @@ class StravaExportImporter:
                 activity_id, athlete_id, activity_name, activity_type, activity_date,
                 distance_meters, moving_time_seconds, elapsed_time_seconds,
                 average_speed_mps, max_speed_mps, average_heartrate, max_heartrate,
-                total_elevation_gain, total_elevation_loss, kudos_count,
+                total_elevation_gain, total_elevation_loss, calories, kudos_count,
                 comment_count, photo_count, trainer, commute, manual, private,
                 flagged, updated_at
             )
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
             """,
             (
                 activity["activity_id"],
@@ -295,6 +313,7 @@ class StravaExportImporter:
                 activity["max_heartrate"],
                 activity["total_elevation_gain"],
                 activity["total_elevation_loss"],
+                activity["calories"],
                 activity["kudos_count"],
                 activity["comment_count"],
                 activity["photo_count"],

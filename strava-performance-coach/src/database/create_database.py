@@ -76,12 +76,20 @@ class DatabaseInitializer:
             for i, statement in enumerate(statements, 1):
                 self.conn.execute(statement)
                 logger.debug(f"Executed statement {i}/{len(statements)}")
+            self.apply_migrations()
             
             logger.info(f"Schema created successfully ({len(statements)} statements)")
         
         except Exception as e:
             logger.error(f"Failed to execute schema: {e}")
             raise
+
+    def apply_migrations(self) -> None:
+        """Apply small idempotent schema migrations for existing local databases."""
+        columns = self.conn.fetch_df("DESCRIBE stg_activities")["column_name"].tolist()
+        if "calories" not in columns:
+            self.conn.execute("ALTER TABLE stg_activities ADD COLUMN calories FLOAT")
+            logger.info("Added stg_activities.calories")
     
     def verify_schema(self) -> Dict[str, int]:
         """

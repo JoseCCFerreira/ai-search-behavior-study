@@ -66,6 +66,15 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+activities/
+export_*.zip
+*.fit
+*.fit.gz
+*.git
+*.gpx
+*.gpx.gz
+*.tcx
+*.tcx.gz
 
 # Logs
 logs/

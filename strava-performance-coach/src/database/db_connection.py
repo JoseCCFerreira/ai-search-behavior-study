@@ -238,11 +238,12 @@ class DatabaseConnection:
         Equivalent to VACUUM in SQLite.
         """
         try:
-            self.connection.execute("PRAGMA vacuum")
-            logger.info("Database vacuumed successfully")
+            self.connection.execute("VACUUM")
+            self.connection.execute("CHECKPOINT")
+            logger.info("Database optimized successfully")
         except Exception as e:
-            logger.error(f"Vacuum failed: {e}")
-            raise
+            logger.warning(f"VACUUM failed, running CHECKPOINT only: {e}")
+            self.connection.execute("CHECKPOINT")
     
     def close(self) -> None:
         """Close database connection."""

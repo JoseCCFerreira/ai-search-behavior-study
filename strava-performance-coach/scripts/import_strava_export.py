@@ -26,6 +26,11 @@ def parse_args():
         action="store_true",
         help="Only import activities; do not refresh metrics/recommendations.",
     )
+    parser.add_argument(
+        "--only-new",
+        action="store_true",
+        help="Skip activities already present in the database.",
+    )
     return parser.parse_args()
 
 
@@ -34,15 +39,20 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
 
     with StravaExportImporter(args.zip_path, database_path=args.database) as importer:
-        result = importer.import_export(refresh_outputs=not args.skip_analytics)
+        result = importer.import_export(
+            refresh_outputs=not args.skip_analytics,
+            only_new=args.only_new,
+        )
 
     print(
         "Imported Strava export: athlete={athlete}, rows={rows}, loaded={loaded}, "
-        "failed={failed}, streams={streams} points/{stream_activities} activities, "
+        "skipped={skipped}, failed={failed}, "
+        "streams={streams} points/{stream_activities} activities, "
         "metrics={metrics}, recommendations={recommendations}".format(
             athlete=result.athlete_id,
             rows=result.rows_seen,
             loaded=result.activities_loaded,
+            skipped=result.activities_skipped,
             failed=result.activities_failed,
             streams=result.stream_points_loaded,
             stream_activities=result.activities_with_streams,

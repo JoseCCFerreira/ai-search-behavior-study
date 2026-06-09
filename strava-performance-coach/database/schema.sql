@@ -72,6 +72,7 @@ CREATE TABLE IF NOT EXISTS stg_activities (
     -- Elevation
     total_elevation_gain FLOAT,
     total_elevation_loss FLOAT,
+    calories FLOAT,
     
     -- Other metrics
     kudos_count INTEGER DEFAULT 0,
