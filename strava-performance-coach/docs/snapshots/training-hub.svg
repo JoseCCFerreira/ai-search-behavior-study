@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="780" viewBox="0 0 1280 780" role="img" aria-labelledby="title desc">
+  <title id="title">Training Hub snapshot</title>
+  <desc id="desc">Sanitized dashboard snapshot showing training status, recent activities, goals, load metrics and sport mix.</desc>
+  <rect width="1280" height="780" fill="#f6f8fb"/>
+  <rect width="255" height="780" fill="#0f172a"/>
+  <text x="30" y="45" fill="#e5e7eb" font-family="Inter,Arial" font-size="22" font-weight="700">Performance Coach</text>
+  <g font-family="Inter,Arial" font-size="15" fill="#cbd5e1">
+    <text x="34" y="92">Overview</text>
+    <rect x="22" y="112" width="210" height="36" rx="8" fill="#2563eb"/>
+    <text x="34" y="136" fill="#fff" font-weight="700">Training Hub</text>
+    <text x="34" y="184">General Results</text>
+    <text x="34" y="226">Activity Deep Dive</text>
+    <text x="34" y="268">Records &amp; Forecasts</text>
+    <text x="34" y="310">Geo Map</text>
+  </g>
+  <rect x="285" y="28" width="955" height="96" rx="10" fill="#111827"/>
+  <text x="315" y="68" fill="#fff" font-family="Inter,Arial" font-size="28" font-weight="800">Strava Performance Coach</text>
+  <text x="315" y="98" fill="#bfdbfe" font-family="Inter,Arial" font-size="15">Offline activity database, performance analytics, GPS maps and explainable coaching.</text>
+  <text x="285" y="158" fill="#2563eb" font-family="Inter,Arial" font-size="13" font-weight="800">DASHBOARD</text>
+  <text x="285" y="190" fill="#0f172a" font-family="Inter,Arial" font-size="26" font-weight="800">Training Hub</text>
+  <g font-family="Inter,Arial">
+    <rect x="285" y="220" width="295" height="96" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="310" y="252" fill="#64748b" font-size="12" font-weight="800">TRAINING STATUS</text>
+    <text x="310" y="282" fill="#0f172a" font-size="25" font-weight="800">Balanced</text>
+    <text x="310" y="304" fill="#64748b" font-size="13">Recent load is controlled against baseline.</text>
+    <rect x="610" y="220" width="295" height="96" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="635" y="252" fill="#64748b" font-size="12" font-weight="800">LAST 7 DAYS</text>
+    <text x="635" y="282" fill="#0f172a" font-size="25" font-weight="800">42.6 km</text>
+    <text x="635" y="304" fill="#64748b" font-size="13">5 activities | 4.8 h</text>
+    <rect x="935" y="220" width="305" height="96" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="960" y="252" fill="#64748b" font-size="12" font-weight="800">LAST 30 DAYS</text>
+    <text x="960" y="282" fill="#0f172a" font-size="25" font-weight="800">168.4 km</text>
+    <text x="960" y="304" fill="#16a34a" font-size="13">+8.5% vs previous 30d</text>
+  </g>
+  <g font-family="Inter,Arial">
+    <rect x="285" y="345" width="455" height="350" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="310" y="382" fill="#0f172a" font-size="20" font-weight="800">Activity Feed</text>
+    <g>
+      <rect x="310" y="405" width="405" height="72" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="328" y="430" fill="#64748b" font-size="12" font-weight="800">RUN | TODAY</text>
+      <text x="328" y="454" fill="#0f172a" font-size="16" font-weight="800">Morning endurance run</text>
+      <text x="328" y="471" fill="#334155" font-size="12">10.2 km | 52 min | 5.08 min/km | 142 bpm</text>
+    </g>
+    <g>
+      <rect x="310" y="492" width="405" height="72" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="328" y="517" fill="#64748b" font-size="12" font-weight="800">RIDE | YESTERDAY</text>
+      <text x="328" y="541" fill="#0f172a" font-size="16" font-weight="800">Tempo ride</text>
+      <text x="328" y="558" fill="#334155" font-size="12">48.7 km | 110 min | 26.5 km/h | 680 m</text>
+    </g>
+    <g>
+      <rect x="310" y="579" width="405" height="72" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="328" y="604" fill="#64748b" font-size="12" font-weight="800">RUN | THIS WEEK</text>
+      <text x="328" y="628" fill="#0f172a" font-size="16" font-weight="800">Progression workout</text>
+      <text x="328" y="645" fill="#334155" font-size="12">8.4 km | 43 min | score 82 | high intensity</text>
+    </g>
+    <rect x="770" y="345" width="470" height="350" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="795" y="382" fill="#0f172a" font-size="20" font-weight="800">Garmin-style Metrics</text>
+    <text x="795" y="420" fill="#64748b" font-size="13">Acute / baseline load</text>
+    <rect x="795" y="438" width="395" height="16" rx="8" fill="#e2e8f0"/>
+    <rect x="795" y="438" width="245" height="16" rx="8" fill="#2563eb"/>
+    <text x="795" y="488" fill="#64748b" font-size="13">Monthly distance goal</text>
+    <rect x="795" y="506" width="395" height="16" rx="8" fill="#e2e8f0"/>
+    <rect x="795" y="506" width="310" height="16" rx="8" fill="#16a34a"/>
+    <text x="795" y="558" fill="#64748b" font-size="13">Sport mix by distance</text>
+    <circle cx="875" cy="615" r="52" fill="none" stroke="#2563eb" stroke-width="28"/>
+    <path d="M875 563 A52 52 0 0 1 923 635" fill="none" stroke="#fc4c02" stroke-width="28"/>
+    <text x="970" y="600" fill="#334155" font-size="13">Run 45%</text>
+    <text x="970" y="626" fill="#334155" font-size="13">Ride 50%</text>
+    <text x="970" y="652" fill="#334155" font-size="13">Other 5%</text>
+  </g>
+</svg>

@@ -3,16 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Manual - Dashboard Offline e Upload de Atividades</title>
+  <title>Manual Completo - Strava Performance Coach</title>
   <style>
     :root {
-      --text: #1f2933;
-      --muted: #5f6c7b;
-      --line: #d9e2ec;
-      --accent: #fc4c02;
-      --bg: #f7f9fb;
+      --text: #172033;
+      --muted: #64748b;
+      --line: #d8e0ea;
+      --accent: #2563eb;
+      --accent-dark: #1e3a8a;
+      --warn: #fc4c02;
+      --bg: #f6f8fb;
       --panel: #ffffff;
-      --code: #12263a;
+      --code: #0f172a;
+      --soft: #eef4ff;
     }
 
     * { box-sizing: border-box; }
@@ -22,46 +25,70 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background: var(--bg);
-      line-height: 1.6;
+      line-height: 1.62;
     }
 
     header {
-      background: var(--panel);
-      border-bottom: 1px solid var(--line);
-      padding: 32px 24px;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 56%, #2563eb 100%);
+      color: #fff;
+      padding: 42px 24px;
     }
 
     .wrap {
-      max-width: 1120px;
+      max-width: 1180px;
       margin: 0 auto;
     }
 
     h1 {
       margin: 0 0 8px;
-      font-size: 34px;
-      line-height: 1.15;
+      font-size: 38px;
+      line-height: 1.12;
+      letter-spacing: 0;
     }
 
     h2 {
-      margin-top: 36px;
-      padding-top: 16px;
+      margin-top: 38px;
+      padding-top: 18px;
       border-top: 1px solid var(--line);
-      font-size: 23px;
+      font-size: 24px;
+    }
+
+    h3 {
+      margin-top: 24px;
+      font-size: 18px;
     }
 
     p, li { font-size: 16px; }
 
     .subtitle {
       margin: 0;
-      color: var(--muted);
+      color: #dbeafe;
       font-size: 17px;
+      max-width: 840px;
     }
 
-    main { padding: 28px 24px 56px; }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .pill {
+      border: 1px solid rgba(255,255,255,0.28);
+      background: rgba(255,255,255,0.10);
+      color: #fff;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    main { padding: 28px 24px 60px; }
 
     .layout {
       display: grid;
-      grid-template-columns: 280px minmax(0, 1fr);
+      grid-template-columns: 300px minmax(0, 1fr);
       gap: 28px;
       align-items: start;
     }
@@ -73,11 +100,14 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 16px;
+      max-height: calc(100vh - 32px);
+      overflow: auto;
     }
 
     nav strong {
       display: block;
       margin-bottom: 8px;
+      color: var(--accent-dark);
     }
 
     nav a {
@@ -95,7 +125,8 @@
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 28px;
+      padding: 30px;
+      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
     }
 
     code {
@@ -108,8 +139,8 @@
     }
 
     pre {
-      background: #102a43;
-      color: #f0f4f8;
+      background: #0f172a;
+      color: #f8fafc;
       padding: 16px;
       border-radius: 8px;
       overflow-x: auto;
@@ -122,12 +153,28 @@
       padding: 0;
     }
 
+    .note, .warning, .success {
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin: 14px 0;
+    }
+
     .note {
       border-left: 4px solid var(--accent);
+      background: var(--soft);
+      color: #17335f;
+    }
+
+    .warning {
+      border-left: 4px solid var(--warn);
       background: #fff4ee;
-      padding: 12px 14px;
-      border-radius: 6px;
       color: #4a2a16;
+    }
+
+    .success {
+      border-left: 4px solid #16a34a;
+      background: #eefdf3;
+      color: #14532d;
     }
 
     table {
@@ -146,18 +193,46 @@
 
     th { background: #f0f4f8; }
 
-    @media (max-width: 860px) {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      background: #fbfdff;
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--accent-dark);
+    }
+
+    @media (max-width: 900px) {
       .layout { grid-template-columns: 1fr; }
-      nav { position: static; }
+      nav { position: static; max-height: none; }
       article { padding: 20px; }
+      .cards { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <h1>Manual: Dashboard Offline e Upload de Atividades</h1>
-      <p class="subtitle">Guia para usar a app Streamlit, importar ficheiros Strava e analisar desempenho.</p>
+      <h1>Manual Completo: Strava Performance Coach</h1>
+      <p class="subtitle">Guia de instalação, execução, upload de atividades, dashboard, análises, manutenção, updates e resolução de problemas da app Streamlit offline.</p>
+      <div class="meta">
+        <span class="pill">Modo offline</span>
+        <span class="pill">DuckDB dedicado</span>
+        <span class="pill">Upload GPX/FIT/TCX/ZIP</span>
+        <span class="pill">Dashboard profissional</span>
+        <span class="pill">Training Hub</span>
+      </div>
     </div>
   </header>
 
@@ -165,217 +240,430 @@
     <div class="layout">
       <nav aria-label="Índice">
         <strong>Índice</strong>
-        <a href="#abrir-app">1. Abrir a app</a>
-        <a href="#base-dados">2. Base de dados dedicada</a>
-        <a href="#sem-strava">3. Sem ligação direta ao Strava</a>
-        <a href="#upload">4. Upload de atividades</a>
-        <a href="#filtros">5. Filtros temporais</a>
-        <a href="#overview">6. Overview detalhado</a>
-        <a href="#projecao">7. Projeção do ano corrente</a>
-        <a href="#timeline">8. Timeline</a>
-        <a href="#estatistica">9. Estatística</a>
-        <a href="#mapas">10. Mapas GPS por área</a>
-        <a href="#heatmaps">11. Heatmaps</a>
-        <a href="#atividade">12. Detalhe por atividade</a>
-        <a href="#cli">13. Linha de comando</a>
-        <a href="#boas-praticas">14. Boas práticas</a>
+        <a href="#visao-geral">1. Visão geral</a>
+        <a href="#estrutura">2. Estrutura do projeto</a>
+        <a href="#instalacao">3. Instalação</a>
+        <a href="#configuracao">4. Configuração</a>
+        <a href="#execucao">5. Execução da app</a>
+        <a href="#workflow">6. Workflow recomendado</a>
+        <a href="#upload">7. Upload e atualização de atividades</a>
+        <a href="#base-dados">8. Base de dados dedicada</a>
+        <a href="#navegacao">9. Navegação e páginas</a>
+        <a href="#training-hub">10. Training Hub</a>
+        <a href="#resultados-gerais">11. Resultados gerais</a>
+        <a href="#atividade-dedicada">12. Página por atividade</a>
+        <a href="#estado-treino">13. Estado do treino</a>
+        <a href="#recordes">14. Recordes e previsões</a>
+        <a href="#mapas">15. Mapas e heatmaps</a>
+        <a href="#detalhe">16. Detalhe de atividade</a>
+        <a href="#coach">17. Coach e recomendações</a>
+        <a href="#cli">18. Linha de comando</a>
+        <a href="#updates">19. Updates e manutenção</a>
+        <a href="#testes">20. Testes e validação</a>
+        <a href="#troubleshooting">21. Troubleshooting</a>
+        <a href="#boas-praticas">22. Boas práticas</a>
       </nav>
 
       <article>
-        <section id="abrir-app">
-          <h2>1. Abrir a app</h2>
-          <p>Na pasta do projeto, executa:</p>
+        <section id="visao-geral">
+          <h2>1. Visão geral</h2>
+          <p>O <strong>Strava Performance Coach</strong> é uma app local em Streamlit para importar atividades exportadas do Strava, guardar os dados numa base DuckDB dedicada e analisar desempenho, evolução, recordes, mapas GPS e tendências.</p>
+          <p>A app atual funciona sem ligação direta ao Strava. Não existe botão de autenticação OAuth. O fluxo é simples: descarregas os ficheiros, fazes upload na app, a base é atualizada apenas com atividades novas e depois analisas tudo no dashboard.</p>
+          <div class="cards">
+            <div class="card"><strong>Entrada de dados</strong>Export completo <code>.zip</code> ou atividades individuais <code>.gpx</code>, <code>.fit</code>, <code>.tcx</code>, <code>.gz</code> e <code>.git</code>.</div>
+            <div class="card"><strong>Análise</strong>KPIs, estatística, tendências, previsões, mapas, heatmaps, recordes e detalhe por atividade.</div>
+            <div class="card"><strong>Armazenamento</strong>Base DuckDB local, otimizada com <code>VACUUM</code>/<code>CHECKPOINT</code> após imports.</div>
+          </div>
+        </section>
+
+        <section id="estrutura">
+          <h2>2. Estrutura do projeto</h2>
+          <table>
+            <thead><tr><th>Caminho</th><th>Função</th></tr></thead>
+            <tbody>
+              <tr><td><code>app/streamlit_app.py</code></td><td>Interface principal da app Streamlit.</td></tr>
+              <tr><td><code>database/schema.sql</code></td><td>Schema da base DuckDB.</td></tr>
+              <tr><td><code>database/strava_coach.duckdb</code></td><td>Base de dados local, se não for alterada no <code>.env</code>.</td></tr>
+              <tr><td><code>src/processing/strava_export_importer.py</code></td><td>Importador de exports e ficheiros de atividade.</td></tr>
+              <tr><td><code>src/metrics/</code></td><td>Cálculo de métricas de desempenho.</td></tr>
+              <tr><td><code>src/coach/</code></td><td>Geração de recomendações.</td></tr>
+              <tr><td><code>scripts/import_strava_export.py</code></td><td>Import por linha de comando.</td></tr>
+              <tr><td><code>docs/manual_dashboard_upload.html</code></td><td>Este manual.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="instalacao">
+          <h2>3. Instalação</h2>
+          <p>Na raiz do projeto:</p>
+          <pre><code>cd /Users/carlosferreira/Projecto/strava-performance-coach</code></pre>
+
+          <h3>3.1 Criar ambiente virtual</h3>
+          <pre><code>python3 -m venv .venv
+source .venv/bin/activate</code></pre>
+
+          <h3>3.2 Instalar dependências</h3>
+          <p>Se existir <code>requirements.txt</code>:</p>
+          <pre><code>pip install -r requirements.txt</code></pre>
+          <p>Se usares outro gestor do projeto, instala as dependências equivalentes para Streamlit, Pandas, Plotly e DuckDB.</p>
+
+          <h3>3.3 Dependência opcional para performance</h3>
+          <p>O Streamlit pode recomendar <code>watchdog</code> para melhorar o reload local:</p>
+          <pre><code>pip install watchdog</code></pre>
+        </section>
+
+        <section id="configuracao">
+          <h2>4. Configuração</h2>
+          <p>A configuração principal vem de <code>config/settings.py</code> e do ficheiro <code>.env</code>, quando existir.</p>
+          <p>Exemplo mínimo:</p>
+          <pre><code>DUCKDB_PATH=database/strava_coach.duckdb
+RAW_DATA_DIR=data/raw</code></pre>
+          <div class="warning">
+            Não coloques <code>.env</code>, tokens, exports Strava, ficheiros GPX/FIT/TCX nem bases DuckDB no Git. Estes dados são pessoais.
+          </div>
+        </section>
+
+        <section id="execucao">
+          <h2>5. Execução da app</h2>
+          <p>Executa a app na pasta do projeto:</p>
           <pre><code>streamlit run app/streamlit_app.py --server.port 8501</code></pre>
-          <p>Depois abre no browser:</p>
+          <p>Depois abre:</p>
           <pre><code>http://localhost:8501</code></pre>
+          <p>Modo headless, útil quando queres deixar a app a correr sem abrir browser automaticamente:</p>
+          <pre><code>streamlit run app/streamlit_app.py --server.headless true --server.port 8501 --browser.gatherUsageStats false</code></pre>
+          <p>Para parar a app, usa <code>Ctrl+C</code> no terminal onde o Streamlit está a correr.</p>
         </section>
 
-        <section id="base-dados">
-          <h2>2. Base de dados dedicada</h2>
-          <p>A app usa a base DuckDB configurada em:</p>
-          <pre><code>database/strava_coach.duckdb</code></pre>
-          <p>Este caminho vem da variável <code>DUCKDB_PATH</code>. Para usar outra base dedicada, muda o ficheiro <code>.env</code>:</p>
-          <pre><code>DUCKDB_PATH=database/minha_base_strava.duckdb</code></pre>
-          <p class="note">A app cria e migra o schema automaticamente quando arranca.</p>
-        </section>
-
-        <section id="sem-strava">
-          <h2>3. Sem ligação direta ao Strava</h2>
-          <p>O dashboard atual funciona em modo offline. Não existe botão para ligar ou autorizar o Strava na interface.</p>
-          <p>Os dados entram através de upload de ficheiros exportados ou descarregados:</p>
-          <ul>
-            <li>export completo <code>.zip</code> do Strava</li>
-            <li>atividade individual <code>.gpx</code></li>
-            <li>atividade individual <code>.fit</code></li>
-            <li>atividade individual <code>.tcx</code></li>
-            <li>ficheiros comprimidos <code>.gz</code></li>
-            <li>extensão <code>.git</code>, tratada como ficheiro FIT se o conteúdo for válido</li>
-          </ul>
+        <section id="workflow">
+          <h2>6. Workflow recomendado</h2>
+          <ol>
+            <li>Exporta novas atividades do Strava ou descarrega ficheiros individuais.</li>
+            <li>Abre a app em <code>http://localhost:8501</code>.</li>
+            <li>Na sidebar, faz upload do ficheiro.</li>
+            <li>Mantém <code>Import only new activities</code> ativo.</li>
+            <li>Espera pela mensagem final de import.</li>
+            <li>Usa os filtros de ano, mês, intervalo de datas e tipo de atividade.</li>
+            <li>Começa pelo <code>Training Hub</code> e depois analisa <code>General Results</code>, <code>Activity Deep Dive</code>, <code>Records & Forecasts</code> e mapas.</li>
+          </ol>
+          <div class="success">
+            Para uso diário, basta importar uma vez por dia. A app verifica atividades já existentes e ignora duplicados quando <code>Import only new activities</code> está ativo.
+          </div>
         </section>
 
         <section id="upload">
-          <h2>4. Upload de atividades</h2>
-          <p>Na sidebar, usa a secção <code>Upload Activities</code>.</p>
+          <h2>7. Upload e atualização de atividades</h2>
+          <p>Na sidebar, usa <code>Upload Activities</code>.</p>
           <ol>
             <li>Clica em <code>Browse files</code>.</li>
-            <li>Seleciona um <code>.zip</code>, <code>.gpx</code>, <code>.fit</code>, <code>.tcx</code>, <code>.gz</code> ou <code>.git</code>.</li>
-            <li>Se for ficheiro individual, escolhe o tipo em <code>Type for single activity files</code>.</li>
-            <li>Mantém <code>Import only new activities</code> ativo para importar apenas novidades.</li>
+            <li>Seleciona <code>.zip</code>, <code>.gpx</code>, <code>.fit</code>, <code>.tcx</code>, <code>.gz</code> ou <code>.git</code>.</li>
+            <li>Se for atividade individual, escolhe o tipo: <code>Run</code>, <code>Ride</code>, <code>Walk</code>, <code>Hike</code>, <code>Swim</code> ou <code>Workout</code>.</li>
+            <li>Deixa <code>Import only new activities</code> ativo para atualizar só novidades.</li>
             <li>Clica em <code>Import Uploaded File</code>.</li>
           </ol>
-
-          <p>No fim, a app mostra um resumo semelhante a:</p>
+          <p>Resumo típico:</p>
           <pre><code>loaded=1, skipped=0, failed=0, streams=3256, metrics=711, recommendations=11</code></pre>
-
           <table>
-            <thead>
-              <tr>
-                <th>Campo</th>
-                <th>Significado</th>
-              </tr>
-            </thead>
+            <thead><tr><th>Campo</th><th>Significado</th></tr></thead>
             <tbody>
               <tr><td><code>loaded</code></td><td>Atividades novas importadas.</td></tr>
               <tr><td><code>skipped</code></td><td>Atividades já existentes ignoradas.</td></tr>
               <tr><td><code>failed</code></td><td>Atividades que falharam.</td></tr>
-              <tr><td><code>streams</code></td><td>Pontos GPS importados.</td></tr>
+              <tr><td><code>streams</code></td><td>Pontos GPS/telemetria importados.</td></tr>
               <tr><td><code>metrics</code></td><td>Métricas recalculadas.</td></tr>
               <tr><td><code>recommendations</code></td><td>Recomendações geradas.</td></tr>
             </tbody>
           </table>
-
-          <p>O ficheiro enviado é temporário. A app importa, otimiza a base com <code>VACUUM</code>/<code>CHECKPOINT</code> e apaga o ficheiro de upload no fim.</p>
+          <p>O ficheiro enviado é temporário: a app importa, atualiza a base, otimiza e remove o ficheiro de upload.</p>
         </section>
 
-        <section id="filtros">
-          <h2>5. Filtros temporais</h2>
-          <p>Na sidebar, podes filtrar por:</p>
-          <ul>
-            <li>anos</li>
-            <li>meses</li>
-            <li>intervalo de datas</li>
-            <li>tipos de atividade</li>
-          </ul>
-          <p>Estes filtros afetam o overview, timeline, estatística, mapas, heatmaps e lista de atividades.</p>
+        <section id="base-dados">
+          <h2>8. Base de dados dedicada</h2>
+          <p>A app usa DuckDB para guardar atividades, streams GPS, métricas e recomendações. Por defeito:</p>
+          <pre><code>database/strava_coach.duckdb</code></pre>
+          <p>Para usar outra base dedicada, define:</p>
+          <pre><code>DUCKDB_PATH=database/minha_base_atividades.duckdb</code></pre>
+          <p>A app aplica o schema automaticamente ao arrancar. Depois de imports, corre otimização com <code>VACUUM</code> e <code>CHECKPOINT</code>.</p>
         </section>
 
-        <section id="overview">
-          <h2>6. Overview detalhado</h2>
-          <p>A página <code>Overview</code> mostra:</p>
+        <section id="navegacao">
+          <h2>9. Navegação e páginas</h2>
+          <p>A interface usa navegação lateral com páginas. Os filtros globais ficam também na sidebar:</p>
           <ul>
-            <li>total de atividades</li>
-            <li>distância total</li>
-            <li>tempo em movimento</li>
-            <li>calorias</li>
-            <li>ganho de elevação</li>
-            <li>performance média</li>
-            <li>projeção para o ano corrente</li>
-            <li>tendência dos últimos 30 dias contra os 30 dias anteriores</li>
-            <li>distância mensal</li>
-            <li>tempo por tipo de atividade</li>
-            <li>calorias e elevação por mês</li>
-            <li>tendência de performance</li>
-            <li>composição por tipo e intensidade</li>
-            <li>relação distância vs performance</li>
+            <li><code>Years</code>: anos disponíveis.</li>
+            <li><code>Months</code>: meses disponíveis.</li>
+            <li><code>Date range</code>: intervalo cronológico exato.</li>
+            <li><code>Activity types</code>: Run, Ride, Walk, Hike, etc.</li>
           </ul>
+          <p>Os filtros afetam as páginas analíticas: resultados gerais, atividade dedicada, recordes, timeline, estatística, mapas, heatmaps e atividades.</p>
+          <table>
+            <thead><tr><th>Página</th><th>Uso principal</th></tr></thead>
+            <tbody>
+              <tr><td><code>Overview</code></td><td>Resumo executivo e projeção do ano corrente.</td></tr>
+              <tr><td><code>Training Hub</code></td><td>Experiência híbrida com feed tipo Strava e métricas tipo Garmin Connect.</td></tr>
+              <tr><td><code>General Results</code></td><td>Resultados gerais por intervalo cronológico.</td></tr>
+              <tr><td><code>Activity Deep Dive</code></td><td>Análise dedicada a uma modalidade.</td></tr>
+              <tr><td><code>Records & Forecasts</code></td><td>Recordes, tendências e previsões.</td></tr>
+              <tr><td><code>Timeline</code></td><td>Evolução anual e mensal.</td></tr>
+              <tr><td><code>Statistics</code></td><td>Distribuições, correlações e estatística.</td></tr>
+              <tr><td><code>Geo Map</code></td><td>Áreas GPS mais frequentes e melhor performance.</td></tr>
+              <tr><td><code>Heatmaps</code></td><td>Heatmaps de corrida e bicicleta por semana.</td></tr>
+              <tr><td><code>Activities</code></td><td>Detalhe individual com rota, elevação, pace, velocidade e HR.</td></tr>
+              <tr><td><code>Profile</code></td><td>Perfil e resumo por tipo de atividade.</td></tr>
+              <tr><td><code>Coach</code></td><td>Recomendações pendentes.</td></tr>
+            </tbody>
+          </table>
         </section>
 
-        <section id="projecao">
-          <h2>7. Projeção do ano corrente</h2>
-          <p>Na secção <code>Current Year Projection</code>, a app calcula:</p>
+        <section id="training-hub">
+          <h2>10. Training Hub</h2>
+          <p>A página <code>Training Hub</code> mistura ideias úteis de plataformas como Strava e Garmin Connect, adaptadas aos teus dados locais e sem ligação direta a serviços externos.</p>
+          <div class="cards">
+            <div class="card"><strong>Estilo Strava</strong>Feed de atividades recentes, cartão por atividade, métricas rápidas, recordes e zonas favoritas.</div>
+            <div class="card"><strong>Estilo Garmin</strong>Estado de treino, carga aguda vs linha de base, intensidade, objetivos mensais e indicadores de recuperação.</div>
+            <div class="card"><strong>Modo local</strong>Tudo é calculado a partir da base DuckDB, usando os ficheiros que importaste.</div>
+          </div>
+          <p>Inclui:</p>
           <ul>
-            <li>distância YTD</li>
-            <li>tempo YTD</li>
-            <li>calorias YTD</li>
-            <li>ganho de elevação YTD</li>
-            <li>performance média YTD</li>
-            <li>projeção anual com base no ritmo atual</li>
+            <li>cartões de estado de treino, últimos 7 dias e últimos 30 dias;</li>
+            <li>objetivos mensais de distância, tempo e elevação comparados com a tua linha de base;</li>
+            <li>feed das atividades recentes com distância, tempo, pace, velocidade, heart rate, altitude e score;</li>
+            <li>tabela de métricas de carga e recuperação;</li>
+            <li>quadro de recordes recentes;</li>
+            <li>mistura de modalidades por distância;</li>
+            <li>distribuição por intensidade;</li>
+            <li>áreas GPS favoritas quando existirem dados de localização.</li>
           </ul>
-          <p>A projeção usa os dias já decorridos no ano corrente para estimar o total anual se o ritmo se mantiver.</p>
+          <p>Esta deve ser a primeira página a consultar quando queres uma leitura rápida mas completa do teu estado atual.</p>
         </section>
 
-        <section id="timeline">
-          <h2>8. Timeline</h2>
-          <p>Na página <code>Timeline</code> podes ver:</p>
+        <section id="resultados-gerais">
+          <h2>11. Resultados gerais</h2>
+          <p>A página <code>General Results</code> é a visão principal para analisar o período selecionado.</p>
           <ul>
-            <li>distância por ano</li>
-            <li>performance média por ano</li>
-            <li>tempo e elevação por ano</li>
-            <li>distância anual por tipo de atividade</li>
-            <li>variação year-over-year</li>
-            <li>distância mensal por tipo</li>
-            <li>frequência e performance por dia da semana</li>
+            <li>KPIs do intervalo filtrado.</li>
+            <li>Comparação dos últimos 30 dias contra os 30 dias anteriores.</li>
+            <li>Estado do treino: equilibrado, carga elevada, potencialmente excessivo ou carga recente baixa.</li>
+            <li>Volume mensal: distância e tempo.</li>
+            <li>Performance mensal e heart rate.</li>
+            <li>Elevação e calorias.</li>
+            <li>Performance por distância e elevação.</li>
+            <li>Contribuição por tipo de atividade.</li>
+            <li>Melhores dias da semana por volume e performance.</li>
+            <li>Indicadores estatísticos.</li>
+            <li>Atividades do último mês.</li>
           </ul>
+          <p>Esta página é ideal para responder: “Como estou no período escolhido?”</p>
         </section>
 
-        <section id="estatistica">
-          <h2>9. Estatística</h2>
-          <p>Na página <code>Statistics</code> existem análises estatísticas complementares:</p>
+        <section id="atividade-dedicada">
+          <h2>12. Página por atividade</h2>
+          <p>A página <code>Activity Deep Dive</code> permite escolher um tipo de atividade e ver uma análise dedicada com a mesma lógica dos resultados gerais.</p>
+          <p>Exemplos:</p>
           <ul>
-            <li>média, mediana e percentis</li>
-            <li>mínimo, máximo e desvio padrão</li>
-            <li>boxplots de performance por tipo</li>
-            <li>distribuição de duração</li>
-            <li>heart rate vs performance</li>
-            <li>distribuição de pace por tipo</li>
-            <li>matriz de correlação entre métricas</li>
+            <li><code>Run</code>: distância, pace, performance, HR, elevação, distribuição e último mês.</li>
+            <li><code>Ride</code>: distância, velocidade, altitude, HR, carga, performance e último mês.</li>
+            <li><code>Walk</code>/<code>Hike</code>: volume, elevação, tempo e consistência.</li>
           </ul>
+          <p>No fim da página, tens também os recordes dessa atividade.</p>
+        </section>
+
+        <section id="estado-treino">
+          <h2>13. Estado do treino</h2>
+          <p>As páginas <code>Training Hub</code>, <code>General Results</code> e <code>Activity Deep Dive</code> incluem sinais de estado de treino.</p>
+          <p>Esta secção indica se o treino recente parece controlado ou se há sinais de carga excessiva.</p>
+          <h3>Como é calculado</h3>
+          <ul>
+            <li>Compara a carga dos últimos 7 dias com a média semanal das 4 semanas anteriores.</li>
+            <li>Usa <code>training_load</code> quando disponível; se não existir, usa tempo em movimento como fallback.</li>
+            <li>Cruza sinais de performance recente, heart rate médio, intensidade, recovery e fatigue impact.</li>
+          </ul>
+          <h3>Estados possíveis</h3>
+          <table>
+            <thead><tr><th>Estado</th><th>Interpretação</th></tr></thead>
+            <tbody>
+              <tr><td><code>Balanced</code></td><td>A carga recente parece controlada face à tua linha de base.</td></tr>
+              <tr><td><code>Elevated load</code></td><td>A carga está produtiva, mas exigente. Convém vigiar recuperação e evitar dias duros seguidos.</td></tr>
+              <tr><td><code>Potentially excessive</code></td><td>Há sinais de carga demasiado alta. Considera recuperação, treino leve ou descanso.</td></tr>
+              <tr><td><code>Low recent load</code></td><td>A carga recente está abaixo da linha de base. Pode ser recuperação útil, mas menor estímulo de treino.</td></tr>
+              <tr><td><code>Needs more history</code></td><td>Ainda não há histórico suficiente para comparar bem.</td></tr>
+            </tbody>
+          </table>
+          <div class="note">
+            Esta indicação é uma ajuda de análise, não diagnóstico médico. Se houver dor, fadiga persistente ou sintomas anormais, a decisão deve privilegiar descanso e aconselhamento profissional.
+          </div>
+        </section>
+
+        <section id="recordes">
+          <h2>14. Recordes e previsões</h2>
+          <p>A página <code>Records & Forecasts</code> mostra recordes pessoais e tendências.</p>
+          <h3>Recordes</h3>
+          <ul>
+            <li>Maior distância.</li>
+            <li>Maior duração.</li>
+            <li>Maior ganho de elevação.</li>
+            <li>Mais calorias.</li>
+            <li>Maior velocidade média.</li>
+            <li>Melhor pace.</li>
+            <li>Maior heart rate médio e máximo.</li>
+            <li>Melhor performance.</li>
+            <li>Maior training load.</li>
+          </ul>
+          <h3>Tendências e previsões</h3>
+          <p>As previsões usam uma regressão linear mensal simples. A linha real aparece sólida, a tendência aparece pontilhada e a previsão aparece tracejada.</p>
+          <p>Métricas disponíveis: distância, tempo, elevação, pace, velocidade, heart rate, performance e training load.</p>
+          <div class="note">
+            A previsão é um indicador de direção, não uma garantia. Serve para perceber se a tendência atual aponta para subida, quebra ou estabilização.
+          </div>
         </section>
 
         <section id="mapas">
-          <h2>10. Mapas GPS por área</h2>
-          <p>Na página <code>Geo Map</code> podes ver:</p>
+          <h2>15. Mapas e heatmaps</h2>
+          <h3>Geo Map</h3>
+          <p>A página <code>Geo Map</code> agrega pontos GPS por células geográficas e mostra:</p>
           <ul>
-            <li>zonas onde passas mais vezes</li>
-            <li>zonas com melhor performance média</li>
-            <li>velocidade média por zona</li>
-            <li>heart rate médio por zona</li>
-            <li>tabela com as principais áreas GPS</li>
+            <li>áreas onde passas mais vezes;</li>
+            <li>áreas onde tens melhor performance média;</li>
+            <li>velocidade média por área;</li>
+            <li>heart rate médio por área;</li>
+            <li>tabela das principais zonas.</li>
           </ul>
-          <p class="note">O mapa usa agregação por células geográficas para evitar carregar todos os pontos GPS crus na interface.</p>
+          <h3>Heatmaps</h3>
+          <p>A página <code>Heatmaps</code> mostra heatmaps semanais para <code>Run</code> e <code>Ride</code>, com quilómetros por dia da semana e semana ISO.</p>
         </section>
 
-        <section id="heatmaps">
-          <h2>11. Heatmaps</h2>
-          <p>Na página <code>Heatmaps</code> existem dois mapas:</p>
+        <section id="detalhe">
+          <h2>16. Detalhe de atividade</h2>
+          <p>A página <code>Activities</code> permite escolher uma atividade individual e ver:</p>
           <ul>
-            <li><code>Run heatmap by week</code></li>
-            <li><code>Ride heatmap by week</code></li>
+            <li>distância, tempo, velocidade média, pace e performance;</li>
+            <li>intensidade, recuperação e existência de stream GPS;</li>
+            <li>rota no mapa;</li>
+            <li>elevação por distância;</li>
+            <li>pace por distância;</li>
+            <li>velocidade por distância;</li>
+            <li>heart rate por distância, quando disponível;</li>
+            <li>tabela de atividades filtradas.</li>
           </ul>
-          <p>Cada célula representa quilómetros por dia da semana e semana ISO.</p>
+          <p class="note">Alguns ficheiros exportados podem não incluir streams completos. Nesses casos, a app mostra as métricas disponíveis e avisa que não há GPS.</p>
         </section>
 
-        <section id="atividade">
-          <h2>12. Detalhe por atividade</h2>
-          <p>Na página <code>Activities</code> podes:</p>
-          <ul>
-            <li>filtrar por tipo</li>
-            <li>mostrar só atividades com GPS</li>
-            <li>escolher uma atividade específica</li>
-            <li>ver distância, tempo, velocidade, pace e performance</li>
-            <li>ver mapa GPS</li>
-            <li>ver gráficos de elevação, pace, velocidade e heart rate</li>
-          </ul>
-          <p>Algumas atividades podem não ter stream GPS, dependendo do ficheiro exportado.</p>
+        <section id="coach">
+          <h2>17. Coach e recomendações</h2>
+          <p>A página <code>Coach</code> lista recomendações pendentes geradas com base nas métricas calculadas.</p>
+          <p>Para recalcular recomendações, usa o botão <code>Refresh Analytics</code> na sidebar ou importa novas atividades.</p>
         </section>
 
         <section id="cli">
-          <h2>13. Atualização por linha de comando</h2>
+          <h2>18. Linha de comando</h2>
           <p>Para importar um export completo sem abrir a app:</p>
           <pre><code>python3 scripts/import_strava_export.py /caminho/export.zip --only-new</code></pre>
-          <p>Para reprocessar tudo, remove <code>--only-new</code>.</p>
+          <p>Para reprocessar tudo, remove <code>--only-new</code>:</p>
+          <pre><code>python3 scripts/import_strava_export.py /caminho/export.zip</code></pre>
+          <p>Depois podes abrir a app e carregar em <code>Refresh Analytics</code>, se precisares recalcular outputs.</p>
+        </section>
+
+        <section id="updates">
+          <h2>19. Updates e manutenção</h2>
+          <h3>19.1 Atualizar atividades diariamente</h3>
+          <ol>
+            <li>Descarrega as novas atividades/export.</li>
+            <li>Abre a app.</li>
+            <li>Faz upload.</li>
+            <li>Garante que <code>Import only new activities</code> está ativo.</li>
+            <li>Confirma que o resumo mostra <code>loaded</code> ou <code>skipped</code>.</li>
+          </ol>
+
+          <h3>19.2 Atualizar código local</h3>
+          <p>Se estiveres a receber alterações do Git:</p>
+          <pre><code>git status
+git pull</code></pre>
+          <p>Depois reinstala dependências se houver mudanças nos requisitos:</p>
+          <pre><code>pip install -r requirements.txt</code></pre>
+
+          <h3>19.3 Atualizar schema e analytics</h3>
+          <p>A app chama o inicializador de base ao arrancar. Para recalcular analytics dentro da app, usa:</p>
+          <pre><code>Refresh Analytics</code></pre>
+
+          <h3>19.4 Reiniciar a app</h3>
+          <p>Se a app já estiver aberta e alterares código, o Streamlit normalmente recarrega. Para restart limpo:</p>
+          <pre><code># parar com Ctrl+C
+streamlit run app/streamlit_app.py --server.port 8501</code></pre>
+        </section>
+
+        <section id="testes">
+          <h2>20. Testes e validação</h2>
+          <p>Validação rápida de sintaxe:</p>
+          <pre><code>python3 -m py_compile app/streamlit_app.py</code></pre>
+          <p>Teste básico Streamlit:</p>
+          <pre><code>python3 - &lt;&lt;'PY'
+from streamlit.testing.v1 import AppTest
+
+app = AppTest.from_file('app/streamlit_app.py', default_timeout=60)
+app.run()
+print('exception_count=', len(app.exception))
+for exc in app.exception:
+    print(exc.value)
+PY</code></pre>
+          <p>Verificar se o servidor responde:</p>
+          <pre><code>curl -I http://localhost:8501</code></pre>
+          <p>Um resultado saudável inclui:</p>
+          <pre><code>HTTP/1.1 200 OK</code></pre>
+        </section>
+
+        <section id="troubleshooting">
+          <h2>21. Troubleshooting</h2>
+          <table>
+            <thead><tr><th>Problema</th><th>Solução</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><code>ModuleNotFoundError: No module named 'config'</code></td>
+                <td>Executa a app a partir da raiz do projeto: <code>cd /Users/carlosferreira/Projecto/strava-performance-coach</code> e depois <code>streamlit run app/streamlit_app.py</code>.</td>
+              </tr>
+              <tr>
+                <td>Porta 8501 ocupada</td>
+                <td>Usa outra porta: <code>streamlit run app/streamlit_app.py --server.port 8502</code>.</td>
+              </tr>
+              <tr>
+                <td>Upload não encontra pontos GPS</td>
+                <td>Confirma se o ficheiro contém streams/rota. Alguns exports podem trazer só resumo da atividade.</td>
+              </tr>
+              <tr>
+                <td>Atividade aparece duplicada</td>
+                <td>Usa <code>Import only new activities</code>. Para reprocessar, desativa conscientemente essa opção.</td>
+              </tr>
+              <tr>
+                <td>Mapa vazio</td>
+                <td>Verifica se há atividades com GPS e se o filtro <code>Only activities with GPS stream</code> não está a excluir tudo.</td>
+              </tr>
+              <tr>
+                <td>Base bloqueada ou lenta após import grande</td>
+                <td>Espera o import terminar. Depois reinicia a app. O import já executa otimização da base.</td>
+              </tr>
+              <tr>
+                <td>Dados antigos não aparecem</td>
+                <td>Confirma filtros de anos, meses, intervalo de datas e tipos de atividade na sidebar.</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <section id="boas-praticas">
-          <h2>14. Boas práticas</h2>
+          <h2>22. Boas práticas</h2>
           <ul>
-            <li>Usa <code>Import only new activities</code> para uploads regulares.</li>
+            <li>Usa <code>Import only new activities</code> para atualizações regulares.</li>
             <li>Mantém a base DuckDB fora do Git.</li>
-            <li>Não guardes <code>.env</code>, tokens OAuth, exports Strava ou ficheiros de atividade no repositório.</li>
-            <li>Usa <code>.zip</code> quando quiseres atualizar histórico em lote.</li>
-            <li>Usa <code>.gpx</code>, <code>.fit</code> ou <code>.tcx</code> quando quiseres adicionar apenas uma atividade.</li>
-            <li>Depois de um upload grande, espera a mensagem final antes de navegar no dashboard.</li>
+            <li>Não guardes ficheiros de atividade pessoais no repositório.</li>
+            <li>Usa <code>.zip</code> para histórico completo e <code>.gpx</code>/<code>.fit</code>/<code>.tcx</code> para atividades isoladas.</li>
+            <li>Depois de uploads grandes, espera sempre a mensagem final.</li>
+            <li>Usa filtros temporais para comparar anos, meses e blocos de treino.</li>
+            <li>Usa <code>Training Hub</code> como ponto de partida diário.</li>
+            <li>Usa <code>Activity Deep Dive</code> para decisões específicas de corrida ou bicicleta.</li>
+            <li>Usa <code>Records & Forecasts</code> para ver direção de evolução, não como previsão absoluta.</li>
+            <li>Faz backup da base DuckDB antes de grandes reimports.</li>
           </ul>
+          <div class="success">
+            Fluxo ideal: importar novidades, verificar resultados gerais, abrir a atividade principal, rever recordes/tendências e consultar mapas para perceber onde tens melhor performance.
+          </div>
         </section>
       </article>
     </div>

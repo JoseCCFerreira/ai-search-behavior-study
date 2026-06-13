@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="780" viewBox="0 0 1280 780" role="img" aria-labelledby="title desc">
+  <title id="title">Geo analytics snapshot</title>
+  <desc id="desc">Sanitized dashboard snapshot showing GPS area analysis, route density and performance areas.</desc>
+  <rect width="1280" height="780" fill="#f6f8fb"/>
+  <text x="42" y="58" fill="#0f172a" font-family="Inter,Arial" font-size="30" font-weight="800">Geo Map and Performance Areas</text>
+  <text x="42" y="88" fill="#64748b" font-family="Inter,Arial" font-size="15">Frequent training areas, performance zones and activity heatmaps.</text>
+  <g font-family="Inter,Arial">
+    <rect x="40" y="125" width="580" height="430" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="70" y="162" fill="#0f172a" font-size="20" font-weight="800">Most Frequent Areas</text>
+    <rect x="70" y="185" width="520" height="330" rx="8" fill="#e0f2fe"/>
+    <path d="M115 465 C220 390, 225 320, 330 300 C430 280, 445 225, 545 205" fill="none" stroke="#94a3b8" stroke-width="14" opacity="0.45"/>
+    <path d="M125 455 C230 382, 235 318, 335 296 C425 276, 448 232, 535 212" fill="none" stroke="#fc4c02" stroke-width="5"/>
+    <circle cx="210" cy="395" r="26" fill="#fb923c" opacity="0.55"/>
+    <circle cx="335" cy="300" r="34" fill="#ea580c" opacity="0.52"/>
+    <circle cx="470" cy="245" r="24" fill="#f97316" opacity="0.48"/>
+    <rect x="660" y="125" width="580" height="430" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="690" y="162" fill="#0f172a" font-size="20" font-weight="800">Best Performance Areas</text>
+    <rect x="690" y="185" width="520" height="330" rx="8" fill="#dcfce7"/>
+    <path d="M720 460 C825 405, 850 330, 930 300 C1020 265, 1060 220, 1165 205" fill="none" stroke="#64748b" stroke-width="14" opacity="0.32"/>
+    <path d="M732 452 C835 395, 858 325, 940 294 C1025 262, 1062 224, 1155 212" fill="none" stroke="#16a34a" stroke-width="5"/>
+    <circle cx="835" cy="392" r="22" fill="#22c55e" opacity="0.55"/>
+    <circle cx="948" cy="292" r="38" fill="#15803d" opacity="0.52"/>
+    <circle cx="1085" cy="230" r="25" fill="#16a34a" opacity="0.48"/>
+    <rect x="40" y="590" width="376" height="120" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="66" y="625" fill="#64748b" font-size="12" font-weight="800">TOP AREA</text>
+    <text x="66" y="660" fill="#0f172a" font-size="27" font-weight="800">Run corridor</text>
+    <text x="66" y="685" fill="#64748b" font-size="14">High frequency and stable pace.</text>
+    <rect x="452" y="590" width="376" height="120" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="478" y="625" fill="#64748b" font-size="12" font-weight="800">BEST PERFORMANCE</text>
+    <text x="478" y="660" fill="#0f172a" font-size="27" font-weight="800">Climb segment</text>
+    <text x="478" y="685" fill="#64748b" font-size="14">Strong score and repeatability.</text>
+    <rect x="864" y="590" width="376" height="120" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="890" y="625" fill="#64748b" font-size="12" font-weight="800">HEATMAP</text>
+    <text x="890" y="660" fill="#0f172a" font-size="27" font-weight="800">Run + Ride</text>
+    <text x="890" y="685" fill="#64748b" font-size="14">Weekly pattern by weekday.</text>
+  </g>
+</svg>

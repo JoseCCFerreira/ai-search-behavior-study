@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="780" viewBox="0 0 1280 780" role="img" aria-labelledby="title desc">
+  <title id="title">Activity Deep Dive snapshot</title>
+  <desc id="desc">Sanitized dashboard snapshot showing activity-specific KPIs, training load status, charts and recent activities.</desc>
+  <rect width="1280" height="780" fill="#f6f8fb"/>
+  <rect x="32" y="28" width="1216" height="90" rx="10" fill="#111827"/>
+  <text x="62" y="70" fill="#fff" font-family="Inter,Arial" font-size="29" font-weight="800">Activity Deep Dive</text>
+  <text x="62" y="98" fill="#bfdbfe" font-family="Inter,Arial" font-size="15">Dedicated view for Run, Ride, Walk, Hike and other activities.</text>
+  <g font-family="Inter,Arial">
+    <text x="40" y="156" fill="#2563eb" font-size="13" font-weight="800">RUN RESULTS</text>
+    <text x="40" y="190" fill="#0f172a" font-size="26" font-weight="800">Selected Period</text>
+    <g>
+      <rect x="40" y="220" width="180" height="82" rx="8" fill="#fff" stroke="#e2e8f0"/>
+      <text x="58" y="250" fill="#64748b" font-size="12" font-weight="800">ACTIVITIES</text>
+      <text x="58" y="282" fill="#0f172a" font-size="25" font-weight="800">38</text>
+    </g>
+    <g>
+      <rect x="240" y="220" width="180" height="82" rx="8" fill="#fff" stroke="#e2e8f0"/>
+      <text x="258" y="250" fill="#64748b" font-size="12" font-weight="800">DISTANCE</text>
+      <text x="258" y="282" fill="#0f172a" font-size="25" font-weight="800">412.8 km</text>
+    </g>
+    <g>
+      <rect x="440" y="220" width="180" height="82" rx="8" fill="#fff" stroke="#e2e8f0"/>
+      <text x="458" y="250" fill="#64748b" font-size="12" font-weight="800">AVG PACE</text>
+      <text x="458" y="282" fill="#0f172a" font-size="25" font-weight="800">5.21</text>
+    </g>
+    <g>
+      <rect x="640" y="220" width="180" height="82" rx="8" fill="#fff" stroke="#e2e8f0"/>
+      <text x="658" y="250" fill="#64748b" font-size="12" font-weight="800">ELEVATION</text>
+      <text x="658" y="282" fill="#0f172a" font-size="25" font-weight="800">5,420 m</text>
+    </g>
+    <g>
+      <rect x="840" y="220" width="180" height="82" rx="8" fill="#fff" stroke="#e2e8f0"/>
+      <text x="858" y="250" fill="#64748b" font-size="12" font-weight="800">HEART RATE</text>
+      <text x="858" y="282" fill="#0f172a" font-size="25" font-weight="800">141 bpm</text>
+    </g>
+    <g>
+      <rect x="1040" y="220" width="180" height="82" rx="8" fill="#fff" stroke="#e2e8f0"/>
+      <text x="1058" y="250" fill="#64748b" font-size="12" font-weight="800">PERFORMANCE</text>
+      <text x="1058" y="282" fill="#0f172a" font-size="25" font-weight="800">78.4</text>
+    </g>
+    <rect x="40" y="330" width="1180" height="64" rx="8" fill="#ecfdf5" stroke="#bbf7d0"/>
+    <text x="62" y="358" fill="#14532d" font-size="16" font-weight="800">Balanced training load</text>
+    <text x="62" y="380" fill="#166534" font-size="13">Recent load is controlled against the previous baseline. Continue progressing gradually.</text>
+    <rect x="40" y="425" width="560" height="250" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="70" y="462" fill="#0f172a" font-size="19" font-weight="800">Monthly Volume</text>
+    <polyline points="80,625 150,590 220,605 290,550 360,530 430,500 520,475" fill="none" stroke="#2563eb" stroke-width="4"/>
+    <polyline points="80,650 150,640 220,620 290,612 360,590 430,570 520,555" fill="none" stroke="#fc4c02" stroke-width="4"/>
+    <rect x="650" y="425" width="570" height="250" rx="8" fill="#fff" stroke="#e2e8f0"/>
+    <text x="680" y="462" fill="#0f172a" font-size="19" font-weight="800">Performance by Distance and Elevation</text>
+    <circle cx="760" cy="615" r="10" fill="#2563eb" opacity="0.75"/>
+    <circle cx="850" cy="575" r="16" fill="#2563eb" opacity="0.75"/>
+    <circle cx="930" cy="535" r="22" fill="#2563eb" opacity="0.75"/>
+    <circle cx="1020" cy="500" r="14" fill="#fc4c02" opacity="0.75"/>
+    <circle cx="1110" cy="550" r="24" fill="#16a34a" opacity="0.75"/>
+  </g>
+</svg>

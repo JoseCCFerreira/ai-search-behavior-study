@@ -1,430 +1,282 @@
 # Strava Performance Coach
 
-[![Python Version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+Offline performance dashboard for endurance activities, built with Streamlit, DuckDB, Pandas and Plotly.
 
-A personal performance coaching application that integrates with Strava to provide data-driven insights, training analysis, and personalized recommendations.
+The app imports Strava export files or individual activity files, stores everything locally, and provides a professional dashboard inspired by useful patterns from Strava and Garmin Connect: activity feed, training status, load indicators, goals, records, maps, heatmaps, trends and forecasts.
 
-## 🎯 Objective
+No Strava OAuth button is required in the current version. The recommended workflow is local and private: download your activities, upload them in the app, import only new entries, and analyze your performance from the dedicated DuckDB database.
 
-Analyze your Strava activities automatically, calculate performance metrics, track training load, identify fatigue patterns, and receive personalized coaching recommendations - all locally on your machine with complete privacy.
+## Snapshots
 
-**Key Features**:
-- 🔐 **Privacy First**: All data stored locally (DuckDB)
-- 📊 **Real-time Sync**: Automatic activity extraction via Strava webhooks
-- 📈 **Performance Metrics**: Track pace, efficiency, training load, fatigue
-- 🧠 **Coach Recommendations**: Rule-based coaching with explanations
-- 📱 **Interactive Dashboard**: Streamlit-based analytics interface
-- 🤖 **Optional ML**: Activity clustering and performance prediction
-- 🔄 **Scalable Architecture**: Modular design ready for expansion
+These snapshots are sanitized product views and do not contain personal activity data.
 
-## 📋 System Architecture
+![Training Hub](docs/snapshots/training-hub.svg)
 
-```
-Strava API & Webhooks
-         ↓
-    FastAPI Server (Webhook Receiver)
-         ↓
-    DuckDB (Local Database)
-         ↓
-    Processing Pipeline (Normalization, Validation, Calculations)
-         ↓
-    Analytics Layer (Metrics, Scores, Summaries)
-         ↓
-    Coach Engine (Rule-based Recommendations)
-         ↓
-    Streamlit Dashboard (Interactive UI)
-```
+![Activity Deep Dive](docs/snapshots/activity-deep-dive.svg)
 
-See [Architecture Documentation](docs/architecture.md) for detailed system design.
+![Geo Analytics](docs/snapshots/geo-analytics.svg)
 
-## 🛠️ Technology Stack
+## Main Features
 
-| Component | Technology | Version |
-|-----------|-----------|---------|
-| **Framework** | FastAPI | 0.109+ |
-| **Dashboard** | Streamlit | 1.28+ |
-| **Database** | DuckDB | 0.9+ |
-| **Data Processing** | Pandas | 2.1+ |
-| **Visualization** | Plotly | 5.18+ |
-| **Machine Learning** | Scikit-learn | 1.3+ |
-| **Testing** | Pytest | 7.4+ |
-| **Python** | 3.9+ | |
+- Offline-first Streamlit dashboard.
+- Dedicated local DuckDB database.
+- Upload support for Strava exports and individual activity files.
+- Supported uploads: `.zip`, `.gpx`, `.fit`, `.tcx`, `.gz` and `.git` when the content is FIT-compatible.
+- Daily update flow with duplicate detection through `Import only new activities`.
+- Automatic cleanup of temporary upload files.
+- Training Hub combining:
+  - Strava-style activity feed and PR board.
+  - Garmin-style training status, load, recovery indicators and monthly goals.
+- General results page with chronological filtering.
+- Activity-specific deep dive for Run, Ride, Walk, Hike, Swim and Workout.
+- Personal records and 6-month trend forecasts.
+- GPS route detail, elevation, speed, pace and heart rate charts.
+- Geo area analysis for most frequent areas and best performance zones.
+- Run and Ride heatmaps.
+- Statistical analysis with distributions, percentiles, correlations and outliers.
+- Coach recommendations generated from local analytics.
 
-## 📁 Project Structure
+## Current Dashboard Pages
 
-```
+| Page | Purpose |
+| --- | --- |
+| `Overview` | Executive summary, current-year projection and high-level trends. |
+| `Training Hub` | Hybrid Strava/Garmin-style home page with feed, training load, goals, PR board and sport mix. |
+| `General Results` | Full analysis for the selected timeline and activity filters. |
+| `Activity Deep Dive` | Dedicated dashboard for one activity type. |
+| `Records & Forecasts` | Personal records, trend lines and 6-month forecasts. |
+| `Timeline` | Yearly and monthly evolution with year-over-year variation. |
+| `Statistics` | Statistical indicators, distributions and correlation matrix. |
+| `Geo Map` | Frequent GPS areas and best performance areas. |
+| `Heatmaps` | Run and Ride weekly activity heatmaps. |
+| `Activities` | Individual activity detail with route, elevation, pace, speed and HR. |
+| `Profile` | Athlete profile and activity profile. |
+| `Coach` | Pending coaching recommendations. |
+
+## Training Load Status
+
+The app includes a training status indicator in `Training Hub`, `General Results` and `Activity Deep Dive`.
+
+Possible statuses:
+
+- `Balanced`: recent load is controlled against the baseline.
+- `Elevated load`: training is productive but demanding.
+- `Potentially excessive`: acute load and supporting signals suggest too much stress.
+- `Low recent load`: recent training is below the baseline.
+- `Needs more history`: more weeks of data are required for a useful comparison.
+
+The status compares the last 7 days with the previous 4-week weekly baseline and combines signals such as training load, performance, average heart rate, intensity, recovery and fatigue impact.
+
+This is an analytical aid, not medical advice.
+
+## Technology Stack
+
+| Layer | Technology |
+| --- | --- |
+| App | Streamlit |
+| Database | DuckDB |
+| Data processing | Pandas |
+| Charts | Plotly |
+| Activity parsing | GPX, TCX, FIT and Strava export importers |
+| Analytics | Local Python metrics and rule-based coaching |
+| Tests | Pytest and Streamlit testing |
+
+## Project Structure
+
+```text
 strava-performance-coach/
-├── README.md                    # This file
-├── requirements.txt             # Python dependencies
-├── pyproject.toml              # Project metadata
-├── .gitignore                  # Git ignore rules
-├── .env.example                # Environment variables template
-│
+├── app/
+│   └── streamlit_app.py
 ├── config/
-│   ├── __init__.py
-│   └── settings.py             # Configuration management
-│
-├── data/                        # Data storage
-│   ├── raw/                    # Raw data from Strava
-│   ├── processed/              # Processed data
-│   └── mock/                   # Mock data for testing
-│
+│   └── settings.py
 ├── database/
-│   ├── schema.sql              # DuckDB schema
-│   └── strava_coach.duckdb     # Database file (gitignored)
-│
-├── docs/                        # Documentation
-│   ├── architecture.md         # System design
-│   ├── roadmap.md              # Development roadmap
-│   ├── strava_api.md           # Strava OAuth setup
-│   ├── data_model.md           # Data schema details
-│   └── ...
-│
-├── src/                         # Source code
-│   ├── auth/                   # Strava OAuth
-│   ├── connector/              # Strava API + Webhooks
-│   ├── database/               # Database operations
-│   ├── processing/             # Data normalization & cleaning
-│   ├── metrics/                # Performance metrics
-│   ├── coach/                  # Recommendation engine
-│   ├── ml/                     # Machine learning (optional)
-│   └── utils/                  # Utilities
-│
-├── app/                         # Streamlit dashboard
-│   ├── streamlit_app.py        # Main app
-│   ├── pages/                  # Dashboard pages
-│   │   ├── 01_Overview.py
-│   │   ├── 02_Activities.py
-│   │   ├── 03_Performance.py
-│   │   ├── 04_Training_Load.py
-│   │   ├── 05_Fatigue_Recovery.py
-│   │   ├── 06_Coach.py
-│   │   └── 07_Machine_Learning.py
-│   └── components/             # Reusable components
-│
-├── notebooks/                   # Jupyter notebooks
-│   ├── 01_explore_strava_data.ipynb
-│   ├── 02_metrics_exploration.ipynb
-│   └── 03_coach_logic_exploration.ipynb
-│
-└── tests/                       # Unit tests
-    ├── test_database.py
-    ├── test_strava_client.py
-    ├── test_metrics.py
-    └── ...
+│   ├── schema.sql
+│   └── strava_coach.duckdb          # local, gitignored
+├── docs/
+│   ├── manual_dashboard_upload.html # full user manual
+│   └── snapshots/
+├── scripts/
+│   └── import_strava_export.py
+├── src/
+│   ├── coach/
+│   ├── database/
+│   ├── metrics/
+│   └── processing/
+└── tests/
 ```
 
-## 🚀 Quick Start
-
-### Prerequisites
-- Python 3.9 or higher
-- Strava account (free tier OK)
-- Git
-- ~500MB disk space
-
-### 1. Clone the Repository
+## Installation
 
 ```bash
-git clone https://github.com/yourusername/strava-performance-coach.git
-cd strava-performance-coach
-```
-
-### 2. Create Virtual Environment
-
-**macOS/Linux:**
-```bash
+cd /Users/carlosferreira/Projecto/strava-performance-coach
 python3 -m venv .venv
 source .venv/bin/activate
-```
-
-**Windows:**
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-### 3. Install Dependencies
-
-```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. Configure Environment
+Optional Streamlit reload helper:
 
 ```bash
-# Copy the example file
-cp .env.example .env
-
-# Edit .env with your settings
-# For now, you can leave defaults for testing
+pip install watchdog
 ```
 
-### 5. Run Tests
+## Configuration
+
+Create or update `.env` in the project root:
 
 ```bash
-pytest -v
+DUCKDB_PATH=database/strava_coach.duckdb
+RAW_DATA_DIR=data/raw
 ```
 
-### 6. Initialize Database
+Keep `.env`, tokens, databases and raw activity files out of Git.
+
+## Run the App
 
 ```bash
-python src/database/create_database.py
+streamlit run app/streamlit_app.py --server.port 8501
 ```
 
-## 📖 Usage
+Open:
 
-### Run Streamlit Dashboard
+```text
+http://localhost:8501
+```
+
+Headless mode:
 
 ```bash
+streamlit run app/streamlit_app.py \
+  --server.headless true \
+  --server.port 8501 \
+  --browser.gatherUsageStats false
+```
+
+## Upload and Daily Update Workflow
+
+1. Download a Strava export or a single activity file.
+2. Open the app.
+3. In the sidebar, use `Upload Activities`.
+4. Select `.zip`, `.gpx`, `.fit`, `.tcx`, `.gz` or `.git`.
+5. For a single activity file, select the activity type.
+6. Keep `Import only new activities` enabled.
+7. Click `Import Uploaded File`.
+8. Review `Training Hub`, `General Results`, `Activity Deep Dive` and `Records & Forecasts`.
+
+Typical import result:
+
+```text
+loaded=1, skipped=0, failed=0, streams=3256, metrics=711, recommendations=11
+```
+
+## Command Line Import
+
+Import a full Strava export without opening the app:
+
+```bash
+python3 scripts/import_strava_export.py /path/to/export.zip --only-new
+```
+
+Reprocess everything from the export:
+
+```bash
+python3 scripts/import_strava_export.py /path/to/export.zip
+```
+
+## Validation
+
+Compile the app:
+
+```bash
+python3 -m py_compile app/streamlit_app.py
+```
+
+Run the Streamlit smoke test:
+
+```bash
+python3 - <<'PY'
+from streamlit.testing.v1 import AppTest
+
+app = AppTest.from_file("app/streamlit_app.py", default_timeout=60)
+for page in ["Overview", "Training Hub", "General Results", "Activity Deep Dive"]:
+    if page == "Overview":
+        app.run()
+    else:
+        app.radio[0].set_value(page).run()
+    print(page, "exception_count=", len(app.exception))
+    for exc in app.exception:
+        print(exc.value)
+PY
+```
+
+Check the local server:
+
+```bash
+curl -I http://localhost:8501
+```
+
+Expected:
+
+```text
+HTTP/1.1 200 OK
+```
+
+## Documentation
+
+- Full HTML manual: [docs/manual_dashboard_upload.html](docs/manual_dashboard_upload.html)
+- Architecture: [docs/architecture.md](docs/architecture.md)
+- Data model: [docs/data_model.md](docs/data_model.md)
+- Metrics: [docs/metrics.md](docs/metrics.md)
+- Coach logic: [docs/coach_logic.md](docs/coach_logic.md)
+
+## Privacy and Security
+
+- Activity data stays local.
+- DuckDB database is gitignored.
+- `.env` and token folders are gitignored.
+- Uploaded files are temporary and removed after import.
+- Sanitized snapshots are used in this README to avoid exposing personal routes, activity names or health metrics.
+
+## Troubleshooting
+
+### `ModuleNotFoundError: No module named 'config'`
+
+Run Streamlit from the project root:
+
+```bash
+cd /Users/carlosferreira/Projecto/strava-performance-coach
 streamlit run app/streamlit_app.py
 ```
 
-Dashboard opens at `http://localhost:8501`
+### Port 8501 Is Already in Use
 
-### Run FastAPI Server (Webhooks)
-
-In a separate terminal:
+Use another port:
 
 ```bash
-uvicorn src.connector.strava_webhook:app --reload --port 8000
+streamlit run app/streamlit_app.py --server.port 8502
 ```
 
-API server at `http://localhost:8000`
-
-### Run Tests
+Or stop the existing process:
 
 ```bash
-# Run all tests
-pytest
-
-# Run with coverage
-pytest --cov=src
-
-# Run specific test file
-pytest tests/test_database.py -v
-
-# Run specific test
-pytest tests/test_database.py::test_connection -v
+lsof -ti tcp:8501
+kill <pid>
 ```
 
-## 📊 Project Roadmap
+### GPS Map Is Empty
 
-The project is divided into 14 phases:
+Some exports only include summary metrics. Use `.gpx`, `.fit`, `.tcx` or a full export that includes streams/routes.
 
-| Phase | Name | Status |
-|-------|------|--------|
-| 1 | Project Setup | ✅ Completed |
-| 2 | Strava Developer Config | ✅ Completed |
-| 3 | Database Setup (Medallion) | ✅ Completed |
-| 3 | Database Setup | 📋 To Do |
-| 4 | Strava API Client | 📋 To Do |
-| 4 | Strava API Client | ✅ Completed |
-| 5 | Webhook Integration | 📋 To Do |
-| 6 | Data Normalization | 📋 To Do |
-| 7 | Performance Metrics | 📋 To Do |
-| 8 | Coach Engine | 📋 To Do |
-| 9 | Streamlit Dashboard | 📋 To Do |
-| 10 | Machine Learning | 📋 To Do |
-| 11 | Testing & Quality | 📋 To Do |
-| 12 | Mock Data Pipeline | 📋 To Do |
-| 13 | GitHub & Workflow | 📋 To Do |
-| 14 | Future Enhancements | 🔮 Future |
+### Activities Are Missing
 
-See [Roadmap](docs/roadmap.md) for detailed phase breakdown.
+Check the sidebar filters:
 
-## 🔐 Security & Privacy
+- Years
+- Months
+- Date range
+- Activity types
 
-### Local Data
-- All data stored in `database/strava_coach.duckdb`
-- Database file is **git-ignored** (never committed)
-- Local access only
+## Disclaimer
 
-### Credentials
-- Strava tokens stored in `.env` (git-ignored)
-- Never hardcoded in source
-- Use `config/settings.py` for all config access
-- Token refresh automated
-
-### Data Usage
-- Only your own activities analyzed
-- No data uploaded to external services
-- No sharing with third parties
-- Machine learning is local-only
-- Recommendations are informational only
-
-### Best Practices
-```bash
-# Always keep .env out of git
-git check-ignore .env  # Should be true
-
-# Keep database file out of git
-git check-ignore database/strava_coach.duckdb  # Should be true
-
-# Never commit sensitive data
-grep -r "STRAVA_CLIENT_SECRET" src/  # Should be empty
-```
-
-## 📚 Documentation
-
-- **[Architecture](docs/architecture.md)**: System design and components
-- **[Roadmap](docs/roadmap.md)**: Development phases and timeline
-- **[Setup Guide](docs/setup.md)**: Detailed setup instructions *(Phase 2)*
-- **[Strava API](docs/strava_api.md)**: OAuth and webhook setup *(Phase 2)*
-- **[Data Model](docs/data_model.md)**: Database schema *(Phase 3)*
-- **[Metrics](docs/metrics.md)**: Performance metrics explained *(Phase 7)*
-- **[Dashboard](docs/dashboard.md)**: Dashboard features *(Phase 9)*
-- **[Coach Logic](docs/coach_logic.md)**: Recommendation logic *(Phase 8)*
-
-## 🔄 Development Workflow
-
-### Working on a New Phase
-
-1. **Create a feature branch**
-   ```bash
-   git checkout -b feature/phase-X-description
-   ```
-
-2. **Make changes**
-   ```bash
-   # Edit files, write code, run tests
-   pytest -v
-   ```
-
-3. **Commit with clear message**
-   ```bash
-   git add .
-   git commit -m "Phase X: Feature description"
-   ```
-
-4. **Push to GitHub**
-   ```bash
-   git push origin feature/phase-X-description
-   ```
-
-5. **Create Pull Request**
-   - Review changes
-   - Ensure tests pass
-   - Merge to main
-
-### Recommended Branches
-
-```
-main                          # Production ready
-├── dev                       # Development branch
-└── feature/phase-X-...       # Feature branches
-    ├── feature/strava-oauth
-    ├── feature/strava-webhook
-    ├── feature/streamlit-dashboard
-    └── feature/performance-coach
-```
-
-## 📝 Commit Messages
-
-Follow these patterns:
-
-```bash
-# Phase completion
-git commit -m "Phase X: Feature description"
-
-# Feature within phase
-git commit -m "Phase X: Add specific feature"
-
-# Bug fix
-git commit -m "Fix: Brief description"
-
-# Documentation
-git commit -m "Docs: Update section"
-
-# Refactor
-git commit -m "Refactor: Improve code organization"
-```
-
-## 🐛 Common Issues
-
-### ImportError: No module named 'src'
-
-**Solution**: Ensure you're in the project root directory:
-```bash
-cd strava-performance-coach
-python -c "import src.config.settings"  # Should work
-```
-
-### DuckDB file locked
-
-**Solution**: Close all connections:
-```bash
-# Kill any running Python processes
-pkill -f python
-
-# Delete and recreate database
-rm database/strava_coach.duckdb
-python src/database/create_database.py
-```
-
-### Streamlit not found
-
-**Solution**: Install all dependencies:
-```bash
-pip install -r requirements.txt
-streamlit run app/streamlit_app.py
-```
-
-### .env file not loading
-
-**Solution**: Check file location and format:
-```bash
-# File must be in project root
-ls -la | grep .env  # Should show .env
-
-# Check format (no quotes needed)
-cat .env | grep STRAVA_CLIENT_ID
-```
-
-## 🤝 Contributing
-
-This is a personal project, but suggestions welcome!
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## ⚠️ Disclaimer
-
-This project is for personal analysis only. Recommendations are based on your data and are **informational**, not medical advice. Always consult healthcare professionals for health-related decisions.
-
-## 🙏 Acknowledgments
-
-- [Strava](https://www.strava.com) for the API and platform
-- [Streamlit](https://streamlit.io) for the dashboard framework
-- [DuckDB](https://duckdb.org) for the local database
-- [FastAPI](https://fastapi.tiangolo.com) for the web framework
-
-## 📞 Support
-
-For issues or questions:
-1. Check existing [issues](https://github.com/yourusername/strava-performance-coach/issues)
-2. Review [documentation](docs/)
-3. Create new issue with detailed description
-
-## 🗺️ Next Steps
-
-**Getting Started:**
-1. ✅ You're reading this! (Phase 1 underway)
-2. 📋 Next: Follow Phase 2 instructions for Strava Developer setup
-3. 🗄️ Then: Create DuckDB schema (Phase 3)
-4. 🔌 Then: Implement Strava API client (Phase 4)
-
-Each phase has detailed instructions. Follow them in order!
-
----
-
-**Happy training! 🏃‍♂️🚴‍♀️**
+The dashboard provides informational training analysis only. It is not medical advice. If you feel persistent fatigue, pain, dizziness or unusual symptoms, prioritize rest and professional guidance.

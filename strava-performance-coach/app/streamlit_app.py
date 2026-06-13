@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import gzip
 import hashlib
+import html
 import json
 import sys
 import tempfile
@@ -275,28 +276,178 @@ def add_dashboard_style() -> None:
     st.markdown(
         """
         <style>
+        :root {
+            --surface: #ffffff;
+            --surface-soft: #f8fafc;
+            --border: #e2e8f0;
+            --text-muted: #64748b;
+            --accent: #2563eb;
+        }
+        @keyframes page-slide-in {
+            from {
+                opacity: 0;
+                transform: translateX(14px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .stApp {
+            background: #f6f8fb;
+        }
         .block-container {
-            padding-top: 1.5rem;
+            padding-top: 1.1rem;
             padding-bottom: 3rem;
+            max-width: 1440px;
+            animation: page-slide-in 220ms ease-out;
         }
         [data-testid="stMetric"] {
-            background: #ffffff;
-            border: 1px solid #e5e7eb;
+            background: var(--surface);
+            border: 1px solid var(--border);
             border-radius: 8px;
-            padding: 14px 16px;
+            padding: 16px 18px;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
         }
         [data-testid="stMetricLabel"] {
-            color: #4b5563;
+            color: var(--text-muted);
+            font-weight: 650;
         }
-        div[data-testid="stTabs"] button {
-            font-weight: 600;
+        [data-testid="stMetricValue"] {
+            color: #0f172a;
+        }
+        [data-testid="stSidebar"] {
+            background: #0f172a;
+        }
+        [data-testid="stSidebar"] * {
+            color: #e5e7eb;
+        }
+        [data-testid="stSidebar"] [role="radiogroup"] label {
+            border-radius: 8px;
+            padding: 8px 10px;
+            margin-bottom: 3px;
+        }
+        [data-testid="stSidebar"] [role="radiogroup"] label:hover {
+            background: rgba(255, 255, 255, 0.08);
+        }
+        [data-testid="stSidebar"] hr {
+            border-color: rgba(255, 255, 255, 0.14);
+        }
+        .app-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 58%, #2563eb 100%);
+            color: #ffffff;
+            border-radius: 8px;
+            padding: 22px 24px;
+            margin-bottom: 18px;
+            box-shadow: 0 14px 32px rgba(15, 23, 42, 0.16);
+        }
+        .app-hero h1 {
+            margin: 0;
+            font-size: 2rem;
+            letter-spacing: 0;
+        }
+        .app-hero p {
+            margin: 6px 0 0;
+            color: #dbeafe;
+            font-size: 0.98rem;
         }
         .section-note {
-            color: #5f6c7b;
+            color: var(--text-muted);
             margin-top: -0.5rem;
             margin-bottom: 1rem;
         }
+        .page-kicker {
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 0.15rem;
+        }
+        .page-title {
+            color: #0f172a;
+            font-size: 1.65rem;
+            font-weight: 800;
+            margin-bottom: 0.25rem;
+        }
+        .hub-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+            margin: 12px 0 18px;
+        }
+        .hub-card,
+        .feed-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 14px 16px;
+            box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+        }
+        .hub-card small,
+        .feed-card small {
+            display: block;
+            color: #64748b;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 4px;
+        }
+        .hub-card strong {
+            display: block;
+            color: #0f172a;
+            font-size: 1.35rem;
+            line-height: 1.2;
+        }
+        .hub-card span,
+        .feed-card span {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        .feed-card {
+            margin-bottom: 10px;
+        }
+        .feed-card h4 {
+            margin: 2px 0 8px;
+            color: #0f172a;
+            font-size: 1rem;
+        }
+        .feed-metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .feed-metrics b {
+            background: #f1f5f9;
+            border-radius: 999px;
+            padding: 4px 8px;
+            font-size: 0.82rem;
+            color: #334155;
+        }
+        @media (max-width: 900px) {
+            .hub-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        div[data-testid="stDataFrame"],
+        div[data-testid="stPlotlyChart"] {
+            border-radius: 8px;
+        }
         </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_app_header(page_title: str) -> None:
+    st.markdown(
+        f"""
+        <div class="app-hero">
+            <h1>Strava Performance Coach</h1>
+            <p>Offline activity database, performance analytics, GPS maps, and explainable coaching.</p>
+        </div>
+        <div class="page-kicker">Dashboard</div>
+        <div class="page-title">{page_title}</div>
         """,
         unsafe_allow_html=True,
     )
@@ -333,6 +484,802 @@ def build_stat_summary(df: pd.DataFrame) -> pd.DataFrame:
             }
         )
     return pd.DataFrame(rows).round(2)
+
+
+def build_record_rows(df: pd.DataFrame) -> pd.DataFrame:
+    record_specs = [
+        ("Longest distance", "distance_km", "max", "km", "distance"),
+        ("Longest duration", "moving_time_minutes", "max", "min", "endurance"),
+        ("Highest elevation gain", "total_elevation_gain", "max", "m", "climbing"),
+        ("Highest calories", "calories", "max", "kcal", "effort"),
+        ("Highest avg speed", "average_speed_kmh", "max", "km/h", "speed"),
+        ("Fastest pace", "average_pace_min_km", "min", "min/km", "pace"),
+        ("Highest avg heart rate", "average_heartrate", "max", "bpm", "heart rate"),
+        ("Highest max heart rate", "max_heartrate", "max", "bpm", "heart rate"),
+        ("Best performance", "performance_score", "max", "score", "performance"),
+        ("Highest training load", "training_load", "max", "load", "load"),
+    ]
+    rows = []
+    scopes = [("All", df)]
+    for activity_type in sorted(df["activity_type"].dropna().unique()):
+        scopes.append((activity_type, df[df["activity_type"] == activity_type]))
+
+    for scope, scoped_df in scopes:
+        for label, column, direction, unit, category in record_specs:
+            if column not in scoped_df.columns:
+                continue
+            values = scoped_df.dropna(subset=[column])
+            values = values[values[column] > 0]
+            if values.empty:
+                continue
+            idx = values[column].idxmin() if direction == "min" else values[column].idxmax()
+            record = values.loc[idx]
+            rows.append(
+                {
+                    "scope": scope,
+                    "category": category,
+                    "record": label,
+                    "value": record[column],
+                    "unit": unit,
+                    "date": record["activity_date"].date(),
+                    "activity_type": record["activity_type"],
+                    "activity": record["activity_name"],
+                    "distance_km": record["distance_km"],
+                    "performance": record["performance_score"],
+                }
+            )
+    return pd.DataFrame(rows).round({"value": 2, "distance_km": 2, "performance": 1})
+
+
+def monthly_metric(
+    df: pd.DataFrame,
+    activity_type: str,
+    metric: str,
+    aggregation: str,
+) -> pd.DataFrame:
+    activity_df = df[df["activity_type"] == activity_type].dropna(subset=[metric]).copy()
+    activity_df = activity_df[activity_df[metric] > 0]
+    if activity_df.empty:
+        return pd.DataFrame(columns=["activity_month", metric])
+
+    return (
+        activity_df.groupby("activity_month", as_index=False)
+        .agg(**{metric: (metric, aggregation)})
+        .sort_values("activity_month")
+    )
+
+
+def linear_fit(values: list[float]) -> tuple[float, float, list[float]]:
+    if not values:
+        return 0.0, 0.0, []
+
+    x_values = list(range(len(values)))
+    x_mean = sum(x_values) / len(x_values)
+    y_mean = sum(values) / len(values)
+    denominator = sum((x - x_mean) ** 2 for x in x_values)
+    slope = (
+        sum((x - x_mean) * (y - y_mean) for x, y in zip(x_values, values)) / denominator
+        if denominator
+        else 0.0
+    )
+    intercept = y_mean - slope * x_mean
+    fitted = [intercept + slope * x for x in x_values]
+    return slope, intercept, fitted
+
+
+def forecast_monthly_metric(
+    df: pd.DataFrame,
+    activity_type: str,
+    metric: str,
+    aggregation: str,
+    periods: int = 6,
+) -> tuple[pd.DataFrame, dict[str, float | None]]:
+    monthly_df = monthly_metric(df, activity_type, metric, aggregation)
+    if len(monthly_df) < 2:
+        monthly_df["kind"] = "actual"
+        return monthly_df, {
+            "slope": None,
+            "last_actual": monthly_df[metric].iloc[-1] if len(monthly_df) else None,
+            "next_forecast": None,
+            "six_month_forecast": None,
+        }
+
+    actual = monthly_df.copy()
+    actual["kind"] = "actual"
+    y_values = monthly_df[metric].astype(float).tolist()
+    slope, intercept, fitted = linear_fit(y_values)
+    trend = monthly_df.copy()
+    trend[metric] = fitted
+    trend["kind"] = "trend"
+
+    last_month = monthly_df["activity_month"].max()
+    forecast_rows = []
+    for step in range(1, periods + 1):
+        next_x = len(monthly_df) + step - 1
+        forecast_rows.append(
+            {
+                "activity_month": last_month + pd.DateOffset(months=step),
+                metric: max(0.0, intercept + slope * next_x),
+                "kind": "forecast",
+            }
+        )
+    forecast_df = pd.concat(
+        [actual, trend, pd.DataFrame(forecast_rows)],
+        ignore_index=True,
+    )
+    summary = {
+        "slope": slope,
+        "last_actual": y_values[-1],
+        "next_forecast": forecast_rows[0][metric],
+        "six_month_forecast": forecast_rows[-1][metric],
+    }
+    return forecast_df, summary
+
+
+def render_trend_forecast(
+    df: pd.DataFrame,
+    activity_type: str,
+    metric: str,
+    label: str,
+    unit: str,
+    aggregation: str,
+) -> None:
+    trend_df, summary = forecast_monthly_metric(df, activity_type, metric, aggregation)
+    if trend_df.empty:
+        st.info(f"No {activity_type.lower()} data for {label.lower()}.")
+        return
+    fig = px.line(
+        trend_df,
+        x="activity_month",
+        y=metric,
+        color="kind",
+        markers=True,
+        labels={"activity_month": "Month", metric: f"{label} ({unit})", "kind": "Series"},
+        title=f"{activity_type}: {label} trend and forecast",
+    )
+    fig.for_each_trace(
+        lambda trace: trace.update(
+            line={
+                "dash": "dash"
+                if trace.name == "forecast"
+                else "dot"
+                if trace.name == "trend"
+                else "solid"
+            }
+        )
+    )
+    st.plotly_chart(fig, width="stretch")
+
+    if summary["slope"] is not None:
+        direction = "improving" if summary["slope"] > 0 else "declining"
+        if metric == "average_pace_min_km":
+            direction = "improving" if summary["slope"] < 0 else "slowing"
+        st.caption(
+            f"Monthly trend: {summary['slope']:+.2f} {unit}/month, "
+            f"next month forecast: {summary['next_forecast']:.2f} {unit}, "
+            f"6-month forecast: {summary['six_month_forecast']:.2f} {unit} "
+            f"({direction})."
+        )
+
+
+def build_forecast_summary(
+    df: pd.DataFrame,
+    activity_type: str,
+    metric_specs: dict[str, tuple[str, str, str]],
+) -> pd.DataFrame:
+    rows = []
+    for label, (metric, aggregation, unit) in metric_specs.items():
+        _, summary = forecast_monthly_metric(df, activity_type, metric, aggregation)
+        if summary["slope"] is None:
+            continue
+        rows.append(
+            {
+                "activity_type": activity_type,
+                "metric": label,
+                "trend_per_month": summary["slope"],
+                "last_actual": summary["last_actual"],
+                "next_month_forecast": summary["next_forecast"],
+                "six_month_forecast": summary["six_month_forecast"],
+                "unit": unit,
+            }
+        )
+    return pd.DataFrame(rows).round(2)
+
+
+def percent_delta(current_value: float, previous_value: float) -> str | None:
+    if pd.isna(previous_value) or previous_value == 0:
+        return None
+    return format_percent(((current_value - previous_value) / previous_value) * 100)
+
+
+def period_value(df: pd.DataFrame, metric: str, aggregation: str) -> float:
+    series = df[metric].dropna()
+    if series.empty:
+        return 0.0
+    if aggregation == "mean":
+        return float(series.mean())
+    return float(series.sum())
+
+
+def render_metric_grid(df: pd.DataFrame, previous_df: pd.DataFrame | None = None) -> None:
+    metric_defs = [
+        ("Activities", "activity_id", "count", "{:,.0f}"),
+        ("Distance", "distance_km", "sum", "{:,.1f} km"),
+        ("Moving Time", "moving_time_minutes", "sum_hours", "{:,.1f} h"),
+        ("Elevation", "total_elevation_gain", "sum", "{:,.0f} m"),
+        ("Avg Pace", "average_pace_min_km", "mean", "{:,.2f} min/km"),
+        ("Performance", "performance_score", "mean", "{:,.1f}"),
+    ]
+    cols = st.columns(len(metric_defs))
+    for col, (label, metric, aggregation, template) in zip(cols, metric_defs):
+        if aggregation == "count":
+            value = float(len(df))
+            previous_value = float(len(previous_df)) if previous_df is not None else 0.0
+        elif aggregation == "sum_hours":
+            value = period_value(df, metric, "sum") / 60
+            previous_value = (
+                period_value(previous_df, metric, "sum") / 60
+                if previous_df is not None
+                else 0.0
+            )
+        else:
+            value = period_value(df, metric, aggregation)
+            previous_value = (
+                period_value(previous_df, metric, aggregation)
+                if previous_df is not None
+                else 0.0
+            )
+
+        delta = percent_delta(value, previous_value) if previous_df is not None else None
+        col.metric(label, template.format(value), delta)
+
+
+def build_training_status(df: pd.DataFrame) -> tuple[str, str, pd.DataFrame]:
+    if df.empty:
+        return "No data", "No activities available to assess training load.", pd.DataFrame()
+
+    latest_day = df["activity_date"].max().normalize()
+    last_7_start = latest_day - pd.Timedelta(days=6)
+    previous_28_start = latest_day - pd.Timedelta(days=34)
+    previous_28_end = last_7_start - pd.Timedelta(days=1)
+
+    last_7 = df[
+        (df["activity_date"] >= last_7_start)
+        & (df["activity_date"] <= latest_day + pd.Timedelta(days=1))
+    ]
+    previous_28 = df[
+        (df["activity_date"] >= previous_28_start)
+        & (df["activity_date"] <= previous_28_end)
+    ]
+
+    load_metric = "training_load"
+    if df[load_metric].dropna().sum() <= 0:
+        load_metric = "moving_time_minutes"
+
+    acute_load = period_value(last_7, load_metric, "sum")
+    chronic_weekly_load = period_value(previous_28, load_metric, "sum") / 4
+    load_ratio = acute_load / chronic_weekly_load if chronic_weekly_load > 0 else None
+    last_7_performance = period_value(last_7, "performance_score", "mean")
+    previous_performance = period_value(previous_28, "performance_score", "mean")
+    last_7_hr = period_value(last_7, "average_heartrate", "mean")
+    previous_hr = period_value(previous_28, "average_heartrate", "mean")
+
+    intensity_series = last_7["intensity_level"].fillna("").astype(str).str.lower()
+    high_intensity_share = (
+        intensity_series.str.contains("high|hard|intense|very").mean()
+        if len(intensity_series)
+        else 0
+    )
+    recovery_series = last_7["recovery_indicator"].fillna("").astype(str).str.lower()
+    poor_recovery_count = int(
+        recovery_series.str.contains("poor|low|bad|insufficient|limited").sum()
+    )
+    fatigue_series = pd.to_numeric(last_7["fatigue_impact"], errors="coerce").dropna()
+    fatigue_avg = float(fatigue_series.mean()) if not fatigue_series.empty else None
+
+    risk_points = 0
+    reasons = []
+    if load_ratio is not None:
+        if load_ratio >= 1.5:
+            risk_points += 3
+            reasons.append("acute load is much higher than the previous 4-week baseline")
+        elif load_ratio >= 1.25:
+            risk_points += 2
+            reasons.append("acute load is rising above the previous 4-week baseline")
+        elif load_ratio < 0.65:
+            reasons.append("recent load is well below the previous baseline")
+    if previous_performance and last_7_performance < previous_performance * 0.9:
+        risk_points += 1
+        reasons.append("recent performance is lower than the previous baseline")
+    if previous_hr and last_7_hr > previous_hr * 1.08:
+        risk_points += 1
+        reasons.append("average heart rate is elevated versus the previous baseline")
+    if high_intensity_share >= 0.45:
+        risk_points += 1
+        reasons.append("a high share of recent sessions are high intensity")
+    if poor_recovery_count >= 2:
+        risk_points += 1
+        reasons.append("multiple recent sessions show weak recovery")
+    if fatigue_avg is not None and fatigue_avg >= 70:
+        risk_points += 1
+        reasons.append("fatigue impact is high")
+
+    if load_ratio is None:
+        status = "Needs more history"
+        message = "Add more activities across several weeks to compare acute and baseline load."
+    elif risk_points >= 4:
+        status = "Potentially excessive"
+        message = "Training load looks high. Consider recovery, easier sessions, or a rest day."
+    elif risk_points >= 2:
+        status = "Elevated load"
+        message = "Training is productive but demanding. Watch recovery and avoid stacking hard days."
+    elif load_ratio < 0.65:
+        status = "Low recent load"
+        message = "Recent training is below your baseline. Good for recovery, but fitness stimulus may be lower."
+    else:
+        status = "Balanced"
+        message = "Recent training load looks controlled against your recent baseline."
+
+    if reasons:
+        message = f"{message} Signals: {', '.join(reasons)}."
+
+    unit = "load" if load_metric == "training_load" else "min"
+    rows = [
+        ("Last 7 days load", acute_load, unit),
+        ("Previous 4-week weekly baseline", chronic_weekly_load, unit),
+        ("Acute/baseline ratio", load_ratio, "ratio"),
+        ("Last 7 days performance", last_7_performance, "score"),
+        ("Previous baseline performance", previous_performance, "score"),
+        ("Last 7 days heart rate", last_7_hr, "bpm"),
+        ("Previous baseline heart rate", previous_hr, "bpm"),
+        ("High intensity share", high_intensity_share * 100, "%"),
+        ("Poor recovery sessions", poor_recovery_count, "activities"),
+    ]
+    if fatigue_avg is not None:
+        rows.append(("Average fatigue impact", fatigue_avg, "score"))
+
+    indicators = pd.DataFrame(
+        [
+            {
+                "indicator": label,
+                "value": None if value is None or pd.isna(value) else round(float(value), 2),
+                "unit": unit,
+            }
+            for label, value, unit in rows
+        ]
+    )
+    return status, message, indicators
+
+
+def render_training_status(df: pd.DataFrame) -> None:
+    status, message, indicators = build_training_status(df)
+    st.subheader("Training Load Status")
+    if status == "Potentially excessive":
+        st.error(f"**{status}:** {message}")
+    elif status == "Elevated load":
+        st.warning(f"**{status}:** {message}")
+    elif status == "Low recent load":
+        st.info(f"**{status}:** {message}")
+    elif status == "Balanced":
+        st.success(f"**{status}:** {message}")
+    else:
+        st.info(f"**{status}:** {message}")
+
+    if not indicators.empty:
+        st.dataframe(indicators, width="stretch", hide_index=True)
+
+
+def render_hub_card(label: str, value: str, note: str) -> None:
+    st.markdown(
+        f"""
+        <div class="hub-card">
+            <small>{html.escape(label)}</small>
+            <strong>{html.escape(value)}</strong>
+            <span>{html.escape(note)}</span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_activity_feed(df: pd.DataFrame, limit: int = 8) -> None:
+    recent = df.sort_values("activity_date", ascending=False).head(limit)
+    if recent.empty:
+        st.info("No recent activities available.")
+        return
+
+    for activity in recent.itertuples(index=False):
+        pace = (
+            f"{activity.average_pace_min_km:.2f} min/km"
+            if not pd.isna(activity.average_pace_min_km)
+            else "-"
+        )
+        speed = (
+            f"{activity.average_speed_kmh:.1f} km/h"
+            if not pd.isna(activity.average_speed_kmh)
+            else "-"
+        )
+        hr = (
+            f"{activity.average_heartrate:.0f} bpm"
+            if not pd.isna(activity.average_heartrate)
+            else "-"
+        )
+        performance = (
+            f"{activity.performance_score:.0f}"
+            if not pd.isna(activity.performance_score)
+            else "-"
+        )
+        st.markdown(
+            f"""
+            <div class="feed-card">
+                <small>{html.escape(str(activity.activity_type))} | {activity.activity_date.date()}</small>
+                <h4>{html.escape(str(activity.activity_name))}</h4>
+                <div class="feed-metrics">
+                    <b>{activity.distance_km:.2f} km</b>
+                    <b>{activity.moving_time_minutes:.0f} min</b>
+                    <b>{pace}</b>
+                    <b>{speed}</b>
+                    <b>{hr}</b>
+                    <b>{activity.total_elevation_gain:.0f} m</b>
+                    <b>score {performance}</b>
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+
+def render_strava_garmin_hub(df: pd.DataFrame, geo_df: pd.DataFrame) -> None:
+    if df.empty:
+        st.info("No activities available for the selected filters.")
+        return
+
+    st.subheader("Training Hub")
+    st.markdown(
+        '<p class="section-note">A Strava-style activity feed combined with Garmin-style training load, goals, status and performance insights.</p>',
+        unsafe_allow_html=True,
+    )
+
+    latest_day = df["activity_date"].max().normalize()
+    last_7 = df[df["activity_date"] >= latest_day - pd.Timedelta(days=6)]
+    last_30 = df[df["activity_date"] >= latest_day - pd.Timedelta(days=29)]
+    previous_30 = df[
+        (df["activity_date"] >= latest_day - pd.Timedelta(days=59))
+        & (df["activity_date"] < latest_day - pd.Timedelta(days=29))
+    ]
+    status, message, indicators = build_training_status(df)
+
+    monthly = (
+        df.groupby("activity_month", as_index=False)
+        .agg(
+            distance_km=("distance_km", "sum"),
+            moving_time_minutes=("moving_time_minutes", "sum"),
+            total_elevation_gain=("total_elevation_gain", "sum"),
+            training_load=("training_load", "sum"),
+            performance_score=("performance_score", "mean"),
+        )
+        .sort_values("activity_month")
+    )
+    monthly_baseline = monthly.iloc[:-1] if len(monthly) > 1 else monthly
+    current_month = monthly.iloc[-1] if not monthly.empty else None
+    distance_goal = max(1.0, float(monthly_baseline["distance_km"].mean() or 0))
+    time_goal = max(1.0, float(monthly_baseline["moving_time_minutes"].mean() or 0))
+    elevation_goal = max(1.0, float(monthly_baseline["total_elevation_gain"].mean() or 0))
+
+    st.markdown('<div class="hub-grid">', unsafe_allow_html=True)
+    hub_cols = st.columns(3)
+    with hub_cols[0]:
+        render_hub_card(
+            "Training status",
+            status,
+            message[:115] + ("..." if len(message) > 115 else ""),
+        )
+    with hub_cols[1]:
+        render_hub_card(
+            "Last 7 days",
+            f"{last_7['distance_km'].sum():,.1f} km",
+            f"{len(last_7)} activities | {last_7['moving_time_minutes'].sum() / 60:,.1f} h",
+        )
+    with hub_cols[2]:
+        render_hub_card(
+            "Last 30 days",
+            f"{last_30['distance_km'].sum():,.1f} km",
+            f"{format_percent(((last_30['distance_km'].sum() - previous_30['distance_km'].sum()) / previous_30['distance_km'].sum()) * 100) if previous_30['distance_km'].sum() else '-'} vs previous 30d",
+        )
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    goal_col1, goal_col2, goal_col3 = st.columns(3)
+    if current_month is not None:
+        current_distance = float(current_month["distance_km"])
+        current_time = float(current_month["moving_time_minutes"])
+        current_elevation = float(current_month["total_elevation_gain"])
+        with goal_col1:
+            st.metric("Monthly Distance Goal", f"{current_distance:,.1f} km", f"baseline {distance_goal:,.1f} km")
+            st.progress(min(1.0, current_distance / distance_goal))
+        with goal_col2:
+            st.metric("Monthly Time Goal", f"{current_time / 60:,.1f} h", f"baseline {time_goal / 60:,.1f} h")
+            st.progress(min(1.0, current_time / time_goal))
+        with goal_col3:
+            st.metric("Monthly Elevation Goal", f"{current_elevation:,.0f} m", f"baseline {elevation_goal:,.0f} m")
+            st.progress(min(1.0, current_elevation / elevation_goal))
+
+    hub_left, hub_right = st.columns([1.1, 0.9])
+    with hub_left:
+        st.subheader("Activity Feed")
+        render_activity_feed(df)
+
+    with hub_right:
+        st.subheader("Garmin-style Metrics")
+        if not indicators.empty:
+            st.dataframe(indicators, width="stretch", hide_index=True)
+
+        records = build_record_rows(df)
+        records = records[records["scope"] == "All"].head(6)
+        st.subheader("Recent PR Board")
+        if records.empty:
+            st.info("No records available.")
+        else:
+            st.dataframe(
+                records[["category", "record", "value", "unit", "date", "activity_type"]],
+                width="stretch",
+                hide_index=True,
+            )
+
+    chart_col1, chart_col2 = st.columns(2)
+    with chart_col1:
+        type_mix = (
+            df.groupby("activity_type", as_index=False)
+            .agg(distance_km=("distance_km", "sum"), activities=("activity_id", "count"))
+            .sort_values("distance_km", ascending=False)
+        )
+        st.plotly_chart(
+            px.pie(
+                type_mix,
+                names="activity_type",
+                values="distance_km",
+                hole=0.45,
+                title="Sport Mix by Distance",
+            ),
+            width="stretch",
+        )
+    with chart_col2:
+        intensity = (
+            df.assign(intensity_level=df["intensity_level"].fillna("unknown"))
+            .groupby("intensity_level", as_index=False)
+            .agg(activities=("activity_id", "count"), training_load=("training_load", "sum"))
+        )
+        st.plotly_chart(
+            px.bar(
+                intensity,
+                x="intensity_level",
+                y="activities",
+                color="training_load",
+                color_continuous_scale="Oranges",
+                labels={
+                    "intensity_level": "Intensity",
+                    "activities": "Activities",
+                    "training_load": "Training load",
+                },
+                title="Intensity Distribution",
+            ),
+            width="stretch",
+        )
+
+    if not geo_df.empty:
+        st.subheader("Favorite Areas")
+        favorite_areas = (
+            geo_df.groupby(["latitude", "longitude", "activity_type"], as_index=False)
+            .agg(
+                samples=("samples", "sum"),
+                avg_performance=("avg_performance", "mean"),
+                avg_speed_kmh=("avg_speed_kmh", "mean"),
+            )
+            .sort_values(["samples", "avg_performance"], ascending=[False, False])
+            .head(10)
+            .round(2)
+        )
+        st.dataframe(favorite_areas, width="stretch", hide_index=True)
+
+
+def render_results_dashboard(df: pd.DataFrame, title: str, show_type_breakdown: bool) -> None:
+    if df.empty:
+        st.info("No activities available for this view.")
+        return
+
+    st.subheader(title)
+    min_day = df["activity_date"].min().date()
+    max_day = df["activity_date"].max().date()
+    st.markdown(
+        f'<p class="section-note">Analysis from {min_day} to {max_day}, using the active sidebar timeline filters.</p>',
+        unsafe_allow_html=True,
+    )
+
+    latest_day = df["activity_date"].max().normalize()
+    last_30_start = latest_day - pd.Timedelta(days=29)
+    previous_30_start = latest_day - pd.Timedelta(days=59)
+    previous_30_end = last_30_start - pd.Timedelta(days=1)
+    last_30 = df[
+        (df["activity_date"] >= last_30_start)
+        & (df["activity_date"] <= latest_day + pd.Timedelta(days=1))
+    ]
+    previous_30 = df[
+        (df["activity_date"] >= previous_30_start)
+        & (df["activity_date"] <= previous_30_end)
+    ]
+
+    st.markdown("**Selected Period**")
+    render_metric_grid(df)
+    st.markdown("**Last 30 Days vs Previous 30 Days**")
+    render_metric_grid(last_30, previous_30)
+    render_training_status(df)
+
+    monthly = (
+        df.groupby("activity_month", as_index=False)
+        .agg(
+            activities=("activity_id", "count"),
+            distance_km=("distance_km", "sum"),
+            moving_time_minutes=("moving_time_minutes", "sum"),
+            elevation_gain=("total_elevation_gain", "sum"),
+            calories=("calories", "sum"),
+            average_pace_min_km=("average_pace_min_km", "mean"),
+            average_speed_kmh=("average_speed_kmh", "mean"),
+            average_heartrate=("average_heartrate", "mean"),
+            performance_score=("performance_score", "mean"),
+            training_load=("training_load", "sum"),
+        )
+        .sort_values("activity_month")
+    )
+    monthly["moving_hours"] = monthly["moving_time_minutes"] / 60
+
+    chart_col1, chart_col2 = st.columns(2)
+    with chart_col1:
+        st.plotly_chart(
+            px.area(
+                monthly,
+                x="activity_month",
+                y=["distance_km", "moving_hours"],
+                labels={"activity_month": "Month", "value": "Total", "variable": "Metric"},
+                title="Monthly Volume: Distance and Time",
+            ),
+            width="stretch",
+        )
+    with chart_col2:
+        st.plotly_chart(
+            px.line(
+                monthly,
+                x="activity_month",
+                y=["performance_score", "average_heartrate"],
+                markers=True,
+                labels={"activity_month": "Month", "value": "Value", "variable": "Metric"},
+                title="Monthly Performance and Heart Rate",
+            ),
+            width="stretch",
+        )
+
+    chart_col3, chart_col4 = st.columns(2)
+    with chart_col3:
+        st.plotly_chart(
+            px.bar(
+                monthly,
+                x="activity_month",
+                y=["elevation_gain", "calories"],
+                barmode="group",
+                labels={"activity_month": "Month", "value": "Total", "variable": "Metric"},
+                title="Elevation and Calories",
+            ),
+            width="stretch",
+        )
+    with chart_col4:
+        st.plotly_chart(
+            px.scatter(
+                df.assign(chart_elevation_gain=df["total_elevation_gain"].fillna(0).clip(lower=0)),
+                x="distance_km",
+                y="performance_score",
+                color="activity_type" if show_type_breakdown else "intensity_level",
+                size="chart_elevation_gain",
+                hover_name="activity_name",
+                labels={
+                    "distance_km": "Distance (km)",
+                    "performance_score": "Performance",
+                    "chart_elevation_gain": "Elevation gain",
+                },
+                title="Performance by Distance and Elevation",
+            ),
+            width="stretch",
+        )
+
+    analysis_col1, analysis_col2 = st.columns(2)
+    with analysis_col1:
+        if show_type_breakdown:
+            by_type = (
+                df.groupby("activity_type", as_index=False)
+                .agg(
+                    activities=("activity_id", "count"),
+                    distance_km=("distance_km", "sum"),
+                    moving_time_minutes=("moving_time_minutes", "sum"),
+                    elevation_gain=("total_elevation_gain", "sum"),
+                    performance_score=("performance_score", "mean"),
+                )
+                .sort_values("distance_km", ascending=False)
+            )
+            st.plotly_chart(
+                px.treemap(
+                    by_type,
+                    path=["activity_type"],
+                    values="distance_km",
+                    color="performance_score",
+                    color_continuous_scale="Viridis",
+                    title="Contribution by Activity Type",
+                ),
+                width="stretch",
+            )
+        else:
+            st.plotly_chart(
+                px.histogram(
+                    df,
+                    x="distance_km",
+                    nbins=25,
+                    labels={"distance_km": "Distance (km)"},
+                    title="Distance Distribution",
+                ),
+                width="stretch",
+            )
+    with analysis_col2:
+        weekday_order = [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+        ]
+        weekday = df.copy()
+        weekday["weekday"] = weekday["activity_date"].dt.day_name()
+        weekday = (
+            weekday.groupby("weekday", as_index=False)
+            .agg(distance_km=("distance_km", "sum"), performance_score=("performance_score", "mean"))
+            .set_index("weekday")
+            .reindex(weekday_order)
+            .reset_index()
+        )
+        st.plotly_chart(
+            px.bar(
+                weekday,
+                x="weekday",
+                y="distance_km",
+                color="performance_score",
+                color_continuous_scale="Blues",
+                labels={
+                    "weekday": "Weekday",
+                    "distance_km": "Distance (km)",
+                    "performance_score": "Performance",
+                },
+                title="Best Days by Volume and Performance",
+            ),
+            width="stretch",
+        )
+
+    st.subheader("Statistical Indicators")
+    st.dataframe(build_stat_summary(df), width="stretch", hide_index=True)
+
+    st.subheader("Last Month Activities")
+    recent_columns = [
+        "activity_date",
+        "activity_type",
+        "activity_name",
+        "distance_km",
+        "moving_time_minutes",
+        "average_pace_min_km",
+        "average_speed_kmh",
+        "average_heartrate",
+        "total_elevation_gain",
+        "performance_score",
+    ]
+    recent_display = last_30.sort_values("activity_date", ascending=False)[recent_columns].copy()
+    numeric_recent = recent_display.select_dtypes(include="number").columns
+    recent_display[numeric_recent] = recent_display[numeric_recent].round(2)
+    st.dataframe(recent_display, width="stretch", hide_index=True)
 
 
 def render_geo_map(
@@ -413,10 +1360,28 @@ def render_activity_heatmap(df: pd.DataFrame, activity_type: str) -> None:
 ensure_database()
 add_dashboard_style()
 
-st.title("Strava Performance Coach")
-st.caption("Offline activity database, performance analytics, GPS maps, and explainable coaching.")
-
 with st.sidebar:
+    st.markdown("## Performance Coach")
+    page_options = [
+        "Overview",
+        "Training Hub",
+        "General Results",
+        "Activity Deep Dive",
+        "Records & Forecasts",
+        "Timeline",
+        "Statistics",
+        "Geo Map",
+        "Heatmaps",
+        "Activities",
+        "Profile",
+        "Coach",
+    ]
+    current_page = st.radio(
+        "Pages",
+        page_options,
+        label_visibility="collapsed",
+    )
+    st.markdown("---")
     st.header("Local Database")
     if st.button("Refresh Analytics", width="stretch"):
         try:
@@ -455,6 +1420,8 @@ with st.sidebar:
     st.markdown("---")
     st.write(f"Database: `{settings.duckdb_path}`")
 
+render_app_header(current_page)
+
 
 activities_all = load_dataframe(
     """
@@ -473,6 +1440,7 @@ activities_all = load_dataframe(
         ROUND(a.elapsed_time_minutes, 1) AS elapsed_time_minutes,
         ROUND(a.average_speed_kmh, 2) AS average_speed_kmh,
         a.average_heartrate,
+        a.max_heartrate,
         ROUND(a.average_pace_min_km, 2) AS average_pace_min_km,
         ROUND(a.total_elevation_gain, 1) AS total_elevation_gain,
         ROUND(COALESCE(a.calories, 0), 1) AS calories,
@@ -520,7 +1488,7 @@ geo_all = load_dataframe(
 )
 
 if activities_all.empty:
-    st.info("No activities loaded yet. Authenticate Strava and run the daily check.")
+    st.info("No activities loaded yet. Upload a Strava export or activity file to start.")
     st.stop()
 
 activities_all["activity_date"] = pd.to_datetime(activities_all["activity_date"])
@@ -618,29 +1586,7 @@ kpi_cols[5].metric(
     "-" if pd.isna(avg_performance) else f"{avg_performance:.1f}",
 )
 
-(
-    tab_home,
-    tab_years,
-    tab_stats,
-    tab_geo,
-    tab_heatmaps,
-    tab_activities,
-    tab_profile,
-    tab_coach,
-) = st.tabs(
-    [
-        "Overview",
-        "Timeline",
-        "Statistics",
-        "Geo Map",
-        "Heatmaps",
-        "Activities",
-        "Profile",
-        "Coach",
-    ]
-)
-
-with tab_home:
+if current_page == "Overview":
     current_year = date.today().year
     today = pd.Timestamp(date.today())
     year_start = pd.Timestamp(date(current_year, 1, 1))
@@ -853,7 +1799,219 @@ with tab_home:
         hide_index=True,
     )
 
-with tab_years:
+if current_page == "Training Hub":
+    render_strava_garmin_hub(filtered, geo_filtered)
+
+if current_page == "General Results":
+    render_results_dashboard(
+        filtered,
+        "General Results",
+        show_type_breakdown=True,
+    )
+
+if current_page == "Activity Deep Dive":
+    st.markdown(
+        '<p class="section-note">Choose one activity type to see a dedicated overview, last-month comparison, charts, records and statistical indicators.</p>',
+        unsafe_allow_html=True,
+    )
+    activity_options = filtered["activity_type"].dropna().drop_duplicates().tolist()
+    selected_activity_page = st.selectbox("Activity type", activity_options)
+    activity_filtered = filtered[filtered["activity_type"] == selected_activity_page]
+    render_results_dashboard(
+        activity_filtered,
+        f"{selected_activity_page} Results",
+        show_type_breakdown=False,
+    )
+
+    st.subheader(f"{selected_activity_page} Records")
+    activity_records = build_record_rows(activity_filtered)
+    activity_records = activity_records[activity_records["scope"] == "All"]
+    if activity_records.empty:
+        st.info("No records available for this activity type.")
+    else:
+        st.dataframe(
+            activity_records[
+                [
+                    "category",
+                    "record",
+                    "value",
+                    "unit",
+                    "date",
+                    "activity",
+                    "distance_km",
+                    "performance",
+                ]
+            ],
+            width="stretch",
+            hide_index=True,
+        )
+
+if current_page == "Records & Forecasts":
+    st.subheader("Personal Records")
+    st.markdown(
+        '<p class="section-note">Records respect the current filters, so you can inspect all-time, one year, one month, or one activity type.</p>',
+        unsafe_allow_html=True,
+    )
+
+    records = build_record_rows(filtered)
+    if records.empty:
+        st.info("No records available for the selected filters.")
+    else:
+        record_scope = st.selectbox(
+            "Record scope",
+            records["scope"].drop_duplicates().tolist(),
+        )
+        category_options = records["category"].drop_duplicates().tolist()
+        selected_categories = st.multiselect(
+            "Record categories",
+            category_options,
+            default=category_options,
+        )
+        visible_records = records[records["scope"] == record_scope]
+        if selected_categories:
+            visible_records = visible_records[
+                visible_records["category"].isin(selected_categories)
+            ]
+
+        record_cols = st.columns(4)
+        highlight_records = visible_records.head(4).to_dict("records")
+        for col, record in zip(record_cols, highlight_records):
+            col.metric(
+                record["record"],
+                f"{record['value']:,.2f} {record['unit']}",
+                f"{record['activity_type']} | {record['date']}",
+            )
+
+        st.dataframe(
+            visible_records[
+                [
+                    "category",
+                    "record",
+                    "value",
+                    "unit",
+                    "date",
+                    "activity_type",
+                    "activity",
+                    "distance_km",
+                    "performance",
+                ]
+            ],
+            width="stretch",
+            hide_index=True,
+        )
+
+    st.subheader("Trends and Forecasts")
+    st.markdown(
+        '<p class="section-note">Actual monthly values are shown with a solid line, the trend with a dotted line, and the forecast with a dashed line.</p>',
+        unsafe_allow_html=True,
+    )
+
+    metric_specs = {
+        "Distance": ("distance_km", "sum", "km"),
+        "Moving time": ("moving_time_minutes", "sum", "min"),
+        "Elevation gain": ("total_elevation_gain", "sum", "m"),
+        "Average pace": ("average_pace_min_km", "mean", "min/km"),
+        "Average speed": ("average_speed_kmh", "mean", "km/h"),
+        "Average heart rate": ("average_heartrate", "mean", "bpm"),
+        "Max heart rate": ("max_heartrate", "mean", "bpm"),
+        "Performance": ("performance_score", "mean", "score"),
+        "Training load": ("training_load", "sum", "load"),
+    }
+    filtered_types = filtered["activity_type"].dropna().drop_duplicates().tolist()
+    preferred_types = [activity for activity in ["Run", "Ride"] if activity in filtered_types]
+    forecast_types = preferred_types + [
+        activity for activity in filtered_types if activity not in preferred_types
+    ]
+    selected_forecast_type = st.selectbox(
+        "Activity type for forecasts",
+        forecast_types,
+    )
+    default_metrics = [
+        metric for metric in ["Distance", "Average pace", "Elevation gain", "Average heart rate"]
+        if metric in metric_specs
+    ]
+    selected_forecast_metrics = st.multiselect(
+        "Forecast metrics",
+        list(metric_specs.keys()),
+        default=default_metrics,
+    )
+
+    summary = build_forecast_summary(filtered, selected_forecast_type, metric_specs)
+    if summary.empty:
+        st.info("At least two monthly data points are needed to calculate trend forecasts.")
+    else:
+        st.dataframe(summary, width="stretch", hide_index=True)
+
+    for index in range(0, len(selected_forecast_metrics), 2):
+        chart_cols = st.columns(2)
+        for col, label in zip(chart_cols, selected_forecast_metrics[index : index + 2]):
+            metric, aggregation, unit = metric_specs[label]
+            with col:
+                render_trend_forecast(
+                    filtered,
+                    selected_forecast_type,
+                    metric,
+                    label,
+                    unit,
+                    aggregation,
+                )
+
+    st.subheader("Run and Ride Direction")
+    comparison_base = filtered[filtered["activity_type"].isin(["Run", "Ride"])].copy()
+    if comparison_base.empty:
+        st.info("No run or ride data available in the selected filters.")
+    else:
+        comparison_base["chart_elevation_gain"] = (
+            comparison_base["total_elevation_gain"].fillna(0).clip(lower=0)
+        )
+        comparison_monthly = (
+            comparison_base.groupby(["activity_month", "activity_type"], as_index=False)
+            .agg(
+                distance_km=("distance_km", "sum"),
+                elevation_gain=("total_elevation_gain", "sum"),
+                average_heartrate=("average_heartrate", "mean"),
+                performance_score=("performance_score", "mean"),
+            )
+            .sort_values("activity_month")
+        )
+        compare_col1, compare_col2 = st.columns(2)
+        with compare_col1:
+            st.plotly_chart(
+                px.line(
+                    comparison_monthly,
+                    x="activity_month",
+                    y="distance_km",
+                    color="activity_type",
+                    markers=True,
+                    labels={
+                        "activity_month": "Month",
+                        "distance_km": "Distance (km)",
+                        "activity_type": "Type",
+                    },
+                    title="Run vs Ride Monthly Distance",
+                ),
+                width="stretch",
+            )
+        with compare_col2:
+            st.plotly_chart(
+                px.scatter(
+                    comparison_base,
+                    x="distance_km",
+                    y="performance_score",
+                    color="activity_type",
+                    size="chart_elevation_gain",
+                    hover_name="activity_name",
+                    labels={
+                        "distance_km": "Distance (km)",
+                        "performance_score": "Performance",
+                        "chart_elevation_gain": "Elevation gain",
+                    },
+                    title="Performance by Distance and Altitude",
+                ),
+                width="stretch",
+            )
+
+if current_page == "Timeline":
     annual = (
         filtered.groupby("activity_year", as_index=False)
         .agg(
@@ -1007,7 +2165,7 @@ with tab_years:
             width="stretch",
         )
 
-with tab_stats:
+if current_page == "Statistics":
     st.subheader("Statistical Analysis")
     st.markdown(
         '<p class="section-note">Distribution, variability, correlations, and outliers for the selected timeline.</p>',
@@ -1104,7 +2262,7 @@ with tab_stats:
         width="stretch",
     )
 
-with tab_geo:
+if current_page == "Geo Map":
     st.subheader("GPS Area Analysis")
     st.markdown(
         '<p class="section-note">Areas where you move most and areas with stronger average performance, filtered by year, month and activity type.</p>',
@@ -1151,7 +2309,7 @@ with tab_geo:
     st.subheader("Top GPS Areas")
     st.dataframe(top_areas, width="stretch", hide_index=True)
 
-with tab_heatmaps:
+if current_page == "Heatmaps":
     st.subheader("Run and Ride Heatmaps")
     heat_col1, heat_col2 = st.columns(2)
     with heat_col1:
@@ -1159,7 +2317,7 @@ with tab_heatmaps:
     with heat_col2:
         render_activity_heatmap(filtered, "Ride")
 
-with tab_activities:
+if current_page == "Activities":
     activities = filtered.sort_values(["activity_date", "activity_id"], ascending=False)
 
     filter_col1, filter_col2 = st.columns([2, 1])
@@ -1339,7 +2497,7 @@ with tab_activities:
             hide_index=True,
         )
 
-with tab_profile:
+if current_page == "Profile":
     profile = load_dataframe(
         """
         SELECT athlete_id, athlete_name, city, state, country, sex, premium, updated_at
@@ -1377,7 +2535,7 @@ with tab_profile:
     st.subheader("Activity Profile")
     st.dataframe(by_type, width="stretch", hide_index=True)
 
-with tab_coach:
+if current_page == "Coach":
     recommendations = load_dataframe(
         """
         SELECT priority_level, recommendation_type, recommendation_text,
